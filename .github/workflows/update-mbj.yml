@@ -1,0 +1,29 @@
+name: Update MBJ Arrivals
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-arrivals:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch MBJ arrivals
+        run: node update-flights.js
+
+      - name: Commit updated flight data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update MBJ arrivals"
+          file_pattern: flights.json last_updated.txt
