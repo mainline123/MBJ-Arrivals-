@@ -7,193 +7,224 @@
 <title>MBJ Live Arrivals</title>
 
 <style>
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #031827;
-    color: white;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #031827;
+  color: white;
+}
+
+body {
+  overflow: hidden;
 }
 
 .screen {
-    min-height: 100vh;
-    padding: 22px;
-    background: linear-gradient(
-        180deg,
-        #063652 0%,
-        #031827 100%
-    );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background:
+    linear-gradient(180deg, #063652 0%, #031827 100%);
 }
 
-/* COMPANY HEADER */
+/* COMPANY */
 
 .brand {
-    background: white;
-    color: #111;
-    text-align: center;
-    padding: 16px;
-    border-radius: 14px;
-    font-size: 26px;
-    font-weight: 900;
-    margin-bottom: 16px;
+  background: white;
+  color: #111;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+}
+
+.brandMain {
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .brandSub {
-    font-size: 15px;
-    margin-top: 3px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #333;
+  margin-top: 2px;
 }
 
 /* AIRPORT HEADER */
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerCard {
+  background: rgba(10,61,97,.65);
+  border: 2px solid #0b5d8c;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 15px;
 
-    padding: 18px;
-    margin-bottom: 16px;
-
-    border: 2px solid #0b5d8c;
-    border-radius: 14px;
-
-    background: rgba(10,61,97,0.65);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .code {
-    font-size: 58px;
-    font-weight: 900;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1;
 }
 
-.airport {
-    font-weight: 900;
-    font-size: 17px;
+.airportName {
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 5px;
 }
 
 .location {
-    color: #f5c62b;
-    font-weight: 900;
-    margin-top: 3px;
+  color: #f5c62b;
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 3px;
 }
 
-.badge {
-    background: #148544;
-    padding: 7px 12px;
-    border-radius: 18px;
-    font-weight: 900;
-    text-align: center;
+.liveBadge {
+  background: #148544;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
 }
 
 .clock {
-    font-size: 26px;
-    font-weight: 900;
-    text-align: right;
-    margin-top: 8px;
+  font-size: 26px;
+  font-weight: 900;
+  margin-top: 7px;
+  text-align: right;
 }
 
 .date {
-    text-align: right;
-    font-size: 13px;
-    color: #c3dae8;
+  font-size: 12px;
+  color: #c3dae8;
+  text-align: right;
 }
 
-/* FLIGHT BOARD */
+/* TABLE */
 
-.card {
-    background: white;
-    color: #102737;
-    border-radius: 14px;
-    overflow: hidden;
-
-    box-shadow:
-        0 6px 18px rgba(0,0,0,0.45);
-}
-
-.tableHead,
-.flightRow {
-
-    display: grid;
-
-    grid-template-columns:
-        1.2fr
-        1.2fr
-        1.8fr
-        0.7fr
-        1.2fr;
-
-    padding: 13px 10px;
-
-    align-items: center;
+.tableContainer {
+  flex: 1;
+  min-height: 0;
+  background: white;
+  color: #102737;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(0,0,0,.5);
 }
 
 .tableHead {
+  background: #0a3d61;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
 
-    background: #0a3d61;
-    color: white;
+  padding: 12px 10px;
 
-    font-size: 13px;
-    font-weight: 900;
+  display: grid;
 
-    text-transform: uppercase;
+  grid-template-columns:
+    .9fr
+    1.45fr
+    1.45fr
+    .65fr
+    .9fr;
+}
+
+.tableBody {
+  flex: 1;
+  overflow-y: auto;
 }
 
 .flightRow {
+  display: grid;
 
-    border-bottom:
-        1px solid #d9e4eb;
+  grid-template-columns:
+    .9fr
+    1.45fr
+    1.45fr
+    .65fr
+    .9fr;
 
-    font-size: 14px;
-    font-weight: 700;
+  align-items: center;
+
+  padding: 12px 10px;
+
+  border-bottom: 1px solid #d9e4eb;
+
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .flightRow:nth-child(even) {
-    background: #eef6fa;
-}
-
-.flight {
-    color: #0b5d8c;
-    font-weight: 900;
+  background: #eef6fa;
 }
 
 .time {
-    font-weight: 900;
+  color: #082f4e;
+  font-weight: 900;
+}
+
+.flight {
+  color: #0b5d8c;
+  font-weight: 900;
+}
+
+.from {
+  color: #222;
+  font-weight: 800;
 }
 
 .baggage {
-    text-align: center;
-    font-weight: 900;
+  text-align: center;
+  color: #0a3d61;
+  font-weight: 900;
 }
 
-.status {
-    font-weight: 900;
+.actual {
+  color: #15743f;
+  font-weight: 900;
 }
 
-.message {
-    padding: 35px;
-    text-align: center;
-    font-weight: 900;
-    color: #0a3d61;
+.loading {
+  padding: 30px;
+  text-align: center;
+  color: #0a3d61;
+  font-weight: bold;
 }
 
 /* FOOTER */
 
 .footer {
+  margin-top: 15px;
+  padding: 8px 5px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    padding-top: 12px;
-
-    font-size: 12px;
-    color: #cbe0ed;
+  font-size: 12px;
+  color: #cbe0ed;
 }
 
+.updated {
+  text-align: right;
+}
 </style>
 </head>
 
@@ -201,100 +232,100 @@ html, body {
 
 <div class="screen">
 
-    <div class="brand">
+  <div class="brand">
+    <div class="brandMain">
+      HALIFAX VIRTUAL MEDIA MASTERS
+    </div>
 
-        HALIFAX VIRTUAL MEDIA MASTERS
+    <div class="brandSub">
+      &amp; EVENTS LTD.
+    </div>
+  </div>
 
-        <div class="brandSub">
-            &amp; EVENTS LTD.
-        </div>
+
+  <div class="headerCard">
+
+    <div>
+      <div class="code">MBJ</div>
+
+      <div class="airportName">
+        SANGSTER INTERNATIONAL AIRPORT
+      </div>
+
+      <div class="location">
+        MONTEGO BAY • JAMAICA
+      </div>
+    </div>
+
+
+    <div>
+
+      <div class="liveBadge" id="syncStatus">
+        ● LIVE ARRIVALS
+      </div>
+
+      <div class="clock" id="clock">
+        --:--
+      </div>
+
+      <div class="date" id="date">
+        --
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="tableContainer">
+
+    <div class="tableHead">
+
+      <div>Scheduled</div>
+
+      <div>Flight</div>
+
+      <div>Origin</div>
+
+      <div style="text-align:center">
+        Bag
+      </div>
+
+      <div>Actual</div>
 
     </div>
 
 
-    <div class="header">
+    <div
+      class="tableBody"
+      id="flightData">
 
-        <div>
-
-            <div class="code">
-                MBJ
-            </div>
-
-            <div class="airport">
-                SANGSTER INTERNATIONAL AIRPORT
-            </div>
-
-            <div class="location">
-                MONTEGO BAY • JAMAICA
-            </div>
-
-        </div>
-
-
-        <div>
-
-            <div class="badge">
-                ● ARRIVALS
-            </div>
-
-            <div
-                id="clock"
-                class="clock">
-                --:--
-            </div>
-
-            <div
-                id="date"
-                class="date">
-                --
-            </div>
-
-        </div>
+      <div class="loading">
+        Loading MBJ Arrivals...
+      </div>
 
     </div>
 
-
-    <div class="card">
-
-        <div class="tableHead">
-
-            <div>Time</div>
-
-            <div>Flight</div>
-
-            <div>From</div>
-
-            <div style="text-align:center">
-                Baggage
-            </div>
-
-            <div>Status</div>
-
-        </div>
+  </div>
 
 
-        <div id="flightData">
+  <div class="footer">
 
-            <div class="message">
-                Loading MBJ arrivals...
-            </div>
+    <div>
+      <strong>
+        Sangster International Airport
+      </strong>
+    </div>
 
-        </div>
+    <div
+      class="updated"
+      id="lastUpdated">
+
+      Loading latest schedule...
 
     </div>
 
-
-    <div class="footer">
-
-        <div>
-            Flight information:
-            Sangster International Airport
-        </div>
-
-        <div id="updated">
-        </div>
-
-    </div>
+  </div>
 
 </div>
 
@@ -302,380 +333,255 @@ html, body {
 <script>
 
 /*
-    OFFICIAL MBJ AIRPORT ARRIVALS PAGE
-*/
-
-const SOURCE =
-"https://www.mbjairport.com/flights?type=arrivals";
-
-
-function cleanText(element) {
-
-    return (
-        element?.textContent || ""
-    )
-    .replace(/\s+/g, " ")
-    .trim();
-
-}
-
-
-/*
-    LOAD FLIGHT INFORMATION
+   flights.json is created by our
+   GitHub Action from the official
+   MBJ Airport arrivals page.
 */
 
 async function loadFlights() {
 
-    const container =
-        document.getElementById(
-            "flightData"
-        );
+  const container =
+    document.getElementById("flightData");
 
-    try {
+  const badge =
+    document.getElementById("syncStatus");
 
-        const response =
-            await fetch(
-                SOURCE +
-                "&_=" +
-                Date.now(),
-                {
-                    cache: "no-store"
-                }
-            );
+  const updated =
+    document.getElementById("lastUpdated");
 
+  try {
 
-        if (!response.ok) {
+    /*
+       Timestamp prevents the kiosk/browser
+       from showing an old cached JSON file.
+    */
 
-            throw new Error(
-                "HTTP " +
-                response.status
-            );
+    const response =
+      await fetch(
+        "flights.json?t=" + Date.now(),
+        { cache: "no-store" }
+      );
 
-        }
+    if (!response.ok) {
+      throw new Error(
+        "HTTP " + response.status
+      );
+    }
 
+    const data =
+      await response.json();
 
-        const html =
-            await response.text();
+    if (
+      !data.flights ||
+      !Array.isArray(data.flights)
+    ) {
+      throw new Error(
+        "Invalid flight data"
+      );
+    }
 
 
-        const documentCopy =
-            new DOMParser()
-            .parseFromString(
-                html,
-                "text/html"
-            );
+    container.innerHTML = "";
 
 
-        /*
-            FIND MBJ FLIGHT TABLE
-        */
+    for (const flight of data.flights) {
 
-        const tables =
-            [
-                ...documentCopy
-                .querySelectorAll(
-                    "table"
-                )
-            ];
+      const row =
+        document.createElement("div");
 
+      row.className =
+        "flightRow";
 
-        const flightTable =
-            tables.find(
-                table =>
-                    /Airline\/Flight/i
-                    .test(
-                        cleanText(table)
-                    )
-                    &&
-                    /Baggage/i
-                    .test(
-                        cleanText(table)
-                    )
-            );
 
+      const scheduled =
+        flight.scheduledTime || "—";
 
-        if (!flightTable) {
+      const airlineFlight =
+        flight.airlineFlight || "—";
 
-            throw new Error(
-                "MBJ flight table not found"
-            );
+      const origin =
+        flight.from || "—";
 
-        }
+      const baggage =
+        flight.baggage || "—";
 
+      const actual =
+        flight.actualTime || "—";
 
-        const rows =
-            [
-                ...flightTable
-                .querySelectorAll(
-                    "tr"
-                )
-            ]
-            .slice(1);
 
+      row.innerHTML = `
 
-        const flights = [];
+        <div class="time">
+          ${scheduled}
+        </div>
 
+        <div class="flight">
+          ${airlineFlight}
+        </div>
 
-        for (const row of rows) {
+        <div class="from">
+          ${origin}
+        </div>
 
-            const columns =
-                [
-                    ...row
-                    .querySelectorAll(
-                        "td"
-                    )
-                ]
-                .map(cleanText);
+        <div class="baggage">
+          ${baggage}
+        </div>
 
+        <div class="actual">
+          ${actual}
+        </div>
 
-            if (
-                columns.length < 5
-            ) {
-                continue;
-            }
+      `;
 
 
-            const airlineFlight =
-                columns[0];
+      container.appendChild(row);
+    }
 
-            const origin =
-                columns[1];
 
-            const baggage =
-                columns[2];
+    badge.textContent =
+      "● LIVE ARRIVALS";
 
-            const timeData =
-                columns[3];
+    badge.style.background =
+      "#148544";
 
-            const status =
-                columns[4];
 
+    if (data.updated) {
 
-            if (
-                !airlineFlight ||
-                !origin
-            ) {
-                continue;
-            }
+      const updateDate =
+        new Date(data.updated);
 
+      updated.textContent =
+        "Data updated " +
+        updateDate.toLocaleTimeString(
+          "en-US",
+          {
+            timeZone:
+              "America/Jamaica",
 
-            /*
-                FIND FLIGHT NUMBER
-            */
+            hour:
+              "numeric",
 
-            const flightMatch =
-                airlineFlight.match(
-                    /([A-Z0-9]{2,3}\s?\*?\d{1,4})\b/i
-                );
-
-
-            const flightNumber =
-                flightMatch
-                ? flightMatch[1]
-                : airlineFlight;
-
-
-            /*
-                FIND SCHEDULED TIME
-            */
-
-            const times =
-                timeData.match(
-                    /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
-                ) || [];
-
-
-            flights.push({
-
-                time:
-                    times[0]
-                    || timeData,
-
-                flight:
-                    flightNumber,
-
-                from:
-                    origin,
-
-                baggage:
-                    baggage,
-
-                status:
-                    status
-                    || "Scheduled"
-
-            });
-
-        }
-
-
-        if (
-            flights.length === 0
-        ) {
-
-            throw new Error(
-                "No arrivals found"
-            );
-
-        }
-
-
-        /*
-            DISPLAY FLIGHTS
-        */
-
-        container.innerHTML =
-            flights
-            .map(
-                flight => `
-
-                <div class="flightRow">
-
-                    <div class="time">
-                        ${flight.time}
-                    </div>
-
-                    <div class="flight">
-                        ${flight.flight}
-                    </div>
-
-                    <div>
-                        ${flight.from}
-                    </div>
-
-                    <div class="baggage">
-                        ${flight.baggage || "—"}
-                    </div>
-
-                    <div class="status">
-                        ${flight.status}
-                    </div>
-
-                </div>
-
-                `
-            )
-            .join("");
-
-
-        document
-        .getElementById(
-            "updated"
-        )
-        .textContent =
-            "Loaded " +
-            new Date()
-            .toLocaleTimeString(
-                "en-US",
-                {
-                    timeZone:
-                        "America/Jamaica",
-
-                    hour:
-                        "numeric",
-
-                    minute:
-                        "2-digit"
-                }
-            );
-
+            minute:
+              "2-digit"
+          }
+        ) +
+        " Jamaica time";
 
     }
 
-    catch (error) {
+  }
 
-        console.error(
-            error
-        );
+  catch (error) {
 
+    console.error(
+      "Flight data error:",
+      error
+    );
 
-        container.innerHTML = `
+    badge.textContent =
+      "DATA UNAVAILABLE";
 
-            <div class="message">
+    badge.style.background =
+      "#9b2c2c";
 
-                Unable to load
-                MBJ arrivals directly.
+    container.innerHTML = `
 
-                <br><br>
+      <div class="loading">
 
-                ${error.message}
+        Unable to load the latest
+        MBJ arrivals.
 
-            </div>
+      </div>
 
-        `;
+    `;
 
-    }
+  }
 
 }
 
 
 /*
-    JAMAICA CLOCK
+   Jamaica clock
 */
 
 function updateClock() {
 
-    const now =
-        new Date();
+  const now =
+    new Date();
 
-
-    document
-    .getElementById(
-        "clock"
-    )
+  document
+    .getElementById("clock")
     .textContent =
-        now.toLocaleTimeString(
-            "en-US",
-            {
-                timeZone:
-                    "America/Jamaica",
+      now.toLocaleTimeString(
+        "en-US",
+        {
+          timeZone:
+            "America/Jamaica",
 
-                hour:
-                    "numeric",
+          hour:
+            "numeric",
 
-                minute:
-                    "2-digit"
-            }
-        );
+          minute:
+            "2-digit"
+        }
+      );
 
 
-    document
-    .getElementById(
-        "date"
-    )
+  document
+    .getElementById("date")
     .textContent =
-        now.toLocaleDateString(
-            "en-US",
-            {
-                timeZone:
-                    "America/Jamaica",
+      now.toLocaleDateString(
+        "en-US",
+        {
+          timeZone:
+            "America/Jamaica",
 
-                weekday:
-                    "short",
+          weekday:
+            "short",
 
-                month:
-                    "short",
+          month:
+            "short",
 
-                day:
-                    "numeric"
-            }
-        );
+          day:
+            "numeric"
+        }
+      );
 
 }
 
 
 /*
-    START
+   Start board
 */
 
 updateClock();
 
+loadFlights();
+
+
+/*
+   Clock refreshes every second.
+*/
+
 setInterval(
-    updateClock,
-    1000
+  updateClock,
+  1000
 );
 
-loadFlights();
+
+/*
+   Re-read flights.json every
+   five minutes.
+
+   This costs nothing on Apify.
+   It simply checks GitHub for
+   the newest JSON file.
+*/
+
+setInterval(
+  loadFlights,
+  300000
+);
 
 </script>
 
