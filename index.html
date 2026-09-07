@@ -6,6 +6,26 @@
 <title>MBJ Live Arrivals</title>
 
 <style>
+
+/* =========================
+   KIOSK TOUCH PROTECTION
+   ========================= */
+
+html,
+body,
+.screen,
+.screen * {
+  -webkit-user-select:none !important;
+  user-select:none !important;
+  -webkit-touch-callout:none !important;
+  -webkit-user-drag:none !important;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body {
+  touch-action:manipulation;
+}
+
 *{
   box-sizing:border-box;
   margin:0;
@@ -238,7 +258,7 @@ html,body{
 }
 
 /* =========================
-   BOARD
+   FLIGHT BOARD
    ========================= */
 
 .board{
@@ -273,30 +293,18 @@ html,body{
   flex:1;
   min-height:0;
   overflow:hidden;
-
-  /*
-    JavaScript changes this value according
-    to the number of flights.
-  */
   --rows:31;
 }
 
 .flightRow{
-  /*
-    Every row receives an equal portion
-    of the available table height.
-  */
   height:calc(100% / var(--rows));
   min-height:0;
-
   padding:0 1.6vw;
   align-items:center;
-
   color:#09264a;
   font-size:1vh;
   line-height:1;
   font-weight:800;
-
   border-bottom:1px solid #d4e3e9;
 }
 
@@ -308,21 +316,25 @@ html,body{
   background:#e8f5fa;
 }
 
-.flight{
-  color:#0870b3;
-  font-weight:900;
+.flight,
+.origin,
+.bag,
+.time,
+.status{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
+}
+
+.flight{
+  color:#0870b3;
+  font-weight:900;
   padding-right:.4vw;
 }
 
 .origin{
   color:#071a38;
   font-weight:900;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
   padding-right:.4vw;
 }
 
@@ -336,19 +348,13 @@ html,body{
   text-align:center;
   color:#071a38;
   font-weight:900;
-  white-space:nowrap;
 }
 
 .status{
   text-align:center;
   color:#07843e;
   font-weight:900;
-  white-space:nowrap;
 }
-
-/*
-  Shrink fonts when there are lots of rows.
-*/
 
 .tableBody.many .flightRow{
   font-size:.88vh;
@@ -358,8 +364,15 @@ html,body{
   font-size:.78vh;
 }
 
+.loading{
+  padding:4vh 2vw;
+  text-align:center;
+  color:#075e86;
+  font-weight:900;
+}
+
 /* =========================
-   SMALL BOTTOM BAR
+   BOTTOM BAR
    ========================= */
 
 .bottomBar{
@@ -384,13 +397,6 @@ html,body{
   font-size:.68vh;
   color:#dbe8ef;
   white-space:nowrap;
-}
-
-.loading{
-  padding:4vh 2vw;
-  text-align:center;
-  color:#075e86;
-  font-weight:900;
 }
 
 </style>
@@ -531,7 +537,7 @@ html,body{
   </div>
 
 
-  <!-- SMALL CREDIT BAR -->
+  <!-- CREDIT BAR -->
 
   <div class="bottomBar">
 
@@ -551,6 +557,32 @@ html,body{
 <script>
 
 /* =========================
+   KIOSK LONG-PRESS PROTECTION
+   ========================= */
+
+document.addEventListener(
+  "contextmenu",
+  function(event){
+    event.preventDefault();
+  }
+);
+
+document.addEventListener(
+  "selectstart",
+  function(event){
+    event.preventDefault();
+  }
+);
+
+document.addEventListener(
+  "dragstart",
+  function(event){
+    event.preventDefault();
+  }
+);
+
+
+/* =========================
    JAMAICA CLOCK
    ========================= */
 
@@ -559,42 +591,74 @@ function updateClock(){
   const now = new Date();
 
   document.getElementById("clock").textContent =
-    now.toLocaleTimeString("en-US",{
-      timeZone:"America/Jamaica",
-      hour:"numeric",
-      minute:"2-digit"
-    });
+    now.toLocaleTimeString(
+      "en-US",
+      {
+        timeZone:"America/Jamaica",
+        hour:"numeric",
+        minute:"2-digit"
+      }
+    );
 
   document.getElementById("date").textContent =
-    now.toLocaleDateString("en-US",{
-      timeZone:"America/Jamaica",
-      weekday:"long",
-      month:"long",
-      day:"numeric"
-    });
-
+    now.toLocaleDateString(
+      "en-US",
+      {
+        timeZone:"America/Jamaica",
+        weekday:"long",
+        month:"long",
+        day:"numeric"
+      }
+    );
 }
 
 updateClock();
-setInterval(updateClock,1000);
+
+setInterval(
+  updateClock,
+  1000
+);
 
 
 /* =========================
-   LOAD FLIGHTS
+   HTML SAFETY
+   ========================= */
+
+function escapeHTML(value){
+
+  return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+
+/* =========================
+   LOAD ARRIVALS
    ========================= */
 
 async function loadFlights(){
 
   const container =
-    document.getElementById("flightData");
+    document.getElementById(
+      "flightData"
+    );
 
   try{
 
     const response =
-      await fetch("flights.json?t=" + Date.now());
+      await fetch(
+        "flights.json?t=" +
+        Date.now()
+      );
 
     if(!response.ok){
-      throw new Error("Unable to load flights.json");
+
+      throw new Error(
+        "Unable to load flights.json"
+      );
     }
 
     const data =
@@ -607,15 +671,16 @@ async function loadFlights(){
     if(!flights.length){
 
       container.innerHTML =
-        '<div class="loading">No arrivals currently listed.</div>';
+        '<div class="loading">' +
+        'No arrivals currently listed.' +
+        '</div>';
 
       return;
     }
 
 
     /*
-      Tell CSS exactly how many rows
-      need to fit on the screen.
+      FIT EVERY ARRIVAL ON THE SCREEN
     */
 
     container.style.setProperty(
@@ -623,23 +688,23 @@ async function loadFlights(){
       flights.length
     );
 
-
-    /*
-      Automatically reduce text slightly
-      for unusually long flight lists.
-    */
-
     container.classList.remove(
       "many",
       "veryMany"
     );
 
     if(flights.length > 25){
-      container.classList.add("many");
+
+      container.classList.add(
+        "many"
+      );
     }
 
     if(flights.length > 34){
-      container.classList.add("veryMany");
+
+      container.classList.add(
+        "veryMany"
+      );
     }
 
 
@@ -649,12 +714,12 @@ async function loadFlights(){
         const flight =
           f.airlineFlight ||
           f.flight ||
-          "--";
+          "—";
 
         const origin =
           f.from ||
           f.origin ||
-          "--";
+          "—";
 
         const baggage =
           f.baggage ||
@@ -677,23 +742,23 @@ async function loadFlights(){
           <div class="flightRow">
 
             <div class="flight">
-              ${flight}
+              ${escapeHTML(flight)}
             </div>
 
             <div class="origin">
-              ${origin}
+              ${escapeHTML(origin)}
             </div>
 
             <div class="bag">
-              ${baggage}
+              ${escapeHTML(baggage)}
             </div>
 
             <div class="time">
-              ${time}
+              ${escapeHTML(time)}
             </div>
 
             <div class="status">
-              ${status}
+              ${escapeHTML(status)}
             </div>
 
           </div>
@@ -703,21 +768,31 @@ async function loadFlights(){
       }).join("");
 
 
-    /* DATA UPDATE TIME */
-
     if(data.updated){
 
       const updatedDate =
-        new Date(data.updated);
+        new Date(
+          data.updated
+        );
 
-      document.getElementById("updated").textContent =
-        "Flight data updated: " +
-        updatedDate.toLocaleTimeString("en-US",{
-          timeZone:"America/Jamaica",
-          hour:"numeric",
-          minute:"2-digit"
-        });
+      document
+        .getElementById("updated")
+        .textContent =
 
+          "Flight data updated: " +
+
+          updatedDate
+            .toLocaleTimeString(
+              "en-US",
+              {
+                timeZone:
+                  "America/Jamaica",
+                hour:
+                  "numeric",
+                minute:
+                  "2-digit"
+              }
+            );
     }
 
   }
@@ -727,26 +802,29 @@ async function loadFlights(){
     console.error(error);
 
     container.innerHTML =
-      '<div class="loading">Unable to load current flight information.</div>';
-
+      '<div class="loading">' +
+      'Unable to load current flight information.' +
+      '</div>';
   }
-
 }
 
 
-/* LOAD IMMEDIATELY */
+/* LOAD NOW */
 
 loadFlights();
 
 
 /*
-  Check flights.json again every 5 minutes.
+  Re-read flights.json every 5 minutes.
 
-  This does NOT trigger Apify.
-  This does NOT trigger the GitHub Action.
+  This does NOT run GitHub Actions
+  and does NOT use Apify.
 */
 
-setInterval(loadFlights,300000);
+setInterval(
+  loadFlights,
+  300000
+);
 
 </script>
 
