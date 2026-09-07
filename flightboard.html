@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBJ Live Arrivals & Departures</title>
+<title>MBJ Live Flight Board</title>
 
 <style>
 :root{
   --navy:#06182c;
-  --navy2:#0b3153;
-  --cyan:#28d7ff;
-  --gold:#ffd42a;
-  --green:#35e17b;
+  --blue:#0b3153;
+  --blue2:#0d4770;
+  --cyan:#29d8ff;
+  --gold:#ffd52e;
+  --green:#42e582;
   --orange:#ffad32;
-  --red:#ff5b5b;
+  --red:#ff5d5d;
   --white:#ffffff;
-  --muted:#bfd0df;
-  --line:rgba(255,255,255,.16);
+  --muted:#c5d4e1;
+  --line:rgba(255,255,255,.18);
 }
 
 *{
@@ -38,33 +39,28 @@ html,body{
   -webkit-touch-callout:none;
   -webkit-user-drag:none;
   -webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;
 }
 
-body{
-  display:flex;
-  flex-direction:column;
-}
-
-/* ===== COMPACT HEADER ===== */
+/* ================= HEADER ================= */
 
 header{
-  height:10vh;
-  min-height:72px;
-  background:linear-gradient(135deg,#06182c,#0d3d63);
-  border-bottom:3px solid var(--gold);
+  height:9vh;
+  min-height:68px;
 
   display:grid;
   grid-template-columns:1fr 3fr 1fr;
   align-items:center;
 
-  padding:0 1.4vw;
+  padding:0 1.2vw;
+
+  background:linear-gradient(90deg,#06182c,#0b3d66,#06182c);
+  border-bottom:3px solid var(--gold);
 }
 
 .mbj{
   color:var(--cyan);
-  font-size:2.65vw;
-  line-height:.9;
+  font-size:2.7vw;
+  line-height:.85;
   font-weight:900;
   letter-spacing:.08em;
 }
@@ -73,8 +69,8 @@ header{
   color:var(--gold);
   font-size:.78vw;
   font-weight:900;
-  letter-spacing:.18em;
-  margin-top:.45vh;
+  letter-spacing:.2em;
+  margin-top:.5vh;
 }
 
 .airport{
@@ -90,18 +86,18 @@ header{
 
 .location{
   color:var(--gold);
-  font-size:.9vw;
-  font-weight:800;
+  font-size:.88vw;
+  font-weight:900;
   letter-spacing:.16em;
-  margin-top:.5vh;
+  margin-top:.45vh;
 }
 
 .live{
   color:var(--green);
-  font-size:.72vw;
+  font-size:.7vw;
   font-weight:900;
-  letter-spacing:.16em;
-  margin-top:.35vh;
+  margin-top:.3vh;
+  letter-spacing:.14em;
 }
 
 .clockBox{
@@ -110,106 +106,92 @@ header{
 
 .clock{
   color:var(--gold);
-  font-size:1.9vw;
+  font-size:1.85vw;
   font-weight:900;
 }
 
 .date{
   color:white;
-  font-size:.72vw;
-  margin-top:.3vh;
+  font-size:.68vw;
+  margin-top:.25vh;
 }
 
 
-/* ===== BOARD AREA ===== */
+/* ================= TWO BOARDS ================= */
 
 .boards{
-  height:86vh;
+  height:87vh;
 
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:.6vw;
+  gap:.5vw;
 
-  padding:.65vh .65vw;
+  padding:.55vh .5vw;
 }
 
 .panel{
   min-height:0;
   display:flex;
   flex-direction:column;
+  overflow:hidden;
 
   border:1px solid var(--line);
-  background:rgba(255,255,255,.02);
-  overflow:hidden;
 }
 
 
-/* ===== ARRIVALS / DEPARTURES TITLES ===== */
+/* ================= BOARD TITLES ================= */
 
 .panelTitle{
-  height:5vh;
-  min-height:38px;
+  height:5.3vh;
+  min-height:40px;
 
   display:flex;
   justify-content:space-between;
   align-items:center;
 
-  padding:0 .75vw;
+  padding:0 .7vw;
 
-  background:linear-gradient(90deg,#0b3153,#0b4770);
+  background:linear-gradient(90deg,var(--blue),var(--blue2));
   border-bottom:2px solid var(--cyan);
 }
 
 .panelTitle h2{
-  font-size:1.45vw;
+  font-size:1.55vw;
   font-weight:900;
-  letter-spacing:.07em;
+  letter-spacing:.06em;
 }
 
 .panelTitle span{
-  color:white;
-  font-size:.62vw;
+  font-size:.6vw;
   font-weight:700;
+  color:white;
 }
 
 
-/* ===== COLUMN GRIDS ===== */
+/* ================= COLUMNS ================= */
 
 .arrivalHeader,
 .arrivalRow{
-  grid-template-columns:
-    1.55fr
-    1.25fr
-    .42fr
-    .82fr
-    .82fr;
+  display:grid;
+  grid-template-columns:1.55fr 1.25fr .42fr .82fr .82fr;
 }
 
 .departureHeader,
 .departureRow{
-  grid-template-columns:
-    1.42fr
-    1.15fr
-    .78fr
-    .42fr
-    .75fr
-    .88fr;
+  display:grid;
+  grid-template-columns:1.42fr 1.13fr .76fr .42fr .76fr .94fr;
 }
 
-
-/* ===== COLUMN HEADERS ===== */
-
 .columnHeader{
-  min-height:4.4vh;
+  height:4.5vh;
+  min-height:34px;
 
-  background:#0d365a;
+  background:#0c365a;
   color:var(--cyan);
 
-  font-size:.74vw;
+  font-size:.76vw;
   font-weight:900;
-  letter-spacing:.04em;
-
-  align-items:center;
+  letter-spacing:.03em;
 
   border-bottom:1px solid var(--line);
 }
@@ -218,51 +200,51 @@ header{
 .flightRow > div{
   padding:0 .38vw;
 
+  display:flex;
+  align-items:center;
+
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-
-  display:flex;
-  align-items:center;
 }
 
 
-/* ===== FLIGHT ROWS ===== */
+/* ================= ROWS ================= */
 
 .tableBody{
   flex:1;
   min-height:0;
   overflow:hidden;
 
-  --rows:20;
+  display:flex;
+  flex-direction:column;
 }
 
 .flightRow{
-  height:calc(100% / var(--rows));
+  flex:1;
   min-height:0;
 
-  font-size:.82vw;
-  font-weight:600;
+  font-size:.88vw;
+  font-weight:700;
 
   border-bottom:1px solid var(--line);
 }
 
-.flightRow:nth-child(even){
-  background:rgba(35,143,211,.13);
+.flightRow:nth-child(odd){
+  background:rgba(255,255,255,.025);
 }
 
-.flightRow:nth-child(odd){
-  background:rgba(255,255,255,.018);
+.flightRow:nth-child(even){
+  background:rgba(36,145,213,.15);
 }
 
 .flight{
-  font-weight:900;
   color:white;
+  font-weight:900;
 }
 
 .place{
-  color:#f1f7fb;
-  font-weight:700;
+  color:white;
 }
 
 .number{
@@ -272,6 +254,11 @@ header{
 
 .time{
   color:var(--gold);
+  font-weight:900;
+}
+
+.actual{
+  color:var(--green);
   font-weight:900;
 }
 
@@ -291,35 +278,23 @@ header{
   color:var(--red);
 }
 
-.empty{
-  height:100%;
 
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  color:var(--muted);
-  font-size:1vw;
-}
-
-
-/* ===== COMPACT FOOTER ===== */
+/* ================= FOOTER ================= */
 
 footer{
   height:4vh;
-  min-height:27px;
+  min-height:28px;
 
   display:grid;
   grid-template-columns:1fr 1.4fr 1fr;
   align-items:center;
 
-  padding:0 .8vw;
+  padding:0 .7vw;
 
   border-top:1px solid var(--line);
 
   color:var(--muted);
   font-size:.62vw;
-  letter-spacing:.03em;
 }
 
 footer .center{
@@ -331,17 +306,6 @@ footer .center{
 footer .right{
   text-align:right;
   color:white;
-}
-
-
-/* Extra row compression only when required */
-
-.tableBody.many .flightRow{
-  font-size:.76vw;
-}
-
-.tableBody.veryMany .flightRow{
-  font-size:.69vw;
 }
 
 </style>
@@ -357,27 +321,14 @@ footer .right{
   </div>
 
   <div class="airport">
-
     <h1>SANGSTER INTERNATIONAL AIRPORT</h1>
-
-    <div class="location">
-      MONTEGO BAY • JAMAICA
-    </div>
-
-    <div class="live">
-      ● LIVE DATA
-    </div>
-
+    <div class="location">MONTEGO BAY • JAMAICA</div>
+    <div class="live">● LIVE DATA</div>
   </div>
 
   <div class="clockBox">
-
-    <div class="clock" id="clock">
-      --:-- --
-    </div>
-
+    <div class="clock" id="clock">--:-- --</div>
     <div class="date" id="date"></div>
-
   </div>
 
 </header>
@@ -385,78 +336,47 @@ footer .right{
 
 <main class="boards">
 
-
-<!-- ================= ARRIVALS ================= -->
+<!-- ARRIVALS -->
 
 <section class="panel">
 
   <div class="panelTitle">
-
     <h2>✈ ARRIVALS</h2>
-
     <span>OFFICIAL MBJ DATA</span>
-
   </div>
-
 
   <div class="columnHeader arrivalHeader">
-
     <div>AIRLINE / FLIGHT</div>
-
     <div>FROM</div>
-
     <div>BAG</div>
-
     <div>TIME</div>
-
     <div>ACTUAL</div>
-
   </div>
 
-
-  <div
-    class="tableBody"
-    id="arrivalBody">
-  </div>
+  <div class="tableBody" id="arrivalBody"></div>
 
 </section>
 
 
-
-<!-- ================= DEPARTURES ================= -->
+<!-- DEPARTURES -->
 
 <section class="panel">
 
   <div class="panelTitle">
-
     <h2>DEPARTURES ✈</h2>
-
     <span>OFFICIAL MBJ DATA</span>
-
   </div>
-
 
   <div class="columnHeader departureHeader">
-
     <div>AIRLINE / FLIGHT</div>
-
     <div>TO</div>
-
     <div>CHECK-IN</div>
-
     <div>GATE</div>
-
     <div>TIME</div>
-
     <div>STATUS</div>
-
   </div>
 
-
-  <div
-    class="tableBody"
-    id="departureBody">
-  </div>
+  <div class="tableBody" id="departureBody"></div>
 
 </section>
 
@@ -473,10 +393,8 @@ footer .right{
     HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.
   </div>
 
-  <div
-    class="right"
-    id="updated">
-    Loading flight data...
+  <div class="right" id="updated">
+    Loading...
   </div>
 
 </footer>
@@ -484,36 +402,28 @@ footer .right{
 
 <script>
 
-/* ==========================================
-   SAFE HTML
-========================================== */
+const MAX_ROWS = 20;
+
 
 function escapeHTML(value){
 
   return String(value ?? "")
-
     .replace(/&/g,"&amp;")
-
     .replace(/</g,"&lt;")
-
     .replace(/>/g,"&gt;")
-
     .replace(/"/g,"&quot;")
-
     .replace(/'/g,"&#039;");
+
 }
 
 
-/* ==========================================
-   JAMAICA CLOCK
-========================================== */
+/* JAMAICA CLOCK */
 
 function updateClock(){
 
-  const now=new Date();
+  const now = new Date();
 
-  document.getElementById("clock").textContent=
-
+  document.getElementById("clock").textContent =
     new Intl.DateTimeFormat(
       "en-US",
       {
@@ -526,8 +436,7 @@ function updateClock(){
     ).format(now);
 
 
-  document.getElementById("date").textContent=
-
+  document.getElementById("date").textContent =
     new Intl.DateTimeFormat(
       "en-US",
       {
@@ -542,134 +451,70 @@ function updateClock(){
 }
 
 updateClock();
-
 setInterval(updateClock,1000);
 
 
+/* ARRIVALS */
 
-/* ==========================================
-   AUTO SIZE TABLE
-========================================== */
+function renderArrivals(allFlights){
 
-function configureRows(body,flights){
-
-  const count=Math.max(flights.length,1);
-
-  body.style.setProperty(
-    "--rows",
-    count
-  );
-
-  body.classList.toggle(
-    "many",
-    count>25
-  );
-
-  body.classList.toggle(
-    "veryMany",
-    count>34
-  );
-}
-
-
-
-/* ==========================================
-   ARRIVALS
-========================================== */
-
-function renderArrivals(flights){
-
-  const body=
+  const body =
     document.getElementById("arrivalBody");
 
+  const flights =
+    (allFlights || []).slice(-MAX_ROWS);
 
-  if(!flights || !flights.length){
+  if(!flights.length){
 
-    body.innerHTML=
-      '<div class="empty">No arrival information available.</div>';
+    body.innerHTML = "";
 
     return;
+
   }
 
+  body.innerHTML = flights.map(f => `
 
-  configureRows(
-    body,
-    flights
-  );
+    <div class="flightRow arrivalRow">
 
-
-  body.innerHTML=
-
-    flights.map(f=>`
-
-      <div class="flightRow arrivalRow">
-
-        <div class="flight">
-          ${escapeHTML(
-            f.airlineFlight || "—"
-          )}
-        </div>
-
-
-        <div class="place">
-          ${escapeHTML(
-            f.from || "—"
-          )}
-        </div>
-
-
-        <div class="number">
-          ${escapeHTML(
-            f.baggage || "—"
-          )}
-        </div>
-
-
-        <div class="time">
-          ${escapeHTML(
-            f.scheduledTime || "—"
-          )}
-        </div>
-
-
-        <div class="status">
-          ${escapeHTML(
-            f.actualTime ||
-            f.status ||
-            "—"
-          )}
-        </div>
-
+      <div class="flight">
+        ${escapeHTML(f.airlineFlight || "—")}
       </div>
 
-    `).join("");
+      <div class="place">
+        ${escapeHTML(f.from || "—")}
+      </div>
+
+      <div class="number">
+        ${escapeHTML(f.baggage || "—")}
+      </div>
+
+      <div class="time">
+        ${escapeHTML(f.scheduledTime || "—")}
+      </div>
+
+      <div class="actual">
+        ${escapeHTML(f.actualTime || f.status || "—")}
+      </div>
+
+    </div>
+
+  `).join("");
 
 }
 
 
-
-/* ==========================================
-   DEPARTURE STATUS COLOR
-========================================== */
+/* STATUS COLOUR */
 
 function statusClass(status){
 
-  const s=
-    (status || "")
-      .toLowerCase();
+  const s =
+    String(status || "").toLowerCase();
 
-
-  if(
-    s.includes("cancel")
-  )
+  if(s.includes("cancel"))
     return "cancelled";
 
-
-  if(
-    s.includes("delay")
-  )
+  if(s.includes("delay"))
     return "delayed";
-
 
   if(
     s.includes("on-time") ||
@@ -677,155 +522,92 @@ function statusClass(status){
   )
     return "onTime";
 
-
   return "";
+
 }
 
 
+/* DEPARTURES */
 
-/* ==========================================
-   DEPARTURES
-========================================== */
+function renderDepartures(allFlights){
 
-function renderDepartures(flights){
-
-  const body=
+  const body =
     document.getElementById("departureBody");
 
+  const flights =
+    (allFlights || []).slice(-MAX_ROWS);
 
-  if(!flights || !flights.length){
+  if(!flights.length){
 
-    body.innerHTML=
-      '<div class="empty">No departure information available.</div>';
+    body.innerHTML = "";
 
     return;
+
   }
 
 
-  configureRows(
-    body,
-    flights
-  );
+  body.innerHTML = flights.map(f => {
 
+    const displayStatus =
+      f.actualTime
+        ? `${f.actualTime}${f.status ? " • " + f.status : ""}`
+        : (f.status || "—");
 
-  body.innerHTML=
+    return `
 
-    flights.map(f=>{
+      <div class="flightRow departureRow">
 
-
-      const displayStatus=
-
-        f.actualTime
-
-          ? `${f.actualTime}${
-              f.status
-                ? " • "+f.status
-                : ""
-            }`
-
-          : (
-              f.status ||
-              "—"
-            );
-
-
-      return `
-
-        <div class="flightRow departureRow">
-
-
-          <div class="flight">
-
-            ${escapeHTML(
-              f.airlineFlight || "—"
-            )}
-
-          </div>
-
-
-          <div class="place">
-
-            ${escapeHTML(
-              f.to || "—"
-            )}
-
-          </div>
-
-
-          <div class="number">
-
-            ${escapeHTML(
-              f.checkInCounters || "—"
-            )}
-
-          </div>
-
-
-          <div class="number">
-
-            ${escapeHTML(
-              f.gate || "—"
-            )}
-
-          </div>
-
-
-          <div class="time">
-
-            ${escapeHTML(
-              f.scheduledTime || "—"
-            )}
-
-          </div>
-
-
-          <div class="status ${statusClass(
-            f.status
-          )}">
-
-            ${escapeHTML(
-              displayStatus
-            )}
-
-          </div>
-
-
+        <div class="flight">
+          ${escapeHTML(f.airlineFlight || "—")}
         </div>
 
-      `;
+        <div class="place">
+          ${escapeHTML(f.to || "—")}
+        </div>
 
-    }).join("");
+        <div class="number">
+          ${escapeHTML(f.checkInCounters || "—")}
+        </div>
+
+        <div class="number">
+          ${escapeHTML(f.gate || "—")}
+        </div>
+
+        <div class="time">
+          ${escapeHTML(f.scheduledTime || "—")}
+        </div>
+
+        <div class="status ${statusClass(f.status)}">
+          ${escapeHTML(displayStatus)}
+        </div>
+
+      </div>
+
+    `;
+
+  }).join("");
 
 }
 
 
-
-/* ==========================================
-   LOAD ARRIVALS + DEPARTURES
-========================================== */
+/* LOAD REAL MBJ DATA */
 
 async function loadBoards(){
 
   try{
 
-    const cacheBust=
-      Date.now();
+    const stamp = Date.now();
 
-
-    const [
-      arrivalResponse,
-      departureResponse
-    ]=
-
+    const [arrivalsResponse, departuresResponse] =
       await Promise.all([
 
         fetch(
-          `flights.json?t=${cacheBust}`,
+          `flights.json?t=${stamp}`,
           {cache:"no-store"}
         ),
 
         fetch(
-          `departures.json?t=${cacheBust}`,
+          `departures.json?t=${stamp}`,
           {cache:"no-store"}
         )
 
@@ -833,50 +615,39 @@ async function loadBoards(){
 
 
     if(
-      !arrivalResponse.ok ||
-      !departureResponse.ok
+      !arrivalsResponse.ok ||
+      !departuresResponse.ok
     ){
 
-      throw new Error(
-        "Flight data request failed."
-      );
+      throw new Error("Unable to retrieve flight data");
 
     }
 
 
-    const arrivals=
-      await arrivalResponse.json();
+    const arrivals =
+      await arrivalsResponse.json();
 
-
-    const departures=
-      await departureResponse.json();
+    const departures =
+      await departuresResponse.json();
 
 
     renderArrivals(
       arrivals.flights || []
     );
 
-
     renderDepartures(
       departures.flights || []
     );
 
 
-    const updated=
-
+    const updated =
       arrivals.updated ||
       departures.updated;
 
 
     if(updated){
 
-      const updateDate=
-        new Date(updated);
-
-
-      document.getElementById(
-        "updated"
-      ).textContent=
+      document.getElementById("updated").textContent =
 
         "DATA UPDATED " +
 
@@ -888,7 +659,7 @@ async function loadBoards(){
             minute:"2-digit",
             hour12:true
           }
-        ).format(updateDate);
+        ).format(new Date(updated));
 
     }
 
@@ -898,11 +669,7 @@ async function loadBoards(){
 
     console.error(error);
 
-
-    document.getElementById(
-      "updated"
-    ).textContent=
-
+    document.getElementById("updated").textContent =
       "DATA UPDATE UNAVAILABLE";
 
   }
@@ -912,33 +679,26 @@ async function loadBoards(){
 
 loadBoards();
 
+/* Check GitHub JSON every 5 minutes */
 
-/* Reload displayed JSON every 5 minutes */
-
-setInterval(
-  loadBoards,
-  300000
-);
+setInterval(loadBoards,300000);
 
 
-
-/* ==========================================
-   KIOSK TOUCH PROTECTION
-========================================== */
+/* KIOSK PROTECTION */
 
 document.addEventListener(
   "contextmenu",
-  e=>e.preventDefault()
+  e => e.preventDefault()
 );
 
 document.addEventListener(
   "selectstart",
-  e=>e.preventDefault()
+  e => e.preventDefault()
 );
 
 document.addEventListener(
   "dragstart",
-  e=>e.preventDefault()
+  e => e.preventDefault()
 );
 
 </script>
