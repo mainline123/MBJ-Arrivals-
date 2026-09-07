@@ -1,13 +1,15 @@
-name: Update MBJ Arrivals
+name: Update MBJ Arrivals and Departures
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '15 * * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update-arrivals:
+  update-flights:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,11 +21,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch MBJ arrivals
+      - name: Fetch MBJ arrivals and departures
         run: node update-flights.js
 
       - name: Commit updated flight data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update MBJ arrivals and departures"
+          commit_message: "Automatic MBJ arrivals and departures update"
           file_pattern: flights.json departures.json last_updated.txt
