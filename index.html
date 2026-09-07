@@ -34,7 +34,10 @@ html, body {
   height: 15vh;
   min-height: 15vh;
   display: grid;
-  grid-template-columns: 27% 47% 26%;
+
+  /* MORE SPACE RESERVED FOR MBJ */
+  grid-template-columns: 34% 40% 26%;
+
   align-items: center;
   padding: 1.2vh 3vw;
   background: #07182c;
@@ -42,22 +45,27 @@ html, body {
 }
 
 .code {
-  font-size: 7.5vh;
+  font-size: 7vh;
   font-weight: 900;
   line-height: .9;
   color: #3cc4f1;
+  white-space: nowrap;
+}
+
+.airportBlock {
+  padding-left: 2vw;
 }
 
 .airportName {
-  font-size: 2.25vh;
-  line-height: 1.05;
+  font-size: 1.95vh;
+  line-height: 1.08;
   font-weight: 900;
 }
 
 .location {
   margin-top: .7vh;
   color: #f7c928;
-  font-size: 1.45vh;
+  font-size: 1.25vh;
   line-height: 1.2;
   font-weight: 900;
 }
@@ -68,17 +76,18 @@ html, body {
 
 .liveBadge {
   display: inline-block;
-  padding: .55vh 1.5vw;
+  padding: .55vh 1.3vw;
   border-radius: 25px;
   background: #159447;
-  font-size: 1.25vh;
+  font-size: 1.1vh;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .clock {
   margin-top: .7vh;
   color: #f7c928;
-  font-size: 3.3vh;
+  font-size: 3vh;
   line-height: 1;
   font-weight: 900;
 }
@@ -86,7 +95,7 @@ html, body {
 .date {
   margin-top: .45vh;
   color: #d4e2ec;
-  font-size: 1.15vh;
+  font-size: 1.05vh;
 }
 
 /* ARRIVALS BAR */
@@ -115,7 +124,7 @@ html, body {
   line-height: 1.2;
 }
 
-/* BOARD */
+/* FLIGHT BOARD */
 .board {
   flex: 1;
   min-height: 0;
@@ -127,23 +136,23 @@ html, body {
   flex-direction: column;
 }
 
-/*
-   FLIGHT gets the most room.
-   FROM gets the second-most.
-*/
 .tableHead,
 .flightRow {
   display: grid;
-  grid-template-columns: 1.75fr 1.85fr .80fr 1.05fr 1.05fr;
+
+  /*
+  Airline/Flight | From | Baggage Claim | Time | Status
+  */
+  grid-template-columns: 1.85fr 1.75fr 1fr .95fr .95fr;
 }
 
 .tableHead {
   height: 4.5vh;
   min-height: 4.5vh;
-  padding: 0 1.8vw;
+  padding: 0 1.5vw;
   align-items: center;
   background: #0a4d73;
-  font-size: 1.05vh;
+  font-size: .95vh;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -157,11 +166,11 @@ html, body {
 
 .flightRow {
   min-height: 5.15vh;
-  padding: .45vh 1.8vw;
+  padding: .45vh 1.5vw;
   align-items: center;
   border-bottom: 1px solid #d5e1e8;
   color: #092d47;
-  font-size: 1.25vh;
+  font-size: 1.22vh;
   font-weight: 800;
 }
 
@@ -185,8 +194,8 @@ html, body {
 }
 
 .time {
-  font-weight: 900;
   color: #092d47;
+  font-weight: 900;
 }
 
 .status {
@@ -202,7 +211,7 @@ html, body {
   font-weight: 900;
 }
 
-/* FOOTER */
+/* SMALL FOOTER */
 .footer {
   height: 5vh;
   min-height: 5vh;
@@ -236,7 +245,8 @@ html, body {
 
     <div class="code">MBJ</div>
 
-    <div>
+    <div class="airportBlock">
+
       <div class="airportName">
         SANGSTER<br>
         INTERNATIONAL<br>
@@ -244,14 +254,26 @@ html, body {
       </div>
 
       <div class="location">
-        MONTEGO BAY • JAMAICA
+        MONTEGO BAY<br>
+        JAMAICA
       </div>
+
     </div>
 
     <div class="right">
-      <div class="liveBadge">● LIVE DATA</div>
-      <div class="clock" id="clock">--:--</div>
-      <div class="date" id="date">--</div>
+
+      <div class="liveBadge">
+        ● LIVE DATA
+      </div>
+
+      <div class="clock" id="clock">
+        --:--
+      </div>
+
+      <div class="date" id="date">
+        --
+      </div>
+
     </div>
 
   </div>
@@ -261,7 +283,8 @@ html, body {
     <h1>ARRIVALS</h1>
 
     <div class="welcome">
-      WELCOME TO<br>JAMAICA
+      WELCOME TO<br>
+      JAMAICA
     </div>
 
   </div>
@@ -269,17 +292,27 @@ html, body {
   <div class="board">
 
     <div class="tableHead">
-      <div>FLIGHT</div>
+
+      <div>AIRLINE/FLIGHT</div>
+
       <div>FROM</div>
-      <div style="text-align:center;">BAGGAGE</div>
+
+      <div style="text-align:center;">
+        BAGGAGE<br>CLAIM
+      </div>
+
       <div>TIME</div>
+
       <div>STATUS</div>
+
     </div>
 
     <div class="tableBody" id="flightData">
+
       <div class="loading">
         Loading MBJ arrivals...
       </div>
+
     </div>
 
   </div>
@@ -326,7 +359,8 @@ setInterval(updateClock, 1000);
 
 async function loadFlights() {
 
-  const container = document.getElementById("flightData");
+  const container =
+    document.getElementById("flightData");
 
   try {
 
@@ -337,39 +371,50 @@ async function loadFlights() {
       throw new Error("Unable to load flights.json");
     }
 
-    const data = await response.json();
-    const flights = data.flights || [];
+    const data =
+      await response.json();
+
+    const flights =
+      data.flights || [];
 
     if (!flights.length) {
+
       container.innerHTML =
         '<div class="loading">No arrivals currently listed.</div>';
+
       return;
     }
 
-    container.innerHTML = flights.map(f => {
+    container.innerHTML =
+      flights.map(f => {
 
-      /*
-       Keep MBJ terminology:
-       scheduledTime = TIME
-       actualTime = STATUS field returned by MBJ
-      */
+        const flight =
+          f.airlineFlight ||
+          f.flight ||
+          "--";
 
-      const flight =
-        f.airlineFlight || f.flight || "--";
+        const origin =
+          f.from ||
+          f.origin ||
+          "--";
 
-      const origin =
-        f.from || f.origin || "--";
+        const bag =
+          f.baggage ||
+          f.bag ||
+          "—";
 
-      const bag =
-        f.baggage || f.bag || "—";
+        const time =
+          f.scheduledTime ||
+          f.time ||
+          "—";
 
-      const time =
-        f.scheduledTime || f.time || "—";
+        const status =
+          f.actualTime ||
+          f.status ||
+          "—";
 
-      const status =
-        f.actualTime || f.status || "—";
+        return `
 
-      return `
         <div class="flightRow">
 
           <div class="flight">
@@ -393,13 +438,16 @@ async function loadFlights() {
           </div>
 
         </div>
-      `;
 
-    }).join("");
+        `;
+
+      }).join("");
+
 
     if (data.updated) {
 
-      const updatedDate = new Date(data.updated);
+      const updatedDate =
+        new Date(data.updated);
 
       document.getElementById("updated").textContent =
         "DATA UPDATED " +
@@ -410,19 +458,24 @@ async function loadFlights() {
         });
     }
 
-  } catch(error) {
+  }
+
+  catch(error) {
 
     console.error(error);
 
     container.innerHTML =
       '<div class="loading">Unable to load current flight information.</div>';
+
   }
+
 }
 
 loadFlights();
 
-/* Reloads our existing JSON every 5 minutes.
-   This does NOT trigger Apify. */
+/* Refresh local JSON every five minutes.
+   This does NOT trigger an Apify run. */
+
 setInterval(loadFlights, 300000);
 
 </script>
