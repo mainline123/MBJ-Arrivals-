@@ -20,11 +20,7 @@
   --line:rgba(255,255,255,.18);
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 html,body{
   width:100%;
@@ -33,7 +29,6 @@ html,body{
   background:var(--navy);
   color:white;
   font-family:Arial,Helvetica,sans-serif;
-
   user-select:none;
   -webkit-user-select:none;
   -webkit-touch-callout:none;
@@ -51,13 +46,10 @@ body{
 header{
   height:9vh;
   min-height:68px;
-
   display:grid;
   grid-template-columns:1fr 3fr 1fr;
   align-items:center;
-
   padding:0 1.2vw;
-
   background:linear-gradient(90deg,#06182c,#0b3d66,#06182c);
   border-bottom:3px solid var(--gold);
 }
@@ -78,9 +70,7 @@ header{
   margin-top:.5vh;
 }
 
-.airport{
-  text-align:center;
-}
+.airport{text-align:center}
 
 .airport h1{
   font-size:1.75vw;
@@ -105,9 +95,7 @@ header{
   letter-spacing:.14em;
 }
 
-.clockBox{
-  text-align:right;
-}
+.clockBox{text-align:right}
 
 .clock{
   color:var(--gold);
@@ -116,7 +104,6 @@ header{
 }
 
 .date{
-  color:white;
   font-size:.68vw;
   margin-top:.25vh;
 }
@@ -125,11 +112,9 @@ header{
 
 .boards{
   height:87vh;
-
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:.5vw;
-
   padding:.55vh .5vw;
 }
 
@@ -138,20 +123,16 @@ header{
   display:flex;
   flex-direction:column;
   overflow:hidden;
-
   border:1px solid var(--line);
 }
 
 .panelTitle{
   height:5.3vh;
   min-height:40px;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
-
   padding:0 .7vw;
-
   background:linear-gradient(90deg,var(--blue),var(--blue2));
   border-bottom:2px solid var(--cyan);
 }
@@ -172,47 +153,90 @@ header{
 .arrivalHeader,
 .arrivalRow{
   display:grid;
-  grid-template-columns:1.55fr 1.25fr .42fr .82fr .82fr;
+  grid-template-columns:1.75fr 1.2fr .42fr .78fr .78fr;
 }
 
 .departureHeader,
 .departureRow{
   display:grid;
-  grid-template-columns:1.42fr 1.13fr .76fr .42fr .76fr .94fr;
+  grid-template-columns:1.62fr 1.05fr .72fr .4fr .72fr .9fr;
 }
 
 .columnHeader{
   height:4.5vh;
   min-height:34px;
-
   background:#0c365a;
   color:var(--cyan);
-
-  font-size:.76vw;
+  font-size:.72vw;
   font-weight:900;
-
   border-bottom:1px solid var(--line);
 }
 
 .columnHeader > div,
 .flightRow > div{
-  padding:0 .38vw;
-
+  padding:0 .32vw;
   display:flex;
   align-items:center;
-
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
 }
 
-/* FLIGHT ROWS */
+/* AIRLINE LOGOS */
+
+.airlineCell{
+  display:flex !important;
+  align-items:center !important;
+  gap:.38vw;
+  min-width:0;
+}
+
+.logoBox{
+  width:2.05vw;
+  min-width:2.05vw;
+  height:2.05vw;
+  max-height:3.2vh;
+  border-radius:.25vw;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  padding:.12vw;
+}
+
+.airlineLogo{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.codeBadge{
+  width:100%;
+  height:100%;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:#edf4f8;
+  color:#08243d;
+  font-size:.64vw;
+  font-weight:900;
+}
+
+.flightText{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight:900;
+}
+
+/* ROWS */
 
 .tableBody{
   flex:1;
   min-height:0;
   overflow:hidden;
-
   display:flex;
   flex-direction:column;
 }
@@ -220,10 +244,8 @@ header{
 .flightRow{
   flex:1;
   min-height:0;
-
-  font-size:.88vw;
+  font-size:.86vw;
   font-weight:700;
-
   border-bottom:1px solid var(--line);
 }
 
@@ -233,15 +255,6 @@ header{
 
 .flightRow:nth-child(even){
   background:rgba(36,145,213,.15);
-}
-
-.flight{
-  color:white;
-  font-weight:900;
-}
-
-.place{
-  color:white;
 }
 
 .number{
@@ -259,36 +272,21 @@ header{
   font-weight:900;
 }
 
-.status{
-  font-weight:900;
-}
-
-.onTime{
-  color:var(--green);
-}
-
-.delayed{
-  color:var(--orange);
-}
-
-.cancelled{
-  color:var(--red);
-}
+.status{font-weight:900}
+.onTime{color:var(--green)}
+.delayed{color:var(--orange)}
+.cancelled{color:var(--red)}
 
 /* FOOTER */
 
 footer{
   height:4vh;
   min-height:28px;
-
   display:grid;
   grid-template-columns:1fr 1.4fr 1fr;
   align-items:center;
-
   padding:0 .7vw;
-
   border-top:1px solid var(--line);
-
   color:var(--muted);
   font-size:.62vw;
 }
@@ -310,85 +308,64 @@ footer .right{
 
 <header>
 
-  <div>
-    <div class="mbj">MBJ</div>
-    <div class="jamaica">JAMAICA</div>
-  </div>
+<div>
+  <div class="mbj">MBJ</div>
+  <div class="jamaica">JAMAICA</div>
+</div>
 
-  <div class="airport">
+<div class="airport">
+  <h1>SANGSTER INTERNATIONAL AIRPORT</h1>
+  <div class="location">MONTEGO BAY • JAMAICA</div>
+  <div class="live">● LIVE DATA</div>
+</div>
 
-    <h1>SANGSTER INTERNATIONAL AIRPORT</h1>
-
-    <div class="location">
-      MONTEGO BAY • JAMAICA
-    </div>
-
-    <div class="live">
-      ● LIVE DATA
-    </div>
-
-  </div>
-
-  <div class="clockBox">
-
-    <div class="clock" id="clock">
-      --:-- --
-    </div>
-
-    <div class="date" id="date"></div>
-
-  </div>
+<div class="clockBox">
+  <div class="clock" id="clock">--:-- --</div>
+  <div class="date" id="date"></div>
+</div>
 
 </header>
 
 
 <main class="boards">
 
-<!-- ARRIVALS -->
-
 <section class="panel">
 
-  <div class="panelTitle">
-    <h2>✈ ARRIVALS</h2>
-    <span>OFFICIAL MBJ DATA</span>
-  </div>
+<div class="panelTitle">
+  <h2>✈ ARRIVALS</h2>
+  <span>OFFICIAL MBJ DATA</span>
+</div>
 
-  <div class="columnHeader arrivalHeader">
+<div class="columnHeader arrivalHeader">
+  <div>AIRLINE / FLIGHT</div>
+  <div>FROM</div>
+  <div>BAG</div>
+  <div>TIME</div>
+  <div>ACTUAL</div>
+</div>
 
-    <div>AIRLINE / FLIGHT</div>
-    <div>FROM</div>
-    <div>BAG</div>
-    <div>TIME</div>
-    <div>ACTUAL</div>
-
-  </div>
-
-  <div class="tableBody" id="arrivalBody"></div>
+<div class="tableBody" id="arrivalBody"></div>
 
 </section>
 
 
-<!-- DEPARTURES -->
-
 <section class="panel">
 
-  <div class="panelTitle">
-    <h2>DEPARTURES ✈</h2>
-    <span>OFFICIAL MBJ DATA</span>
-  </div>
+<div class="panelTitle">
+  <h2>DEPARTURES ✈</h2>
+  <span>OFFICIAL MBJ DATA</span>
+</div>
 
-  <div class="columnHeader departureHeader">
+<div class="columnHeader departureHeader">
+  <div>AIRLINE / FLIGHT</div>
+  <div>TO</div>
+  <div>CHECK-IN</div>
+  <div>GATE</div>
+  <div>TIME</div>
+  <div>STATUS</div>
+</div>
 
-    <div>AIRLINE / FLIGHT</div>
-    <div>TO</div>
-    <div>CHECK-IN</div>
-    <div>GATE</div>
-    <div>TIME</div>
-    <div>STATUS</div>
-
-  </div>
-
-  <div class="tableBody" id="departureBody"></div>
+<div class="tableBody" id="departureBody"></div>
 
 </section>
 
@@ -397,17 +374,13 @@ footer .right{
 
 <footer>
 
-  <div>
-    Source: Sangster International Airport
-  </div>
+<div>Source: Sangster International Airport</div>
 
-  <div class="center">
-    HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.
-  </div>
+<div class="center">
+HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.
+</div>
 
-  <div class="right" id="updated">
-    Loading...
-  </div>
+<div class="right" id="updated">Loading...</div>
 
 </footer>
 
@@ -415,23 +388,144 @@ footer .right{
 <script>
 
 const MAX_ROWS = 20;
-
-/* Keep several recent flights visible,
-   then fill the board with upcoming flights. */
-
 const KEEP_PREVIOUS = 4;
 
+/*
+ AIRLINE LOGO DATASET
+ Maps the IATA airline code in the MBJ flight number
+ to the ICAO filename used by the logo repository.
+*/
 
-/* SAFE TEXT */
+const AIRLINES = {
+
+  "AA":"AAL",
+  "B6":"JBU",
+  "AC":"ACA",
+  "WS":"WJA",
+  "DL":"DAL",
+  "UA":"UAL",
+  "WN":"SWA",
+  "BA":"BAW",
+  "NK":"NKS",
+  "F9":"FFT",
+  "CM":"CMP",
+
+  "TS":"TSC",
+  "WG":"SWG",
+  "BW":"BWA",
+  "VS":"VIR",
+  "BY":"TOM",
+  "OR":"TFL",
+  "SY":"SCX",
+  "5Y":"GTI"
+
+};
+
+
+/*
+ We use the raw GitHub image location.
+ No files have to be manually uploaded to your repository.
+*/
+
+const LOGO_BASE =
+"https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
+
 
 function escapeHTML(value){
 
-  return String(value ?? "")
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
+ return String(value ?? "")
+ .replace(/&/g,"&amp;")
+ .replace(/</g,"&lt;")
+ .replace(/>/g,"&gt;")
+ .replace(/"/g,"&quot;")
+ .replace(/'/g,"&#039;");
+
+}
+
+
+/* FIND AIRLINE CODE FROM MBJ TEXT */
+
+function getAirlineCode(text){
+
+ const value =
+ String(text || "").toUpperCase();
+
+ /*
+ Flight number normally appears at the end:
+ Jet Blue B61179
+ American Airlines AA863
+ Air Canada AC1805
+ Copa CM147
+ */
+
+ const match =
+ value.match(/\b([A-Z0-9]{2})\s*\d{1,4}[A-Z]?\b/);
+
+ return match ? match[1] : "";
+
+}
+
+
+/* CREATE AIRLINE LOGO */
+
+function airlineDisplay(airlineFlight){
+
+ const safeText =
+ escapeHTML(airlineFlight || "—");
+
+ const code =
+ getAirlineCode(airlineFlight);
+
+ const icao =
+ AIRLINES[code];
+
+ /*
+ If we don't know the airline yet,
+ simply show the original MBJ text.
+ */
+
+ if(!code || !icao){
+
+   return `
+     <div class="flightText">
+       ${safeText}
+     </div>
+   `;
+
+ }
+
+
+ const logoURL =
+ LOGO_BASE +
+ encodeURIComponent(icao) +
+ ".png";
+
+
+ return `
+
+ <div class="logoBox">
+
+   <img
+     class="airlineLogo"
+     src="${logoURL}"
+     alt=""
+     onerror="
+       this.style.display='none';
+       this.nextElementSibling.style.display='flex';
+     "
+   >
+
+   <div class="codeBadge">
+     ${escapeHTML(code)}
+   </div>
+
+ </div>
+
+ <div class="flightText">
+   ${safeText}
+ </div>
+
+ `;
 
 }
 
@@ -440,34 +534,34 @@ function escapeHTML(value){
 
 function updateClock(){
 
-  const now = new Date();
+ const now = new Date();
 
-  document.getElementById("clock").textContent =
+ document.getElementById("clock").textContent =
 
-    new Intl.DateTimeFormat(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        hour:"numeric",
-        minute:"2-digit",
-        second:"2-digit",
-        hour12:true
-      }
-    ).format(now);
+ new Intl.DateTimeFormat(
+   "en-US",
+   {
+     timeZone:"America/Jamaica",
+     hour:"numeric",
+     minute:"2-digit",
+     second:"2-digit",
+     hour12:true
+   }
+ ).format(now);
 
 
-  document.getElementById("date").textContent =
+ document.getElementById("date").textContent =
 
-    new Intl.DateTimeFormat(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        weekday:"short",
-        month:"short",
-        day:"numeric",
-        year:"numeric"
-      }
-    ).format(now);
+ new Intl.DateTimeFormat(
+   "en-US",
+   {
+     timeZone:"America/Jamaica",
+     weekday:"short",
+     month:"short",
+     day:"numeric",
+     year:"numeric"
+   }
+ ).format(now);
 
 }
 
@@ -476,175 +570,157 @@ updateClock();
 setInterval(updateClock,1000);
 
 
-/* GET CURRENT JAMAICA MINUTES */
+/* CURRENT JAMAICA TIME */
 
 function jamaicaMinutesNow(){
 
-  const parts =
+ const parts =
 
-    new Intl.DateTimeFormat(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        hour:"numeric",
-        minute:"2-digit",
-        hour12:false
-      }
-    ).formatToParts(new Date());
-
-
-  const hour =
-    Number(
-      parts.find(p=>p.type==="hour")?.value || 0
-    );
+ new Intl.DateTimeFormat(
+   "en-US",
+   {
+     timeZone:"America/Jamaica",
+     hour:"numeric",
+     minute:"2-digit",
+     hour12:false
+   }
+ ).formatToParts(new Date());
 
 
-  const minute =
-    Number(
-      parts.find(p=>p.type==="minute")?.value || 0
-    );
+ const hour =
+ Number(
+   parts.find(p=>p.type==="hour")?.value || 0
+ );
 
 
-  return (hour % 24) * 60 + minute;
+ const minute =
+ Number(
+   parts.find(p=>p.type==="minute")?.value || 0
+ );
+
+
+ return (hour % 24) * 60 + minute;
 
 }
 
 
-/* CONVERT 12-HOUR FLIGHT TIME TO MINUTES */
+/* FLIGHT TIME TO MINUTES */
 
 function flightTimeMinutes(timeString){
 
-  if(!timeString)
-    return null;
+ if(!timeString)
+   return null;
 
 
-  const match =
+ const match =
 
-    String(timeString)
-      .trim()
-      .match(
-        /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i
-      );
-
-
-  if(!match)
-    return null;
+ String(timeString)
+ .trim()
+ .match(
+   /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i
+ );
 
 
-  let hour =
-    Number(match[1]);
+ if(!match)
+   return null;
 
 
-  const minute =
-    Number(match[2]);
+ let hour =
+ Number(match[1]);
 
 
-  const ampm =
-    match[3].toUpperCase();
+ const minute =
+ Number(match[2]);
 
 
-  if(hour === 12)
-    hour = 0;
+ const ampm =
+ match[3].toUpperCase();
 
 
-  if(ampm === "PM")
-    hour += 12;
+ if(hour === 12)
+   hour = 0;
 
 
-  return hour * 60 + minute;
+ if(ampm === "PM")
+   hour += 12;
+
+
+ return hour * 60 + minute;
 
 }
 
 
-/* MOVING FLIGHT WINDOW */
+/* MOVING 20-FLIGHT WINDOW */
 
 function getCurrentFlights(allFlights){
 
-  const flights =
-    Array.isArray(allFlights)
-      ? allFlights
-      : [];
+ const flights =
+ Array.isArray(allFlights)
+ ? allFlights
+ : [];
 
 
-  if(flights.length <= MAX_ROWS)
-    return flights;
+ if(flights.length <= MAX_ROWS)
+   return flights;
 
 
-  const now =
-    jamaicaMinutesNow();
+ const now =
+ jamaicaMinutesNow();
 
 
-  /*
-    Find the first flight whose scheduled time
-    has not passed yet.
-  */
+ let nextIndex =
 
-  let nextIndex =
-    flights.findIndex(f=>{
+ flights.findIndex(f=>{
 
-      const mins =
-        flightTimeMinutes(
-          f.scheduledTime
-        );
+   const mins =
+   flightTimeMinutes(
+     f.scheduledTime
+   );
 
-      return (
-        mins !== null &&
-        mins >= now
-      );
+   return (
+     mins !== null &&
+     mins >= now
+   );
 
-    });
+ });
 
 
-  /*
-    If all flights have passed,
-    show the last MAX_ROWS flights.
-  */
+ if(nextIndex === -1){
 
-  if(nextIndex === -1){
+   return flights.slice(
+     -MAX_ROWS
+   );
 
-    return flights.slice(
-      -MAX_ROWS
-    );
-
-  }
+ }
 
 
-  /*
-    Keep a few recently scheduled flights
-    above the upcoming flights.
-  */
+ let start =
 
-  let start =
-
-    Math.max(
-      0,
-      nextIndex - KEEP_PREVIOUS
-    );
+ Math.max(
+   0,
+   nextIndex - KEEP_PREVIOUS
+ );
 
 
-  /*
-    Make sure we still fill 20 rows
-    whenever enough flights exist.
-  */
+ if(
+   start + MAX_ROWS >
+   flights.length
+ ){
 
-  if(
-    start + MAX_ROWS >
-    flights.length
-  ){
+   start =
 
-    start =
-      Math.max(
-        0,
-        flights.length - MAX_ROWS
-      );
+   Math.max(
+     0,
+     flights.length - MAX_ROWS
+   );
 
-  }
+ }
 
 
-  return flights.slice(
-    start,
-    start + MAX_ROWS
-  );
+ return flights.slice(
+   start,
+   start + MAX_ROWS
+ );
 
 }
 
@@ -653,89 +729,79 @@ function getCurrentFlights(allFlights){
 
 function renderArrivals(allFlights){
 
-  const body =
-    document.getElementById(
-      "arrivalBody"
-    );
+ const body =
+ document.getElementById(
+   "arrivalBody"
+ );
 
 
-  const flights =
-    getCurrentFlights(
-      allFlights || []
-    );
+ const flights =
+ getCurrentFlights(
+   allFlights || []
+ );
 
 
-  body.innerHTML =
+ body.innerHTML =
 
-    flights.map(f=>`
+ flights.map(f=>`
 
-      <div class="flightRow arrivalRow">
+ <div class="flightRow arrivalRow">
 
-        <div class="flight">
-          ${escapeHTML(
-            f.airlineFlight || "—"
-          )}
-        </div>
+   <div class="airlineCell">
+     ${airlineDisplay(f.airlineFlight)}
+   </div>
 
-        <div class="place">
-          ${escapeHTML(
-            f.from || "—"
-          )}
-        </div>
+   <div>
+     ${escapeHTML(f.from || "—")}
+   </div>
 
-        <div class="number">
-          ${escapeHTML(
-            f.baggage || "—"
-          )}
-        </div>
+   <div class="number">
+     ${escapeHTML(f.baggage || "—")}
+   </div>
 
-        <div class="time">
-          ${escapeHTML(
-            f.scheduledTime || "—"
-          )}
-        </div>
+   <div class="time">
+     ${escapeHTML(f.scheduledTime || "—")}
+   </div>
 
-        <div class="actual">
-          ${escapeHTML(
-            f.actualTime ||
-            f.status ||
-            "—"
-          )}
-        </div>
+   <div class="actual">
+     ${escapeHTML(
+       f.actualTime ||
+       f.status ||
+       "—"
+     )}
+   </div>
 
-      </div>
+ </div>
 
-    `).join("");
+ `).join("");
 
 }
 
 
-/* STATUS COLOURS */
+/* STATUS COLOUR */
 
 function statusClass(status){
 
-  const s =
-    String(
-      status || ""
-    ).toLowerCase();
+ const s =
+ String(status || "").toLowerCase();
 
 
-  if(s.includes("cancel"))
-    return "cancelled";
+ if(s.includes("cancel"))
+   return "cancelled";
 
 
-  if(s.includes("delay"))
-    return "delayed";
+ if(s.includes("delay"))
+   return "delayed";
 
 
-  if(
-    s.includes("on-time") ||
-    s.includes("on time")
-  )
-    return "onTime";
+ if(
+   s.includes("on-time") ||
+   s.includes("on time")
+ )
+   return "onTime";
 
 
-  return "";
+ return "";
 
 }
 
@@ -744,86 +810,75 @@ function statusClass(status){
 
 function renderDepartures(allFlights){
 
-  const body =
-    document.getElementById(
-      "departureBody"
-    );
+ const body =
+ document.getElementById(
+   "departureBody"
+ );
 
 
-  const flights =
-    getCurrentFlights(
-      allFlights || []
-    );
+ const flights =
+ getCurrentFlights(
+   allFlights || []
+ );
 
 
-  body.innerHTML =
+ body.innerHTML =
 
-    flights.map(f=>{
+ flights.map(f=>{
+
+   const displayStatus =
+
+   f.actualTime
+
+   ? `${f.actualTime}${
+       f.status
+       ? " • " + f.status
+       : ""
+     }`
+
+   : (
+       f.status ||
+       "—"
+     );
 
 
-      const displayStatus =
+   return `
 
-        f.actualTime
+   <div class="flightRow departureRow">
 
-          ? `${f.actualTime}${
-              f.status
-                ? " • " + f.status
-                : ""
-            }`
+     <div class="airlineCell">
+       ${airlineDisplay(f.airlineFlight)}
+     </div>
 
-          : (
-              f.status ||
-              "—"
-            );
+     <div>
+       ${escapeHTML(f.to || "—")}
+     </div>
 
+     <div class="number">
+       ${escapeHTML(
+         f.checkInCounters || "—"
+       )}
+     </div>
 
-      return `
+     <div class="number">
+       ${escapeHTML(f.gate || "—")}
+     </div>
 
-        <div class="flightRow departureRow">
+     <div class="time">
+       ${escapeHTML(
+         f.scheduledTime || "—"
+       )}
+     </div>
 
-          <div class="flight">
-            ${escapeHTML(
-              f.airlineFlight || "—"
-            )}
-          </div>
+     <div class="status ${statusClass(f.status)}">
+       ${escapeHTML(displayStatus)}
+     </div>
 
-          <div class="place">
-            ${escapeHTML(
-              f.to || "—"
-            )}
-          </div>
+   </div>
 
-          <div class="number">
-            ${escapeHTML(
-              f.checkInCounters || "—"
-            )}
-          </div>
+   `;
 
-          <div class="number">
-            ${escapeHTML(
-              f.gate || "—"
-            )}
-          </div>
-
-          <div class="time">
-            ${escapeHTML(
-              f.scheduledTime || "—"
-            )}
-          </div>
-
-          <div class="status ${statusClass(
-            f.status
-          )}">
-            ${escapeHTML(
-              displayStatus
-            )}
-          </div>
-
-        </div>
-
-      `;
-
-    }).join("");
+ }).join("");
 
 }
 
@@ -832,104 +887,103 @@ function renderDepartures(allFlights){
 
 async function loadBoards(){
 
-  try{
+ try{
 
-    const stamp =
-      Date.now();
-
-
-    const [
-      arrivalsResponse,
-      departuresResponse
-    ] =
-
-      await Promise.all([
-
-        fetch(
-          `flights.json?t=${stamp}`,
-          {cache:"no-store"}
-        ),
-
-        fetch(
-          `departures.json?t=${stamp}`,
-          {cache:"no-store"}
-        )
-
-      ]);
+   const stamp =
+   Date.now();
 
 
-    if(
-      !arrivalsResponse.ok ||
-      !departuresResponse.ok
-    ){
+   const [
+     arrivalsResponse,
+     departuresResponse
+   ] =
 
-      throw new Error(
-        "Unable to retrieve flight data"
-      );
+   await Promise.all([
 
-    }
+     fetch(
+       `flights.json?t=${stamp}`,
+       {cache:"no-store"}
+     ),
 
+     fetch(
+       `departures.json?t=${stamp}`,
+       {cache:"no-store"}
+     )
 
-    const arrivals =
-      await arrivalsResponse.json();
-
-
-    const departures =
-      await departuresResponse.json();
-
-
-    renderArrivals(
-      arrivals.flights || []
-    );
+   ]);
 
 
-    renderDepartures(
-      departures.flights || []
-    );
+   if(
+     !arrivalsResponse.ok ||
+     !departuresResponse.ok
+   ){
+
+     throw new Error(
+       "Unable to retrieve flight data"
+     );
+
+   }
 
 
-    const updated =
-
-      arrivals.updated ||
-      departures.updated;
+   const arrivals =
+   await arrivalsResponse.json();
 
 
-    if(updated){
-
-      document.getElementById(
-        "updated"
-      ).textContent =
-
-        "DATA UPDATED " +
-
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/Jamaica",
-            hour:"numeric",
-            minute:"2-digit",
-            hour12:true
-          }
-        ).format(
-          new Date(updated)
-        );
-
-    }
-
-  }
-
-  catch(error){
-
-    console.error(error);
+   const departures =
+   await departuresResponse.json();
 
 
-    document.getElementById(
-      "updated"
-    ).textContent =
+   renderArrivals(
+     arrivals.flights || []
+   );
 
-      "DATA UPDATE UNAVAILABLE";
 
-  }
+   renderDepartures(
+     departures.flights || []
+   );
+
+
+   const updated =
+   arrivals.updated ||
+   departures.updated;
+
+
+   if(updated){
+
+     document.getElementById(
+       "updated"
+     ).textContent =
+
+     "DATA UPDATED " +
+
+     new Intl.DateTimeFormat(
+       "en-US",
+       {
+         timeZone:"America/Jamaica",
+         hour:"numeric",
+         minute:"2-digit",
+         hour12:true
+       }
+     ).format(
+       new Date(updated)
+     );
+
+   }
+
+ }
+
+ catch(error){
+
+   console.error(error);
+
+
+   document.getElementById(
+     "updated"
+   ).textContent =
+
+   "DATA UPDATE UNAVAILABLE";
+
+ }
 
 }
 
@@ -937,33 +991,29 @@ async function loadBoards(){
 loadBoards();
 
 
-/*
-  Re-read the JSON every 5 minutes.
-  This also moves the visible flight window
-  forward as the Jamaica time changes.
-*/
+/* Check fresh MBJ JSON and move board every 5 minutes */
 
 setInterval(
-  loadBoards,
-  300000
+ loadBoards,
+ 300000
 );
 
 
-/* KIOSK TOUCH PROTECTION */
+/* KIOSK PROTECTION */
 
 document.addEventListener(
-  "contextmenu",
-  e=>e.preventDefault()
+ "contextmenu",
+ e=>e.preventDefault()
 );
 
 document.addEventListener(
-  "selectstart",
-  e=>e.preventDefault()
+ "selectstart",
+ e=>e.preventDefault()
 );
 
 document.addEventListener(
-  "dragstart",
-  e=>e.preventDefault()
+ "dragstart",
+ e=>e.preventDefault()
 );
 
 </script>
