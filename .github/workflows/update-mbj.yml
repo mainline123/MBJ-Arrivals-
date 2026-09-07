@@ -25,5 +25,5 @@ jobs:
       - name: Commit updated flight data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update MBJ arrivals"
-          file_pattern: flights.json last_updated.txt
+          commit_message: "Update MBJ arrivals and departures"
+          file_pattern: flights.json departures.json last_updated.txt
