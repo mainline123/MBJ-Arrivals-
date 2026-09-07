@@ -6,234 +6,481 @@
 <title>MBJ Live Arrivals</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #031827;
-  color: #fff;
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#031a2b;
 }
 
-.screen {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(180deg,#063652 0%,#031827 100%);
+body{
+  color:white;
 }
 
-/* COMPACT HEADER */
-.header {
-  height: 15vh;
-  min-height: 15vh;
-  display: grid;
-
-  /* MORE SPACE RESERVED FOR MBJ */
-  grid-template-columns: 34% 40% 26%;
-
-  align-items: center;
-  padding: 1.2vh 3vw;
-  background: #07182c;
-  border-bottom: 4px solid #f7c928;
+.screen{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:
+    radial-gradient(circle at 50% 0%,#07506b 0%,#032a43 42%,#021729 100%);
 }
 
-.code {
-  font-size: 7vh;
-  font-weight: 900;
-  line-height: .9;
-  color: #3cc4f1;
-  white-space: nowrap;
+/* ==============================
+   TOP AIRPORT HEADER
+   ============================== */
+
+.header{
+  height:13.5vh;
+  min-height:13.5vh;
+  display:grid;
+  grid-template-columns:30% 45% 25%;
+  align-items:center;
+  padding:1vh 3vw .8vh;
+  background:linear-gradient(90deg,#02243a,#063a53,#021d31);
+  border-bottom:3px solid #ffd326;
 }
 
-.airportBlock {
-  padding-left: 2vw;
+.leftTop{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
-.airportName {
-  font-size: 1.95vh;
-  line-height: 1.08;
-  font-weight: 900;
+.code{
+  color:#40c8f2;
+  font-size:6.6vh;
+  font-weight:900;
+  line-height:.85;
+  letter-spacing:-.04em;
+  white-space:nowrap;
 }
 
-.location {
-  margin-top: .7vh;
-  color: #f7c928;
-  font-size: 1.25vh;
-  line-height: 1.2;
-  font-weight: 900;
+.jamaicaLine{
+  margin-top:.7vh;
+  display:flex;
+  align-items:center;
+  gap:1.2vw;
 }
 
-.right {
-  text-align: right;
+.flag{
+  width:7vw;
+  max-width:75px;
+  aspect-ratio:1.9/1;
+  position:relative;
+  overflow:hidden;
+  background:#169447;
+  border:1px solid rgba(255,255,255,.4);
 }
 
-.liveBadge {
-  display: inline-block;
-  padding: .55vh 1.3vw;
-  border-radius: 25px;
-  background: #159447;
-  font-size: 1.1vh;
-  font-weight: 900;
-  white-space: nowrap;
+/* CSS Jamaica-style flag */
+.flag:before,
+.flag:after{
+  content:"";
+  position:absolute;
+  inset:-25%;
+  background:#ffd326;
 }
 
-.clock {
-  margin-top: .7vh;
-  color: #f7c928;
-  font-size: 3vh;
-  line-height: 1;
-  font-weight: 900;
+.flag:before{
+  clip-path:polygon(
+    0 0,
+    12% 0,
+    100% 88%,
+    100% 100%,
+    88% 100%,
+    0 12%
+  );
 }
 
-.date {
-  margin-top: .45vh;
-  color: #d4e2ec;
-  font-size: 1.05vh;
+.flag:after{
+  clip-path:polygon(
+    88% 0,
+    100% 0,
+    100% 12%,
+    12% 100%,
+    0 100%,
+    0 88%
+  );
 }
 
-/* ARRIVALS BAR */
-.arrivalsBar {
-  height: 6vh;
-  min-height: 6vh;
-  padding: 0 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #064d63;
-  border-bottom: 3px solid #f7c928;
+.flagBlackTop,
+.flagBlackBottom{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:50%;
+  background:#050505;
 }
 
-.arrivalsBar h1 {
-  font-size: 3vh;
-  font-weight: 900;
-  letter-spacing: .04em;
+.flagBlackTop{
+  top:0;
+  clip-path:polygon(0 0,100% 0,50% 100%);
 }
 
-.welcome {
-  text-align: right;
-  color: #f7c928;
-  font-size: 1.25vh;
-  font-weight: 900;
-  line-height: 1.2;
+.flagBlackBottom{
+  bottom:0;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
 }
 
-/* FLIGHT BOARD */
-.board {
-  flex: 1;
-  min-height: 0;
-  margin: 1.2vh 2.5vw 1vh;
-  overflow: hidden;
-  border-radius: 14px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
+.tagline{
+  font-size:.9vh;
+  letter-spacing:.17em;
+  font-weight:900;
+  white-space:nowrap;
+  color:#fff;
+}
+
+.airportBlock{
+  padding-left:1.5vw;
+}
+
+.airportName{
+  font-size:1.85vh;
+  line-height:1.02;
+  font-weight:900;
+  letter-spacing:.015em;
+}
+
+.location{
+  margin-top:.5vh;
+  color:#ffd326;
+  font-size:1.25vh;
+  font-weight:900;
+  line-height:1.2;
+}
+
+.rightTop{
+  text-align:right;
+}
+
+.liveBadge{
+  display:inline-block;
+  background:#169447;
+  border-radius:30px;
+  padding:.55vh 1.6vw;
+  font-size:1.05vh;
+  font-weight:900;
+  white-space:nowrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.clock{
+  color:#ffd326;
+  font-size:3.2vh;
+  line-height:1;
+  font-weight:900;
+  margin-top:.65vh;
+  white-space:nowrap;
+}
+
+.date{
+  margin-top:.35vh;
+  color:white;
+  font-size:.9vh;
+  line-height:1.15;
+}
+
+.jamaicaTime{
+  font-size:.8vh;
+  color:#d6e8ef;
+}
+
+/* ==============================
+   ARRIVALS HERO
+   ============================== */
+
+.arrivalsHero{
+  height:8.5vh;
+  min-height:8.5vh;
+  display:grid;
+  grid-template-columns:16% 50% 34%;
+  align-items:center;
+  padding:.7vh 2.5vw;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(16,151,185,.55),transparent 38%),
+    linear-gradient(90deg,#032239,#064c66,#03273d);
+  border-bottom:3px solid #18a5b9;
+}
+
+.planeBox{
+  width:6vh;
+  height:6vh;
+  max-width:90%;
+  border:3px solid white;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:3.2vh;
+  font-weight:900;
+}
+
+.arrivalsTitle{
+  font-size:4.2vh;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.01em;
+}
+
+.welcome{
+  text-align:right;
+  line-height:.95;
+  transform:rotate(-3deg);
+}
+
+.welcomeSmall{
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  font-size:1.7vh;
+  color:white;
+}
+
+.welcomeBig{
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  font-size:2.2vh;
+  color:#ffd326;
+  font-weight:bold;
+}
+
+/* ==============================
+   FLIGHT TABLE
+   ============================== */
+
+.board{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  background:white;
+  overflow:hidden;
 }
 
 .tableHead,
-.flightRow {
-  display: grid;
+.flightRow{
+  display:grid;
 
-  /*
-  Airline/Flight | From | Baggage Claim | Time | Status
-  */
-  grid-template-columns: 1.85fr 1.75fr 1fr .95fr .95fr;
+  /* Airline/Flight | From | Baggage Claim | Time | Status */
+  grid-template-columns:1.75fr 1.55fr .9fr .9fr .95fr;
 }
 
-.tableHead {
-  height: 4.5vh;
-  min-height: 4.5vh;
-  padding: 0 1.5vw;
-  align-items: center;
-  background: #0a4d73;
-  font-size: .95vh;
-  font-weight: 900;
-  text-transform: uppercase;
+.tableHead{
+  min-height:4.2vh;
+  height:4.2vh;
+  align-items:center;
+  padding:0 2vw;
+  background:linear-gradient(90deg,#076e96,#075e86);
+  color:white;
+  font-size:.9vh;
+  line-height:1.05;
+  font-weight:900;
+  text-transform:uppercase;
+  border-bottom:1px solid #d6e6ed;
 }
 
-.tableBody {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  scrollbar-width: thin;
+.tableHead > div:not(:last-child){
+  border-right:1px solid rgba(255,255,255,.18);
 }
 
-.flightRow {
-  min-height: 5.15vh;
-  padding: .45vh 1.5vw;
-  align-items: center;
-  border-bottom: 1px solid #d5e1e8;
-  color: #092d47;
-  font-size: 1.22vh;
-  font-weight: 800;
+.tableBody{
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  scrollbar-width:thin;
+  scrollbar-color:#7a8c95 #e8f0f3;
 }
 
-.flightRow:nth-child(even) {
-  background: #eaf4f8;
+.flightRow{
+  min-height:4.35vh;
+  padding:.3vh 2vw;
+  align-items:center;
+  color:#09264a;
+  font-size:1.05vh;
+  line-height:1.12;
+  font-weight:800;
+  border-bottom:1px solid #d4e3e9;
 }
 
-.flight {
-  color: #08709d;
-  font-weight: 900;
+.flightRow:nth-child(odd){
+  background:#ffffff;
 }
 
-.origin {
-  color: #111;
-  font-weight: 800;
+.flightRow:nth-child(even){
+  background:#e8f5fa;
 }
 
-.bag {
-  text-align: center;
-  font-weight: 900;
+.flight{
+  color:#0870b3;
+  font-weight:900;
+  padding-right:.5vw;
 }
 
-.time {
-  color: #092d47;
-  font-weight: 900;
+.origin{
+  color:#071a38;
+  font-weight:900;
+  padding-right:.5vw;
 }
 
-.status {
-  color: #07813e;
-  font-weight: 900;
+.bag{
+  text-align:center;
+  color:#071a38;
+  font-weight:900;
 }
 
-.loading {
-  padding: 4vh 2vw;
-  text-align: center;
-  color: #0a4d73;
-  font-size: 1.6vh;
-  font-weight: 900;
+.time{
+  text-align:center;
+  color:#071a38;
+  font-weight:900;
 }
 
-/* SMALL FOOTER */
-.footer {
-  height: 5vh;
-  min-height: 5vh;
-  padding: 0 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #061625;
-  border-top: 3px solid #f7c928;
+.status{
+  text-align:center;
+  color:#07843e;
+  font-weight:900;
 }
 
-.footerLeft {
-  color: #f7c928;
-  font-size: 1.2vh;
-  font-weight: 900;
+.loading{
+  color:#075e86;
+  font-size:1.4vh;
+  font-weight:900;
+  text-align:center;
+  padding:5vh 2vw;
 }
 
-.footerRight {
-  color: #a9c1d0;
-  font-size: 1vh;
-  text-align: right;
+/* ==============================
+   TROPICAL FOOTER
+   ============================== */
+
+.tropicalFooter{
+  height:9vh;
+  min-height:9vh;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    radial-gradient(circle at 78% 120%,#21a9c0 0%,#087e9c 25%,transparent 26%),
+    radial-gradient(circle at 88% 70%,#168955 0%,#0d653e 20%,transparent 21%),
+    linear-gradient(120deg,#022a45 0%,#075b78 45%,#0791ad 75%,#033c59 100%);
+  border-top:3px solid #ffd326;
 }
+
+.tropicalFooter:before{
+  content:"✿";
+  position:absolute;
+  left:2vw;
+  bottom:-1.3vh;
+  color:#ed3237;
+  font-size:8vh;
+  line-height:1;
+  text-shadow:
+    3px 3px 0 #bd1f29,
+    -2px -2px 0 #ff6868;
+}
+
+.tropicalFooter:after{
+  content:"";
+  position:absolute;
+  right:-3vw;
+  bottom:-2vh;
+  width:35vw;
+  height:7vh;
+  background:#0d6f45;
+  border-radius:100% 0 0 0;
+  transform:rotate(-4deg);
+  opacity:.9;
+}
+
+.oneLove{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  transform:rotate(-2deg);
+}
+
+.one{
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  font-size:2.5vh;
+  line-height:.9;
+  color:white;
+}
+
+.jamaica{
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  font-size:2.4vh;
+  line-height:1;
+  color:#ffd326;
+  font-weight:bold;
+}
+
+.yellowSwipe{
+  width:13vw;
+  height:.35vh;
+  background:#ffd326;
+  border-radius:100%;
+  margin:.4vh auto 0;
+  transform:rotate(-5deg);
+}
+
+/* ==============================
+   BOTTOM CREDIT BAR
+   ============================== */
+
+.bottomBar{
+  height:3.8vh;
+  min-height:3.8vh;
+  padding:0 3vw;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#031b2e;
+  border-top:2px solid #ffd326;
+}
+
+.company{
+  font-size:.75vh;
+  letter-spacing:.13em;
+  font-weight:900;
+  color:white;
+}
+
+.updated{
+  font-size:.8vh;
+  color:#dbe8ef;
+  white-space:nowrap;
+}
+
+/* Smaller kiosk widths */
+@media(max-width:600px){
+
+  .airportName{
+    font-size:1.65vh;
+  }
+
+  .tagline{
+    font-size:.75vh;
+  }
+
+  .tableHead{
+    font-size:.78vh;
+  }
+
+  .flightRow{
+    font-size:.95vh;
+  }
+}
+
 </style>
 </head>
 
@@ -241,9 +488,31 @@ html, body {
 
 <div class="screen">
 
+  <!-- HEADER -->
+
   <div class="header">
 
-    <div class="code">MBJ</div>
+    <div class="leftTop">
+
+      <div class="code">
+        MBJ
+      </div>
+
+      <div class="jamaicaLine">
+
+        <div class="flag">
+          <div class="flagBlackTop"></div>
+          <div class="flagBlackBottom"></div>
+        </div>
+
+        <div class="tagline">
+          SUN • SEA • CULTURE • GOOD VIBES
+        </div>
+
+      </div>
+
+    </div>
+
 
     <div class="airportBlock">
 
@@ -254,13 +523,13 @@ html, body {
       </div>
 
       <div class="location">
-        MONTEGO BAY<br>
-        JAMAICA
+        MONTEGO BAY • JAMAICA
       </div>
 
     </div>
 
-    <div class="right">
+
+    <div class="rightTop">
 
       <div class="liveBadge">
         ● LIVE DATA
@@ -274,38 +543,70 @@ html, body {
         --
       </div>
 
+      <div class="jamaicaTime">
+        Jamaica time
+      </div>
+
     </div>
 
   </div>
 
-  <div class="arrivalsBar">
 
-    <h1>ARRIVALS</h1>
+  <!-- ARRIVALS HERO -->
+
+  <div class="arrivalsHero">
+
+    <div class="planeBox">
+      ✈
+    </div>
+
+    <div class="arrivalsTitle">
+      ARRIVALS
+    </div>
 
     <div class="welcome">
-      WELCOME TO<br>
-      JAMAICA
+
+      <div class="welcomeSmall">
+        Welcome to
+      </div>
+
+      <div class="welcomeBig">
+        Jamaica
+      </div>
+
     </div>
 
   </div>
+
+
+  <!-- FLIGHT BOARD -->
 
   <div class="board">
 
     <div class="tableHead">
 
-      <div>AIRLINE/FLIGHT</div>
+      <div>
+        AIRLINE/FLIGHT
+      </div>
 
-      <div>FROM</div>
+      <div>
+        FROM
+      </div>
 
       <div style="text-align:center;">
         BAGGAGE<br>CLAIM
       </div>
 
-      <div>TIME</div>
+      <div style="text-align:center;">
+        TIME
+      </div>
 
-      <div>STATUS</div>
+      <div style="text-align:center;">
+        STATUS
+      </div>
 
     </div>
+
 
     <div class="tableBody" id="flightData">
 
@@ -317,57 +618,91 @@ html, body {
 
   </div>
 
-  <div class="footer">
 
-    <div class="footerLeft">
-      🇯🇲 ONE LOVE • JAMAICA
+  <!-- JAMAICA FOOTER -->
+
+  <div class="tropicalFooter">
+
+    <div class="oneLove">
+
+      <div class="one">
+        One Love
+      </div>
+
+      <div class="jamaica">
+        Jamaica
+      </div>
+
+      <div class="yellowSwipe"></div>
+
     </div>
 
-    <div class="footerRight" id="updated">
-      Flight information loading...
+  </div>
+
+
+  <!-- CREDIT -->
+
+  <div class="bottomBar">
+
+    <div class="company">
+      HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.
+    </div>
+
+    <div class="updated" id="updated">
+      Flight data loading...
     </div>
 
   </div>
 
 </div>
 
+
 <script>
 
-function updateClock() {
+/* ==============================
+   JAMAICA CLOCK
+   ============================== */
+
+function updateClock(){
 
   const now = new Date();
 
   document.getElementById("clock").textContent =
-    now.toLocaleTimeString("en-US", {
-      timeZone: "America/Jamaica",
-      hour: "numeric",
-      minute: "2-digit"
+    now.toLocaleTimeString("en-US",{
+      timeZone:"America/Jamaica",
+      hour:"numeric",
+      minute:"2-digit"
     });
 
   document.getElementById("date").textContent =
-    now.toLocaleDateString("en-US", {
-      timeZone: "America/Jamaica",
-      weekday: "short",
-      month: "short",
-      day: "numeric"
+    now.toLocaleDateString("en-US",{
+      timeZone:"America/Jamaica",
+      weekday:"long",
+      month:"long",
+      day:"numeric"
     });
 }
 
 updateClock();
-setInterval(updateClock, 1000);
+
+setInterval(updateClock,1000);
 
 
-async function loadFlights() {
+/* ==============================
+   LIVE FLIGHT DATA
+   ============================== */
+
+async function loadFlights(){
 
   const container =
     document.getElementById("flightData");
 
-  try {
+  try{
 
     const response =
       await fetch("flights.json?t=" + Date.now());
 
-    if (!response.ok) {
+    if(!response.ok){
       throw new Error("Unable to load flights.json");
     }
 
@@ -377,13 +712,15 @@ async function loadFlights() {
     const flights =
       data.flights || [];
 
-    if (!flights.length) {
+
+    if(!flights.length){
 
       container.innerHTML =
         '<div class="loading">No arrivals currently listed.</div>';
 
       return;
     }
+
 
     container.innerHTML =
       flights.map(f => {
@@ -398,7 +735,7 @@ async function loadFlights() {
           f.origin ||
           "--";
 
-        const bag =
+        const baggage =
           f.baggage ||
           f.bag ||
           "—";
@@ -413,54 +750,58 @@ async function loadFlights() {
           f.status ||
           "—";
 
+
         return `
 
-        <div class="flightRow">
+          <div class="flightRow">
 
-          <div class="flight">
-            ${flight}
+            <div class="flight">
+              ${flight}
+            </div>
+
+            <div class="origin">
+              ${origin}
+            </div>
+
+            <div class="bag">
+              ${baggage}
+            </div>
+
+            <div class="time">
+              ${time}
+            </div>
+
+            <div class="status">
+              ${status}
+            </div>
+
           </div>
-
-          <div class="origin">
-            ${origin}
-          </div>
-
-          <div class="bag">
-            ${bag}
-          </div>
-
-          <div class="time">
-            ${time}
-          </div>
-
-          <div class="status">
-            ${status}
-          </div>
-
-        </div>
 
         `;
 
       }).join("");
 
 
-    if (data.updated) {
+    /* LAST DATA UPDATE */
+
+    if(data.updated){
 
       const updatedDate =
         new Date(data.updated);
 
       document.getElementById("updated").textContent =
-        "DATA UPDATED " +
-        updatedDate.toLocaleTimeString("en-US", {
-          timeZone: "America/Jamaica",
-          hour: "numeric",
-          minute: "2-digit"
+        "Flight data updated: " +
+        updatedDate.toLocaleTimeString("en-US",{
+          timeZone:"America/Jamaica",
+          hour:"numeric",
+          minute:"2-digit"
         });
+
     }
 
   }
 
-  catch(error) {
+  catch(error){
 
     console.error(error);
 
@@ -471,12 +812,21 @@ async function loadFlights() {
 
 }
 
+
+/* Load immediately */
 loadFlights();
 
-/* Refresh local JSON every five minutes.
-   This does NOT trigger an Apify run. */
 
-setInterval(loadFlights, 300000);
+/*
+  Re-read flights.json every 5 minutes.
+
+  IMPORTANT:
+  This does NOT run Apify.
+  It does NOT run the GitHub Action.
+  It simply checks the JSON file already on GitHub.
+*/
+
+setInterval(loadFlights,300000);
 
 </script>
 
