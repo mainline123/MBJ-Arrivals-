@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBJ Live Arrivals & Departures</title>
+
+<style>
+:root {
+  --navy:#07182b;
+  --navy2:#0c2741;
+  --cyan:#39d7ff;
+  --gold:#ffd34d;
+  --green:#42d77d;
+  --orange:#ffad42;
+  --red:#ff6262;
+  --white:#ffffff;
+  --muted:#b9c9d8;
+  --line:rgba(255,255,255,.13);
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,body {
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:var(--navy);
+  font-family:Arial,Helvetica,sans-serif;
+  color:white;
+
+  user-select:none;
+  -webkit-user-select:none;
+  -webkit-touch-callout:none;
+  -webkit-user-drag:none;
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+
+header {
+  height:14vh;
+  min-height:100px;
+  background:linear-gradient(135deg,#07182b,#0d3451);
+  border-bottom:3px solid var(--gold);
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  align-items:center;
+  padding:0 2.2vw;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:1vw;
+}
+
+.mbj {
+  font-size:3.2vw;
+  line-height:1;
+  font-weight:900;
+  color:var(--cyan);
+  letter-spacing:.08em;
+}
+
+.jamaica {
+  color:var(--gold);
+  font-size:1vw;
+  font-weight:800;
+  letter-spacing:.18em;
+  margin-top:.4vh;
+}
+
+.airport {
+  text-align:center;
+}
+
+.airport h1 {
+  font-size:2.15vw;
+  font-weight:800;
+  letter-spacing:.05em;
+}
+
+.airport .location {
+  color:var(--gold);
+  font-size:1.1vw;
+  font-weight:700;
+  letter-spacing:.15em;
+  margin-top:.7vh;
+}
+
+.live {
+  color:var(--green);
+  margin-top:.6vh;
+  font-size:.9vw;
+  font-weight:800;
+  letter-spacing:.15em;
+}
+
+.clockBox {
+  text-align:right;
+}
+
+.clock {
+  color:var(--gold);
+  font-size:2.25vw;
+  font-weight:800;
+}
+
+.date {
+  color:var(--muted);
+  font-size:.9vw;
+  margin-top:.5vh;
+}
+
+/* TWO BOARDS */
+
+.boards {
+  height:81vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.2vw;
+  padding:1.2vh 1.2vw;
+}
+
+.panel {
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.panelTitle {
+  height:6vh;
+  min-height:48px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 1vw;
+  background:var(--navy2);
+  border-bottom:2px solid var(--cyan);
+}
+
+.panelTitle h2 {
+  font-size:1.55vw;
+  letter-spacing:.1em;
+}
+
+.panelTitle span {
+  color:var(--muted);
+  font-size:.8vw;
+}
+
+/* ARRIVALS */
+
+.arrivalHeader,
+.arrivalRow {
+  display:grid;
+  grid-template-columns:1.45fr 1.3fr .55fr .9fr .9fr;
+}
+
+/* DEPARTURES */
+
+.departureHeader,
+.departureRow {
+  display:grid;
+  grid-template-columns:1.35fr 1.25fr .8fr .5fr .8fr .9fr;
+}
+
+.columnHeader {
+  min-height:4.2vh;
+  background:#102f4c;
+  color:var(--cyan);
+  font-size:.72vw;
+  font-weight:800;
+  letter-spacing:.05em;
+  align-items:center;
+  border-bottom:1px solid var(--line);
+}
+
+.columnHeader > div,
+.flightRow > div {
+  padding:0 .45vw;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  display:flex;
+  align-items:center;
+}
+
+.tableBody {
+  flex:1;
+  min-height:0;
+  overflow:hidden;
+  --rows:20;
+}
+
+.flightRow {
+  height:calc(100% / var(--rows));
+  min-height:0;
+  font-size:.76vw;
+  border-bottom:1px solid var(--line);
+}
+
+.flightRow:nth-child(even) {
+  background:rgba(255,255,255,.035);
+}
+
+.flight {
+  font-weight:800;
+  color:white;
+}
+
+.place {
+  color:#e7f2fb;
+}
+
+.number {
+  justify-content:center;
+  font-weight:700;
+}
+
+.time {
+  color:var(--gold);
+  font-weight:800;
+}
+
+.status {
+  font-weight:800;
+}
+
+.onTime {
+  color:var(--green);
+}
+
+.delayed {
+  color:var(--orange);
+}
+
+.cancelled {
+  color:var(--red);
+}
+
+.empty {
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--muted);
+  font-size:1vw;
+}
+
+/* FOOTER */
+
+footer {
+  height:5vh;
+  min-height:34px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  padding:0 1.5vw;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:.68vw;
+  letter-spacing:.05em;
+}
+
+footer .center {
+  text-align:center;
+  color:var(--cyan);
+  font-weight:700;
+}
+
+footer .right {
+  text-align:right;
+}
+
+@media(max-width:1100px) {
+  .flightRow {font-size:.72vw;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="brand">
+    <div>
+      <div class="mbj">MBJ</div>
+      <div class="jamaica">JAMAICA</div>
+    </div>
+  </div>
+
+  <div class="airport">
+    <h1>SANGSTER INTERNATIONAL AIRPORT</h1>
+    <div class="location">MONTEGO BAY • JAMAICA</div>
+    <div class="live">● LIVE DATA</div>
+  </div>
+
+  <div class="clockBox">
+    <div class="clock" id="clock">--:-- --</div>
+    <div class="date" id="date"></div>
+  </div>
+
+</header>
+
+<main class="boards">
+
+  <!-- ARRIVALS -->
+
+  <section class="panel">
+
+    <div class="panelTitle">
+      <h2>✈ ARRIVALS</h2>
+      <span>OFFICIAL MBJ DATA</span>
+    </div>
+
+    <div class="columnHeader arrivalHeader">
+      <div>AIRLINE / FLIGHT</div>
+      <div>FROM</div>
+      <div>BAG</div>
+      <div>TIME</div>
+      <div>ACTUAL</div>
+    </div>
+
+    <div class="tableBody" id="arrivalBody"></div>
+
+  </section>
+
+  <!-- DEPARTURES -->
+
+  <section class="panel">
+
+    <div class="panelTitle">
+      <h2>DEPARTURES ✈</h2>
+      <span>OFFICIAL MBJ DATA</span>
+    </div>
+
+    <div class="columnHeader departureHeader">
+      <div>AIRLINE / FLIGHT</div>
+      <div>TO</div>
+      <div>CHECK-IN</div>
+      <div>GATE</div>
+      <div>TIME</div>
+      <div>STATUS</div>
+    </div>
+
+    <div class="tableBody" id="departureBody"></div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div>Source: Sangster International Airport</div>
+  <div class="center">HALIFAX VIRTUAL MEDIA MASTERS & EVENTS LTD.</div>
+  <div class="right" id="updated">Loading flight data...</div>
+</footer>
+
+<script>
+
+function escapeHTML(value) {
+  return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+/* JAMAICA CLOCK */
+
+function updateClock() {
+
+  const now = new Date();
+
+  document.getElementById("clock").textContent =
+    new Intl.DateTimeFormat("en-US",{
+      timeZone:"America/Jamaica",
+      hour:"numeric",
+      minute:"2-digit",
+      second:"2-digit",
+      hour12:true
+    }).format(now);
+
+  document.getElementById("date").textContent =
+    new Intl.DateTimeFormat("en-US",{
+      timeZone:"America/Jamaica",
+      weekday:"long",
+      month:"long",
+      day:"numeric",
+      year:"numeric"
+    }).format(now);
+}
+
+updateClock();
+setInterval(updateClock,1000);
+
+
+/* ARRIVALS */
+
+function renderArrivals(flights) {
+
+  const body=document.getElementById("arrivalBody");
+
+  if(!flights || !flights.length) {
+    body.innerHTML='<div class="empty">No arrival information available.</div>';
+    return;
+  }
+
+  body.style.setProperty("--rows",flights.length);
+
+  body.innerHTML=flights.map(f=>`
+
+    <div class="flightRow arrivalRow">
+
+      <div class="flight">
+        ${escapeHTML(f.airlineFlight || "—")}
+      </div>
+
+      <div class="place">
+        ${escapeHTML(f.from || "—")}
+      </div>
+
+      <div class="number">
+        ${escapeHTML(f.baggage || "—")}
+      </div>
+
+      <div class="time">
+        ${escapeHTML(f.scheduledTime || "—")}
+      </div>
+
+      <div class="status">
+        ${escapeHTML(f.actualTime || f.status || "—")}
+      </div>
+
+    </div>
+
+  `).join("");
+}
+
+
+/* DEPARTURES */
+
+function statusClass(status) {
+
+  const s=(status || "").toLowerCase();
+
+  if(s.includes("cancel")) return "cancelled";
+  if(s.includes("delay")) return "delayed";
+  if(s.includes("on-time") || s.includes("on time")) return "onTime";
+
+  return "";
+}
+
+function renderDepartures(flights) {
+
+  const body=document.getElementById("departureBody");
+
+  if(!flights || !flights.length) {
+    body.innerHTML='<div class="empty">No departure information available.</div>';
+    return;
+  }
+
+  body.style.setProperty("--rows",flights.length);
+
+  body.innerHTML=flights.map(f=>{
+
+    const displayStatus =
+      f.actualTime
+        ? `${f.actualTime}${f.status ? " • "+f.status : ""}`
+        : (f.status || "—");
+
+    return `
+
+      <div class="flightRow departureRow">
+
+        <div class="flight">
+          ${escapeHTML(f.airlineFlight || "—")}
+        </div>
+
+        <div class="place">
+          ${escapeHTML(f.to || "—")}
+        </div>
+
+        <div class="number">
+          ${escapeHTML(f.checkInCounters || "—")}
+        </div>
+
+        <div class="number">
+          ${escapeHTML(f.gate || "—")}
+        </div>
+
+        <div class="time">
+          ${escapeHTML(f.scheduledTime || "—")}
+        </div>
+
+        <div class="status ${statusClass(f.status)}">
+          ${escapeHTML(displayStatus)}
+        </div>
+
+      </div>
+
+    `;
+
+  }).join("");
+}
+
+
+/* LOAD BOTH JSON FILES */
+
+async function loadBoards() {
+
+  try {
+
+    const cacheBust=Date.now();
+
+    const [arrivalResponse,departureResponse] =
+      await Promise.all([
+
+        fetch(`flights.json?t=${cacheBust}`,{cache:"no-store"}),
+
+        fetch(`departures.json?t=${cacheBust}`,{cache:"no-store"})
+
+      ]);
+
+    if(!arrivalResponse.ok || !departureResponse.ok)
+      throw new Error("Flight data request failed.");
+
+    const arrivals=await arrivalResponse.json();
+    const departures=await departureResponse.json();
+
+    renderArrivals(arrivals.flights || []);
+    renderDepartures(departures.flights || []);
+
+    const updated =
+      arrivals.updated ||
+      departures.updated;
+
+    if(updated) {
+
+      const updateDate=new Date(updated);
+
+      document.getElementById("updated").textContent =
+        "DATA UPDATED " +
+        new Intl.DateTimeFormat("en-US",{
+          timeZone:"America/Jamaica",
+          hour:"numeric",
+          minute:"2-digit",
+          hour12:true
+        }).format(updateDate);
+
+    }
+
+  }
+  catch(error) {
+
+    console.error(error);
+
+    document.getElementById("updated").textContent =
+      "DATA UPDATE UNAVAILABLE";
+
+  }
+
+}
+
+loadBoards();
+
+/* Reload local JSON every 5 minutes.
+   GitHub updates the source files hourly. */
+
+setInterval(loadBoards,300000);
+
+
+/* KIOSK TOUCH PROTECTION */
+
+document.addEventListener("contextmenu",e=>e.preventDefault());
+
+document.addEventListener("selectstart",e=>e.preventDefault());
+
+document.addEventListener("dragstart",e=>e.preventDefault());
+
+</script>
+
+</body>
+</html>
