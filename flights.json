@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-07T19:24:54.315Z",
+  "updated": "2026-09-07T20:26:54.389Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -58,7 +58,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "2",
+      "baggage": "4",
       "scheduledTime": "11:34 AM",
       "actualTime": "2:26 PM",
       "status": ""
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "TUI Airways TOM44",
       "from": "London-Gatwick",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "3:05 PM",
       "actualTime": "2:57 PM",
       "status": ""

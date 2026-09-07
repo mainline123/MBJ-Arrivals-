@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-07T19:24:54.315Z",
+  "updated": "2026-09-07T20:26:54.389Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -156,9 +156,9 @@
       "to": "Miami",
       "checkInCounters": "65 - 78",
       "gate": "9",
-      "scheduledTime": "2:52 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "2:52 PM 3:00 PM",
+      "actualTime": "3:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2039",
@@ -209,10 +209,10 @@
       "airlineFlight": "American Airlines AA2618",
       "to": "Miami",
       "checkInCounters": "",
-      "gate": "13",
-      "scheduledTime": "5:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "gate": "9",
+      "scheduledTime": "5:08 PM 6:36 PM",
+      "actualTime": "6:36 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6326",
