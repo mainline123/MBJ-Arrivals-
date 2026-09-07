@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-07T20:26:54.389Z",
+  "updated": "2026-09-07T21:26:10.309Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "3:34 PM",
       "actualTime": "3:21 PM",
       "status": ""
@@ -204,7 +204,7 @@
       "from": "Bogota",
       "baggage": "3",
       "scheduledTime": "6:28 PM",
-      "actualTime": "",
+      "actualTime": "6:08 PM",
       "status": ""
     },
     {
