@@ -7,9 +7,7 @@
 
 <style>
 
-/* =========================
-   KIOSK TOUCH PROTECTION
-   ========================= */
+/* KIOSK TOUCH PROTECTION */
 
 html,
 body,
@@ -49,9 +47,7 @@ html,body{
   background:linear-gradient(180deg,#06435e 0%,#021827 100%);
 }
 
-/* =========================
-   TOP HEADER
-   ========================= */
+/* TOP HEADER */
 
 .header{
   height:12vh;
@@ -105,25 +101,11 @@ html,body{
 }
 
 .flag:before{
-  clip-path:polygon(
-    0 0,
-    12% 0,
-    100% 88%,
-    100% 100%,
-    88% 100%,
-    0 12%
-  );
+  clip-path:polygon(0 0,12% 0,100% 88%,100% 100%,88% 100%,0 12%);
 }
 
 .flag:after{
-  clip-path:polygon(
-    88% 0,
-    100% 0,
-    100% 12%,
-    12% 100%,
-    0 100%,
-    0 88%
-  );
+  clip-path:polygon(88% 0,100% 0,100% 12%,12% 100%,0 100%,0 88%);
 }
 
 .flagBlackTop,
@@ -173,6 +155,17 @@ html,body{
   text-align:right;
 }
 
+/* NEW RETURN TO MENU TEXT */
+
+.returnMenu{
+  color:#ffd326;
+  font-size:.78vh;
+  font-weight:900;
+  letter-spacing:.06em;
+  margin-bottom:.45vh;
+  white-space:nowrap;
+}
+
 .liveBadge{
   display:inline-block;
   background:#169447;
@@ -203,9 +196,7 @@ html,body{
   font-size:.7vh;
 }
 
-/* =========================
-   ARRIVALS BANNER
-   ========================= */
+/* ARRIVALS BANNER */
 
 .arrivalsHero{
   height:6.5vh;
@@ -257,9 +248,7 @@ html,body{
   font-weight:bold;
 }
 
-/* =========================
-   FLIGHT BOARD
-   ========================= */
+/* FLIGHT BOARD */
 
 .board{
   flex:1;
@@ -371,9 +360,7 @@ html,body{
   font-weight:900;
 }
 
-/* =========================
-   BOTTOM BAR
-   ========================= */
+/* BOTTOM BAR */
 
 .bottomBar{
   height:3.2vh;
@@ -406,15 +393,11 @@ html,body{
 
 <div class="screen">
 
-  <!-- HEADER -->
-
   <div class="header">
 
     <div class="leftTop">
 
-      <div class="code">
-        MBJ
-      </div>
+      <div class="code">MBJ</div>
 
       <div class="jamaicaLine">
 
@@ -423,9 +406,7 @@ html,body{
           <div class="flagBlackBottom"></div>
         </div>
 
-        <div class="jamaicaLabel">
-          JAMAICA
-        </div>
+        <div class="jamaicaLabel">JAMAICA</div>
 
       </div>
 
@@ -449,17 +430,17 @@ html,body{
 
     <div class="rightTop">
 
+      <div class="returnMenu">
+        ← RETURN TO MENU
+      </div>
+
       <div class="liveBadge">
         ● LIVE DATA
       </div>
 
-      <div class="clock" id="clock">
-        --:--
-      </div>
+      <div class="clock" id="clock">--:--</div>
 
-      <div class="date" id="date">
-        --
-      </div>
+      <div class="date" id="date">--</div>
 
       <div class="jamaicaTime">
         Jamaica time
@@ -470,13 +451,9 @@ html,body{
   </div>
 
 
-  <!-- ARRIVALS -->
-
   <div class="arrivalsHero">
 
-    <div class="planeBox">
-      ✈
-    </div>
+    <div class="planeBox">✈</div>
 
     <div class="arrivalsTitle">
       ARRIVALS
@@ -497,19 +474,12 @@ html,body{
   </div>
 
 
-  <!-- FLIGHT BOARD -->
-
   <div class="board">
 
     <div class="tableHead">
 
-      <div>
-        AIRLINE/FLIGHT
-      </div>
-
-      <div>
-        FROM
-      </div>
+      <div>AIRLINE/FLIGHT</div>
+      <div>FROM</div>
 
       <div style="text-align:center;">
         BAGGAGE<br>CLAIM
@@ -537,8 +507,6 @@ html,body{
   </div>
 
 
-  <!-- CREDIT BAR -->
-
   <div class="bottomBar">
 
     <div class="company">
@@ -556,73 +524,48 @@ html,body{
 
 <script>
 
-/* =========================
-   KIOSK LONG-PRESS PROTECTION
-   ========================= */
+/* KIOSK LONG-PRESS PROTECTION */
 
-document.addEventListener(
-  "contextmenu",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("contextmenu", function(event){
+  event.preventDefault();
+});
 
-document.addEventListener(
-  "selectstart",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("selectstart", function(event){
+  event.preventDefault();
+});
 
-document.addEventListener(
-  "dragstart",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("dragstart", function(event){
+  event.preventDefault();
+});
 
 
-/* =========================
-   JAMAICA CLOCK
-   ========================= */
+/* JAMAICA CLOCK */
 
 function updateClock(){
 
   const now = new Date();
 
   document.getElementById("clock").textContent =
-    now.toLocaleTimeString(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        hour:"numeric",
-        minute:"2-digit"
-      }
-    );
+    now.toLocaleTimeString("en-US",{
+      timeZone:"America/Jamaica",
+      hour:"numeric",
+      minute:"2-digit"
+    });
 
   document.getElementById("date").textContent =
-    now.toLocaleDateString(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        weekday:"long",
-        month:"long",
-        day:"numeric"
-      }
-    );
+    now.toLocaleDateString("en-US",{
+      timeZone:"America/Jamaica",
+      weekday:"long",
+      month:"long",
+      day:"numeric"
+    });
 }
 
 updateClock();
-
-setInterval(
-  updateClock,
-  1000
-);
+setInterval(updateClock,1000);
 
 
-/* =========================
-   HTML SAFETY
-   ========================= */
+/* HTML SAFETY */
 
 function escapeHTML(value){
 
@@ -635,38 +578,25 @@ function escapeHTML(value){
 }
 
 
-/* =========================
-   LOAD ARRIVALS
-   ========================= */
+/* LOAD ARRIVALS */
 
 async function loadFlights(){
 
   const container =
-    document.getElementById(
-      "flightData"
-    );
+    document.getElementById("flightData");
 
   try{
 
     const response =
-      await fetch(
-        "flights.json?t=" +
-        Date.now()
-      );
+      await fetch("flights.json?t=" + Date.now());
 
     if(!response.ok){
-
-      throw new Error(
-        "Unable to load flights.json"
-      );
+      throw new Error("Unable to load flights.json");
     }
 
-    const data =
-      await response.json();
+    const data = await response.json();
 
-    const flights =
-      data.flights || [];
-
+    const flights = data.flights || [];
 
     if(!flights.length){
 
@@ -679,10 +609,6 @@ async function loadFlights(){
     }
 
 
-    /*
-      FIT EVERY ARRIVAL ON THE SCREEN
-    */
-
     container.style.setProperty(
       "--rows",
       flights.length
@@ -694,17 +620,11 @@ async function loadFlights(){
     );
 
     if(flights.length > 25){
-
-      container.classList.add(
-        "many"
-      );
+      container.classList.add("many");
     }
 
     if(flights.length > 34){
-
-      container.classList.add(
-        "veryMany"
-      );
+      container.classList.add("veryMany");
     }
 
 
@@ -735,7 +655,6 @@ async function loadFlights(){
           f.actualTime ||
           f.status ||
           "—";
-
 
         return `
 
@@ -771,28 +690,18 @@ async function loadFlights(){
     if(data.updated){
 
       const updatedDate =
-        new Date(
-          data.updated
+        new Date(data.updated);
+
+      document.getElementById("updated").textContent =
+        "Flight data updated: " +
+        updatedDate.toLocaleTimeString(
+          "en-US",
+          {
+            timeZone:"America/Jamaica",
+            hour:"numeric",
+            minute:"2-digit"
+          }
         );
-
-      document
-        .getElementById("updated")
-        .textContent =
-
-          "Flight data updated: " +
-
-          updatedDate
-            .toLocaleTimeString(
-              "en-US",
-              {
-                timeZone:
-                  "America/Jamaica",
-                hour:
-                  "numeric",
-                minute:
-                  "2-digit"
-              }
-            );
     }
 
   }
@@ -809,22 +718,9 @@ async function loadFlights(){
 }
 
 
-/* LOAD NOW */
-
 loadFlights();
 
-
-/*
-  Re-read flights.json every 5 minutes.
-
-  This does NOT run GitHub Actions
-  and does NOT use Apify.
-*/
-
-setInterval(
-  loadFlights,
-  300000
-);
+setInterval(loadFlights,300000);
 
 </script>
 
