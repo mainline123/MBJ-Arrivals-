@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-07T21:26:10.309Z",
+  "updated": "2026-09-07T22:25:46.408Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -219,9 +219,9 @@
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
       "gate": "10",
-      "scheduledTime": "5:47 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "5:47 PM 6:48 PM",
+      "actualTime": "6:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",
