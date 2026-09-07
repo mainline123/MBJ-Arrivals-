@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBJ Live Flight Board</title>
+<title>MBJ Live Arrivals & Departures</title>
 
 <style>
 :root{
@@ -41,7 +41,12 @@ html,body{
   -webkit-tap-highlight-color:transparent;
 }
 
-/* ================= HEADER ================= */
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
 
 header{
   height:9vh;
@@ -116,8 +121,7 @@ header{
   margin-top:.25vh;
 }
 
-
-/* ================= TWO BOARDS ================= */
+/* BOARDS */
 
 .boards{
   height:87vh;
@@ -137,9 +141,6 @@ header{
 
   border:1px solid var(--line);
 }
-
-
-/* ================= BOARD TITLES ================= */
 
 .panelTitle{
   height:5.3vh;
@@ -164,11 +165,9 @@ header{
 .panelTitle span{
   font-size:.6vw;
   font-weight:700;
-  color:white;
 }
 
-
-/* ================= COLUMNS ================= */
+/* COLUMNS */
 
 .arrivalHeader,
 .arrivalRow{
@@ -191,7 +190,6 @@ header{
 
   font-size:.76vw;
   font-weight:900;
-  letter-spacing:.03em;
 
   border-bottom:1px solid var(--line);
 }
@@ -208,8 +206,7 @@ header{
   white-space:nowrap;
 }
 
-
-/* ================= ROWS ================= */
+/* FLIGHT ROWS */
 
 .tableBody{
   flex:1;
@@ -278,8 +275,7 @@ header{
   color:var(--red);
 }
 
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
   height:4vh;
@@ -307,7 +303,6 @@ footer .right{
   text-align:right;
   color:white;
 }
-
 </style>
 </head>
 
@@ -321,14 +316,27 @@ footer .right{
   </div>
 
   <div class="airport">
+
     <h1>SANGSTER INTERNATIONAL AIRPORT</h1>
-    <div class="location">MONTEGO BAY • JAMAICA</div>
-    <div class="live">● LIVE DATA</div>
+
+    <div class="location">
+      MONTEGO BAY • JAMAICA
+    </div>
+
+    <div class="live">
+      ● LIVE DATA
+    </div>
+
   </div>
 
   <div class="clockBox">
-    <div class="clock" id="clock">--:-- --</div>
+
+    <div class="clock" id="clock">
+      --:-- --
+    </div>
+
     <div class="date" id="date"></div>
+
   </div>
 
 </header>
@@ -346,11 +354,13 @@ footer .right{
   </div>
 
   <div class="columnHeader arrivalHeader">
+
     <div>AIRLINE / FLIGHT</div>
     <div>FROM</div>
     <div>BAG</div>
     <div>TIME</div>
     <div>ACTUAL</div>
+
   </div>
 
   <div class="tableBody" id="arrivalBody"></div>
@@ -368,12 +378,14 @@ footer .right{
   </div>
 
   <div class="columnHeader departureHeader">
+
     <div>AIRLINE / FLIGHT</div>
     <div>TO</div>
     <div>CHECK-IN</div>
     <div>GATE</div>
     <div>TIME</div>
     <div>STATUS</div>
+
   </div>
 
   <div class="tableBody" id="departureBody"></div>
@@ -404,6 +416,13 @@ footer .right{
 
 const MAX_ROWS = 20;
 
+/* Keep several recent flights visible,
+   then fill the board with upcoming flights. */
+
+const KEEP_PREVIOUS = 4;
+
+
+/* SAFE TEXT */
 
 function escapeHTML(value){
 
@@ -424,6 +443,7 @@ function updateClock(){
   const now = new Date();
 
   document.getElementById("clock").textContent =
+
     new Intl.DateTimeFormat(
       "en-US",
       {
@@ -437,6 +457,7 @@ function updateClock(){
 
 
   document.getElementById("date").textContent =
+
     new Intl.DateTimeFormat(
       "en-US",
       {
@@ -451,7 +472,181 @@ function updateClock(){
 }
 
 updateClock();
+
 setInterval(updateClock,1000);
+
+
+/* GET CURRENT JAMAICA MINUTES */
+
+function jamaicaMinutesNow(){
+
+  const parts =
+
+    new Intl.DateTimeFormat(
+      "en-US",
+      {
+        timeZone:"America/Jamaica",
+        hour:"numeric",
+        minute:"2-digit",
+        hour12:false
+      }
+    ).formatToParts(new Date());
+
+
+  const hour =
+    Number(
+      parts.find(p=>p.type==="hour")?.value || 0
+    );
+
+
+  const minute =
+    Number(
+      parts.find(p=>p.type==="minute")?.value || 0
+    );
+
+
+  return (hour % 24) * 60 + minute;
+
+}
+
+
+/* CONVERT 12-HOUR FLIGHT TIME TO MINUTES */
+
+function flightTimeMinutes(timeString){
+
+  if(!timeString)
+    return null;
+
+
+  const match =
+
+    String(timeString)
+      .trim()
+      .match(
+        /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i
+      );
+
+
+  if(!match)
+    return null;
+
+
+  let hour =
+    Number(match[1]);
+
+
+  const minute =
+    Number(match[2]);
+
+
+  const ampm =
+    match[3].toUpperCase();
+
+
+  if(hour === 12)
+    hour = 0;
+
+
+  if(ampm === "PM")
+    hour += 12;
+
+
+  return hour * 60 + minute;
+
+}
+
+
+/* MOVING FLIGHT WINDOW */
+
+function getCurrentFlights(allFlights){
+
+  const flights =
+    Array.isArray(allFlights)
+      ? allFlights
+      : [];
+
+
+  if(flights.length <= MAX_ROWS)
+    return flights;
+
+
+  const now =
+    jamaicaMinutesNow();
+
+
+  /*
+    Find the first flight whose scheduled time
+    has not passed yet.
+  */
+
+  let nextIndex =
+    flights.findIndex(f=>{
+
+      const mins =
+        flightTimeMinutes(
+          f.scheduledTime
+        );
+
+      return (
+        mins !== null &&
+        mins >= now
+      );
+
+    });
+
+
+  /*
+    If all flights have passed,
+    show the last MAX_ROWS flights.
+  */
+
+  if(nextIndex === -1){
+
+    return flights.slice(
+      -MAX_ROWS
+    );
+
+  }
+
+
+  /*
+    Keep a few recently scheduled flights
+    above the upcoming flights.
+  */
+
+  let start =
+
+    Math.max(
+      0,
+      nextIndex - KEEP_PREVIOUS
+    );
+
+
+  /*
+    Make sure we still fill 20 rows
+    whenever enough flights exist.
+  */
+
+  if(
+    start + MAX_ROWS >
+    flights.length
+  ){
+
+    start =
+      Math.max(
+        0,
+        flights.length - MAX_ROWS
+      );
+
+  }
+
+
+  return flights.slice(
+    start,
+    start + MAX_ROWS
+  );
+
+}
 
 
 /* ARRIVALS */
@@ -459,68 +654,86 @@ setInterval(updateClock,1000);
 function renderArrivals(allFlights){
 
   const body =
-    document.getElementById("arrivalBody");
+    document.getElementById(
+      "arrivalBody"
+    );
+
 
   const flights =
-    (allFlights || []).slice(-MAX_ROWS);
+    getCurrentFlights(
+      allFlights || []
+    );
 
-  if(!flights.length){
 
-    body.innerHTML = "";
+  body.innerHTML =
 
-    return;
+    flights.map(f=>`
 
-  }
+      <div class="flightRow arrivalRow">
 
-  body.innerHTML = flights.map(f => `
+        <div class="flight">
+          ${escapeHTML(
+            f.airlineFlight || "—"
+          )}
+        </div>
 
-    <div class="flightRow arrivalRow">
+        <div class="place">
+          ${escapeHTML(
+            f.from || "—"
+          )}
+        </div>
 
-      <div class="flight">
-        ${escapeHTML(f.airlineFlight || "—")}
+        <div class="number">
+          ${escapeHTML(
+            f.baggage || "—"
+          )}
+        </div>
+
+        <div class="time">
+          ${escapeHTML(
+            f.scheduledTime || "—"
+          )}
+        </div>
+
+        <div class="actual">
+          ${escapeHTML(
+            f.actualTime ||
+            f.status ||
+            "—"
+          )}
+        </div>
+
       </div>
 
-      <div class="place">
-        ${escapeHTML(f.from || "—")}
-      </div>
-
-      <div class="number">
-        ${escapeHTML(f.baggage || "—")}
-      </div>
-
-      <div class="time">
-        ${escapeHTML(f.scheduledTime || "—")}
-      </div>
-
-      <div class="actual">
-        ${escapeHTML(f.actualTime || f.status || "—")}
-      </div>
-
-    </div>
-
-  `).join("");
+    `).join("");
 
 }
 
 
-/* STATUS COLOUR */
+/* STATUS COLOURS */
 
 function statusClass(status){
 
   const s =
-    String(status || "").toLowerCase();
+    String(
+      status || ""
+    ).toLowerCase();
+
 
   if(s.includes("cancel"))
     return "cancelled";
 
+
   if(s.includes("delay"))
     return "delayed";
+
 
   if(
     s.includes("on-time") ||
     s.includes("on time")
   )
     return "onTime";
+
 
   return "";
 
@@ -532,60 +745,85 @@ function statusClass(status){
 function renderDepartures(allFlights){
 
   const body =
-    document.getElementById("departureBody");
+    document.getElementById(
+      "departureBody"
+    );
+
 
   const flights =
-    (allFlights || []).slice(-MAX_ROWS);
-
-  if(!flights.length){
-
-    body.innerHTML = "";
-
-    return;
-
-  }
+    getCurrentFlights(
+      allFlights || []
+    );
 
 
-  body.innerHTML = flights.map(f => {
+  body.innerHTML =
 
-    const displayStatus =
-      f.actualTime
-        ? `${f.actualTime}${f.status ? " • " + f.status : ""}`
-        : (f.status || "—");
+    flights.map(f=>{
 
-    return `
 
-      <div class="flightRow departureRow">
+      const displayStatus =
 
-        <div class="flight">
-          ${escapeHTML(f.airlineFlight || "—")}
+        f.actualTime
+
+          ? `${f.actualTime}${
+              f.status
+                ? " • " + f.status
+                : ""
+            }`
+
+          : (
+              f.status ||
+              "—"
+            );
+
+
+      return `
+
+        <div class="flightRow departureRow">
+
+          <div class="flight">
+            ${escapeHTML(
+              f.airlineFlight || "—"
+            )}
+          </div>
+
+          <div class="place">
+            ${escapeHTML(
+              f.to || "—"
+            )}
+          </div>
+
+          <div class="number">
+            ${escapeHTML(
+              f.checkInCounters || "—"
+            )}
+          </div>
+
+          <div class="number">
+            ${escapeHTML(
+              f.gate || "—"
+            )}
+          </div>
+
+          <div class="time">
+            ${escapeHTML(
+              f.scheduledTime || "—"
+            )}
+          </div>
+
+          <div class="status ${statusClass(
+            f.status
+          )}">
+            ${escapeHTML(
+              displayStatus
+            )}
+          </div>
+
         </div>
 
-        <div class="place">
-          ${escapeHTML(f.to || "—")}
-        </div>
+      `;
 
-        <div class="number">
-          ${escapeHTML(f.checkInCounters || "—")}
-        </div>
-
-        <div class="number">
-          ${escapeHTML(f.gate || "—")}
-        </div>
-
-        <div class="time">
-          ${escapeHTML(f.scheduledTime || "—")}
-        </div>
-
-        <div class="status ${statusClass(f.status)}">
-          ${escapeHTML(displayStatus)}
-        </div>
-
-      </div>
-
-    `;
-
-  }).join("");
+    }).join("");
 
 }
 
@@ -596,9 +834,15 @@ async function loadBoards(){
 
   try{
 
-    const stamp = Date.now();
+    const stamp =
+      Date.now();
 
-    const [arrivalsResponse, departuresResponse] =
+
+    const [
+      arrivalsResponse,
+      departuresResponse
+    ] =
+
       await Promise.all([
 
         fetch(
@@ -619,13 +863,16 @@ async function loadBoards(){
       !departuresResponse.ok
     ){
 
-      throw new Error("Unable to retrieve flight data");
+      throw new Error(
+        "Unable to retrieve flight data"
+      );
 
     }
 
 
     const arrivals =
       await arrivalsResponse.json();
+
 
     const departures =
       await departuresResponse.json();
@@ -635,19 +882,23 @@ async function loadBoards(){
       arrivals.flights || []
     );
 
+
     renderDepartures(
       departures.flights || []
     );
 
 
     const updated =
+
       arrivals.updated ||
       departures.updated;
 
 
     if(updated){
 
-      document.getElementById("updated").textContent =
+      document.getElementById(
+        "updated"
+      ).textContent =
 
         "DATA UPDATED " +
 
@@ -659,7 +910,9 @@ async function loadBoards(){
             minute:"2-digit",
             hour12:true
           }
-        ).format(new Date(updated));
+        ).format(
+          new Date(updated)
+        );
 
     }
 
@@ -669,7 +922,11 @@ async function loadBoards(){
 
     console.error(error);
 
-    document.getElementById("updated").textContent =
+
+    document.getElementById(
+      "updated"
+    ).textContent =
+
       "DATA UPDATE UNAVAILABLE";
 
   }
@@ -679,26 +936,34 @@ async function loadBoards(){
 
 loadBoards();
 
-/* Check GitHub JSON every 5 minutes */
 
-setInterval(loadBoards,300000);
+/*
+  Re-read the JSON every 5 minutes.
+  This also moves the visible flight window
+  forward as the Jamaica time changes.
+*/
+
+setInterval(
+  loadBoards,
+  300000
+);
 
 
-/* KIOSK PROTECTION */
+/* KIOSK TOUCH PROTECTION */
 
 document.addEventListener(
   "contextmenu",
-  e => e.preventDefault()
+  e=>e.preventDefault()
 );
 
 document.addEventListener(
   "selectstart",
-  e => e.preventDefault()
+  e=>e.preventDefault()
 );
 
 document.addEventListener(
   "dragstart",
-  e => e.preventDefault()
+  e=>e.preventDefault()
 );
 
 </script>
