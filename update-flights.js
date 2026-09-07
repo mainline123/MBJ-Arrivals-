@@ -22,7 +22,9 @@ function clean(value = "") {
 
 async function fetchPage(url, label) {
 
-  console.log(`Fetching MBJ ${label} from official airport website...`);
+  console.log(
+    `Fetching MBJ ${label} from official airport website...`
+  );
 
   const response = await fetch(url, {
     headers: {
@@ -33,7 +35,10 @@ async function fetchPage(url, label) {
     }
   });
 
-  console.log(`${label} HTTP status:`, response.status);
+  console.log(
+    `${label} HTTP status:`,
+    response.status
+  );
 
   if (!response.ok) {
     throw new Error(
@@ -45,75 +50,12 @@ async function fetchPage(url, label) {
 }
 
 
-/* ==========================================
+/* ==================================================
    ARRIVALS
-   This preserves your working arrivals logic.
-   ========================================== */
+   PRESERVES YOUR CURRENT WORKING ARRIVALS PARSER
+   ================================================== */
 
 function parseArrivals(html) {
-
-  const rows =
-    html.match(/<tr[\s\S]*?<\/tr>/gi) || [];
-
-  const flights = [];
-
-  for (const row of rows) {
-
-    const tdMatches =
-      row.match(/<td[\s\S]*?<\/td>/gi);
-
-    if (!tdMatches) continue;
-
-    const cells =
-      tdMatches.map(clean);
-
-    if (cells.length < 5) continue;
-
-    const airlineFlight = cells[0];
-    const from = cells[1];
-    const baggage = cells[2];
-
-    const timeMatches =
-      cells[3].match(
-        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
-      ) || [];
-
-    const scheduledTime =
-      timeMatches[0] || cells[3] || "";
-
-    const actualTime =
-      timeMatches[1] || "";
-
-    let status =
-      cells[4] || "";
-
-    if (
-      /^\d{1,2}:\d{2}\s*(?:AM|PM)$/i.test(status)
-    ) {
-      status = "";
-    }
-
-    if (!airlineFlight || !from) continue;
-
-    flights.push({
-      airlineFlight,
-      from,
-      baggage,
-      scheduledTime,
-      actualTime,
-      status
-    });
-  }
-
-  return flights;
-}
-
-
-/* ==========================================
-   DEPARTURES
-   ========================================== */
-
-function parseDepartures(html) {
 
   const rows =
     html.match(/<tr[\s\S]*?<\/tr>/gi) || [];
@@ -135,21 +77,15 @@ function parseDepartures(html) {
     const airlineFlight =
       cells[0];
 
-    const to =
+    const from =
       cells[1];
 
-    /*
-      On the MBJ departures page the third
-      column is stored as the departure
-      location/gate field.
-    */
-
-    const gate =
-      cells[2] || "";
+    const baggage =
+      cells[2];
 
     /*
-      Extract scheduled and updated times
-      using the same safe approach as arrivals.
+      MBJ arrival time cell may contain
+      scheduled and updated/actual times.
     */
 
     const timeMatches =
@@ -158,17 +94,19 @@ function parseDepartures(html) {
       ) || [];
 
     const scheduledTime =
-      timeMatches[0] || cells[3] || "";
+      timeMatches[0] ||
+      cells[3] ||
+      "";
 
     const actualTime =
-      timeMatches[1] || "";
+      timeMatches[1] ||
+      "";
 
     let status =
       cells[4] || "";
 
     /*
-      Don't invent a status if MBJ gives
-      only another time value.
+      A time by itself is not a textual status.
     */
 
     if (
@@ -177,11 +115,165 @@ function parseDepartures(html) {
       status = "";
     }
 
-    if (!airlineFlight || !to) continue;
+    if (!airlineFlight || !from) {
+      continue;
+    }
+
+    flights.push({
+      airlineFlight,
+      from,
+      baggage,
+      scheduledTime,
+      actualTime,
+      status
+    });
+  }
+
+  return flights;
+}
+
+
+/* ==================================================
+   DEPARTURES
+   MBJ OFFICIAL COLUMN ORDER:
+
+   0 Airline/Flight
+   1 To
+   2 Check-In Counters
+   3 Gate
+   4 Time
+   5 Status
+   ================================================== */
+
+function parseDepartures(html) {
+
+  const rows =
+    html.match(/<tr[\s\S]*?<\/tr>/gi) || [];
+
+  const flights = [];
+
+  for (const row of rows) {
+
+    const tdMatches =
+      row.match(/<td[\s\S]*?<\/td>/gi);
+
+    if (!tdMatches) continue;
+
+    const cells =
+      tdMatches.map(clean);
+
+    /*
+      Departures requires six columns.
+    */
+
+    if (cells.length < 6) continue;
+
+
+    const airlineFlight =
+      cells[0];
+
+    const to =
+      cells[1];
+
+    const checkInCounters =
+      cells[2] || "";
+
+    const gate =
+      cells[3] || "";
+
+    const scheduledTime =
+      cells[4] || "";
+
+    const statusCell =
+      cells[5] || "";
+
+
+    /*
+      MBJ may put an updated departure time
+      inside the Status column.
+
+      Example from the official page:
+
+      Time:   12:38 PM
+      Status: 1:37 PM + orange indicator
+
+      We preserve that updated time.
+    */
+
+    const statusTimeMatches =
+      statusCell.match(
+        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
+      ) || [];
+
+    const actualTime =
+      statusTimeMatches[0] || "";
+
+
+    /*
+      Determine status from MBJ's HTML indicator.
+
+      The visible MBJ legend identifies:
+      green  = On-Time
+      orange = Delayed
+      red    = Cancelled
+
+      We inspect the original status TD
+      rather than inventing a status based
+      on the clock times.
+    */
+
+    const rawStatusTd =
+      tdMatches[5] || "";
+
+    let status = "";
+
+    const rawLower =
+      rawStatusTd.toLowerCase();
+
+
+    if (
+      rawLower.includes("cancel") ||
+      rawLower.includes("#ed0029") ||
+      rawLower.includes("rgb(237, 0, 41)")
+    ) {
+      status = "Cancelled";
+    }
+
+    else if (
+      rawLower.includes("delay") ||
+      rawLower.includes("#ff6600") ||
+      rawLower.includes("#ff6") ||
+      rawLower.includes("orange")
+    ) {
+      status = "Delayed";
+    }
+
+    else if (
+      rawLower.includes("on-time") ||
+      rawLower.includes("on time") ||
+      rawLower.includes("#009b4") ||
+      rawLower.includes("green")
+    ) {
+      status = "On-Time";
+    }
+
+
+    /*
+      If MBJ supplies an updated time in
+      the Status column but its HTML color
+      cannot be identified, retain the
+      updated time without inventing a label.
+    */
+
+    if (!airlineFlight || !to) {
+      continue;
+    }
+
 
     flights.push({
       airlineFlight,
       to,
+      checkInCounters,
       gate,
       scheduledTime,
       actualTime,
@@ -193,15 +285,15 @@ function parseDepartures(html) {
 }
 
 
-/* ==========================================
-   MAIN UPDATE
-   ========================================== */
+/* ==================================================
+   MAIN
+   ================================================== */
 
 async function main() {
 
-  /*
-    ARRIVALS
-  */
+  /* --------------------
+     ARRIVALS
+     -------------------- */
 
   const arrivalsHtml =
     await fetchPage(
@@ -217,6 +309,7 @@ async function main() {
     arrivals.length
   );
 
+
   if (arrivals.length === 0) {
 
     fs.writeFileSync(
@@ -230,9 +323,9 @@ async function main() {
   }
 
 
-  /*
-    DEPARTURES
-  */
+  /* --------------------
+     DEPARTURES
+     -------------------- */
 
   const departuresHtml =
     await fetchPage(
@@ -247,6 +340,7 @@ async function main() {
     "Departure flights extracted:",
     departures.length
   );
+
 
   if (departures.length === 0) {
 
@@ -265,26 +359,36 @@ async function main() {
     new Date().toISOString();
 
 
-  /*
-    WRITE ARRIVALS
-  */
+  /* --------------------
+     WRITE ARRIVALS
+     -------------------- */
 
   const arrivalsOutput = {
-    airport: "MBJ",
+
+    airport:
+      "MBJ",
+
     airportName:
       "Sangster International Airport",
+
     location:
       "Montego Bay, Jamaica",
+
     type:
       "arrivals",
+
     source:
       "Official MBJ Airport website",
+
     sourceUrl:
       ARRIVALS_URL,
+
     updated,
+
     flights:
       arrivals
   };
+
 
   fs.writeFileSync(
     "flights.json",
@@ -296,26 +400,36 @@ async function main() {
   );
 
 
-  /*
-    WRITE DEPARTURES
-  */
+  /* --------------------
+     WRITE DEPARTURES
+     -------------------- */
 
   const departuresOutput = {
-    airport: "MBJ",
+
+    airport:
+      "MBJ",
+
     airportName:
       "Sangster International Airport",
+
     location:
       "Montego Bay, Jamaica",
+
     type:
       "departures",
+
     source:
       "Official MBJ Airport website",
+
     sourceUrl:
       DEPARTURES_URL,
+
     updated,
+
     flights:
       departures
   };
+
 
   fs.writeFileSync(
     "departures.json",
@@ -327,9 +441,9 @@ async function main() {
   );
 
 
-  /*
-    LAST UPDATED
-  */
+  /* --------------------
+     LAST UPDATED
+     -------------------- */
 
   fs.writeFileSync(
     "last_updated.txt",
