@@ -1,0 +1,10 @@
+{
+  "airport": "MBJ",
+  "airportName": "Sangster International Airport",
+  "location": "Montego Bay, Jamaica",
+  "type": "departures",
+  "source": "Official MBJ Airport website",
+  "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
+  "updated": "",
+  "flights": []
+}
