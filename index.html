@@ -34,7 +34,7 @@ html, body {
   height: 15vh;
   min-height: 15vh;
   display: grid;
-  grid-template-columns: 30% 44% 26%;
+  grid-template-columns: 27% 47% 26%;
   align-items: center;
   padding: 1.2vh 3vw;
   background: #07182c;
@@ -115,7 +115,7 @@ html, body {
   line-height: 1.2;
 }
 
-/* FLIGHT BOARD */
+/* BOARD */
 .board {
   flex: 1;
   min-height: 0;
@@ -127,15 +127,23 @@ html, body {
   flex-direction: column;
 }
 
+/*
+   FLIGHT gets the most room.
+   FROM gets the second-most.
+*/
+.tableHead,
+.flightRow {
+  display: grid;
+  grid-template-columns: 1.75fr 1.85fr .80fr 1.05fr 1.05fr;
+}
+
 .tableHead {
   height: 4.5vh;
   min-height: 4.5vh;
   padding: 0 1.8vw;
-  display: grid;
-  grid-template-columns: 1.15fr 1.75fr 1.85fr .55fr 1.05fr;
   align-items: center;
   background: #0a4d73;
-  font-size: 1.15vh;
+  font-size: 1.05vh;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -150,21 +158,15 @@ html, body {
 .flightRow {
   min-height: 5.15vh;
   padding: .45vh 1.8vw;
-  display: grid;
-  grid-template-columns: 1.15fr 1.75fr 1.85fr .55fr 1.05fr;
   align-items: center;
   border-bottom: 1px solid #d5e1e8;
   color: #092d47;
-  font-size: 1.28vh;
+  font-size: 1.25vh;
   font-weight: 800;
 }
 
 .flightRow:nth-child(even) {
   background: #eaf4f8;
-}
-
-.scheduled {
-  font-weight: 900;
 }
 
 .flight {
@@ -182,7 +184,12 @@ html, body {
   font-weight: 900;
 }
 
-.actual {
+.time {
+  font-weight: 900;
+  color: #092d47;
+}
+
+.status {
   color: #07813e;
   font-weight: 900;
 }
@@ -195,7 +202,7 @@ html, body {
   font-weight: 900;
 }
 
-/* SMALL FOOTER */
+/* FOOTER */
 .footer {
   height: 5vh;
   min-height: 5vh;
@@ -262,19 +269,17 @@ html, body {
   <div class="board">
 
     <div class="tableHead">
-      <div>SCHEDULED</div>
       <div>FLIGHT</div>
-      <div>ORIGIN</div>
-      <div style="text-align:center;">BAG</div>
-      <div>ACTUAL</div>
+      <div>FROM</div>
+      <div style="text-align:center;">BAGGAGE</div>
+      <div>TIME</div>
+      <div>STATUS</div>
     </div>
 
     <div class="tableBody" id="flightData">
-
       <div class="loading">
         Loading MBJ arrivals...
       </div>
-
     </div>
 
   </div>
@@ -343,11 +348,11 @@ async function loadFlights() {
 
     container.innerHTML = flights.map(f => {
 
-      const scheduled =
-        f.scheduledTime || f.time || "--";
-
-      const actual =
-        f.actualTime || "—";
+      /*
+       Keep MBJ terminology:
+       scheduledTime = TIME
+       actualTime = STATUS field returned by MBJ
+      */
 
       const flight =
         f.airlineFlight || f.flight || "--";
@@ -358,12 +363,14 @@ async function loadFlights() {
       const bag =
         f.baggage || f.bag || "—";
 
+      const time =
+        f.scheduledTime || f.time || "—";
+
+      const status =
+        f.actualTime || f.status || "—";
+
       return `
         <div class="flightRow">
-
-          <div class="scheduled">
-            ${scheduled}
-          </div>
 
           <div class="flight">
             ${flight}
@@ -377,8 +384,12 @@ async function loadFlights() {
             ${bag}
           </div>
 
-          <div class="actual">
-            ${actual}
+          <div class="time">
+            ${time}
+          </div>
+
+          <div class="status">
+            ${status}
           </div>
 
         </div>
@@ -410,8 +421,8 @@ async function loadFlights() {
 
 loadFlights();
 
-/* Reads the existing JSON again every five minutes.
-   This does NOT trigger an Apify run. */
+/* Reloads our existing JSON every 5 minutes.
+   This does NOT trigger Apify. */
 setInterval(loadFlights, 300000);
 
 </script>
