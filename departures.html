@@ -7,9 +7,7 @@
 
 <style>
 
-/* =========================
-   KIOSK TOUCH PROTECTION
-   ========================= */
+/* KIOSK TOUCH PROTECTION */
 
 html,
 body,
@@ -103,25 +101,11 @@ html,body{
 }
 
 .flag:before{
-  clip-path:polygon(
-    0 0,
-    12% 0,
-    100% 88%,
-    100% 100%,
-    88% 100%,
-    0 12%
-  );
+  clip-path:polygon(0 0,12% 0,100% 88%,100% 100%,88% 100%,0 12%);
 }
 
 .flag:after{
-  clip-path:polygon(
-    88% 0,
-    100% 0,
-    100% 12%,
-    12% 100%,
-    0 100%,
-    0 88%
-  );
+  clip-path:polygon(88% 0,100% 0,100% 12%,12% 100%,0 100%,0 88%);
 }
 
 .flagBlackTop,
@@ -169,6 +153,17 @@ html,body{
 
 .rightTop{
   text-align:right;
+}
+
+/* RETURN TO MENU */
+
+.returnMenu{
+  color:#ffd326;
+  font-size:.78vh;
+  font-weight:900;
+  letter-spacing:.06em;
+  margin-bottom:.45vh;
+  white-space:nowrap;
 }
 
 .liveBadge{
@@ -267,13 +262,7 @@ html,body{
 .tableHead,
 .flightRow{
   display:grid;
-  grid-template-columns:
-    1.7fr
-    1.45fr
-    1.05fr
-    .55fr
-    .9fr
-    .9fr;
+  grid-template-columns:1.7fr 1.45fr 1.05fr .55fr .9fr .9fr;
 }
 
 .tableHead{
@@ -343,18 +332,8 @@ html,body{
   padding-right:.4vw;
 }
 
-.checkin{
-  text-align:center;
-  color:#071a38;
-  font-weight:900;
-}
-
-.gate{
-  text-align:center;
-  color:#071a38;
-  font-weight:900;
-}
-
+.checkin,
+.gate,
 .time{
   text-align:center;
   color:#071a38;
@@ -365,6 +344,18 @@ html,body{
   text-align:center;
   color:#07843e;
   font-weight:900;
+}
+
+.status.onTime{
+  color:#07843e;
+}
+
+.status.delayed{
+  color:#f06a00;
+}
+
+.status.cancelled{
+  color:#d90028;
 }
 
 .tableBody.many .flightRow{
@@ -382,21 +373,7 @@ html,body{
   font-weight:900;
 }
 
-/* STATUS COLOURS */
-
-.status.onTime{
-  color:#07843e;
-}
-
-.status.delayed{
-  color:#f06a00;
-}
-
-.status.cancelled{
-  color:#d90028;
-}
-
-/* BOTTOM CREDIT BAR */
+/* BOTTOM BAR */
 
 .bottomBar{
   height:3.2vh;
@@ -433,9 +410,7 @@ html,body{
 
     <div class="leftTop">
 
-      <div class="code">
-        MBJ
-      </div>
+      <div class="code">MBJ</div>
 
       <div class="jamaicaLine">
 
@@ -444,13 +419,12 @@ html,body{
           <div class="flagBlackBottom"></div>
         </div>
 
-        <div class="jamaicaLabel">
-          JAMAICA
-        </div>
+        <div class="jamaicaLabel">JAMAICA</div>
 
       </div>
 
     </div>
+
 
     <div class="airportBlock">
 
@@ -466,19 +440,20 @@ html,body{
 
     </div>
 
+
     <div class="rightTop">
+
+      <div class="returnMenu">
+        ← RETURN TO MENU
+      </div>
 
       <div class="liveBadge">
         ● LIVE DATA
       </div>
 
-      <div class="clock" id="clock">
-        --:--
-      </div>
+      <div class="clock" id="clock">--:--</div>
 
-      <div class="date" id="date">
-        --
-      </div>
+      <div class="date" id="date">--</div>
 
       <div class="jamaicaTime">
         Jamaica time
@@ -491,9 +466,7 @@ html,body{
 
   <div class="departuresHero">
 
-    <div class="planeBox">
-      ✈
-    </div>
+    <div class="planeBox">✈</div>
 
     <div class="departuresTitle">
       DEPARTURES
@@ -519,26 +492,14 @@ html,body{
     <div class="tableHead">
 
       <div>AIRLINE/FLIGHT</div>
-
       <div>TO</div>
-
-      <div class="center">
-        CHECK-IN
-      </div>
-
-      <div class="center">
-        GATE
-      </div>
-
-      <div class="center">
-        TIME
-      </div>
-
-      <div class="center">
-        STATUS
-      </div>
+      <div class="center">CHECK-IN</div>
+      <div class="center">GATE</div>
+      <div class="center">TIME</div>
+      <div class="center">STATUS</div>
 
     </div>
+
 
     <div class="tableBody" id="flightData">
 
@@ -568,28 +529,19 @@ html,body{
 
 <script>
 
-/* ADDITIONAL KIOSK LONG-PRESS PROTECTION */
+/* KIOSK LONG-PRESS PROTECTION */
 
-document.addEventListener(
-  "contextmenu",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("contextmenu", function(event){
+  event.preventDefault();
+});
 
-document.addEventListener(
-  "selectstart",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("selectstart", function(event){
+  event.preventDefault();
+});
 
-document.addEventListener(
-  "dragstart",
-  function(event){
-    event.preventDefault();
-  }
-);
+document.addEventListener("dragstart", function(event){
+  event.preventDefault();
+});
 
 
 /* JAMAICA CLOCK */
@@ -599,33 +551,23 @@ function updateClock(){
   const now = new Date();
 
   document.getElementById("clock").textContent =
-    now.toLocaleTimeString(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        hour:"numeric",
-        minute:"2-digit"
-      }
-    );
+    now.toLocaleTimeString("en-US",{
+      timeZone:"America/Jamaica",
+      hour:"numeric",
+      minute:"2-digit"
+    });
 
   document.getElementById("date").textContent =
-    now.toLocaleDateString(
-      "en-US",
-      {
-        timeZone:"America/Jamaica",
-        weekday:"long",
-        month:"long",
-        day:"numeric"
-      }
-    );
+    now.toLocaleDateString("en-US",{
+      timeZone:"America/Jamaica",
+      weekday:"long",
+      month:"long",
+      day:"numeric"
+    });
 }
 
 updateClock();
-
-setInterval(
-  updateClock,
-  1000
-);
+setInterval(updateClock,1000);
 
 
 /* HTML SAFETY */
@@ -646,20 +588,16 @@ function escapeHTML(value){
 async function loadFlights(){
 
   const container =
-    document.getElementById(
-      "flightData"
-    );
+    document.getElementById("flightData");
 
   try{
 
     const response =
       await fetch(
-        "departures.json?t=" +
-        Date.now()
+        "departures.json?t=" + Date.now()
       );
 
     if(!response.ok){
-
       throw new Error(
         "Unable to load departures.json"
       );
@@ -682,8 +620,6 @@ async function loadFlights(){
     }
 
 
-    /* FIT ALL FLIGHTS ON ONE SCREEN */
-
     container.style.setProperty(
       "--rows",
       flights.length
@@ -695,17 +631,11 @@ async function loadFlights(){
     );
 
     if(flights.length > 25){
-
-      container.classList.add(
-        "many"
-      );
+      container.classList.add("many");
     }
 
     if(flights.length > 34){
-
-      container.classList.add(
-        "veryMany"
-      );
+      container.classList.add("veryMany");
     }
 
 
@@ -748,9 +678,7 @@ async function loadFlights(){
 
           statusDisplay =
             actualTime +
-            (status
-              ? " " + status
-              : "");
+            (status ? " " + status : "");
         }
 
         let statusClass = "";
@@ -758,37 +686,17 @@ async function loadFlights(){
         const statusLower =
           status.toLowerCase();
 
-        if(
-          statusLower.includes(
-            "cancel"
-          )
-        ){
-
-          statusClass =
-            "cancelled";
+        if(statusLower.includes("cancel")){
+          statusClass = "cancelled";
         }
-
-        else if(
-          statusLower.includes(
-            "delay"
-          )
-        ){
-
-          statusClass =
-            "delayed";
+        else if(statusLower.includes("delay")){
+          statusClass = "delayed";
         }
-
         else if(
-          statusLower.includes(
-            "on-time"
-          ) ||
-          statusLower.includes(
-            "on time"
-          )
+          statusLower.includes("on-time") ||
+          statusLower.includes("on time")
         ){
-
-          statusClass =
-            "onTime";
+          statusClass = "onTime";
         }
 
 
@@ -830,30 +738,18 @@ async function loadFlights(){
     if(data.updated){
 
       const updatedDate =
-        new Date(
-          data.updated
+        new Date(data.updated);
+
+      document.getElementById("updated").textContent =
+        "Flight data updated: " +
+        updatedDate.toLocaleTimeString(
+          "en-US",
+          {
+            timeZone:"America/Jamaica",
+            hour:"numeric",
+            minute:"2-digit"
+          }
         );
-
-      document
-        .getElementById("updated")
-        .textContent =
-
-          "Flight data updated: " +
-
-          updatedDate
-            .toLocaleTimeString(
-              "en-US",
-              {
-                timeZone:
-                  "America/Jamaica",
-
-                hour:
-                  "numeric",
-
-                minute:
-                  "2-digit"
-              }
-            );
     }
 
   }
@@ -870,20 +766,9 @@ async function loadFlights(){
 }
 
 
-/* LOAD NOW */
-
 loadFlights();
 
-
-/*
-  Re-read local departures.json
-  every 5 minutes.
-*/
-
-setInterval(
-  loadFlights,
-  300000
-);
+setInterval(loadFlights,300000);
 
 </script>
 
