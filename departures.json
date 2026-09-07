@@ -5,6 +5,255 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "",
-  "flights": []
+  "updated": "2026-09-07T00:54:24.678Z",
+  "flights": [
+    {
+      "airlineFlight": "Jet Blue B6380",
+      "to": "New York - JFK",
+      "gate": "31 - 40",
+      "scheduledTime": "9",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Jet Blue B61126",
+      "to": "Ft. Lauderdale",
+      "gate": "31 - 40",
+      "scheduledTime": "16",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Copa Airlines CM147",
+      "to": "Tocumen",
+      "gate": "1 - 8",
+      "scheduledTime": "12",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Air Canada AC1805",
+      "to": "Toronto",
+      "gate": "55 - 64",
+      "scheduledTime": "13",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Jet Blue B6780",
+      "to": "New York - JFK",
+      "gate": "31 - 40",
+      "scheduledTime": "17",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA863",
+      "to": "Charlotte",
+      "gate": "65 - 78",
+      "scheduledTime": "9",
+      "actualTime": "",
+      "status": "12:38 PM 1:37 PM"
+    },
+    {
+      "airlineFlight": "Southwest Airlines WN907",
+      "to": "Baltimore",
+      "gate": "115 - 126",
+      "scheduledTime": "2",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "West Jet WS2567",
+      "to": "Toronto",
+      "gate": "43 - 54",
+      "scheduledTime": "8",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA439",
+      "to": "Dallas-Ft. Worth",
+      "gate": "65 - 78",
+      "scheduledTime": "3",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "United Airlines UA1628",
+      "to": "Newark",
+      "gate": "23 - 30",
+      "scheduledTime": "5",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Delta Airlines DL1957",
+      "to": "New York - JFK",
+      "gate": "87 - 98",
+      "scheduledTime": "19",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Delta Airlines DL1928",
+      "to": "Atlanta",
+      "gate": "87 - 98",
+      "scheduledTime": "18",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Frontier Airlines F9124",
+      "to": "Atlanta",
+      "gate": "81 - 86",
+      "scheduledTime": "4",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Wingo P57479",
+      "to": "Bogota",
+      "gate": "99 - 106",
+      "scheduledTime": "10",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Jet Blue B6280",
+      "to": "New York - JFK",
+      "gate": "31 - 40",
+      "scheduledTime": "16",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Southwest Airlines WN905",
+      "to": "Baltimore",
+      "gate": "115 - 126",
+      "scheduledTime": "5",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA975",
+      "to": "O'Hare International",
+      "gate": "65 - 78",
+      "scheduledTime": "3",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Delta Airlines DL1800",
+      "to": "Atlanta",
+      "gate": "87 - 98",
+      "scheduledTime": "13",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA875",
+      "to": "Charlotte",
+      "gate": "65 - 78",
+      "scheduledTime": "18",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA2388",
+      "to": "Miami",
+      "gate": "65 - 78",
+      "scheduledTime": "",
+      "actualTime": "",
+      "status": "2:52 PM 10:00 AM"
+    },
+    {
+      "airlineFlight": "American Airlines AA2039",
+      "to": "Philadelphia",
+      "gate": "65 - 78",
+      "scheduledTime": "4",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Southwest Airlines WN293",
+      "to": "Orlando",
+      "gate": "115 - 126",
+      "scheduledTime": "4",
+      "actualTime": "",
+      "status": "3:25 PM 6:00 PM"
+    },
+    {
+      "airlineFlight": "Jet Blue B6522",
+      "to": "Orlando",
+      "gate": "31 - 40",
+      "scheduledTime": "8",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Jet Blue B61194",
+      "to": "Boston",
+      "gate": "31 - 40",
+      "scheduledTime": "10",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Delta Airlines DL1987",
+      "to": "Atlanta",
+      "gate": "87 - 98",
+      "scheduledTime": "19",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "Air Transat TS519",
+      "to": "Toronto",
+      "gate": "99 - 106",
+      "scheduledTime": "13",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "TUI Airways TOM115",
+      "to": "Manchester",
+      "gate": "55 - 64",
+      "scheduledTime": "17",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "American Airlines AA2618",
+      "to": "Miami",
+      "gate": "",
+      "scheduledTime": "16",
+      "actualTime": "",
+      "status": "5:08 PM 6:30 PM"
+    },
+    {
+      "airlineFlight": "Jet Blue B6326",
+      "to": "Ft. Lauderdale",
+      "gate": "31 - 40",
+      "scheduledTime": "12",
+      "actualTime": "",
+      "status": "5:47 PM 7:10 PM"
+    },
+    {
+      "airlineFlight": "LP2447",
+      "to": "Lima",
+      "gate": "1 - 8",
+      "scheduledTime": "18",
+      "actualTime": "",
+      "status": ""
+    },
+    {
+      "airlineFlight": "West Jet WS2577",
+      "to": "Toronto",
+      "gate": "43 - 54",
+      "scheduledTime": "9",
+      "actualTime": "",
+      "status": ""
+    }
+  ]
 }
