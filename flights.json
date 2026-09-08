@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-08T16:30:26.755Z",
+  "updated": "2026-09-08T17:26:55.478Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61127",
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "11:33 AM",
       "actualTime": "11:48 AM",
       "status": ""
@@ -84,7 +84,7 @@
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "12:39 PM",
-      "actualTime": "",
+      "actualTime": "12:19 PM",
       "status": ""
     },
     {
@@ -92,7 +92,7 @@
       "from": "Montreal",
       "baggage": "1",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
+      "actualTime": "12:15 PM",
       "status": ""
     },
     {
