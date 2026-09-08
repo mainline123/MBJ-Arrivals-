@@ -182,7 +182,7 @@ header{
   white-space:nowrap;
 }
 
-/* AIRLINE LOGOS - ENLARGED FOR 16:9 TV */
+/* AIRLINE LOGOS */
 
 .airlineCell{
   display:flex !important;
@@ -389,7 +389,6 @@ const MAX_ROWS = 20;
 const KEEP_PREVIOUS = 4;
 
 const AIRLINES = {
-
   "AA":"AAL",
   "B6":"JBU",
   "AC":"ACA",
@@ -401,7 +400,6 @@ const AIRLINES = {
   "NK":"NKS",
   "F9":"FFT",
   "CM":"CMP",
-
   "TS":"TSC",
   "WG":"SWG",
   "BW":"BWA",
@@ -410,11 +408,17 @@ const AIRLINES = {
   "OR":"TFL",
   "SY":"SCX",
   "5Y":"GTI"
-
 };
 
 const LOGO_BASE =
 "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
+
+/* HIGH-RESOLUTION LOCAL OVERRIDES */
+
+const LOCAL_LOGOS = {
+  "AA":"airline-logos/american-airlines.png",
+  "VS":"airline-logos/virgin-atlantic.png"
+};
 
 function escapeHTML(value){
 
@@ -450,20 +454,27 @@ function airlineDisplay(airlineFlight){
  const icao =
  AIRLINES[code];
 
- if(!code || !icao){
+ let logoURL = "";
+
+ if(LOCAL_LOGOS[code]){
+   logoURL = LOCAL_LOGOS[code];
+ }
+ else if(icao){
+   logoURL =
+     LOGO_BASE +
+     encodeURIComponent(icao) +
+     ".png";
+ }
+
+ if(!code || !logoURL){
 
    return `
      <div class="flightText">
        ${safeText}
      </div>
-  `;
+   `;
 
  }
-
- const logoURL =
- LOGO_BASE +
- encodeURIComponent(icao) +
- ".png";
 
  return `
 
@@ -476,7 +487,7 @@ function airlineDisplay(airlineFlight){
      onerror="
        this.style.display='none';
        this.nextElementSibling.style.display='flex';
-    "
+     "
   >
 
    <div class="codeBadge">
@@ -489,7 +500,7 @@ function airlineDisplay(airlineFlight){
    ${safeText}
  </div>
 
-`;
+ `;
 
 }
 
@@ -526,7 +537,6 @@ function updateClock(){
 }
 
 updateClock();
-
 setInterval(updateClock,1000);
 
 function jamaicaMinutesNow(){
@@ -612,12 +622,12 @@ function getCurrentFlights(allFlights){
    const mins =
    flightTimeMinutes(
      f.scheduledTime
-  );
+   );
 
    return (
      mins !== null &&
      mins >= now
-  );
+   );
 
  });
 
@@ -625,14 +635,14 @@ function getCurrentFlights(allFlights){
 
    return flights.slice(
      -MAX_ROWS
-  );
+   );
 
  }
 
  let start =
 
  Math.max(
-  0,
+   0,
    nextIndex - KEEP_PREVIOUS
  );
 
@@ -644,9 +654,9 @@ function getCurrentFlights(allFlights){
    start =
 
    Math.max(
-    0,
+     0,
      flights.length - MAX_ROWS
-  );
+   );
 
  }
 
@@ -679,7 +689,7 @@ function renderArrivals(allFlights){
      ${airlineDisplay(f.airlineFlight)}
    </div>
 
-  <div>
+   <div>
      ${escapeHTML(f.from || "—")}
    </div>
 
@@ -695,8 +705,8 @@ function renderArrivals(allFlights){
      ${escapeHTML(
        f.actualTime ||
        f.status ||
-      "—"
-    )}
+       "—"
+     )}
    </div>
 
  </div>
@@ -749,13 +759,13 @@ function renderDepartures(allFlights){
    ? `${f.actualTime}${
        f.status
        ? " • " + f.status
-      : ""
-    }`
+       : ""
+     }`
 
-  : (
+   : (
        f.status ||
-      "—"
-    );
+       "—"
+     );
 
    return `
 
@@ -765,14 +775,14 @@ function renderDepartures(allFlights){
        ${airlineDisplay(f.airlineFlight)}
      </div>
 
-    <div>
+     <div>
        ${escapeHTML(f.to || "—")}
      </div>
 
      <div class="number">
        ${escapeHTML(
          f.checkInCounters || "—"
-      )}
+       )}
      </div>
 
      <div class="number">
@@ -782,7 +792,7 @@ function renderDepartures(allFlights){
      <div class="time">
        ${escapeHTML(
          f.scheduledTime || "—"
-      )}
+       )}
      </div>
 
      <div class="status ${statusClass(f.status)}">
@@ -791,7 +801,7 @@ function renderDepartures(allFlights){
 
    </div>
 
-  `;
+   `;
 
  }).join("");
 
@@ -807,32 +817,32 @@ async function loadBoards(){
    const [
      arrivalsResponse,
      departuresResponse
-  ] =
+   ] =
 
    await Promise.all([
 
      fetch(
        `flights.json?t=${stamp}`,
        {cache:"no-store"}
-    ),
+     ),
 
      fetch(
        `departures.json?t=${stamp}`,
        {cache:"no-store"}
-    )
+     )
 
-  ]);
+   ]);
 
-  if(
+   if(
      !arrivalsResponse.ok ||
      !departuresResponse.ok
-  ){
+   ){
 
      throw new Error(
        "Unable to retrieve flight data"
-    );
+     );
 
-  }
+   }
 
    const arrivals =
    await arrivalsResponse.json();
@@ -842,11 +852,11 @@ async function loadBoards(){
 
    renderArrivals(
      arrivals.flights || []
-  );
+   );
 
    renderDepartures(
      departures.flights || []
-  );
+   );
 
    const updated =
    arrivals.updated ||
@@ -870,9 +880,9 @@ async function loadBoards(){
       }
      ).format(
        new Date(updated)
-    );
+     );
 
-  }
+   }
 
  }
 
