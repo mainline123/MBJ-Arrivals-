@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-07T23:24:45.497Z",
+  "updated": "2026-09-08T00:37:33.189Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -196,7 +196,7 @@
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "4:42 PM",
-      "actualTime": "5:48 PM",
+      "actualTime": "6:54 PM",
       "status": ""
     },
     {
