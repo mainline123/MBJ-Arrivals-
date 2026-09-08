@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-08T19:25:34.387Z",
+  "updated": "2026-09-08T20:27:10.243Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61127",
@@ -172,7 +172,7 @@
       "from": "Amsterdam",
       "baggage": "6",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
+      "actualTime": "3:00 PM",
       "status": ""
     },
     {
