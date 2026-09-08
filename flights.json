@@ -5,12 +5,12 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-08T15:29:46.712Z",
+  "updated": "2026-09-08T16:30:26.755Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61127",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "11:04 AM",
       "actualTime": "",
       "status": ""
@@ -20,7 +20,7 @@
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "11:15 AM",
-      "actualTime": "",
+      "actualTime": "10:42 AM",
       "status": ""
     },
     {
@@ -36,7 +36,7 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
+      "actualTime": "10:46 AM",
       "status": ""
     },
     {
@@ -44,7 +44,7 @@
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
+      "actualTime": "11:48 AM",
       "status": ""
     },
     {
@@ -60,7 +60,7 @@
       "from": "Newark",
       "baggage": "4",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
+      "actualTime": "11:18 AM",
       "status": ""
     },
     {
@@ -76,7 +76,7 @@
       "from": "Orlando",
       "baggage": "7",
       "scheduledTime": "11:55 AM",
-      "actualTime": "",
+      "actualTime": "12:07 PM",
       "status": ""
     },
     {
@@ -100,7 +100,7 @@
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
+      "actualTime": "1:27 PM",
       "status": ""
     },
     {

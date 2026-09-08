@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-08T15:29:46.712Z",
+  "updated": "2026-09-08T16:30:26.755Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61126",
@@ -66,9 +66,9 @@
       "to": "Orlando",
       "checkInCounters": "115 - 126",
       "gate": "3",
-      "scheduledTime": "12:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "12:55 PM 1:07 PM",
+      "actualTime": "1:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -102,9 +102,9 @@
       "to": "Baltimore",
       "checkInCounters": "115 - 126",
       "gate": "2",
-      "scheduledTime": "1:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "1:55 PM 2:27 PM",
+      "actualTime": "2:27 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6280",
