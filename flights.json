@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-08T11:26:31.052Z",
+  "updated": "2026-09-08T12:33:44.650Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61127",
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
-      "baggage": "4",
+      "baggage": "2",
       "scheduledTime": "12:55 PM",
       "actualTime": "",
       "status": ""
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "American Airlines AA875",
       "from": "Charlotte",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "1:28 PM",
       "actualTime": "",
       "status": ""
@@ -138,7 +138,7 @@
     {
       "airlineFlight": "American Airlines AA2124",
       "from": "Miami",
-      "baggage": "7",
+      "baggage": "4",
       "scheduledTime": "1:48 PM",
       "actualTime": "",
       "status": ""
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "2:21 PM",
       "actualTime": "",
       "status": ""
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "Wingo P57482",
       "from": "Medellin",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "3:29 PM",
       "actualTime": "",
       "status": ""
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "5",
       "scheduledTime": "4:47 PM",
       "actualTime": "",
       "status": ""
@@ -186,7 +186,7 @@
     {
       "airlineFlight": "West Jet WS2814",
       "from": "Toronto",
-      "baggage": "3",
+      "baggage": "6",
       "scheduledTime": "6:30 PM",
       "actualTime": "",
       "status": ""
