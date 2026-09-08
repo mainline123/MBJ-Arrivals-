@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-08T17:26:55.478Z",
+  "updated": "2026-09-08T18:30:59.523Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61127",
@@ -108,7 +108,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
+      "actualTime": "12:47 PM",
       "status": ""
     },
     {
@@ -116,7 +116,7 @@
       "from": "O'Hare International",
       "baggage": "3",
       "scheduledTime": "1:12 PM",
-      "actualTime": "",
+      "actualTime": "12:43 PM",
       "status": ""
     },
     {
@@ -132,7 +132,7 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:28 PM",
-      "actualTime": "",
+      "actualTime": "1:02 PM",
       "status": ""
     },
     {
