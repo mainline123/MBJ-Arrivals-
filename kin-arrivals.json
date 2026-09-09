@@ -6,7 +6,7 @@
     "month": "09",
     "day": "09"
   },
-  "updated": "2026-09-09T22:59:46.540Z",
+  "updated": "2026-09-09T23:07:20.760Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -107,26 +107,6 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1407219876,
-      "source": "FlightStats"
-    },
-    {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1059",
-      "flight": "B61059",
-      "airportCode": "JFK",
-      "city": "New York",
-      "scheduledTime": "9:05AM",
-      "estimatedTime": "",
-      "actualTime": "8:44AM",
-      "updatedTime": "8:44AM",
-      "timeType": "Actual",
-      "displayTime": "8:44AM",
-      "status": "On time",
-      "gate": "3",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407206047,
       "source": "FlightStats"
     },
     {
@@ -358,10 +338,10 @@
       "city": "London",
       "scheduledTime": "5:40PM",
       "estimatedTime": "",
-      "actualTime": "5:32PM",
-      "updatedTime": "5:32PM",
+      "actualTime": "5:34PM",
+      "updatedTime": "5:34PM",
       "timeType": "Actual",
-      "displayTime": "5:32PM",
+      "displayTime": "5:34PM",
       "status": "On time",
       "gate": "",
       "terminal": "",

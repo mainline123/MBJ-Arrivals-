@@ -6,7 +6,7 @@
     "month": "09",
     "day": "09"
   },
-  "updated": "2026-09-09T22:59:46.540Z",
+  "updated": "2026-09-09T23:07:20.760Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -242,7 +242,7 @@
       "updatedTime": "4:07PM",
       "timeType": "Actual",
       "displayTime": "4:07PM",
-      "status": "Delayed by 2h 46m",
+      "status": "Delayed by 2h 53m",
       "gate": "",
       "terminal": "",
       "baggage": "",
@@ -398,10 +398,10 @@
       "city": "Santiago",
       "scheduledTime": "5:50PM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "5:50PM",
+      "actualTime": "5:58PM",
+      "updatedTime": "5:58PM",
+      "timeType": "Actual",
+      "displayTime": "5:58PM",
       "status": "On time",
       "gate": "",
       "terminal": "",
