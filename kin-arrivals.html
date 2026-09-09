@@ -4,780 +4,474 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KIN Live Arrivals</title>
+<title>KIN Arrivals</title>
 
 <style>
-
-:root {
-    --header:#063956;
-    --gold:#f3d67a;
-    --green:#42e582;
-    --orange:#ffbd45;
-    --red:#ff6464;
-    --cyan:#56c8ff;
-    --line:rgba(201,166,75,.22);
-}
-
 * {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
 }
 
-html,
-body {
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
-
-body {
-    background:transparent;
-    color:white;
-    font-family:Arial,"Segoe UI",sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
 .board {
-    width:100%;
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-
-    overflow:hidden;
-
-    background:rgba(4,24,42,.97);
-
-    border:2px solid #c9a64b;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(4, 24, 38, 0.96);
+  border: 2px solid rgba(209, 174, 91, 0.75);
 }
 
-.table-wrap {
-    flex:1;
-    min-height:0;
+.header {
+  display: grid;
+  grid-template-columns: 1.35fr 1.25fr 0.48fr 0.9fr 1fr;
+  align-items: center;
+  min-height: 68px;
+  padding: 0 14px;
+  background: #071d2c;
+  border-bottom: 2px solid #c9a85c;
+  color: #d9bd78;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-table {
-    width:100%;
-    height:100%;
-
-    border-collapse:collapse;
-    table-layout:fixed;
+.rows {
+  flex: 1;
+  overflow: hidden;
 }
 
-thead {
-    height:5%;
+.row {
+  display: grid;
+  grid-template-columns: 1.35fr 1.25fr 0.48fr 0.9fr 1fr;
+  align-items: center;
+  min-height: 88px;
+  padding: 7px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
 }
 
-tbody {
-    height:95%;
+.row:nth-child(even) {
+  background: rgba(255,255,255,0.035);
 }
-
-th {
-    background:var(--header);
-    color:var(--gold);
-
-    font-size:clamp(17px,2vw,31px);
-    font-weight:800;
-
-    text-align:left;
-
-    padding:8px;
-
-    border-bottom:2px solid #c9a64b;
-
-    text-transform:uppercase;
-
-    white-space:nowrap;
-}
-
-td {
-    padding:7px 8px;
-
-    border-bottom:1px solid var(--line);
-
-    font-size:clamp(17px,2.15vw,32px);
-
-    line-height:1.1;
-
-    white-space:nowrap;
-
-    overflow:hidden;
-
-    text-overflow:ellipsis;
-}
-
-tbody tr:nth-child(even) {
-    background:rgba(255,255,255,.025);
-}
-
-
-/* AIRLINE */
 
 .flight-cell {
-    display:flex;
-    align-items:center;
-
-    gap:9px;
-
-    width:100%;
-
-    overflow:hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
 }
 
-.airline-logo {
-    width:clamp(40px,4.5vw,66px);
-    height:clamp(30px,3.5vw,50px);
-
-    object-fit:contain;
-
-    flex:0 0 auto;
-
-    background:white;
-
-    border-radius:4px;
-
-    padding:2px;
+.logo-box {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
-.flight-text {
-    font-weight:800;
-
-    overflow:hidden;
-
-    text-overflow:ellipsis;
-
-    white-space:nowrap;
+.logo-box img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
 }
 
-
-/* BAG */
-
-.center {
-    text-align:center;
-    font-weight:800;
+.logo-fallback {
+  color: #071d2c;
+  font-size: 15px;
+  font-weight: 800;
 }
 
+.flight-info {
+  min-width: 0;
+}
 
-/* TIME */
+.flight-number {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.airline-name {
+  margin-top: 4px;
+  color: #b9c8cf;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.city {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.airport-code {
+  margin-top: 4px;
+  color: #b9c8cf;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.baggage {
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+}
 
 .scheduled {
-    color:white;
-    font-weight:800;
+  font-size: 23px;
+  font-weight: 700;
 }
 
-
-/* STATUS */
-
-.status {
-    font-weight:800;
+.status-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.status-time {
-    color:white;
-    font-weight:800;
-
-    margin-right:6px;
+.live-time {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.05;
 }
 
-.status-on-time,
-.status-ontime {
-    color:var(--green);
+.time-type {
+  margin-top: 3px;
+  color: #d9bd78;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.status-early {
-    color:#18c6c8;
+.status-text {
+  margin-top: 3px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.status-on-time {
+  color: #65d58b;
 }
 
 .status-delayed {
-    color:var(--orange);
+  color: #ffb44c;
 }
 
 .status-cancelled {
-    color:var(--red);
+  color: #ff6666;
 }
 
 .status-landed,
 .status-arrived {
-    color:var(--cyan);
+  color: #67c7ff;
 }
 
-
-/* COLUMN WIDTHS */
-
-.col-flight {
-    width:31%;
+.status-default {
+  color: #ffffff;
 }
-
-.col-from {
-    width:27%;
-}
-
-.col-bag {
-    width:8%;
-}
-
-.col-time {
-    width:15%;
-}
-
-.col-status {
-    width:19%;
-}
-
-
-/* UPDATE BAR */
 
 .update-bar {
-    flex:0 0 auto;
-
-    background:var(--header);
-
-    color:var(--gold);
-
-    text-align:right;
-
-    padding:5px 10px;
-
-    font-size:clamp(11px,1.2vw,17px);
-
-    font-weight:700;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background: #071d2c;
+  border-top: 1px solid rgba(209,174,91,0.65);
+  color: #d9bd78;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
+.message {
+  padding: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
 </style>
 </head>
-
 
 <body>
 
 <div class="board">
 
-    <div class="table-wrap">
+  <div class="header">
+    <div>AIRLINE / FLIGHT</div>
+    <div>FROM</div>
+    <div style="text-align:center;">BAG</div>
+    <div>SCHEDULED</div>
+    <div>STATUS</div>
+  </div>
 
-        <table>
+  <div id="rows" class="rows">
+    <div class="message">Loading KIN arrivals...</div>
+  </div>
 
-            <thead>
-
-                <tr>
-
-                    <th class="col-flight">
-                        AIRLINE / FLIGHT
-                    </th>
-
-                    <th class="col-from">
-                        FROM
-                    </th>
-
-                    <th class="col-bag">
-                        BAG
-                    </th>
-
-                    <th class="col-time">
-                        SCHEDULED
-                    </th>
-
-                    <th class="col-status">
-                        STATUS
-                    </th>
-
-                </tr>
-
-            </thead>
-
-            <tbody id="flightBody">
-            </tbody>
-
-        </table>
-
-    </div>
-
-
-    <div
-        class="update-bar"
-        id="updated">
-        LIVE KIN DATA
-    </div>
+  <div id="updated" class="update-bar">
+    LIVE KIN DATA
+  </div>
 
 </div>
 
-
 <script>
+const DATA_URL = "kin-arrivals.json";
 
-/*
-   SALMAN'S EXISTING LIVE KIN DATA
-   We are only reading it.
-*/
-
-const LIVE_URL =
-"https://mainline123.github.io/travis-airports/data/kin-arrivals.json";
-
-
-/* AIRLINE LOGOS */
-
-const airlineLogos = {
-
-    "AA":"AAL",
-    "AC":"ACA",
-    "B6":"JBU",
-    "BW":"BWA",
-    "CM":"CMP",
-    "DL":"DAL",
-    "DM":"ARA",
-    "JY":"IWY",
-    "KX":"CAY",
-    "NK":"NKS",
-    "BA":"BAW",
-    "UA":"UAL"
-
+const AIRLINE_LOGOS = {
+  "AA": "AAL",
+  "AC": "ACA",
+  "AF": "AFR",
+  "5Y": "GTI",
+  "B6": "JBU",
+  "BA": "BAW",
+  "BW": "BWA",
+  "CM": "CMP",
+  "DL": "DAL",
+  "DWI": "DWI",
+  "JY": "IWY",
+  "KX": "CAY",
+  "NK": "NKS",
+  "TXG": "TXG",
+  "UA": "UAL",
+  "VS": "VIR"
 };
 
+function logoUrl(code) {
+  const mapped = AIRLINE_LOGOS[code] || code;
 
-const LOGO_BASE =
-"https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
-
-
-/* SAFE HTML */
+  return "https://raw.githubusercontent.com/npow/airline-codes/master/logos/" +
+    mapped + ".png";
+}
 
 function escapeHtml(value) {
-
-    return String(value ?? "")
-
-        .replace(/&/g,"&amp;")
-
-        .replace(/</g,"&lt;")
-
-        .replace(/>/g,"&gt;")
-
-        .replace(/"/g,"&quot;")
-
-        .replace(/'/g,"&#039;");
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
-
-
-/* FIND AIRLINE CODE */
-
-function getAirlineCode(value) {
-
-    const text =
-        String(value || "")
-        .toUpperCase();
-
-    const match =
-        text.match(
-            /\b([A-Z0-9]{2})\s*\d{1,4}\b/
-        );
-
-    return match
-        ? match[1]
-        : "";
-}
-
-
-/* GET LOGO */
-
-function getLogo(value) {
-
-    const code =
-        getAirlineCode(value);
-
-    const icao =
-        airlineLogos[code];
-
-    if(!icao) {
-        return "";
-    }
-
-    return (
-        LOGO_BASE +
-        encodeURIComponent(icao) +
-        ".png"
-    );
-}
-
-
-/* STATUS COLOUR */
 
 function statusClass(status) {
+  const s = String(status || "").toLowerCase();
 
-    const value =
-        String(status || "")
-        .toLowerCase();
+  if (s.includes("cancel")) {
+    return "status-cancelled";
+  }
 
-    if(value.includes("landed")) {
-        return "status-landed";
-    }
+  if (s.includes("delay")) {
+    return "status-delayed";
+  }
 
-    if(value.includes("arrived")) {
-        return "status-arrived";
-    }
+  if (s.includes("landed")) {
+    return "status-landed";
+  }
 
-    if(value.includes("early")) {
-        return "status-early";
-    }
+  if (s.includes("arrived")) {
+    return "status-arrived";
+  }
 
-    if(value.includes("delay")) {
-        return "status-delayed";
-    }
+  if (s.includes("on time") || s.includes("scheduled")) {
+    return "status-on-time";
+  }
 
-    if(value.includes("cancel")) {
-        return "status-cancelled";
-    }
-
-    if(
-        value.includes("on-time") ||
-        value.includes("on time")
-    ) {
-        return "status-on-time";
-    }
-
-    return "";
+  return "status-default";
 }
 
+function formatUpdated(iso) {
+  if (!iso) {
+    return "LIVE KIN DATA";
+  }
 
-/* FORMAT UPDATE TIME */
+  const date = new Date(iso);
 
-function formatUpdateTime(value) {
-
-    if(!value) {
-        return "";
-    }
-
-    const date =
-        new Date(value);
-
-    if(isNaN(date.getTime())) {
-        return "";
-    }
-
-    return new Intl.DateTimeFormat(
-        "en-US",
-        {
-            timeZone:"America/Jamaica",
-            hour:"numeric",
-            minute:"2-digit",
-            hour12:true
-        }
-    ).format(date);
+  return "LIVE KIN DATA • UPDATED " +
+    date.toLocaleTimeString("en-US", {
+      timeZone: "America/Jamaica",
+      hour: "numeric",
+      minute: "2-digit"
+    }) +
+    " JAMAICA TIME";
 }
 
+function renderFlights(data) {
+  const rows = document.getElementById("rows");
+  const flights = Array.isArray(data.flights)
+    ? data.flights
+    : [];
 
-/* GET FIELD USING POSSIBLE NAMES */
+  if (!flights.length) {
+    rows.innerHTML =
+      '<div class="message">No KIN arrivals currently available.</div>';
 
-function getValue(object,names) {
+    document.getElementById("updated").textContent =
+      formatUpdated(data.updated);
 
-    for(const name of names) {
+    return;
+  }
 
-        if(
-            object[name] !== undefined &&
-            object[name] !== null &&
-            object[name] !== ""
-        ) {
-            return object[name];
-        }
-    }
+  rows.innerHTML = flights.map(flight => {
 
-    return "";
+    const code = flight.airlineCode || "";
+    const flightNumber =
+      flight.flight ||
+      `${code}${flight.flightNumber || ""}`;
+
+    const city =
+      flight.city ||
+      flight.airportCode ||
+      "—";
+
+    const airportCode =
+      flight.airportCode || "";
+
+    const baggage =
+      flight.baggage || "—";
+
+    const scheduled =
+      flight.scheduledTime || "—";
+
+    const liveTime =
+      flight.updatedTime ||
+      flight.displayTime ||
+      scheduled;
+
+    const timeType =
+      flight.timeType || "Scheduled";
+
+    const status =
+      flight.status || "Scheduled";
+
+    return `
+      <div class="row">
+
+        <div class="flight-cell">
+
+          <div class="logo-box">
+            <img
+              src="${logoUrl(code)}"
+              alt="${escapeHtml(code)}"
+              onerror="
+                this.style.display='none';
+                this.nextElementSibling.style.display='block';
+              "
+            >
+            <span
+              class="logo-fallback"
+              style="display:none;"
+            >
+              ${escapeHtml(code)}
+            </span>
+          </div>
+
+          <div class="flight-info">
+            <div class="flight-number">
+              ${escapeHtml(flightNumber)}
+            </div>
+
+            <div class="airline-name">
+              ${escapeHtml(flight.airline || "")}
+            </div>
+          </div>
+
+        </div>
+
+        <div>
+          <div class="city">
+            ${escapeHtml(city)}
+          </div>
+
+          <div class="airport-code">
+            ${escapeHtml(airportCode)}
+          </div>
+        </div>
+
+        <div class="baggage">
+          ${escapeHtml(baggage)}
+        </div>
+
+        <div class="scheduled">
+          ${escapeHtml(scheduled)}
+        </div>
+
+        <div class="status-cell">
+
+          <div class="live-time">
+            ${escapeHtml(liveTime)}
+          </div>
+
+          <div class="time-type">
+            ${escapeHtml(timeType)}
+          </div>
+
+          <div class="status-text ${statusClass(status)}">
+            ${escapeHtml(status)}
+          </div>
+
+        </div>
+
+      </div>
+    `;
+  }).join("");
+
+  document.getElementById("updated").textContent =
+    formatUpdated(data.updated);
 }
-
-
-/* LOAD KIN ARRIVALS */
 
 async function loadFlights() {
-
-    try {
-
-        const response =
-            await fetch(
-                LIVE_URL +
-                "?refresh=" +
-                Date.now(),
-                {
-                    cache:"no-store"
-                }
-            );
-
-
-        if(!response.ok) {
-
-            throw new Error(
-                "Unable to retrieve KIN arrivals"
-            );
-        }
-
-
-        const data =
-            await response.json();
-
-
-        const flights =
-            (data.flights || [])
-            .slice(0,30);
-
-
-        const body =
-            document.getElementById(
-                "flightBody"
-            );
-
-
-        body.innerHTML = "";
-
-
-        flights.forEach(f => {
-
-
-            const airlineFlight =
-                getValue(
-                    f,
-                    [
-                        "airlineFlight",
-                        "airline_flight",
-                        "flight"
-                    ]
-                );
-
-
-            const from =
-                getValue(
-                    f,
-                    [
-                        "from",
-                        "origin",
-                        "arrivingFrom"
-                    ]
-                );
-
-
-            const bag =
-                getValue(
-                    f,
-                    [
-                        "baggage",
-                        "bag",
-                        "baggageClaim"
-                    ]
-                );
-
-
-            const scheduledTime =
-                getValue(
-                    f,
-                    [
-                        "scheduledTime",
-                        "scheduled",
-                        "time"
-                    ]
-                );
-
-
-            const actualTime =
-                getValue(
-                    f,
-                    [
-                        "actualTime",
-                        "actual",
-                        "estimatedTime"
-                    ]
-                );
-
-
-            const status =
-                getValue(
-                    f,
-                    [
-                        "status",
-                        "flightStatus"
-                    ]
-                ) || "On-Time";
-
-
-            /*
-               STATUS DISPLAY
-
-               Landed / delayed / early:
-               show updated time + status.
-
-               On-Time:
-               show scheduled time + status.
-            */
-
-            const statusTime =
-                actualTime ||
-                scheduledTime ||
-                "";
-
-
-            const logo =
-                getLogo(
-                    airlineFlight
-                );
-
-
-            const logoHTML =
-                logo
-
-                ? `
-                    <img
-                        class="airline-logo"
-                        src="${logo}"
-                        alt=""
-                        onerror="
-                            this.style.display='none';
-                        "
-                    >
-                  `
-
-                : "";
-
-
-            const row =
-                document.createElement(
-                    "tr"
-                );
-
-
-            row.innerHTML = `
-
-                <td>
-
-                    <div class="flight-cell">
-
-                        ${logoHTML}
-
-                        <span class="flight-text">
-
-                            ${escapeHtml(
-                                airlineFlight || "—"
-                            )}
-
-                        </span>
-
-                    </div>
-
-                </td>
-
-
-                <td>
-
-                    ${escapeHtml(
-                        from || "—"
-                    )}
-
-                </td>
-
-
-                <td class="center">
-
-                    ${escapeHtml(
-                        bag || "—"
-                    )}
-
-                </td>
-
-
-                <td class="scheduled">
-
-                    ${escapeHtml(
-                        scheduledTime || "—"
-                    )}
-
-                </td>
-
-
-                <td class="status">
-
-                    <span class="status-time">
-
-                        ${escapeHtml(
-                            statusTime
-                        )}
-
-                    </span>
-
-                    <span class="${statusClass(status)}">
-
-                        ${escapeHtml(
-                            status
-                        )}
-
-                    </span>
-
-                </td>
-
-            `;
-
-
-            body.appendChild(row);
-
-        });
-
-
-        const updateTime =
-            formatUpdateTime(
-                data.updated
-            );
-
-
-        document
-            .getElementById("updated")
-            .textContent =
-
-            updateTime
-
-            ? "LIVE KIN DATA UPDATED " +
-              updateTime
-
-            : "LIVE KIN DATA";
-
-
+  try {
+    const response = await fetch(
+      DATA_URL + "?t=" + Date.now(),
+      {
+        cache: "no-store"
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        "HTTP " + response.status
+      );
     }
 
-    catch(error) {
+    const data = await response.json();
 
-        console.error(
-            "KIN arrival update failed:",
-            error
-        );
+    renderFlights(data);
 
+  } catch (error) {
+    console.error(
+      "KIN arrivals error:",
+      error
+    );
 
-        document
-            .getElementById("updated")
-            .textContent =
-
-            "LIVE KIN DATA — REFRESHING...";
-
-    }
-
+    document.getElementById("rows").innerHTML =
+      '<div class="message">KIN arrival data temporarily unavailable.</div>';
+  }
 }
-
-
-/* LOAD NOW */
 
 loadFlights();
 
-
-/* UPDATE EVERY 60 SECONDS */
-
-setInterval(
-    loadFlights,
-    60000
-);
-
-
-/* REFRESH WHEN NOVISIGN RETURNS TO PAGE */
-
-document.addEventListener(
-    "visibilitychange",
-    function() {
-
-        if(!document.hidden) {
-
-            loadFlights();
-
-        }
-
-    }
-);
-
+/*
+ * Reload our JSON every 60 seconds.
+ * GitHub Actions updates the underlying data automatically.
+ */
+setInterval(loadFlights, 60000);
 </script>
 
 </body>
