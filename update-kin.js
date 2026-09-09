@@ -27,9 +27,7 @@ function fetchPage(url) {
         res.on("end", () => {
           if (res.statusCode !== 200) {
             reject(
-              new Error(
-                `HTTP ${res.statusCode} while requesting ${url}`
-              )
+              new Error(`HTTP ${res.statusCode} while requesting ${url}`)
             );
             return;
           }
@@ -57,9 +55,7 @@ function extractNextData(html) {
     throw new Error("End of __NEXT_DATA__ not found");
   }
 
-  return JSON.parse(
-    html.substring(jsonStart, jsonEnd)
-  );
+  return JSON.parse(html.substring(jsonStart, jsonEnd));
 }
 
 function getRouteFlights(data) {
@@ -74,65 +70,61 @@ function getFlightDetail(data) {
   );
 }
 
-function cleanStatus(detail) {
-  const status =
-    detail?.status?.statusDescription ||
-    detail?.status?.status ||
-    detail?.resultHeader?.statusDescription ||
-    detail?.resultHeader?.status ||
-    "Scheduled";
-
-  return status;
-}
-
-function getAirportTime(airport, type) {
-  if (!airport?.times) {
+function formatTime(timeObject) {
+  if (!timeObject?.time) {
     return "";
   }
 
-  /*
-   * Prefer an actual/estimated time when FlightStats has one.
-   */
-  const live = airport.times.estimatedActual;
-
-  if (live?.time) {
-    return `${live.time}${live.ampm || ""}`;
-  }
-
-  const scheduled = airport.times.scheduled;
-
-  if (scheduled?.time) {
-    return `${scheduled.time}${scheduled.ampm || ""}`;
-  }
-
-  return "";
+  return `${timeObject.time}${timeObject.ampm || ""}`;
 }
 
 function getScheduledTime(airport) {
-  const scheduled = airport?.times?.scheduled;
-
-  if (!scheduled?.time) {
-    return "";
-  }
-
-  return `${scheduled.time}${scheduled.ampm || ""}`;
+  return formatTime(airport?.times?.scheduled);
 }
 
-function getActualTime(airport) {
+function getLiveTimeInfo(airport) {
   const live = airport?.times?.estimatedActual;
 
   if (!live?.time) {
-    return "";
+    return {
+      time: "",
+      type: ""
+    };
   }
 
-  return `${live.time}${live.ampm || ""}`;
+  const title = String(live.title || "").toLowerCase();
+
+  if (title.includes("actual")) {
+    return {
+      time: formatTime(live),
+      type: "Actual"
+    };
+  }
+
+  if (title.includes("estimated")) {
+    return {
+      time: formatTime(live),
+      type: "Estimated"
+    };
+  }
+
+  return {
+    time: formatTime(live),
+    type: "Updated"
+  };
 }
 
-function normalizeFlight(
-  routeFlight,
-  detail,
-  type
-) {
+function getStatus(detail) {
+  return (
+    detail?.status?.statusDescription ||
+    detail?.resultHeader?.statusDescription ||
+    detail?.status?.status ||
+    detail?.resultHeader?.status ||
+    "Scheduled"
+  );
+}
+
+function normalizeFlight(routeFlight, detail, type) {
   const carrier =
     detail?.ticketHeader?.carrier ||
     detail?.resultHeader?.carrier ||
@@ -157,8 +149,14 @@ function normalizeFlight(
 
   const routeScheduled =
     type === "arrivals"
-      ? routeFlight?.arrivalTime?.timeAMPM
-      : routeFlight?.departureTime?.timeAMPM;
+      ? routeFlight?.arrivalTime?.timeAMPM || ""
+      : routeFlight?.departureTime?.timeAMPM || "";
+
+  const scheduledTime =
+    getScheduledTime(relevantAirport) ||
+    routeScheduled;
+
+  const live = getLiveTimeInfo(relevantAirport);
 
   return {
     airlineCode: carrier.fs || "",
@@ -176,20 +174,28 @@ function normalizeFlight(
       routeFlight?.airport?.city ||
       "",
 
-    scheduledTime:
-      getScheduledTime(relevantAirport) ||
-      routeScheduled ||
-      "",
+    scheduledTime: scheduledTime,
+
+    estimatedTime:
+      live.type === "Estimated"
+        ? live.time
+        : "",
 
     actualTime:
-      getActualTime(relevantAirport),
+      live.type === "Actual"
+        ? live.time
+        : "",
+
+    updatedTime:
+      live.time,
+
+    timeType:
+      live.type || "Scheduled",
 
     displayTime:
-      getAirportTime(relevantAirport, type) ||
-      routeScheduled ||
-      "",
+      live.time || scheduledTime,
 
-    status: cleanStatus(detail),
+    status: getStatus(detail),
 
     gate:
       relevantAirport?.gate || "",
@@ -205,8 +211,50 @@ function normalizeFlight(
     flightId:
       detail?.flightId || null,
 
-    source:
-      "FlightStats"
+    source: "FlightStats"
+  };
+}
+
+function fallbackFlight(flight, type) {
+  const scheduledTime =
+    type === "arrivals"
+      ? flight.arrivalTime?.timeAMPM || ""
+      : flight.departureTime?.timeAMPM || "";
+
+  return {
+    airlineCode:
+      flight.carrier?.fs || "",
+
+    airline:
+      flight.carrier?.name || "",
+
+    flightNumber:
+      flight.carrier?.flightNumber || "",
+
+    flight:
+      `${flight.carrier?.fs || ""}${flight.carrier?.flightNumber || ""}`,
+
+    airportCode:
+      flight.airport?.fs || "",
+
+    city:
+      flight.airport?.city || "",
+
+    scheduledTime: scheduledTime,
+    estimatedTime: "",
+    actualTime: "",
+    updatedTime: "",
+    timeType: "Scheduled",
+    displayTime: scheduledTime,
+
+    status: "Scheduled",
+
+    gate: "",
+    terminal: "",
+    baggage: "",
+
+    flightId: null,
+    source: "FlightStats"
   };
 }
 
@@ -222,10 +270,8 @@ async function processBoard(type) {
     `${type}: ${flights.length} schedule records found`
   );
 
-  /*
-   * Remove codeshares so one physical flight does not
-   * appear several times under different airlines.
-   */
+  // Remove codeshares so the same physical flight
+  // is not displayed several times.
   flights = flights.filter(
     flight => !flight.isCodeshare
   );
@@ -239,6 +285,9 @@ async function processBoard(type) {
   for (const flight of flights) {
     try {
       if (!flight.url) {
+        output.push(
+          fallbackFlight(flight, type)
+        );
         continue;
       }
 
@@ -270,9 +319,7 @@ async function processBoard(type) {
         )
       );
 
-      /*
-       * Small pause between FlightStats requests.
-       */
+      // Be gentle with the FlightStats website.
       await new Promise(resolve =>
         setTimeout(resolve, 500)
       );
@@ -283,48 +330,11 @@ async function processBoard(type) {
         err.message
       );
 
-      /*
-       * Do not lose the entire board because one
-       * individual flight detail page failed.
-       */
-      output.push({
-        airlineCode:
-          flight.carrier?.fs || "",
-
-        airline:
-          flight.carrier?.name || "",
-
-        flightNumber:
-          flight.carrier?.flightNumber || "",
-
-        flight:
-          `${flight.carrier?.fs || ""}${flight.carrier?.flightNumber || ""}`,
-
-        airportCode:
-          flight.airport?.fs || "",
-
-        city:
-          flight.airport?.city || "",
-
-        scheduledTime:
-          type === "arrivals"
-            ? flight.arrivalTime?.timeAMPM || ""
-            : flight.departureTime?.timeAMPM || "",
-
-        actualTime: "",
-
-        displayTime:
-          type === "arrivals"
-            ? flight.arrivalTime?.timeAMPM || ""
-            : flight.departureTime?.timeAMPM || "",
-
-        status: "Scheduled",
-        gate: "",
-        terminal: "",
-        baggage: "",
-        flightId: null,
-        source: "FlightStats"
-      });
+      // Keep the scheduled flight on the board even
+      // if its individual detail request fails.
+      output.push(
+        fallbackFlight(flight, type)
+      );
     }
   }
 
@@ -368,20 +378,12 @@ async function run() {
 
     fs.writeFileSync(
       "kin-arrivals.json",
-      JSON.stringify(
-        arrivalsJSON,
-        null,
-        2
-      )
+      JSON.stringify(arrivalsJSON, null, 2)
     );
 
     fs.writeFileSync(
       "kin-departures.json",
-      JSON.stringify(
-        departuresJSON,
-        null,
-        2
-      )
+      JSON.stringify(departuresJSON, null, 2)
     );
 
     console.log(
