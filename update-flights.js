@@ -20,64 +20,6 @@ function clean(value = "") {
 }
 
 
-/*
-  Reads MBJ's status indicator from the ORIGINAL HTML.
-
-  MBJ legend:
-  Green  = On-Time
-  Blue   = Arrived
-  Teal   = Early
-  Orange = Delayed
-  Red    = Cancelled
-*/
-
-function getStatus(rawStatusTd = "") {
-
-  const raw =
-    rawStatusTd.toLowerCase();
-
-  if (
-    raw.includes("cancel") ||
-    raw.includes("#ed0029") ||
-    raw.includes("rgb(237, 0, 41)")
-  ) {
-    return "Cancelled";
-  }
-
-  if (
-    raw.includes("delay") ||
-    raw.includes("#ff6600") ||
-    raw.includes("orange")
-  ) {
-    return "Delayed";
-  }
-
-  if (
-    raw.includes("early") ||
-    raw.includes("teal")
-  ) {
-    return "Early";
-  }
-
-  if (
-    raw.includes("arrived") ||
-    raw.includes("blue")
-  ) {
-    return "Arrived";
-  }
-
-  if (
-    raw.includes("on-time") ||
-    raw.includes("on time") ||
-    raw.includes("green")
-  ) {
-    return "On-Time";
-  }
-
-  return "";
-}
-
-
 async function fetchPage(url, label) {
 
   console.log(
@@ -110,6 +52,7 @@ async function fetchPage(url, label) {
 
 /* ==================================================
    ARRIVALS
+   PRESERVES YOUR CURRENT WORKING ARRIVALS PARSER
    ================================================== */
 
 function parseArrivals(html) {
@@ -131,7 +74,6 @@ function parseArrivals(html) {
 
     if (cells.length < 5) continue;
 
-
     const airlineFlight =
       cells[0];
 
@@ -141,9 +83,8 @@ function parseArrivals(html) {
     const baggage =
       cells[2];
 
-
     /*
-      MBJ arrival Time column may contain
+      MBJ arrival time cell may contain
       scheduled and updated/actual times.
     */
 
@@ -157,40 +98,26 @@ function parseArrivals(html) {
       cells[3] ||
       "";
 
-    /*
-      MBJ can also place the actual time
-      inside the Status TD, so inspect both.
-    */
-
-    const rawStatusTd =
-      tdMatches[4] || "";
-
-    const statusCell =
-      cells[4] || "";
-
-    const statusTimeMatches =
-      statusCell.match(
-        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
-      ) || [];
-
     const actualTime =
       timeMatches[1] ||
-      statusTimeMatches[0] ||
       "";
 
+    let status =
+      cells[4] || "";
 
     /*
-      Read MBJ's actual status indicator.
+      A time by itself is not a textual status.
     */
 
-    const status =
-      getStatus(rawStatusTd);
-
+    if (
+      /^\d{1,2}:\d{2}\s*(?:AM|PM)$/i.test(status)
+    ) {
+      status = "";
+    }
 
     if (!airlineFlight || !from) {
       continue;
     }
-
 
     flights.push({
       airlineFlight,
@@ -208,7 +135,6 @@ function parseArrivals(html) {
 
 /* ==================================================
    DEPARTURES
-
    MBJ OFFICIAL COLUMN ORDER:
 
    0 Airline/Flight
@@ -236,6 +162,10 @@ function parseDepartures(html) {
     const cells =
       tdMatches.map(clean);
 
+    /*
+      Departures requires six columns.
+    */
+
     if (cells.length < 6) continue;
 
 
@@ -251,29 +181,24 @@ function parseDepartures(html) {
     const gate =
       cells[3] || "";
 
-
-    /*
-      Scheduled departure time.
-    */
-
-    const timeMatches =
-      cells[4].match(
-        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
-      ) || [];
-
     const scheduledTime =
-      timeMatches[0] ||
-      cells[4] ||
-      "";
-
-
-    /*
-      Updated/actual time may be in
-      the Status column.
-    */
+      cells[4] || "";
 
     const statusCell =
       cells[5] || "";
+
+
+    /*
+      MBJ may put an updated departure time
+      inside the Status column.
+
+      Example from the official page:
+
+      Time:   12:38 PM
+      Status: 1:37 PM + orange indicator
+
+      We preserve that updated time.
+    */
 
     const statusTimeMatches =
       statusCell.match(
@@ -281,21 +206,64 @@ function parseDepartures(html) {
       ) || [];
 
     const actualTime =
-      statusTimeMatches[0] ||
-      timeMatches[1] ||
-      "";
+      statusTimeMatches[0] || "";
 
 
     /*
-      Read MBJ status indicator.
+      Determine status from MBJ's HTML indicator.
+
+      The visible MBJ legend identifies:
+      green  = On-Time
+      orange = Delayed
+      red    = Cancelled
+
+      We inspect the original status TD
+      rather than inventing a status based
+      on the clock times.
     */
 
     const rawStatusTd =
       tdMatches[5] || "";
 
-    const status =
-      getStatus(rawStatusTd);
+    let status = "";
 
+    const rawLower =
+      rawStatusTd.toLowerCase();
+
+
+    if (
+      rawLower.includes("cancel") ||
+      rawLower.includes("#ed0029") ||
+      rawLower.includes("rgb(237, 0, 41)")
+    ) {
+      status = "Cancelled";
+    }
+
+    else if (
+      rawLower.includes("delay") ||
+      rawLower.includes("#ff6600") ||
+      rawLower.includes("#ff6") ||
+      rawLower.includes("orange")
+    ) {
+      status = "Delayed";
+    }
+
+    else if (
+      rawLower.includes("on-time") ||
+      rawLower.includes("on time") ||
+      rawLower.includes("#009b4") ||
+      rawLower.includes("green")
+    ) {
+      status = "On-Time";
+    }
+
+
+    /*
+      If MBJ supplies an updated time in
+      the Status column but its HTML color
+      cannot be identified, retain the
+      updated time without inventing a label.
+    */
 
     if (!airlineFlight || !to) {
       continue;
