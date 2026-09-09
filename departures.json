@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-09T15:28:21.414Z",
+  "updated": "2026-09-09T16:26:53.801Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -75,9 +75,9 @@
       "to": "Miami",
       "checkInCounters": "65 - 78",
       "gate": "9",
-      "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "1:00 PM 1:50 PM",
+      "actualTime": "1:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -128,7 +128,7 @@
       "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "18",
       "scheduledTime": "2:40 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -147,9 +147,9 @@
       "to": "Manchester",
       "checkInCounters": "55 - 64",
       "gate": "17",
-      "scheduledTime": "4:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "4:50 PM 5:20 PM",
+      "actualTime": "5:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "3P4160",

@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-09T15:28:21.414Z",
+  "updated": "2026-09-09T16:26:53.801Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -28,7 +28,7 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
+      "actualTime": "10:51 AM",
       "status": ""
     },
     {
@@ -36,7 +36,7 @@
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
+      "actualTime": "11:01 AM",
       "status": ""
     },
     {
@@ -44,7 +44,7 @@
       "from": "Newark",
       "baggage": "3",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
+      "actualTime": "11:21 AM",
       "status": ""
     },
     {
@@ -52,7 +52,7 @@
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
+      "actualTime": "11:26 AM",
       "status": ""
     },
     {
@@ -60,7 +60,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "11:48 AM",
-      "actualTime": "",
+      "actualTime": "11:38 AM",
       "status": ""
     },
     {
@@ -76,7 +76,7 @@
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "11:56 AM",
-      "actualTime": "",
+      "actualTime": "12:52 PM",
       "status": ""
     },
     {
@@ -92,7 +92,7 @@
       "from": "Orlando",
       "baggage": "4",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
+      "actualTime": "11:51 AM",
       "status": ""
     },
     {
@@ -100,7 +100,7 @@
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
+      "actualTime": "12:42 PM",
       "status": ""
     },
     {
@@ -108,7 +108,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
+      "actualTime": "12:47 PM",
       "status": ""
     },
     {
@@ -116,7 +116,7 @@
       "from": "Charlotte",
       "baggage": "6",
       "scheduledTime": "1:09 PM",
-      "actualTime": "",
+      "actualTime": "12:55 PM",
       "status": ""
     },
     {
@@ -124,7 +124,7 @@
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
+      "actualTime": "1:10 PM",
       "status": ""
     },
     {
@@ -132,7 +132,7 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:50 PM",
-      "actualTime": "",
+      "actualTime": "3:21 PM",
       "status": ""
     },
     {
@@ -140,7 +140,7 @@
       "from": "Lisbon",
       "baggage": "6",
       "scheduledTime": "5:40 PM",
-      "actualTime": "",
+      "actualTime": "5:27 PM",
       "status": ""
     }
   ]
