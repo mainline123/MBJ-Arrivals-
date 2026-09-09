@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-09T16:59:55.565Z",
+  "updated": "2026-09-09T17:24:57.270Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -75,8 +75,8 @@
       "to": "Miami",
       "checkInCounters": "65 - 78",
       "gate": "9",
-      "scheduledTime": "1:00 PM 1:50 PM",
-      "actualTime": "1:50 PM",
+      "scheduledTime": "1:00 PM",
+      "actualTime": "1:26 PM",
       "status": "Delayed"
     },
     {
@@ -147,7 +147,7 @@
       "to": "Manchester",
       "checkInCounters": "55 - 64",
       "gate": "17",
-      "scheduledTime": "4:50 PM 5:20 PM",
+      "scheduledTime": "4:50 PM",
       "actualTime": "5:20 PM",
       "status": "Delayed"
     },
