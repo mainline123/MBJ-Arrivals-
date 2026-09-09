@@ -20,6 +20,62 @@ function clean(value = "") {
 }
 
 
+/*
+  MBJ STATUS CLASSES
+
+  Confirmed directly from the MBJ website:
+
+  green  = On-Time
+  blue   = Arrived
+  teal   = Early
+  orange = Delayed
+  red    = Cancelled
+*/
+
+function getStatus(rawHtml = "") {
+
+  const raw =
+    rawHtml.toLowerCase();
+
+  if (
+    raw.includes("bg-red") ||
+    raw.includes("text-red")
+  ) {
+    return "Cancelled";
+  }
+
+  if (
+    raw.includes("bg-orange") ||
+    raw.includes("text-orange")
+  ) {
+    return "Delayed";
+  }
+
+  if (
+    raw.includes("bg-blue") ||
+    raw.includes("text-blue")
+  ) {
+    return "Arrived";
+  }
+
+  if (
+    raw.includes("bg-teal") ||
+    raw.includes("text-teal")
+  ) {
+    return "Early";
+  }
+
+  if (
+    raw.includes("bg-green") ||
+    raw.includes("text-green")
+  ) {
+    return "On-Time";
+  }
+
+  return "";
+}
+
+
 async function fetchPage(url, label) {
 
   console.log(
@@ -52,7 +108,6 @@ async function fetchPage(url, label) {
 
 /* ==================================================
    ARRIVALS
-   PRESERVES YOUR CURRENT WORKING ARRIVALS PARSER
    ================================================== */
 
 function parseArrivals(html) {
@@ -83,9 +138,12 @@ function parseArrivals(html) {
     const baggage =
       cells[2];
 
+
     /*
-      MBJ arrival time cell may contain
-      scheduled and updated/actual times.
+      MBJ's Time column can contain:
+
+      scheduled time
+      updated/actual time
     */
 
     const timeMatches =
@@ -102,22 +160,26 @@ function parseArrivals(html) {
       timeMatches[1] ||
       "";
 
-    let status =
-      cells[4] || "";
 
     /*
-      A time by itself is not a textual status.
+      Read MBJ's real status class from
+      the original status TD.
+
+      Example:
+      text-teal / bg-teal = Early
     */
 
-    if (
-      /^\d{1,2}:\d{2}\s*(?:AM|PM)$/i.test(status)
-    ) {
-      status = "";
-    }
+    const rawStatusTd =
+      tdMatches[4] || "";
+
+    const status =
+      getStatus(rawStatusTd);
+
 
     if (!airlineFlight || !from) {
       continue;
     }
+
 
     flights.push({
       airlineFlight,
@@ -135,7 +197,8 @@ function parseArrivals(html) {
 
 /* ==================================================
    DEPARTURES
-   MBJ OFFICIAL COLUMN ORDER:
+
+   MBJ COLUMN ORDER
 
    0 Airline/Flight
    1 To
@@ -162,10 +225,6 @@ function parseDepartures(html) {
     const cells =
       tdMatches.map(clean);
 
-    /*
-      Departures requires six columns.
-    */
-
     if (cells.length < 6) continue;
 
 
@@ -181,24 +240,22 @@ function parseDepartures(html) {
     const gate =
       cells[3] || "";
 
+
+    /*
+      Scheduled departure time
+    */
+
     const scheduledTime =
       cells[4] || "";
 
-    const statusCell =
-      cells[5] || "";
-
 
     /*
-      MBJ may put an updated departure time
+      MBJ may place an updated time
       inside the Status column.
-
-      Example from the official page:
-
-      Time:   12:38 PM
-      Status: 1:37 PM + orange indicator
-
-      We preserve that updated time.
     */
+
+    const statusCell =
+      cells[5] || "";
 
     const statusTimeMatches =
       statusCell.match(
@@ -210,60 +267,16 @@ function parseDepartures(html) {
 
 
     /*
-      Determine status from MBJ's HTML indicator.
-
-      The visible MBJ legend identifies:
-      green  = On-Time
-      orange = Delayed
-      red    = Cancelled
-
-      We inspect the original status TD
-      rather than inventing a status based
-      on the clock times.
+      Use the same confirmed MBJ
+      status classes for departures.
     */
 
     const rawStatusTd =
       tdMatches[5] || "";
 
-    let status = "";
+    const status =
+      getStatus(rawStatusTd);
 
-    const rawLower =
-      rawStatusTd.toLowerCase();
-
-
-    if (
-      rawLower.includes("cancel") ||
-      rawLower.includes("#ed0029") ||
-      rawLower.includes("rgb(237, 0, 41)")
-    ) {
-      status = "Cancelled";
-    }
-
-    else if (
-      rawLower.includes("delay") ||
-      rawLower.includes("#ff6600") ||
-      rawLower.includes("#ff6") ||
-      rawLower.includes("orange")
-    ) {
-      status = "Delayed";
-    }
-
-    else if (
-      rawLower.includes("on-time") ||
-      rawLower.includes("on time") ||
-      rawLower.includes("#009b4") ||
-      rawLower.includes("green")
-    ) {
-      status = "On-Time";
-    }
-
-
-    /*
-      If MBJ supplies an updated time in
-      the Status column but its HTML color
-      cannot be identified, retain the
-      updated time without inventing a label.
-    */
 
     if (!airlineFlight || !to) {
       continue;
@@ -290,6 +303,7 @@ function parseDepartures(html) {
    ================================================== */
 
 async function main() {
+
 
   /* --------------------
      ARRIVALS
@@ -323,6 +337,23 @@ async function main() {
   }
 
 
+  /*
+    Show status results in GitHub Actions.
+    This makes future troubleshooting easier.
+  */
+
+  console.log(
+    "\nARRIVAL STATUS RESULTS:"
+  );
+
+  for (const flight of arrivals) {
+
+    console.log(
+      `${flight.airlineFlight} => ${flight.status || "NO STATUS"}`
+    );
+  }
+
+
   /* --------------------
      DEPARTURES
      -------------------- */
@@ -337,7 +368,7 @@ async function main() {
     parseDepartures(departuresHtml);
 
   console.log(
-    "Departure flights extracted:",
+    "\nDeparture flights extracted:",
     departures.length
   );
 
@@ -351,6 +382,18 @@ async function main() {
 
     throw new Error(
       "No MBJ departures were extracted. Existing departure data was left untouched."
+    );
+  }
+
+
+  console.log(
+    "\nDEPARTURE STATUS RESULTS:"
+  );
+
+  for (const flight of departures) {
+
+    console.log(
+      `${flight.airlineFlight} => ${flight.status || "NO STATUS"}`
     );
   }
 
@@ -452,7 +495,7 @@ async function main() {
 
 
   console.log(
-    "SUCCESS: MBJ arrivals and departures updated."
+    "\nSUCCESS: MBJ arrivals and departures updated."
   );
 }
 
