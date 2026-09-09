@@ -8,428 +8,741 @@
 
 <style>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+    --navy:#06182c;
+    --navy2:#082b49;
+    --header:#063956;
+    --gold:#f3d67a;
+    --green:#42e582;
+    --orange:#ffbd45;
+    --red:#ff6464;
+    --teal:#18c6c8;
+    --cyan:#56c8ff;
+    --line:rgba(201,166,75,.22);
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,
+body {
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 
 body {
-    background: #071a2d;
-    color: white;
-    font-family: Arial, "Segoe UI", sans-serif;
+    background:transparent;
+    color:white;
+    font-family:Arial,"Segoe UI",sans-serif;
 }
 
 .board {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    border: 2px solid #c9a64b;
-    background: rgba(4, 24, 42, 0.97);
-    display: flex;
-    flex-direction: column;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+
+    background:rgba(4,24,42,.97);
+
+    display:flex;
+    flex-direction:column;
+
+    border:2px solid #c9a64b;
 }
 
+
+/* =========================================
+   TABLE
+   ========================================= */
+
 .table-wrap {
-    flex: 1;
-    min-height: 0;
+    flex:1;
+    min-height:0;
 }
 
 table {
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
+    width:100%;
+    height:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
 }
 
 thead {
-    height: 5%;
+    height:5%;
 }
 
 tbody {
-    height: 95%;
+    height:95%;
 }
+
+
+/* =========================================
+   COLUMN HEADINGS
+   ========================================= */
 
 th {
-    background: #063956;
-    color: #f3d67a;
-    font-size: clamp(16px, 2vw, 30px);
-    font-weight: 800;
-    text-align: left;
-    padding: 8px;
-    border-bottom: 2px solid #c9a64b;
-    text-transform: uppercase;
+    background:var(--header);
+    color:var(--gold);
+
+    font-size:clamp(16px,2vw,30px);
+    font-weight:800;
+
+    text-align:left;
+
+    padding:8px;
+
+    border-bottom:2px solid #c9a64b;
+
+    text-transform:uppercase;
 }
 
+
+/* =========================================
+   FLIGHT ROWS
+   ========================================= */
+
 td {
-    padding: 6px 8px;
-    border-bottom: 1px solid rgba(201,166,75,.22);
-    font-size: clamp(16px, 2.1vw, 30px);
-    line-height: 1.1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding:6px 8px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    font-size:
+        clamp(16px,2.1vw,30px);
+
+    line-height:1.1;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
 }
 
 tbody tr:nth-child(even) {
-    background: rgba(255,255,255,.025);
+    background:
+        rgba(255,255,255,.025);
 }
 
+
+/* =========================================
+   AIRLINE
+   ========================================= */
+
 .flight-cell {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    width: 100%;
-    overflow: hidden;
+    display:flex;
+    align-items:center;
+
+    gap:9px;
+
+    width:100%;
+
+    overflow:hidden;
 }
 
 .airline-logo {
-    width: clamp(38px, 4.5vw, 64px);
-    height: clamp(28px, 3.4vw, 48px);
-    object-fit: contain;
-    flex: 0 0 auto;
-    background: white;
-    border-radius: 4px;
-    padding: 2px;
+    width:clamp(38px,4.5vw,64px);
+    height:clamp(28px,3.4vw,48px);
+
+    object-fit:contain;
+
+    flex:0 0 auto;
+
+    background:white;
+
+    border-radius:4px;
+
+    padding:2px;
 }
 
 .flight-text {
-    font-weight: 800;
-    color: white;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    font-weight:800;
+
+    color:white;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    white-space:nowrap;
 }
 
-.time {
-    font-weight: 800;
+
+/* =========================================
+   SCHEDULED TIME
+   ========================================= */
+
+.scheduled {
+    font-weight:800;
+    color:white;
 }
+
+
+/* =========================================
+   STATUS
+   ========================================= */
 
 .status {
-    font-weight: 800;
+    font-weight:800;
 }
 
-/* STATUS COLOURS */
+.status-time {
+    color:white;
+    font-weight:800;
+    margin-right:7px;
+}
 
-.status-arrived,
-.status-landed,
 .status-on-time {
-    color: #51e38a;
+    color:var(--green);
 }
 
 .status-early {
-    color: #18c6c8;
+    color:var(--teal);
 }
 
 .status-delayed {
-    color: #ffbd45;
+    color:var(--orange);
 }
 
 .status-cancelled {
-    color: #ff6464;
+    color:var(--red);
 }
 
-.status-en-route,
-.status-enroute,
-.status-in-air {
-    color: #56c8ff;
+.status-arrived,
+.status-landed {
+    color:var(--cyan);
 }
 
-.message {
-    text-align: center;
-    padding: 30px;
-    color: #d6d6d6;
+
+/* =========================================
+   COLUMN WIDTHS
+   ========================================= */
+
+.col-flight {
+    width:30%;
 }
 
-/* LAST UPDATE LINE */
+.col-from {
+    width:26%;
+}
+
+.col-bag {
+    width:9%;
+}
+
+.col-time {
+    width:17%;
+}
+
+.col-status {
+    width:18%;
+}
+
+
+/* =========================================
+   UPDATED BAR
+   ========================================= */
 
 .update-bar {
-    flex: 0 0 auto;
-    background: #063956;
-    color: #f3d67a;
-    text-align: right;
-    padding: 4px 10px;
-    font-size: clamp(10px, 1.1vw, 16px);
-    font-weight: 700;
+    flex:0 0 auto;
+
+    background:var(--header);
+
+    color:var(--gold);
+
+    text-align:right;
+
+    padding:4px 10px;
+
+    font-size:
+        clamp(10px,1.1vw,16px);
+
+    font-weight:700;
 }
-
-/* COLUMN WIDTHS */
-
-.col-flight { width: 30%; }
-.col-from   { width: 26%; }
-.col-bag    { width: 9%; }
-.col-time   { width: 17%; }
-.col-status { width: 18%; }
 
 </style>
 </head>
+
 
 <body>
 
 <div class="board">
 
-<div class="table-wrap">
+    <div class="table-wrap">
 
-<table>
+        <table>
 
-<thead>
-<tr>
-    <th class="col-flight">Airline / Flight</th>
-    <th class="col-from">From</th>
-    <th class="col-bag">Bag</th>
-    <th class="col-time">Time</th>
-    <th class="col-status">Status</th>
-</tr>
-</thead>
+            <thead>
 
-<tbody id="flight-body">
+                <tr>
 
-<tr>
-    <td colspan="5" class="message">
-        Loading MBJ arrivals...
-    </td>
-</tr>
+                    <th class="col-flight">
+                        AIRLINE / FLIGHT
+                    </th>
 
-</tbody>
+                    <th class="col-from">
+                        FROM
+                    </th>
 
-</table>
+                    <th class="col-bag">
+                        BAG
+                    </th>
+
+                    <th class="col-time">
+                        SCHEDULED
+                    </th>
+
+                    <th class="col-status">
+                        STATUS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="flightBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div
+        class="update-bar"
+        id="updated">
+        LIVE DATA
+    </div>
 
 </div>
 
-<div class="update-bar" id="update-bar">
-    Loading live flight information...
-</div>
-
-</div>
 
 <script>
 
-function escapeHtml(value) {
-    return String(value ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-}
 
-function statusClass(status) {
-    return "status-" +
-        String(status || "")
-            .toLowerCase()
-            .trim()
-            .replace(/\s+/g, "-");
-}
-
-
-/* AIRLINE LOGOS */
+/* =========================================
+   AIRLINE LOGOS
+   ========================================= */
 
 const airlineLogos = {
-    "AA": "AAL",
-    "AC": "ACA",
-    "B6": "JBU",
-    "CM": "CMP",
-    "DL": "DAL",
-    "UA": "UAL",
-    "WN": "SWA",
-    "WS": "WJA",
-    "VS": "VIR",
-    "OR": "TFL",
-    "P5": "RPB"
+
+    "AA":"AAL",
+    "AC":"ACA",
+    "B6":"JBU",
+    "CM":"CMP",
+    "DL":"DAL",
+    "UA":"UAL",
+    "WN":"SWA",
+    "WS":"WJA",
+    "VS":"VIR",
+    "OR":"TFL",
+    "BY":"TOM"
+
 };
+
+
+const LOGO_BASE =
+
+"https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
+
+
+/* =========================================
+   SAFE HTML
+   ========================================= */
+
+function escapeHtml(value) {
+
+    return String(value ?? "")
+
+        .replace(/&/g,"&amp;")
+
+        .replace(/</g,"&lt;")
+
+        .replace(/>/g,"&gt;")
+
+        .replace(/"/g,"&quot;")
+
+        .replace(/'/g,"&#039;");
+}
+
+
+/* =========================================
+   STATUS CLASS
+   ========================================= */
+
+function statusClass(status) {
+
+    return "status-" +
+
+        String(status || "")
+
+        .toLowerCase()
+
+        .trim()
+
+        .replace(/\s+/g,"-");
+}
+
+
+/* =========================================
+   GET AIRLINE CODE
+   ========================================= */
 
 function getAirlineCode(value) {
 
     const text =
-        String(value || "").toUpperCase();
+
+        String(value || "")
+        .toUpperCase();
+
 
     const match =
-        text.match(/\b([A-Z0-9]{2})\s*\d{1,4}\b/);
 
-    return match ? match[1] : "";
+        text.match(
+
+            /\b([A-Z0-9]{2})\s*\d{1,4}\b/
+
+        );
+
+
+    return match
+        ? match[1]
+        : "";
 }
+
+
+/* =========================================
+   GET AIRLINE LOGO
+   ========================================= */
 
 function getLogo(value) {
 
     const code =
         getAirlineCode(value);
 
+
     const icao =
         airlineLogos[code];
 
-    if (!icao) return "";
 
-    return "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/" +
-           icao +
-           ".png";
+    if(!icao)
+        return "";
+
+
+    return (
+
+        LOGO_BASE +
+
+        encodeURIComponent(icao) +
+
+        ".png"
+
+    );
 }
 
 
-/* FORMAT JSON UPDATE TIME */
+/* =========================================
+   FORMAT LAST UPDATE
+   ========================================= */
 
 function formatUpdateTime(value) {
 
-    if (!value)
-        return "Live flight information";
+    if(!value)
+        return "LIVE DATA";
+
 
     const date =
         new Date(value);
 
-    if (isNaN(date.getTime()))
-        return "Live flight information";
 
-    return date.toLocaleString("en-JM", {
-        timeZone: "America/Jamaica",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true
-    });
+    if(isNaN(date.getTime()))
+        return "LIVE DATA";
+
+
+    return new Intl.DateTimeFormat(
+
+        "en-US",
+
+        {
+            timeZone:
+                "America/Jamaica",
+
+            hour:
+                "numeric",
+
+            minute:
+                "2-digit",
+
+            hour12:
+                true
+        }
+
+    ).format(date);
 }
 
 
-/* LOAD CURRENT FLIGHTS */
+/* =========================================
+   LOAD LIVE ARRIVALS
+   ========================================= */
 
 async function loadFlights() {
 
-    const body =
-        document.getElementById("flight-body");
-
-    const updateBar =
-        document.getElementById("update-bar");
-
     try {
 
+
         const url =
-            "./flights.json?refresh=" + Date.now();
+
+            "./flights.json?refresh="
+
+            +
+
+            Date.now();
+
 
         const response =
-            await fetch(url, {
-                method: "GET",
-                cache: "no-store",
-                headers: {
-                    "Cache-Control": "no-cache"
-                }
-            });
 
-        if (!response.ok) {
+            await fetch(
+
+                url,
+
+                {
+                    cache:"no-store"
+                }
+
+            );
+
+
+        if(!response.ok) {
+
             throw new Error(
-                "Unable to load flights.json"
+                "Unable to retrieve arrivals"
             );
         }
 
+
         const data =
+
             await response.json();
 
+
         const flights =
-            (data.flights || []).slice(0, 30);
+
+            (data.flights || [])
+            .slice(0,30);
+
+
+        const body =
+
+            document.getElementById(
+                "flightBody"
+            );
+
 
         body.innerHTML = "";
 
-        if (!flights.length) {
-
-            body.innerHTML = `
-                <tr>
-                    <td colspan="5" class="message">
-                        No arrival information available.
-                    </td>
-                </tr>
-            `;
-
-            return;
-        }
 
         flights.forEach(f => {
 
-            const row =
-                document.createElement("tr");
 
+            const scheduledTime =
 
-            /* USE UPDATED TIME WHEN AVAILABLE */
-
-            const displayTime =
-                f.actualTime ||
-                f.scheduledTime ||
+                f.scheduledTime
+                ||
                 "—";
 
 
-            /* USE REAL MBJ STATUS */
+            const status =
 
-            const displayStatus =
-                f.status || "Scheduled";
+                f.status
+                ||
+                "Scheduled";
+
+
+            /*
+               IMPORTANT:
+
+               Scheduled time remains
+               in the SCHEDULED column.
+
+               If MBJ provides an updated
+               or actual time, it appears
+               beside the status.
+
+               Example:
+
+               10:34 AM | 9:55 AM Early
+            */
+
+
+            const statusDisplay =
+
+                f.actualTime
+
+                ? `
+
+                    <span class="status-time">
+
+                        ${escapeHtml(
+                            f.actualTime
+                        )}
+
+                    </span>
+
+                    <span class="${statusClass(status)}">
+
+                        ${escapeHtml(
+                            status
+                        )}
+
+                    </span>
+
+                  `
+
+                : `
+
+                    <span class="${statusClass(status)}">
+
+                        ${escapeHtml(
+                            status
+                        )}
+
+                    </span>
+
+                  `;
 
 
             const logo =
-                getLogo(f.airlineFlight);
 
-            const logoHtml =
+                getLogo(
+                    f.airlineFlight
+                );
+
+
+            const logoHTML =
+
                 logo
-                ? `<img
-                    class="airline-logo"
-                    src="${logo}"
-                    alt=""
-                    onerror="this.style.display='none'"
-                   >`
+
+                ? `
+
+                    <img
+                        class="airline-logo"
+                        src="${logo}"
+                        alt=""
+                        onerror="
+                            this.style.display='none';
+                        "
+                    >
+
+                  `
+
                 : "";
+
+
+            const row =
+
+                document.createElement(
+                    "tr"
+                );
 
 
             row.innerHTML = `
 
+
                 <td>
+
                     <div class="flight-cell">
 
-                        ${logoHtml}
+                        ${logoHTML}
 
                         <span class="flight-text">
+
                             ${escapeHtml(
                                 f.airlineFlight || "—"
                             )}
+
                         </span>
 
                     </div>
+
                 </td>
+
 
                 <td>
-                    ${escapeHtml(f.from || "—")}
+
+                    ${escapeHtml(
+                        f.from || "—"
+                    )}
+
                 </td>
+
 
                 <td>
-                    ${escapeHtml(f.baggage || "—")}
+
+                    ${escapeHtml(
+                        f.baggage || "—"
+                    )}
+
                 </td>
 
-                <td class="time">
-                    ${escapeHtml(displayTime)}
+
+                <td class="scheduled">
+
+                    ${escapeHtml(
+                        scheduledTime
+                    )}
+
                 </td>
 
-                <td class="status ${statusClass(displayStatus)}">
-                    ${escapeHtml(displayStatus)}
+
+                <td class="status">
+
+                    ${statusDisplay}
+
                 </td>
+
+
             `;
+
 
             body.appendChild(row);
 
         });
 
 
-        /* SHOW ACTUAL JSON UPDATE TIME */
+        document
+            .getElementById("updated")
+            .textContent =
 
-        updateBar.textContent =
-            "LIVE DATA UPDATED: " +
-            formatUpdateTime(data.updated);
+            "LIVE DATA UPDATED "
+
+            +
+
+            formatUpdateTime(
+                data.updated
+            );
 
 
-    } catch (error) {
+    }
 
-        console.error(error);
 
-        updateBar.textContent =
+    catch(error) {
+
+
+        console.error(
+            "Arrival update failed:",
+            error
+        );
+
+
+        document
+            .getElementById("updated")
+            .textContent =
+
             "LIVE DATA — REFRESHING...";
 
     }
@@ -437,28 +750,39 @@ async function loadFlights() {
 }
 
 
-/* LOAD IMMEDIATELY */
+/* =========================================
+   START
+   ========================================= */
 
 loadFlights();
 
 
-/* CHECK FOR NEW DATA EVERY 60 SECONDS */
+/* CHECK LIVE DATA EVERY 60 SECONDS */
 
-setInterval(loadFlights, 60000);
+setInterval(
+    loadFlights,
+    60000
+);
 
 
-/* REFRESH WHEN NOVISIGN RETURNS TO PAGE */
+/* REFRESH WHEN NOVISIGN RETURNS */
 
 document.addEventListener(
-    "visibilitychange",
-    function () {
 
-        if (!document.hidden) {
+    "visibilitychange",
+
+    function() {
+
+        if(!document.hidden) {
+
             loadFlights();
+
         }
 
     }
+
 );
+
 
 </script>
 
