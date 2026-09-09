@@ -232,32 +232,50 @@ html, body {
 </div>
 
 <script>
+
 const DATA_URL = "kin-departures.json";
 
+/*
+ * SAME WORKING LOGO DATASET AS MBJ + KIN ARRIVALS
+ */
 const AIRLINE_LOGOS = {
   "AA": "AAL",
   "AC": "ACA",
-  "AF": "AFR",
   "5Y": "GTI",
   "B6": "JBU",
   "BA": "BAW",
   "BW": "BWA",
   "CM": "CMP",
   "DL": "DAL",
-  "DWI": "DWI",
-  "JY": "IWY",
-  "KX": "CAY",
-  "NK": "NKS",
-  "TXG": "TXG",
   "UA": "UAL",
-  "VS": "VIR"
+  "WS": "WJA",
+  "VS": "VIR",
+
+  "KX": "CAY",
+  "JY": "IWY",
+  "F8": "FLE",
+  "NK": "NKS",
+
+  "DWI": "DWI",
+  "TXG": "TXG",
+  "GAO": "GAO"
 };
 
-function logoUrl(code) {
-  const mapped = AIRLINE_LOGOS[code] || code;
+const LOGO_BASE =
+  "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
 
-  return "https://raw.githubusercontent.com/npow/airline-codes/master/logos/" +
-    mapped + ".png";
+function logoUrl(code) {
+
+  const mapped =
+    AIRLINE_LOGOS[code];
+
+  if (!mapped) {
+    return "";
+  }
+
+  return LOGO_BASE +
+    encodeURIComponent(mapped) +
+    ".png";
 }
 
 function escapeHtml(value) {
@@ -270,7 +288,9 @@ function escapeHtml(value) {
 }
 
 function statusClass(status) {
-  const s = String(status || "").toLowerCase();
+
+  const s =
+    String(status || "").toLowerCase();
 
   if (s.includes("cancel")) {
     return "status-cancelled";
@@ -284,7 +304,10 @@ function statusClass(status) {
     return "status-departed";
   }
 
-  if (s.includes("on time") || s.includes("scheduled")) {
+  if (
+    s.includes("on time") ||
+    s.includes("scheduled")
+  ) {
     return "status-on-time";
   }
 
@@ -292,87 +315,101 @@ function statusClass(status) {
 }
 
 function formatUpdated(iso) {
+
   if (!iso) {
     return "LIVE KIN DATA";
   }
 
-  const date = new Date(iso);
+  const date =
+    new Date(iso);
 
   return "LIVE KIN DATA • UPDATED " +
-    date.toLocaleTimeString("en-US", {
-      timeZone: "America/Jamaica",
-      hour: "numeric",
-      minute: "2-digit"
-    }) +
+    date.toLocaleTimeString(
+      "en-US",
+      {
+        timeZone: "America/Jamaica",
+        hour: "numeric",
+        minute: "2-digit"
+      }
+    ) +
     " JAMAICA TIME";
 }
 
 function renderFlights(data) {
-  const rows = document.getElementById("rows");
 
-  const flights = Array.isArray(data.flights)
-    ? data.flights
-    : [];
+  const rows =
+    document.getElementById("rows");
+
+  const flights =
+    Array.isArray(data.flights)
+      ? data.flights
+      : [];
 
   if (!flights.length) {
+
     rows.innerHTML =
       '<div class="message">No KIN departures currently available.</div>';
 
-    document.getElementById("updated").textContent =
-      formatUpdated(data.updated);
+    document
+      .getElementById("updated")
+      .textContent =
+        formatUpdated(data.updated);
 
     return;
   }
 
-  rows.innerHTML = flights.map(flight => {
+  rows.innerHTML =
+    flights.map(flight => {
 
-    const code = flight.airlineCode || "";
+      const code =
+        String(
+          flight.airlineCode || ""
+        ).toUpperCase();
 
-    const flightNumber =
-      flight.flight ||
-      `${code}${flight.flightNumber || ""}`;
+      const flightNumber =
+        flight.flight ||
+        `${code}${flight.flightNumber || ""}`;
 
-    const city =
-      flight.city ||
-      flight.airportCode ||
-      "—";
+      const city =
+        flight.city ||
+        flight.airportCode ||
+        "—";
 
-    const airportCode =
-      flight.airportCode || "";
+      const airportCode =
+        flight.airportCode || "";
 
-    /*
-     * FlightStats does not currently give us a
-     * check-in counter for these KIN records.
-     * We show a dash rather than inventing one.
-     */
-    const checkIn =
-      flight.checkIn || "—";
+      /*
+       * FlightStats does not currently
+       * provide KIN check-in counters.
+       */
+      const checkIn =
+        flight.checkIn || "—";
 
-    const gate =
-      flight.gate || "—";
+      const gate =
+        flight.gate || "—";
 
-    const scheduled =
-      flight.scheduledTime || "—";
+      const scheduled =
+        flight.scheduledTime || "—";
 
-    const liveTime =
-      flight.updatedTime ||
-      flight.displayTime ||
-      scheduled;
+      const liveTime =
+        flight.updatedTime ||
+        flight.displayTime ||
+        scheduled;
 
-    const timeType =
-      flight.timeType || "Scheduled";
+      const timeType =
+        flight.timeType || "Scheduled";
 
-    const status =
-      flight.status || "Scheduled";
+      const status =
+        flight.status || "Scheduled";
 
-    return `
-      <div class="row">
+      const logo =
+        logoUrl(code);
 
-        <div class="flight-cell">
-
-          <div class="logo-box">
+      const logoHTML =
+        logo
+        ? `
             <img
-              src="${logoUrl(code)}"
+              src="${logo}"
               alt="${escapeHtml(code)}"
               onerror="
                 this.style.display='none';
@@ -385,81 +422,101 @@ function renderFlights(data) {
             >
               ${escapeHtml(code)}
             </span>
-          </div>
+          `
+        : `
+            <span class="logo-fallback">
+              ${escapeHtml(code)}
+            </span>
+          `;
 
-          <div class="flight-info">
+      return `
+        <div class="row">
 
-            <div class="flight-number">
-              ${escapeHtml(flightNumber)}
+          <div class="flight-cell">
+
+            <div class="logo-box">
+              ${logoHTML}
             </div>
 
-            <div class="airline-name">
-              ${escapeHtml(flight.airline || "")}
+            <div class="flight-info">
+
+              <div class="flight-number">
+                ${escapeHtml(flightNumber)}
+              </div>
+
+              <div class="airline-name">
+                ${escapeHtml(flight.airline || "")}
+              </div>
+
+            </div>
+
+          </div>
+
+          <div>
+
+            <div class="city">
+              ${escapeHtml(city)}
+            </div>
+
+            <div class="airport-code">
+              ${escapeHtml(airportCode)}
+            </div>
+
+          </div>
+
+          <div class="center">
+            ${escapeHtml(checkIn)}
+          </div>
+
+          <div class="center">
+            ${escapeHtml(gate)}
+          </div>
+
+          <div class="scheduled">
+            ${escapeHtml(scheduled)}
+          </div>
+
+          <div class="status-cell">
+
+            <div class="live-time">
+              ${escapeHtml(liveTime)}
+            </div>
+
+            <div class="time-type">
+              ${escapeHtml(timeType)}
+            </div>
+
+            <div class="status-text ${statusClass(status)}">
+              ${escapeHtml(status)}
             </div>
 
           </div>
 
         </div>
+      `;
 
-        <div>
+    }).join("");
 
-          <div class="city">
-            ${escapeHtml(city)}
-          </div>
-
-          <div class="airport-code">
-            ${escapeHtml(airportCode)}
-          </div>
-
-        </div>
-
-        <div class="center">
-          ${escapeHtml(checkIn)}
-        </div>
-
-        <div class="center">
-          ${escapeHtml(gate)}
-        </div>
-
-        <div class="scheduled">
-          ${escapeHtml(scheduled)}
-        </div>
-
-        <div class="status-cell">
-
-          <div class="live-time">
-            ${escapeHtml(liveTime)}
-          </div>
-
-          <div class="time-type">
-            ${escapeHtml(timeType)}
-          </div>
-
-          <div class="status-text ${statusClass(status)}">
-            ${escapeHtml(status)}
-          </div>
-
-        </div>
-
-      </div>
-    `;
-  }).join("");
-
-  document.getElementById("updated").textContent =
-    formatUpdated(data.updated);
+  document
+    .getElementById("updated")
+    .textContent =
+      formatUpdated(data.updated);
 }
 
 async function loadFlights() {
+
   try {
 
-    const response = await fetch(
-      DATA_URL + "?t=" + Date.now(),
-      {
-        cache: "no-store"
-      }
-    );
+    const response =
+      await fetch(
+        DATA_URL + "?t=" + Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
 
     if (!response.ok) {
+
       throw new Error(
         "HTTP " + response.status
       );
@@ -477,14 +534,20 @@ async function loadFlights() {
       error
     );
 
-    document.getElementById("rows").innerHTML =
-      '<div class="message">KIN departure data temporarily unavailable.</div>';
+    document
+      .getElementById("rows")
+      .innerHTML =
+        '<div class="message">KIN departure data temporarily unavailable.</div>';
   }
 }
 
 loadFlights();
 
-setInterval(loadFlights, 60000);
+setInterval(
+  loadFlights,
+  60000
+);
+
 </script>
 
 </body>
