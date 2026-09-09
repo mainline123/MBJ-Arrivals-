@@ -20,17 +20,17 @@ function clean(value = "") {
 }
 
 
-/*
-  MBJ STATUS CLASSES
+/* ==================================================
+   MBJ STATUS DETECTION
 
-  Confirmed directly from the MBJ website:
+   CONFIRMED FROM THE OFFICIAL MBJ WEBSITE:
 
-  green  = On-Time
-  blue   = Arrived
-  teal   = Early
-  orange = Delayed
-  red    = Cancelled
-*/
+   green  = On-Time
+   blue   = Arrived
+   teal   = Early
+   orange = Delayed
+   red    = Cancelled
+   ================================================== */
 
 function getStatus(rawHtml = "") {
 
@@ -75,6 +75,10 @@ function getStatus(rawHtml = "") {
   return "";
 }
 
+
+/* ==================================================
+   FETCH MBJ PAGE
+   ================================================== */
 
 async function fetchPage(url, label) {
 
@@ -129,6 +133,7 @@ function parseArrivals(html) {
 
     if (cells.length < 5) continue;
 
+
     const airlineFlight =
       cells[0];
 
@@ -140,33 +145,40 @@ function parseArrivals(html) {
 
 
     /*
-      MBJ's Time column can contain:
-
-      scheduled time
-      updated/actual time
+      ARRIVAL SCHEDULED TIME
     */
 
-    const timeMatches =
+    const scheduledMatches =
       cells[3].match(
         /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
       ) || [];
 
     const scheduledTime =
-      timeMatches[0] ||
+      scheduledMatches[0] ||
       cells[3] ||
-      "";
-
-    const actualTime =
-      timeMatches[1] ||
       "";
 
 
     /*
-      Read MBJ's real status class from
-      the original status TD.
+      ARRIVAL UPDATED / ACTUAL TIME
 
-      Example:
-      text-teal / bg-teal = Early
+      MBJ places this in the status column.
+    */
+
+    const statusCell =
+      cells[4] || "";
+
+    const actualMatches =
+      statusCell.match(
+        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
+      ) || [];
+
+    const actualTime =
+      actualMatches[0] || "";
+
+
+    /*
+      REAL MBJ STATUS
     */
 
     const rawStatusTd =
@@ -198,9 +210,9 @@ function parseArrivals(html) {
 /* ==================================================
    DEPARTURES
 
-   MBJ COLUMN ORDER
+   MBJ COLUMN ORDER:
 
-   0 Airline/Flight
+   0 Airline / Flight
    1 To
    2 Check-In Counters
    3 Gate
@@ -242,16 +254,41 @@ function parseDepartures(html) {
 
 
     /*
-      Scheduled departure time
+      DEPARTURE TIME
+
+      MBJ can place BOTH the original
+      scheduled time and an updated time
+      inside this cell.
+
+      Example:
+
+      1:00 PM 1:50 PM
+
+      We want:
+
+      scheduledTime = 1:00 PM
+      actualTime    = 1:50 PM
     */
 
+    const departureTimeMatches =
+      cells[4].match(
+        /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
+      ) || [];
+
+
     const scheduledTime =
-      cells[4] || "";
+      departureTimeMatches[0] ||
+      cells[4] ||
+      "";
 
 
     /*
-      MBJ may place an updated time
-      inside the Status column.
+      MBJ may also repeat the updated time
+      in the Status column.
+
+      First use a second time from the
+      Time column. If there isn't one,
+      check the Status column.
     */
 
     const statusCell =
@@ -262,13 +299,15 @@ function parseDepartures(html) {
         /\b\d{1,2}:\d{2}\s*(?:AM|PM)\b/gi
       ) || [];
 
+
     const actualTime =
-      statusTimeMatches[0] || "";
+      departureTimeMatches[1] ||
+      statusTimeMatches[0] ||
+      "";
 
 
     /*
-      Use the same confirmed MBJ
-      status classes for departures.
+      REAL MBJ STATUS
     */
 
     const rawStatusTd =
@@ -318,6 +357,7 @@ async function main() {
   const arrivals =
     parseArrivals(arrivalsHtml);
 
+
   console.log(
     "Arrival flights extracted:",
     arrivals.length
@@ -336,11 +376,6 @@ async function main() {
     );
   }
 
-
-  /*
-    Show status results in GitHub Actions.
-    This makes future troubleshooting easier.
-  */
 
   console.log(
     "\nARRIVAL STATUS RESULTS:"
@@ -366,6 +401,7 @@ async function main() {
 
   const departures =
     parseDepartures(departuresHtml);
+
 
   console.log(
     "\nDeparture flights extracted:",
