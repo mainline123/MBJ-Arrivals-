@@ -1,9 +1,7 @@
 const https = require("https");
 
-const urls = {
-  arrivals: "https://www.flightstats.com/v2/flight-tracker/arrivals/KIN",
-  departures: "https://www.flightstats.com/v2/flight-tracker/departures/KIN"
-};
+const ARRIVALS_URL =
+  "https://www.flightstats.com/v2/flight-tracker/arrivals/KIN";
 
 function fetchPage(url) {
   return new Promise((resolve, reject) => {
@@ -34,92 +32,108 @@ function fetchPage(url) {
   });
 }
 
-function findUsefulData(name, html) {
+function extractNextData(html) {
+  /*
+   * FlightStats writes:
+   * __NEXT_DATA__ = {...};
+   * rather than using a script tag with id="__NEXT_DATA__".
+   */
+  const marker = "__NEXT_DATA__ = ";
+  const start = html.indexOf(marker);
+
+  if (start === -1) {
+    throw new Error("__NEXT_DATA__ assignment not found");
+  }
+
+  const jsonStart = start + marker.length;
+  const endMarker = ";__NEXT_LOADED_PAGES__";
+  const jsonEnd = html.indexOf(endMarker, jsonStart);
+
+  if (jsonEnd === -1) {
+    throw new Error("Could not find end of __NEXT_DATA__");
+  }
+
+  const jsonText = html.substring(jsonStart, jsonEnd);
+
+  return JSON.parse(jsonText);
+}
+
+function getFlights(data) {
+  return (
+    data?.props?.initialState?.flightTracker?.route?.flights || []
+  );
+}
+
+function inspectIndividualFlight(html) {
   console.log("\n====================================");
-  console.log(`KIN ${name.toUpperCase()}`);
+  console.log("INDIVIDUAL FLIGHT PAGE INSPECTION");
   console.log("====================================");
 
   console.log("HTML BYTES:", html.length);
 
-  const searches = [
-    "flightId",
-    "flightNumber",
-    "carrierCode",
-    "departureAirport",
-    "arrivalAirport",
-    "departureTime",
-    "arrivalTime",
+  const terms = [
+    "status",
+    "statusCode",
+    "statusDescription",
     "scheduled",
     "estimated",
     "actual",
-    "status",
     "gate",
+    "terminal",
     "baggage",
-    "Kingston",
-    "Norman Manley"
+    "baggageClaim",
+    "departureGate",
+    "arrivalGate",
+    "departureTerminal",
+    "arrivalTerminal"
   ];
 
   console.log("\nFIELD SEARCH:");
 
-  for (const term of searches) {
+  for (const term of terms) {
     const index = html.toLowerCase().indexOf(term.toLowerCase());
 
     console.log(
-      term.padEnd(20),
+      term.padEnd(22),
       index >= 0 ? `FOUND at ${index}` : "NOT FOUND"
     );
   }
 
-  /*
-   * Look for Next.js page data.
-   * FlightStats is rendered using Next.js, so useful flight
-   * information may be embedded inside __NEXT_DATA__.
-   */
-  const nextMatch = html.match(
-    /<script[^>]*id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i
-  );
+  try {
+    const data = extractNextData(html);
 
-  if (nextMatch) {
-    console.log("\n*** __NEXT_DATA__ FOUND ***");
+    const flight =
+      data?.props?.initialState?.flightTracker?.flight || {};
 
-    try {
-      const nextData = JSON.parse(nextMatch[1]);
+    console.log("\n*** FLIGHT OBJECT FOUND ***");
 
-      console.log(
-        JSON.stringify(nextData, null, 2).substring(0, 15000)
-      );
-    } catch (err) {
-      console.log("Could not parse __NEXT_DATA__:");
-      console.log(err.message);
+    console.log(
+      JSON.stringify(flight, null, 2).substring(0, 30000)
+    );
 
-      console.log(
-        nextMatch[1].substring(0, 15000)
-      );
-    }
-  } else {
-    console.log("\n__NEXT_DATA__ NOT FOUND");
+  } catch (err) {
+    console.log("\nCould not parse individual flight data:");
+    console.log(err.message);
 
     /*
-     * If there is no __NEXT_DATA__, print areas surrounding
-     * likely flight fields so we can identify the structure.
+     * Show surrounding text for useful fields if parsing fails.
      */
-    const keywords = [
-      "flightNumber",
-      "carrierCode",
-      "scheduled",
-      "estimated",
+    const usefulTerms = [
+      "status",
       "actual",
-      "status"
+      "estimated",
+      "gate",
+      "baggage"
     ];
 
-    for (const keyword of keywords) {
-      const index = html.toLowerCase().indexOf(keyword.toLowerCase());
+    for (const term of usefulTerms) {
+      const index = html.toLowerCase().indexOf(term);
 
       if (index >= 0) {
-        console.log(`\n--- CONTEXT AROUND ${keyword} ---`);
+        console.log(`\n--- CONTEXT AROUND ${term} ---`);
 
         const start = Math.max(0, index - 1000);
-        const end = Math.min(html.length, index + 4000);
+        const end = Math.min(html.length, index + 5000);
 
         console.log(html.substring(start, end));
       }
@@ -128,23 +142,86 @@ function findUsefulData(name, html) {
 }
 
 async function run() {
-  console.log("KIN FlightStats flight-data inspection");
+  console.log("KIN individual-flight FlightStats test");
   console.log(new Date().toISOString());
 
-  for (const [name, url] of Object.entries(urls)) {
-    try {
-      const result = await fetchPage(url);
+  try {
+    /*
+     * STEP 1:
+     * Get today's KIN arrivals.
+     */
+    const arrivals = await fetchPage(ARRIVALS_URL);
 
-      console.log(`\n${name.toUpperCase()} HTTP STATUS:`, result.status);
+    console.log("\nKIN ARRIVALS HTTP STATUS:", arrivals.status);
 
-      if (result.status === 200) {
-        findUsefulData(name, result.body);
-      } else {
-        console.log("FlightStats did not return HTTP 200.");
-      }
-    } catch (err) {
-      console.error(`${name} ERROR:`, err.message);
+    if (arrivals.status !== 200) {
+      throw new Error("Could not retrieve KIN arrivals page");
     }
+
+    const arrivalsData = extractNextData(arrivals.body);
+    const flights = getFlights(arrivalsData);
+
+    console.log("FLIGHTS FOUND:", flights.length);
+
+    if (!flights.length) {
+      throw new Error("No KIN flights found");
+    }
+
+    /*
+     * Prefer a non-codeshare flight.
+     */
+    const selected =
+      flights.find(f => !f.isCodeshare) || flights[0];
+
+    console.log("\nSELECTED FLIGHT:");
+    console.log(
+      `${selected.carrier?.fs || ""}${selected.carrier?.flightNumber || ""}`
+    );
+    console.log(
+      "AIRLINE:",
+      selected.carrier?.name || "Unknown"
+    );
+    console.log(
+      "FROM:",
+      selected.airport?.city || selected.airport?.fs || "Unknown"
+    );
+    console.log(
+      "ARRIVAL:",
+      selected.arrivalTime?.timeAMPM || "Unknown"
+    );
+    console.log(
+      "FLIGHTSTATS PATH:",
+      selected.url
+    );
+
+    /*
+     * STEP 2:
+     * Open that flight's individual tracker page.
+     */
+    const flightUrl =
+      "https://www.flightstats.com/v2" + selected.url;
+
+    console.log("\nREQUESTING:");
+    console.log(flightUrl);
+
+    const detail = await fetchPage(flightUrl);
+
+    console.log(
+      "\nINDIVIDUAL FLIGHT HTTP STATUS:",
+      detail.status
+    );
+
+    if (detail.status === 200) {
+      inspectIndividualFlight(detail.body);
+    } else {
+      console.log(
+        "Individual FlightStats page did not return HTTP 200."
+      );
+    }
+
+  } catch (err) {
+    console.error("\nTEST ERROR:", err.message);
+    process.exitCode = 1;
   }
 
   console.log("\nTEST COMPLETE");
