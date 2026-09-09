@@ -34,10 +34,6 @@ function fetchPage(url) {
   });
 }
 
-/*
- * Get today's calendar date in Jamaica.
- * This is important because the GitHub runner itself uses UTC.
- */
 function getJamaicaDate() {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "America/Jamaica",
@@ -73,12 +69,6 @@ function buildBoardUrl(type, date, startHour) {
   );
 }
 
-/*
- * FlightStats has changed the exact nesting of this
- * response before, so this searches the JSON for arrays
- * containing flight records instead of depending on only
- * one hard-coded location.
- */
 function findFlightArrays(value, found = []) {
   if (!value || typeof value !== "object") {
     return found;
@@ -119,7 +109,6 @@ function findFlightArrays(value, found = []) {
 
 function extractBoardFlights(json) {
   const arrays = findFlightArrays(json);
-
   const flights = [];
 
   for (const array of arrays) {
@@ -180,28 +169,16 @@ function isCodeshare(flight) {
   );
 }
 
+/*
+ * DUPLICATE FIX:
+ * For one day's KIN board, the same airline +
+ * flight number should only appear once.
+ */
 function flightKey(flight, type) {
   const code = getCarrierCode(flight);
   const number = getFlightNumber(flight);
 
-  const time =
-    type === "arrivals"
-      ? (
-          flight.arrivalTime24 ||
-          flight.arrivalTime?.time24 ||
-          flight.arrivalTime?.timeAMPM ||
-          flight.arrivalTime ||
-          ""
-        )
-      : (
-          flight.departureTime24 ||
-          flight.departureTime?.time24 ||
-          flight.departureTime?.timeAMPM ||
-          flight.departureTime ||
-          ""
-        );
-
-  return `${code}|${number}|${time}`;
+  return `${code}|${number}`;
 }
 
 function removeDuplicates(flights, type) {
@@ -670,10 +647,6 @@ async function processBoard(type) {
         )
       );
 
-      /*
-       * Small delay so we don't hammer FlightStats
-       * while getting the individual flight details.
-       */
       await new Promise(resolve =>
         setTimeout(resolve, 500)
       );
@@ -693,9 +666,6 @@ async function processBoard(type) {
     }
   }
 
-  /*
-   * Full-day board should stay in scheduled-time order.
-   */
   output.sort(
     (a, b) =>
       timeToMinutes(a.scheduledTime) -
