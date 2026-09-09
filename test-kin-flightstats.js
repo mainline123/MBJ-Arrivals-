@@ -5,9 +5,8 @@ const urls = {
   departures: "https://www.flightstats.com/v2/flight-tracker/departures/KIN"
 };
 
-function testPage(name, url) {
-  return new Promise((resolve) => {
-
+function fetchPage(url) {
+  return new Promise((resolve, reject) => {
     const options = {
       headers: {
         "User-Agent":
@@ -18,14 +17,7 @@ function testPage(name, url) {
       }
     };
 
-    https.get(url, options, (res) => {
-
-      console.log("\n==============================");
-      console.log(`KIN ${name.toUpperCase()}`);
-      console.log("==============================");
-      console.log("HTTP STATUS:", res.statusCode);
-      console.log("CONTENT TYPE:", res.headers["content-type"]);
-
+    https.get(url, options, res => {
       let body = "";
 
       res.on("data", chunk => {
@@ -33,47 +25,127 @@ function testPage(name, url) {
       });
 
       res.on("end", () => {
-
-        console.log("BYTES RECEIVED:", body.length);
-
-        const lower = body.toLowerCase();
-
-        console.log(
-          "CONTAINS KIN:",
-          lower.includes("kin")
-        );
-
-        console.log(
-          "CONTAINS FLIGHT:",
-          lower.includes("flight")
-        );
-
-        console.log(
-          "CONTAINS STATUS:",
-          lower.includes("status")
-        );
-
-        console.log("\nFIRST 1000 CHARACTERS:");
-        console.log(body.substring(0, 1000));
-
-        resolve();
+        resolve({
+          status: res.statusCode,
+          body
+        });
       });
-
-    }).on("error", err => {
-      console.error(`${name} ERROR:`, err.message);
-      resolve();
-    });
-
+    }).on("error", reject);
   });
 }
 
-async function run() {
+function findUsefulData(name, html) {
+  console.log("\n====================================");
+  console.log(`KIN ${name.toUpperCase()}`);
+  console.log("====================================");
 
-  console.log("Testing FlightStats access from GitHub/Node...");
+  console.log("HTML BYTES:", html.length);
+
+  const searches = [
+    "flightId",
+    "flightNumber",
+    "carrierCode",
+    "departureAirport",
+    "arrivalAirport",
+    "departureTime",
+    "arrivalTime",
+    "scheduled",
+    "estimated",
+    "actual",
+    "status",
+    "gate",
+    "baggage",
+    "Kingston",
+    "Norman Manley"
+  ];
+
+  console.log("\nFIELD SEARCH:");
+
+  for (const term of searches) {
+    const index = html.toLowerCase().indexOf(term.toLowerCase());
+
+    console.log(
+      term.padEnd(20),
+      index >= 0 ? `FOUND at ${index}` : "NOT FOUND"
+    );
+  }
+
+  /*
+   * Look for Next.js page data.
+   * FlightStats is rendered using Next.js, so useful flight
+   * information may be embedded inside __NEXT_DATA__.
+   */
+  const nextMatch = html.match(
+    /<script[^>]*id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i
+  );
+
+  if (nextMatch) {
+    console.log("\n*** __NEXT_DATA__ FOUND ***");
+
+    try {
+      const nextData = JSON.parse(nextMatch[1]);
+
+      console.log(
+        JSON.stringify(nextData, null, 2).substring(0, 15000)
+      );
+    } catch (err) {
+      console.log("Could not parse __NEXT_DATA__:");
+      console.log(err.message);
+
+      console.log(
+        nextMatch[1].substring(0, 15000)
+      );
+    }
+  } else {
+    console.log("\n__NEXT_DATA__ NOT FOUND");
+
+    /*
+     * If there is no __NEXT_DATA__, print areas surrounding
+     * likely flight fields so we can identify the structure.
+     */
+    const keywords = [
+      "flightNumber",
+      "carrierCode",
+      "scheduled",
+      "estimated",
+      "actual",
+      "status"
+    ];
+
+    for (const keyword of keywords) {
+      const index = html.toLowerCase().indexOf(keyword.toLowerCase());
+
+      if (index >= 0) {
+        console.log(`\n--- CONTEXT AROUND ${keyword} ---`);
+
+        const start = Math.max(0, index - 1000);
+        const end = Math.min(html.length, index + 4000);
+
+        console.log(html.substring(start, end));
+      }
+    }
+  }
+}
+
+async function run() {
+  console.log("KIN FlightStats flight-data inspection");
   console.log(new Date().toISOString());
 
-  await testPage("arrivals", urls.arrivals);
-  await testPage("departures", urls.departures);
+  for (const [name, url] of Object.entries(urls)) {
+    try {
+      const result = await fetchPage(url);
+
+      console.log(`\n${name.toUpperCase()} HTTP STATUS:`, result.status);
+
+      if (result.status === 200) {
+        findUsefulData(name, result.body);
+      } else {
+        console.log("FlightStats did not return HTTP 200.");
+      }
+    } catch (err) {
+      console.error(`${name} ERROR:`, err.message);
+    }
+  }
 
   console.log("\nTEST COMPLETE");
 }
