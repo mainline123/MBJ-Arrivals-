@@ -5,12 +5,12 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-09T11:27:18.768Z",
+  "updated": "2026-09-09T12:34:02.854Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "10:34 AM",
       "actualTime": "",
       "status": ""
@@ -18,7 +18,7 @@
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Tocumen",
-      "baggage": "",
+      "baggage": "1",
       "scheduledTime": "11:17 AM",
       "actualTime": "",
       "status": ""
@@ -26,7 +26,7 @@
     {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "11:30 AM",
       "actualTime": "",
       "status": ""
@@ -34,7 +34,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "11:33 AM",
       "actualTime": "",
       "status": ""
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "",
+      "baggage": "3",
       "scheduledTime": "11:43 AM",
       "actualTime": "",
       "status": ""
@@ -50,7 +50,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "",
+      "baggage": "2",
       "scheduledTime": "11:45 AM",
       "actualTime": "",
       "status": ""
@@ -58,7 +58,7 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "11:48 AM",
       "actualTime": "",
       "status": ""
@@ -66,7 +66,7 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "",
+      "baggage": "1",
       "scheduledTime": "11:55 AM",
       "actualTime": "",
       "status": ""
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "American Airlines AA2618",
       "from": "Miami",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "11:56 AM",
       "actualTime": "",
       "status": ""
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "",
+      "baggage": "4",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": ""
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "",
+      "baggage": "4",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": ""
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
-      "baggage": "",
+      "baggage": "2",
       "scheduledTime": "12:55 PM",
       "actualTime": "",
       "status": ""
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": ""
@@ -114,7 +114,7 @@
     {
       "airlineFlight": "American Airlines AA1284",
       "from": "Charlotte",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "1:09 PM",
       "actualTime": "",
       "status": ""
@@ -122,7 +122,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "4",
       "scheduledTime": "1:50 PM",
       "actualTime": "",
       "status": ""
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "TUI Airways TOM138",
       "from": "Manchester",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "2:50 PM",
       "actualTime": "",
       "status": ""
@@ -138,7 +138,7 @@
     {
       "airlineFlight": "3P4159",
       "from": "Lisbon",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "5:40 PM",
       "actualTime": "",
       "status": ""
