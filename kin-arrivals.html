@@ -232,32 +232,55 @@ html, body {
 </div>
 
 <script>
+
 const DATA_URL = "kin-arrivals.json";
 
+/*
+ * SAME LOGO DATASET USED BY OUR WORKING MBJ BOARD
+ */
 const AIRLINE_LOGOS = {
   "AA": "AAL",
   "AC": "ACA",
-  "AF": "AFR",
   "5Y": "GTI",
   "B6": "JBU",
   "BA": "BAW",
   "BW": "BWA",
   "CM": "CMP",
   "DL": "DAL",
-  "DWI": "DWI",
-  "JY": "IWY",
-  "KX": "CAY",
-  "NK": "NKS",
-  "TXG": "TXG",
   "UA": "UAL",
-  "VS": "VIR"
+  "WS": "WJA",
+  "VS": "VIR",
+
+  /*
+   * KIN AIRLINES
+   */
+  "KX": "CAY",
+  "JY": "IWY",
+  "F8": "FLE",
+  "NK": "NKS",
+
+  /*
+   * These may use three-letter codes
+   * directly in the KIN feed.
+   */
+  "DWI": "DWI",
+  "TXG": "TXG",
+  "GAO": "GAO"
 };
 
-function logoUrl(code) {
-  const mapped = AIRLINE_LOGOS[code] || code;
+const LOGO_BASE =
+  "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
 
-  return "https://raw.githubusercontent.com/npow/airline-codes/master/logos/" +
-    mapped + ".png";
+function logoUrl(code) {
+  const mapped = AIRLINE_LOGOS[code];
+
+  if (!mapped) {
+    return "";
+  }
+
+  return LOGO_BASE +
+    encodeURIComponent(mapped) +
+    ".png";
 }
 
 function escapeHtml(value) {
@@ -312,12 +335,17 @@ function formatUpdated(iso) {
 }
 
 function renderFlights(data) {
-  const rows = document.getElementById("rows");
-  const flights = Array.isArray(data.flights)
-    ? data.flights
-    : [];
+
+  const rows =
+    document.getElementById("rows");
+
+  const flights =
+    Array.isArray(data.flights)
+      ? data.flights
+      : [];
 
   if (!flights.length) {
+
     rows.innerHTML =
       '<div class="message">No KIN arrivals currently available.</div>';
 
@@ -329,7 +357,10 @@ function renderFlights(data) {
 
   rows.innerHTML = flights.map(flight => {
 
-    const code = flight.airlineCode || "";
+    const code =
+      String(flight.airlineCode || "")
+        .toUpperCase();
+
     const flightNumber =
       flight.flight ||
       `${code}${flight.flightNumber || ""}`;
@@ -359,29 +390,45 @@ function renderFlights(data) {
     const status =
       flight.status || "Scheduled";
 
+    const logo =
+      logoUrl(code);
+
+    const logoHTML = logo
+      ? `
+          <img
+            src="${logo}"
+            alt="${escapeHtml(code)}"
+            onerror="
+              this.style.display='none';
+              this.nextElementSibling.style.display='block';
+            "
+          >
+          <span
+            class="logo-fallback"
+            style="display:none;"
+          >
+            ${escapeHtml(code)}
+          </span>
+        `
+      : `
+          <span class="logo-fallback">
+            ${escapeHtml(code)}
+          </span>
+        `;
+
     return `
       <div class="row">
 
         <div class="flight-cell">
 
           <div class="logo-box">
-            <img
-              src="${logoUrl(code)}"
-              alt="${escapeHtml(code)}"
-              onerror="
-                this.style.display='none';
-                this.nextElementSibling.style.display='block';
-              "
-            >
-            <span
-              class="logo-fallback"
-              style="display:none;"
-            >
-              ${escapeHtml(code)}
-            </span>
+
+            ${logoHTML}
+
           </div>
 
           <div class="flight-info">
+
             <div class="flight-number">
               ${escapeHtml(flightNumber)}
             </div>
@@ -389,11 +436,13 @@ function renderFlights(data) {
             <div class="airline-name">
               ${escapeHtml(flight.airline || "")}
             </div>
+
           </div>
 
         </div>
 
         <div>
+
           <div class="city">
             ${escapeHtml(city)}
           </div>
@@ -401,6 +450,7 @@ function renderFlights(data) {
           <div class="airport-code">
             ${escapeHtml(airportCode)}
           </div>
+
         </div>
 
         <div class="baggage">
@@ -429,6 +479,7 @@ function renderFlights(data) {
 
       </div>
     `;
+
   }).join("");
 
   document.getElementById("updated").textContent =
@@ -436,13 +487,16 @@ function renderFlights(data) {
 }
 
 async function loadFlights() {
+
   try {
-    const response = await fetch(
-      DATA_URL + "?t=" + Date.now(),
-      {
-        cache: "no-store"
-      }
-    );
+
+    const response =
+      await fetch(
+        DATA_URL + "?t=" + Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
 
     if (!response.ok) {
       throw new Error(
@@ -450,11 +504,13 @@ async function loadFlights() {
       );
     }
 
-    const data = await response.json();
+    const data =
+      await response.json();
 
     renderFlights(data);
 
   } catch (error) {
+
     console.error(
       "KIN arrivals error:",
       error
@@ -467,11 +523,11 @@ async function loadFlights() {
 
 loadFlights();
 
-/*
- * Reload our JSON every 60 seconds.
- * GitHub Actions updates the underlying data automatically.
- */
-setInterval(loadFlights, 60000);
+setInterval(
+  loadFlights,
+  60000
+);
+
 </script>
 
 </body>
