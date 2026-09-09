@@ -51,20 +51,19 @@ tbody {
 th {
     background: #063956;
     color: #f3d67a;
-    font-size: clamp(11px, 1.5vw, 22px);
-    font-weight: 700;
+    font-size: clamp(16px, 2vw, 30px);
+    font-weight: 800;
     text-align: left;
-    padding: 8px 7px;
+    padding: 8px;
     border-bottom: 2px solid #c9a64b;
     text-transform: uppercase;
-    letter-spacing: .4px;
 }
 
 td {
-    padding: 3px 7px;
+    padding: 6px 8px;
     border-bottom: 1px solid rgba(201,166,75,.22);
-    font-size: clamp(10px, 1.4vw, 20px);
-    line-height: 1.05;
+    font-size: clamp(16px, 2.1vw, 30px);
+    line-height: 1.1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -74,41 +73,40 @@ tbody tr:nth-child(even) {
     background: rgba(255,255,255,.025);
 }
 
-/* AIRLINE + LOGO */
+/* AIRLINE LOGO + FLIGHT */
 
 .flight-cell {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 9px;
     width: 100%;
     overflow: hidden;
 }
 
 .airline-logo {
-    width: clamp(20px, 2.4vw, 36px);
-    height: clamp(16px, 2vw, 28px);
+    width: clamp(38px, 4.5vw, 64px);
+    height: clamp(28px, 3.4vw, 48px);
     object-fit: contain;
     flex: 0 0 auto;
     background: white;
-    border-radius: 3px;
-    padding: 1px;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .flight-text {
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 800;
+    color: white;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .time {
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 800;
 }
 
 .status {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .status-arrived,
@@ -139,10 +137,10 @@ tbody tr:nth-child(even) {
 
 /* COLUMN WIDTHS */
 
-.col-flight { width: 29%; }
-.col-from   { width: 27%; }
-.col-bag    { width: 10%; }
-.col-time   { width: 16%; }
+.col-flight { width: 30%; }
+.col-from   { width: 26%; }
+.col-bag    { width: 9%; }
+.col-time   { width: 17%; }
 .col-status { width: 18%; }
 
 </style>
@@ -195,7 +193,7 @@ function statusClass(status) {
             .replace(/\s+/g, "-");
 }
 
-/* Airline flight-code to ICAO logo filename */
+/* AIRLINE CODE → LOGO */
 
 const airlineLogos = {
     "AA": "AAL",
@@ -224,7 +222,6 @@ function getAirlineCode(value) {
 function getLogo(value) {
 
     const code = getAirlineCode(value);
-
     const icao = airlineLogos[code];
 
     if (!icao) return "";
@@ -253,7 +250,7 @@ async function loadFlights() {
 
         const data = await response.json();
 
-        /* Maximum 30 flights */
+        /* KEEP CAPACITY FOR UP TO 30 FLIGHTS */
 
         const flights =
             (data.flights || []).slice(0, 30);
@@ -349,7 +346,7 @@ async function loadFlights() {
 
 loadFlights();
 
-/* Re-read your existing live JSON every 60 seconds */
+/* REFRESH LIVE DISPLAY EVERY 60 SECONDS */
 
 setInterval(loadFlights, 60000);
 
