@@ -7,6 +7,7 @@
 <title>Moon Palace MBJ Arrivals</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,6 +32,13 @@ body {
     overflow: hidden;
     border: 2px solid #c9a64b;
     background: rgba(4, 24, 42, 0.97);
+    display: flex;
+    flex-direction: column;
+}
+
+.table-wrap {
+    flex: 1;
+    min-height: 0;
 }
 
 table {
@@ -72,8 +80,6 @@ td {
 tbody tr:nth-child(even) {
     background: rgba(255,255,255,.025);
 }
-
-/* AIRLINE LOGO + FLIGHT */
 
 .flight-cell {
     display: flex;
@@ -135,6 +141,18 @@ tbody tr:nth-child(even) {
     color: #d6d6d6;
 }
 
+/* LAST UPDATE LINE */
+
+.update-bar {
+    flex: 0 0 auto;
+    background: #063956;
+    color: #f3d67a;
+    text-align: right;
+    padding: 4px 10px;
+    font-size: clamp(10px, 1.1vw, 16px);
+    font-weight: 700;
+}
+
 /* COLUMN WIDTHS */
 
 .col-flight { width: 30%; }
@@ -150,6 +168,8 @@ tbody tr:nth-child(even) {
 
 <div class="board">
 
+<div class="table-wrap">
+
 <table>
 
 <thead>
@@ -163,14 +183,22 @@ tbody tr:nth-child(even) {
 </thead>
 
 <tbody id="flight-body">
+
 <tr>
     <td colspan="5" class="message">
         Loading MBJ arrivals...
     </td>
 </tr>
+
 </tbody>
 
 </table>
+
+</div>
+
+<div class="update-bar" id="update-bar">
+    Loading live flight information...
+</div>
 
 </div>
 
@@ -193,7 +221,7 @@ function statusClass(status) {
             .replace(/\s+/g, "-");
 }
 
-/* AIRLINE CODE → LOGO */
+/* AIRLINE LOGOS */
 
 const airlineLogos = {
     "AA": "AAL",
@@ -211,7 +239,8 @@ const airlineLogos = {
 
 function getAirlineCode(value) {
 
-    const text = String(value || "").toUpperCase();
+    const text =
+        String(value || "").toUpperCase();
 
     const match =
         text.match(/\b([A-Z0-9]{2})\s*\d{1,4}\b/);
@@ -221,8 +250,11 @@ function getAirlineCode(value) {
 
 function getLogo(value) {
 
-    const code = getAirlineCode(value);
-    const icao = airlineLogos[code];
+    const code =
+        getAirlineCode(value);
+
+    const icao =
+        airlineLogos[code];
 
     if (!icao) return "";
 
@@ -231,26 +263,66 @@ function getLogo(value) {
            ".png";
 }
 
+/* FORMAT JSON UPDATE TIME */
+
+function formatUpdateTime(value) {
+
+    if (!value) return "Live flight information";
+
+    const date = new Date(value);
+
+    if (isNaN(date.getTime()))
+        return "Live flight information";
+
+    return date.toLocaleString("en-JM", {
+        timeZone: "America/Jamaica",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+    });
+}
+
+
+/* LOAD CURRENT FLIGHTS */
+
 async function loadFlights() {
 
     const body =
         document.getElementById("flight-body");
 
+    const updateBar =
+        document.getElementById("update-bar");
+
     try {
 
+        /*
+           Date.now() gives every request a unique URL.
+           This prevents the kiosk/browser from reusing
+           an older cached copy of flights.json.
+        */
+
+        const url =
+            "./flights.json?refresh=" + Date.now();
+
         const response =
-            await fetch(
-                "flights.json?t=" + Date.now(),
-                { cache: "no-store" }
-            );
+            await fetch(url, {
+                method: "GET",
+                cache: "no-store",
+                headers: {
+                    "Cache-Control": "no-cache"
+                }
+            });
 
         if (!response.ok) {
-            throw new Error("Unable to load flights.json");
+            throw new Error(
+                "Unable to load flights.json"
+            );
         }
 
-        const data = await response.json();
-
-        /* KEEP CAPACITY FOR UP TO 30 FLIGHTS */
+        const data =
+            await response.json();
 
         const flights =
             (data.flights || []).slice(0, 30);
@@ -275,10 +347,21 @@ async function loadFlights() {
             const row =
                 document.createElement("tr");
 
+            /*
+              Actual time takes priority.
+              Scheduled time is used when there
+              is no actual time yet.
+            */
+
             const displayTime =
                 f.actualTime ||
                 f.scheduledTime ||
                 "—";
+
+            /*
+              MBJ currently leaves status blank
+              on some flights, so we show Scheduled.
+            */
 
             const displayStatus =
                 f.status || "Scheduled";
@@ -289,10 +372,10 @@ async function loadFlights() {
             const logoHtml =
                 logo
                 ? `<img
-                     class="airline-logo"
-                     src="${logo}"
-                     alt=""
-                     onerror="this.style.display='none'"
+                    class="airline-logo"
+                    src="${logo}"
+                    alt=""
+                    onerror="this.style.display='none'"
                    >`
                 : "";
 
@@ -304,7 +387,9 @@ async function loadFlights() {
                         ${logoHtml}
 
                         <span class="flight-text">
-                            ${escapeHtml(f.airlineFlight || "—")}
+                            ${escapeHtml(
+                                f.airlineFlight || "—"
+                            )}
                         </span>
 
                     </div>
@@ -328,27 +413,63 @@ async function loadFlights() {
             `;
 
             body.appendChild(row);
+
         });
+
+
+        /* SHOW THE ACTUAL JSON UPDATE TIME */
+
+        updateBar.textContent =
+            "LIVE DATA UPDATED: " +
+            formatUpdateTime(data.updated);
+
 
     } catch (error) {
 
         console.error(error);
 
-        body.innerHTML = `
-            <tr>
-                <td colspan="5" class="message">
-                    Flight information temporarily unavailable.
-                </td>
-            </tr>
-        `;
+        /*
+           IMPORTANT:
+           Do not erase good flight information
+           just because one refresh fails.
+        */
+
+        updateBar.textContent =
+            "LIVE DATA — REFRESHING...";
+
     }
+
 }
+
+
+/* LOAD IMMEDIATELY */
 
 loadFlights();
 
-/* REFRESH LIVE DISPLAY EVERY 60 SECONDS */
+
+/*
+   CHECK FOR A NEW flights.json
+   EVERY 60 SECONDS
+*/
 
 setInterval(loadFlights, 60000);
+
+
+/*
+   ALSO REFRESH WHEN THE NOVISIGN
+   PLAYER RETURNS TO THIS PAGE
+*/
+
+document.addEventListener(
+    "visibilitychange",
+    function () {
+
+        if (!document.hidden) {
+            loadFlights();
+        }
+
+    }
+);
 
 </script>
 
