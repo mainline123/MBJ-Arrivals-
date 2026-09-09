@@ -1,0 +1,20 @@
+name: Test KIN FlightStats
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-kin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Test FlightStats KIN pages
+        run: node test-kin-flightstats.js
