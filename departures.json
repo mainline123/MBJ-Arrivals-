@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-10T14:27:33.984Z",
+  "updated": "2026-09-10T16:26:24.707Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -31,8 +31,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "12:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM147",
@@ -103,8 +103,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1332",
@@ -155,7 +155,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "10",
+      "gate": "8",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
