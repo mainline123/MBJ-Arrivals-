@@ -6,7 +6,7 @@
     "month": "09",
     "day": "10"
   },
-  "updated": "2026-09-10T11:32:01.859Z",
+  "updated": "2026-09-10T12:39:16.484Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -57,11 +57,11 @@
       "airportCode": "GCM",
       "city": "Grand Cayman Island",
       "scheduledTime": "8:10AM",
-      "estimatedTime": "",
+      "estimatedTime": "8:16AM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "8:10AM",
+      "updatedTime": "8:16AM",
+      "timeType": "Estimated",
+      "displayTime": "8:16AM",
       "status": "On time",
       "gate": "",
       "terminal": "",
