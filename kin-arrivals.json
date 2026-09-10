@@ -6,9 +6,29 @@
     "month": "09",
     "day": "10"
   },
-  "updated": "2026-09-10T05:31:24.382Z",
+  "updated": "2026-09-10T06:38:30.461Z",
   "source": "FlightStats",
   "flights": [
+    {
+      "airlineCode": "LAE",
+      "airline": "LATAM Cargo Colombia",
+      "flightNumber": "1811",
+      "flight": "LAE1811",
+      "airportCode": "MIA",
+      "city": "Miami",
+      "scheduledTime": "2:45AM",
+      "estimatedTime": "",
+      "actualTime": "1:07AM",
+      "updatedTime": "1:07AM",
+      "timeType": "Actual",
+      "displayTime": "1:07AM",
+      "status": "Kingston",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407242988,
+      "source": "FlightStats"
+    },
     {
       "airlineCode": "5Y",
       "airline": "Atlas Air",
