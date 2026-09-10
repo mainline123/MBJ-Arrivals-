@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-10T02:27:40.410Z",
+  "updated": "2026-09-10T03:27:57.593Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
