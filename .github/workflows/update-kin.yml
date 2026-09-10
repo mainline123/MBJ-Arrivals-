@@ -36,5 +36,10 @@ jobs:
             echo "No KIN flight changes to commit"
           else
             git commit -m "Automatic KIN flight update"
-            git push
+
+            # Get any changes that were added while this job was running
+            git pull --rebase origin main
+
+            # Push the updated KIN data
+            git push origin main
           fi
