@@ -6,7 +6,7 @@
     "month": "09",
     "day": "09"
   },
-  "updated": "2026-09-10T02:32:43.949Z",
+  "updated": "2026-09-10T03:33:09.588Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -418,11 +418,11 @@
       "city": "Toronto",
       "scheduledTime": "8:45PM",
       "estimatedTime": "",
-      "actualTime": "9:28PM",
-      "updatedTime": "9:28PM",
+      "actualTime": "9:34PM",
+      "updatedTime": "9:34PM",
       "timeType": "Actual",
-      "displayTime": "9:28PM",
-      "status": "Delayed by 43m",
+      "displayTime": "9:34PM",
+      "status": "Delayed by 49m",
       "gate": "",
       "terminal": "",
       "baggage": "",
