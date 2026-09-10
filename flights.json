@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-10T19:23:02.791Z",
+  "updated": "2026-09-10T20:25:23.306Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -164,7 +164,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "2:59 PM",
+      "actualTime": "3:25 PM",
       "status": "Early"
     },
     {
@@ -172,8 +172,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",
@@ -188,8 +188,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:44 PM",
+      "status": "Early"
     }
   ]
 }

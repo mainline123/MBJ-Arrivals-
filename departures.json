@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-10T19:23:02.791Z",
+  "updated": "2026-09-10T20:25:23.306Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -193,8 +193,8 @@
       "checkInCounters": "",
       "gate": "9",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
