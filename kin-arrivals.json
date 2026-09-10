@@ -6,7 +6,7 @@
     "month": "09",
     "day": "09"
   },
-  "updated": "2026-09-10T02:26:06.055Z",
+  "updated": "2026-09-10T02:32:43.949Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -417,12 +417,12 @@
       "airportCode": "YYZ",
       "city": "Toronto",
       "scheduledTime": "8:45PM",
-      "estimatedTime": "9:38PM",
-      "actualTime": "",
-      "updatedTime": "9:38PM",
-      "timeType": "Estimated",
-      "displayTime": "9:38PM",
-      "status": "Delayed by 53m",
+      "estimatedTime": "",
+      "actualTime": "9:28PM",
+      "updatedTime": "9:28PM",
+      "timeType": "Actual",
+      "displayTime": "9:28PM",
+      "status": "Delayed by 43m",
       "gate": "",
       "terminal": "",
       "baggage": "",
