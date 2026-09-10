@@ -6,7 +6,7 @@
     "month": "09",
     "day": "09"
   },
-  "updated": "2026-09-10T00:38:32.290Z",
+  "updated": "2026-09-10T01:30:50.997Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -397,11 +397,11 @@
       "airportCode": "SCU",
       "city": "Santiago",
       "scheduledTime": "8:10PM",
-      "estimatedTime": "8:12PM",
-      "actualTime": "",
-      "updatedTime": "8:12PM",
-      "timeType": "Estimated",
-      "displayTime": "8:12PM",
+      "estimatedTime": "",
+      "actualTime": "8:09PM",
+      "updatedTime": "8:09PM",
+      "timeType": "Actual",
+      "displayTime": "8:09PM",
       "status": "On time",
       "gate": "",
       "terminal": "",
