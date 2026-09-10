@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-10T16:26:24.707Z",
+  "updated": "2026-09-10T17:25:40.401Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "11:48 AM",
       "actualTime": "11:36 AM",
       "status": "Early"
@@ -92,8 +92,8 @@
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:32 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6521",
