@@ -6,7 +6,7 @@
     "month": "09",
     "day": "11"
   },
-  "updated": "2026-09-11T06:37:39.375Z",
+  "updated": "2026-09-11T07:33:02.789Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -237,10 +237,10 @@
       "airportCode": "FLL",
       "city": "Fort Lauderdale",
       "scheduledTime": "1:40PM",
-      "estimatedTime": "",
+      "estimatedTime": "1:40PM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
+      "updatedTime": "1:40PM",
+      "timeType": "Estimated",
       "displayTime": "1:40PM",
       "status": "On time",
       "gate": "",
@@ -270,26 +270,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "AC",
-      "airline": "Air Canada",
-      "flightNumber": "965",
-      "flight": "AC965",
-      "airportCode": "YYZ",
-      "city": "Toronto",
-      "scheduledTime": "3:05PM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "3:05PM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407577966,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1376",
@@ -307,6 +287,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1407585640,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "AC",
+      "airline": "Air Canada",
+      "flightNumber": "965",
+      "flight": "AC965",
+      "airportCode": "YYZ",
+      "city": "Toronto",
+      "scheduledTime": "3:05PM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "3:05PM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407577966,
       "source": "FlightStats"
     },
     {
