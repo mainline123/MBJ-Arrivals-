@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-11T19:24:55.659Z",
+  "updated": "2026-09-11T20:27:11.931Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "2:32 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -156,16 +156,16 @@
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "3:20 PM",
-      "actualTime": "2:58 PM",
-      "status": "Early"
+      "actualTime": "3:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Transat TS486",
@@ -180,8 +180,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "2",
       "scheduledTime": "4:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:58 PM",
+      "status": "Early"
     }
   ]
 }

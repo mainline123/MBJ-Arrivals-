@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-11T19:24:55.659Z",
+  "updated": "2026-09-11T20:27:11.931Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -184,8 +184,8 @@
       "checkInCounters": "87 - 98",
       "gate": "9",
       "scheduledTime": "4:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:42 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2963",
