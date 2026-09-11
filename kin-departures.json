@@ -6,7 +6,7 @@
     "month": "09",
     "day": "11"
   },
-  "updated": "2026-09-11T10:32:22.673Z",
+  "updated": "2026-09-11T11:31:09.245Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -57,11 +57,11 @@
       "airportCode": "YYZ",
       "city": "Toronto",
       "scheduledTime": "8:35AM",
-      "estimatedTime": "",
+      "estimatedTime": "8:45AM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "8:35AM",
+      "updatedTime": "8:45AM",
+      "timeType": "Estimated",
+      "displayTime": "8:45AM",
       "status": "On time",
       "gate": "",
       "terminal": "",
