@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-11T16:27:59.315Z",
+  "updated": "2026-09-11T17:25:38.860Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -58,7 +58,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "11:43 AM",
       "actualTime": "11:35 AM",
       "status": "Early"
@@ -66,7 +66,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "11:45 AM",
       "actualTime": "11:33 AM",
       "status": "Early"
@@ -84,8 +84,8 @@
       "from": "Ft. Lauderdale",
       "baggage": "4",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6521",
@@ -100,8 +100,8 @@
       "from": "Miami",
       "baggage": "1",
       "scheduledTime": "12:53 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
