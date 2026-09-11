@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-11T20:27:11.931Z",
+  "updated": "2026-09-11T21:24:22.667Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -170,7 +170,7 @@
     {
       "airlineFlight": "Air Transat TS486",
       "from": "Montreal",
-      "baggage": "5",
+      "baggage": "2",
       "scheduledTime": "3:35 PM",
       "actualTime": "3:20 PM",
       "status": "Early"
