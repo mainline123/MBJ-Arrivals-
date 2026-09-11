@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-11T15:26:49.937Z",
+  "updated": "2026-09-11T16:27:59.315Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -155,7 +155,7 @@
       "airlineFlight": "Frontier Airlines F9124",
       "to": "Atlanta",
       "checkInCounters": "81 - 86",
-      "gate": "10",
+      "gate": "4",
       "scheduledTime": "3:51 PM",
       "actualTime": "",
       "status": "On-Time"

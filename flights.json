@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-11T15:26:49.937Z",
+  "updated": "2026-09-11T16:27:59.315Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -36,8 +36,8 @@
       "from": "Tocumen",
       "baggage": "1",
       "scheduledTime": "11:17 AM",
-      "actualTime": "11:24 AM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Air Canada AC1804",
