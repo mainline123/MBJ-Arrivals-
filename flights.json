@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-11T17:25:38.860Z",
+  "updated": "2026-09-11T18:29:44.263Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "6",
+      "baggage": "3",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -108,24 +108,24 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:27 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1284",
       "from": "Charlotte",
       "baggage": "2",
       "scheduledTime": "1:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:42 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN292",
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:47 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
@@ -172,8 +172,8 @@
       "from": "Montreal",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:20 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2890",

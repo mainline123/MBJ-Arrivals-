@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-11T17:25:38.860Z",
+  "updated": "2026-09-11T18:29:44.263Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -103,8 +103,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "1:54 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:44 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1284",
@@ -130,8 +130,8 @@
       "checkInCounters": "87 - 98",
       "gate": "18",
       "scheduledTime": "2:26 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:47 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6380",
@@ -199,7 +199,7 @@
     {
       "airlineFlight": "Condor DE2163",
       "to": "Frankfurt",
-      "checkInCounters": "43 - 50",
+      "checkInCounters": "23 - 30",
       "gate": "19",
       "scheduledTime": "5:35 PM",
       "actualTime": "",
