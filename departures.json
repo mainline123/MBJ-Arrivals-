@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-11T18:29:44.263Z",
+  "updated": "2026-09-11T19:24:55.659Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -193,8 +193,8 @@
       "checkInCounters": "",
       "gate": "16",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:38 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2163",
