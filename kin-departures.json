@@ -6,7 +6,7 @@
     "month": "09",
     "day": "10"
   },
-  "updated": "2026-09-11T01:31:06.250Z",
+  "updated": "2026-09-11T02:32:19.065Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -218,15 +218,15 @@
       "city": "Santo Domingo",
       "scheduledTime": "1:05PM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "1:05PM",
-      "status": "Scheduled",
+      "actualTime": "2:12PM",
+      "updatedTime": "2:12PM",
+      "timeType": "Actual",
+      "displayTime": "2:12PM",
+      "status": "Delayed by 58m",
       "gate": "",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1407466483,
       "source": "FlightStats"
     },
     {
@@ -342,7 +342,7 @@
       "updatedTime": "6:45PM",
       "timeType": "Actual",
       "displayTime": "6:45PM",
-      "status": "Delayed by 1h 21m",
+      "status": "Delayed by 1h 27m",
       "gate": "3",
       "terminal": "",
       "baggage": "",
