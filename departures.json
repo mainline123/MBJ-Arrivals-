@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-11T08:28:54.330Z",
+  "updated": "2026-09-11T09:27:20.369Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
