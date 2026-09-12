@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-12T15:24:43.973Z",
+  "updated": "2026-09-12T16:25:55.539Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -49,8 +49,8 @@
       "checkInCounters": "65 - 78",
       "gate": "16",
       "scheduledTime": "12:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA681",

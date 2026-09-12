@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T15:24:43.973Z",
+  "updated": "2026-09-12T16:25:55.539Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -44,24 +44,24 @@
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "11:03 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:23 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Tocumen",
       "baggage": "1",
       "scheduledTime": "11:17 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:27 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA681",
       "from": "Philadelphia",
       "baggage": "3",
       "scheduledTime": "11:17 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:51 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
@@ -76,16 +76,16 @@
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:07 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
