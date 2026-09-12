@@ -6,7 +6,7 @@
     "month": "09",
     "day": "11"
   },
-  "updated": "2026-09-12T02:32:59.292Z",
+  "updated": "2026-09-12T03:31:56.070Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -90,26 +90,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "KX",
-      "airline": "Cayman Airways",
-      "flightNumber": "601",
-      "flight": "KX601",
-      "airportCode": "GCM",
-      "city": "Grand Cayman Island",
-      "scheduledTime": "9:10AM",
-      "estimatedTime": "",
-      "actualTime": "8:56AM",
-      "updatedTime": "8:56AM",
-      "timeType": "Actual",
-      "displayTime": "8:56AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407624251,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "DL",
       "airline": "Delta Air Lines",
       "flightNumber": "1841",
@@ -127,6 +107,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1407596186,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "KX",
+      "airline": "Cayman Airways",
+      "flightNumber": "601",
+      "flight": "KX601",
+      "airportCode": "GCM",
+      "city": "Grand Cayman Island",
+      "scheduledTime": "9:10AM",
+      "estimatedTime": "",
+      "actualTime": "8:56AM",
+      "updatedTime": "8:56AM",
+      "timeType": "Actual",
+      "displayTime": "8:56AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407624251,
       "source": "FlightStats"
     },
     {
@@ -270,26 +270,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1376",
-      "flight": "B61376",
-      "airportCode": "FLL",
-      "city": "Fort Lauderdale",
-      "scheduledTime": "3:05PM",
-      "estimatedTime": "",
-      "actualTime": "3:04PM",
-      "updatedTime": "3:04PM",
-      "timeType": "Actual",
-      "displayTime": "3:04PM",
-      "status": "On time",
-      "gate": "4",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407585640,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "AC",
       "airline": "Air Canada",
       "flightNumber": "965",
@@ -307,6 +287,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1407577966,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "B6",
+      "airline": "JetBlue",
+      "flightNumber": "1376",
+      "flight": "B61376",
+      "airportCode": "FLL",
+      "city": "Fort Lauderdale",
+      "scheduledTime": "3:05PM",
+      "estimatedTime": "",
+      "actualTime": "3:04PM",
+      "updatedTime": "3:04PM",
+      "timeType": "Actual",
+      "displayTime": "3:04PM",
+      "status": "On time",
+      "gate": "4",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407585640,
       "source": "FlightStats"
     },
     {
