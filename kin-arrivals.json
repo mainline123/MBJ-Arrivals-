@@ -6,7 +6,7 @@
     "month": "09",
     "day": "11"
   },
-  "updated": "2026-09-12T03:31:56.070Z",
+  "updated": "2026-09-12T04:31:13.021Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -417,12 +417,12 @@
       "airportCode": "ATL",
       "city": "Atlanta",
       "scheduledTime": "8:10PM",
-      "estimatedTime": "10:41PM",
-      "actualTime": "",
-      "updatedTime": "10:41PM",
-      "timeType": "Estimated",
-      "displayTime": "10:41PM",
-      "status": "Delayed by 2h 31m",
+      "estimatedTime": "",
+      "actualTime": "10:38PM",
+      "updatedTime": "10:38PM",
+      "timeType": "Actual",
+      "displayTime": "10:38PM",
+      "status": "Delayed by 2h 28m",
       "gate": "002",
       "terminal": "",
       "baggage": "",
