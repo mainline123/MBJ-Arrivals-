@@ -6,7 +6,7 @@
     "month": "09",
     "day": "12"
   },
-  "updated": "2026-09-12T09:30:08.854Z",
+  "updated": "2026-09-12T10:29:59.917Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -42,11 +42,11 @@
       "updatedTime": "",
       "timeType": "Scheduled",
       "displayTime": "7:30AM",
-      "status": "Scheduled",
+      "status": "On time",
       "gate": "",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1407769668,
       "source": "FlightStats"
     },
     {
