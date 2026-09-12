@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T18:26:57.101Z",
+  "updated": "2026-09-12T19:23:08.515Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -124,7 +124,7 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "3:46 PM",
+      "actualTime": "4:00 PM",
       "status": "Delayed"
     },
     {
@@ -138,7 +138,7 @@
     {
       "airlineFlight": "American Airlines AA3234",
       "from": "Miami",
-      "baggage": "6",
+      "baggage": "2",
       "scheduledTime": "12:53 PM",
       "actualTime": "1:15 PM",
       "status": "Delayed"
@@ -170,7 +170,7 @@
     {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "1:30 PM",
       "actualTime": "1:53 PM",
       "status": "Delayed"
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "1:50 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -220,6 +220,14 @@
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "6:30 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "American Airlines AA9794",
+      "from": "Miami",
+      "baggage": "",
+      "scheduledTime": "7:41 PM",
       "actualTime": "",
       "status": "On-Time"
     },

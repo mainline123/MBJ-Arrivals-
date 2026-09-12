@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-12T18:26:57.101Z",
+  "updated": "2026-09-12T19:23:08.515Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -130,7 +130,7 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "1:25 PM",
-      "actualTime": "4:46 PM",
+      "actualTime": "5:00 PM",
       "status": "Delayed"
     },
     {
@@ -247,6 +247,15 @@
       "checkInCounters": "43 - 54",
       "gate": "9",
       "scheduledTime": "7:30 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "American Airlines AA1145",
+      "to": "Cartagena",
+      "checkInCounters": "",
+      "gate": "16",
+      "scheduledTime": "8:41 PM",
       "actualTime": "",
       "status": "On-Time"
     },
