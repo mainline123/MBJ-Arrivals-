@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-12T16:25:55.539Z",
+  "updated": "2026-09-12T17:23:56.231Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -103,8 +103,8 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "1:07 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -119,7 +119,7 @@
       "airlineFlight": "Jet Blue B6522",
       "to": "Orlando",
       "checkInCounters": "31 - 40",
-      "gate": "12",
+      "gate": "8",
       "scheduledTime": "1:15 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -155,7 +155,7 @@
       "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "12",
       "scheduledTime": "2:00 PM",
       "actualTime": "",
       "status": "On-Time"

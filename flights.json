@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T16:25:55.539Z",
+  "updated": "2026-09-12T17:23:56.231Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "American Airlines AA2618",
       "from": "Miami",
-      "baggage": "6",
+      "baggage": "3",
       "scheduledTime": "11:03 AM",
       "actualTime": "11:23 AM",
       "status": "Delayed"
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "4",
+      "baggage": "7",
       "scheduledTime": "11:33 AM",
       "actualTime": "11:07 AM",
       "status": "Early"
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "5",
+      "baggage": "2",
       "scheduledTime": "11:43 AM",
       "actualTime": "12:03 PM",
       "status": "Delayed"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "7",
+      "baggage": "4",
       "scheduledTime": "11:48 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -100,8 +100,8 @@
       "from": "Atlanta",
       "baggage": "1",
       "scheduledTime": "11:52 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:49 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -114,7 +114,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "4",
+      "baggage": "2",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -124,8 +124,8 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:44 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN292",
