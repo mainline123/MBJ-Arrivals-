@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T19:23:08.515Z",
+  "updated": "2026-09-12T20:26:54.591Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -124,7 +124,7 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "4:00 PM",
+      "actualTime": "3:56 PM",
       "status": "Delayed"
     },
     {
@@ -196,16 +196,16 @@
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2890",
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",

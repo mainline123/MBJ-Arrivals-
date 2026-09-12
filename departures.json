@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-12T19:23:08.515Z",
+  "updated": "2026-09-12T20:26:54.591Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -218,10 +218,10 @@
       "airlineFlight": "Delta Airlines DL1987",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "3",
+      "gate": "4",
       "scheduledTime": "4:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2963",
@@ -229,8 +229,8 @@
       "checkInCounters": "",
       "gate": "13",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
