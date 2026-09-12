@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T17:23:56.231Z",
+  "updated": "2026-09-12T18:26:57.101Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -114,7 +114,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -124,7 +124,7 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "4:44 PM",
+      "actualTime": "3:46 PM",
       "status": "Delayed"
     },
     {
@@ -140,8 +140,8 @@
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "12:53 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
@@ -156,24 +156,24 @@
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "1:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:46 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM854",
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "1:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:04 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
       "baggage": "1",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:53 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
