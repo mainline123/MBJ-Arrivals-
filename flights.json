@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T14:26:13.239Z",
+  "updated": "2026-09-12T15:24:43.973Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -28,16 +28,16 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "10:40 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:14 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61193",
       "from": "Boston",
       "baggage": "4",
       "scheduledTime": "10:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:05 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2618",
