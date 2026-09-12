@@ -6,7 +6,7 @@
     "month": "09",
     "day": "12"
   },
-  "updated": "2026-09-12T12:35:02.454Z",
+  "updated": "2026-09-12T13:29:12.524Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -70,26 +70,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "DL",
-      "airline": "Delta Air Lines",
-      "flightNumber": "1841",
-      "flight": "DL1841",
-      "airportCode": "ATL",
-      "city": "Atlanta",
-      "scheduledTime": "9:10AM",
-      "estimatedTime": "10:20AM",
-      "actualTime": "",
-      "updatedTime": "10:20AM",
-      "timeType": "Estimated",
-      "displayTime": "10:20AM",
-      "status": "Delayed by 1h 10m",
-      "gate": "002",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407798975,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "KX",
       "airline": "Cayman Airways",
       "flightNumber": "601",
@@ -110,6 +90,26 @@
       "source": "FlightStats"
     },
     {
+      "airlineCode": "DL",
+      "airline": "Delta Air Lines",
+      "flightNumber": "1841",
+      "flight": "DL1841",
+      "airportCode": "ATL",
+      "city": "Atlanta",
+      "scheduledTime": "9:10AM",
+      "estimatedTime": "10:20AM",
+      "actualTime": "",
+      "updatedTime": "10:20AM",
+      "timeType": "Estimated",
+      "displayTime": "10:20AM",
+      "status": "Delayed by 1h 10m",
+      "gate": "002",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407798975,
+      "source": "FlightStats"
+    },
+    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1060",
@@ -123,7 +123,7 @@
       "timeType": "Estimated",
       "displayTime": "10:15AM",
       "status": "On time",
-      "gate": "",
+      "gate": "3",
       "terminal": "",
       "baggage": "",
       "flightId": 1407789047,
