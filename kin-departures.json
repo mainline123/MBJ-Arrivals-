@@ -6,7 +6,7 @@
     "month": "09",
     "day": "12"
   },
-  "updated": "2026-09-13T02:31:45.271Z",
+  "updated": "2026-09-13T03:31:48.986Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -70,26 +70,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "KX",
-      "airline": "Cayman Airways",
-      "flightNumber": "601",
-      "flight": "KX601",
-      "airportCode": "GCM",
-      "city": "Grand Cayman Island",
-      "scheduledTime": "9:10AM",
-      "estimatedTime": "",
-      "actualTime": "9:19AM",
-      "updatedTime": "9:19AM",
-      "timeType": "Actual",
-      "displayTime": "9:19AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1407824766,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "DL",
       "airline": "Delta Air Lines",
       "flightNumber": "1841",
@@ -107,6 +87,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1407798975,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "KX",
+      "airline": "Cayman Airways",
+      "flightNumber": "601",
+      "flight": "KX601",
+      "airportCode": "GCM",
+      "city": "Grand Cayman Island",
+      "scheduledTime": "9:10AM",
+      "estimatedTime": "",
+      "actualTime": "9:19AM",
+      "updatedTime": "9:19AM",
+      "timeType": "Actual",
+      "displayTime": "9:19AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1407824766,
       "source": "FlightStats"
     },
     {
@@ -282,7 +282,7 @@
       "updatedTime": "8:15PM",
       "timeType": "Actual",
       "displayTime": "8:15PM",
-      "status": "Delayed by 1h 1m",
+      "status": "Delayed by 1h 14m",
       "gate": "",
       "terminal": "",
       "baggage": "",
