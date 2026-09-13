@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-13T17:24:38.713Z",
+  "updated": "2026-09-13T18:28:06.039Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -50,7 +50,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "3",
+      "baggage": "6",
       "scheduledTime": "11:43 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "4",
+      "baggage": "3",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -108,13 +108,13 @@
       "from": "Baltimore",
       "baggage": "3",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:38 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "2",
+      "baggage": "5",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -132,8 +132,8 @@
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:54 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57478",
@@ -156,8 +156,8 @@
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "2:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:01 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM114",

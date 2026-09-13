@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-13T17:24:38.713Z",
+  "updated": "2026-09-13T18:28:06.039Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -148,8 +148,8 @@
       "checkInCounters": "31 - 40",
       "gate": "8",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:54 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",
@@ -175,8 +175,8 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "3:51 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
