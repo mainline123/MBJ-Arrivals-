@@ -6,7 +6,7 @@
     "month": "09",
     "day": "12"
   },
-  "updated": "2026-09-13T01:31:11.562Z",
+  "updated": "2026-09-13T02:31:45.271Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -282,7 +282,7 @@
       "updatedTime": "8:15PM",
       "timeType": "Actual",
       "displayTime": "8:15PM",
-      "status": "Delayed by 51m",
+      "status": "Delayed by 1h 1m",
       "gate": "",
       "terminal": "",
       "baggage": "",
@@ -298,10 +298,10 @@
       "city": "Punta Cana",
       "scheduledTime": "8:06PM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "8:06PM",
+      "actualTime": "8:23PM",
+      "updatedTime": "8:23PM",
+      "timeType": "Actual",
+      "displayTime": "8:23PM",
       "status": "On time",
       "gate": "",
       "terminal": "",

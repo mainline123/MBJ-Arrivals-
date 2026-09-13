@@ -6,7 +6,7 @@
     "month": "09",
     "day": "12"
   },
-  "updated": "2026-09-13T01:31:11.562Z",
+  "updated": "2026-09-13T02:31:45.271Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -58,10 +58,10 @@
       "city": "New York",
       "scheduledTime": "9:05AM",
       "estimatedTime": "",
-      "actualTime": "8:58AM",
-      "updatedTime": "8:58AM",
+      "actualTime": "8:46AM",
+      "updatedTime": "8:46AM",
       "timeType": "Actual",
-      "displayTime": "8:58AM",
+      "displayTime": "8:46AM",
       "status": "On time",
       "gate": "3",
       "terminal": "",
