@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-13T18:28:06.039Z",
+  "updated": "2026-09-13T19:23:32.674Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -146,7 +146,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "12",
       "scheduledTime": "3:00 PM",
       "actualTime": "3:54 PM",
       "status": "Delayed"
@@ -211,8 +211,8 @@
       "checkInCounters": "65 - 78",
       "gate": "16",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:45 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
