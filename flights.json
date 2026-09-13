@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-12T23:24:19.451Z",
+  "updated": "2026-09-13T00:34:17.785Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -236,8 +236,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:29 PM",
+      "status": "Delayed"
     }
   ]
 }
