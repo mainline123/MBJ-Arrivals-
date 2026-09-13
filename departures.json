@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-13T16:26:37.716Z",
+  "updated": "2026-09-13T17:24:38.713Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -110,7 +110,7 @@
       "airlineFlight": "Southwest Airlines WN905",
       "to": "Baltimore",
       "checkInCounters": "115 - 126",
-      "gate": "2",
+      "gate": "3",
       "scheduledTime": "2:00 PM",
       "actualTime": "",
       "status": "On-Time"
