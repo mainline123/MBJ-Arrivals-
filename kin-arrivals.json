@@ -6,7 +6,7 @@
     "month": "09",
     "day": "13"
   },
-  "updated": "2026-09-13T12:35:33.682Z",
+  "updated": "2026-09-13T13:29:21.408Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -37,13 +37,13 @@
       "airportCode": "FLL",
       "city": "Fort Lauderdale",
       "scheduledTime": "10:50AM",
-      "estimatedTime": "10:50AM",
+      "estimatedTime": "10:51AM",
       "actualTime": "",
-      "updatedTime": "10:50AM",
+      "updatedTime": "10:51AM",
       "timeType": "Estimated",
-      "displayTime": "10:50AM",
+      "displayTime": "10:51AM",
       "status": "On time",
-      "gate": "",
+      "gate": "4",
       "terminal": "",
       "baggage": "",
       "flightId": 1407986384,
