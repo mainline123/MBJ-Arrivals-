@@ -6,7 +6,7 @@
     "month": "09",
     "day": "13"
   },
-  "updated": "2026-09-13T21:30:01.190Z",
+  "updated": "2026-09-13T22:31:45.042Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -217,12 +217,12 @@
       "airportCode": "MIA",
       "city": "Miami",
       "scheduledTime": "5:08PM",
-      "estimatedTime": "7:15PM",
+      "estimatedTime": "7:44PM",
       "actualTime": "",
-      "updatedTime": "7:15PM",
+      "updatedTime": "7:44PM",
       "timeType": "Estimated",
-      "displayTime": "7:15PM",
-      "status": "Delayed by 2h 7m",
+      "displayTime": "7:44PM",
+      "status": "Delayed by 2h 36m",
       "gate": "8",
       "terminal": "",
       "baggage": "",
@@ -237,16 +237,16 @@
       "airportCode": "MIA",
       "city": "Miami",
       "scheduledTime": "6:10PM",
-      "estimatedTime": "",
+      "estimatedTime": "3:14PM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "6:10PM",
-      "status": "Scheduled",
+      "updatedTime": "3:14PM",
+      "timeType": "Estimated",
+      "displayTime": "3:14PM",
+      "status": "On time",
       "gate": "",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1407989120,
       "source": "FlightStats"
     },
     {
@@ -282,11 +282,11 @@
       "updatedTime": "",
       "timeType": "Scheduled",
       "displayTime": "8:35PM",
-      "status": "Scheduled",
+      "status": "On time",
       "gate": "",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1408024404,
       "source": "FlightStats"
     }
   ]
