@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-13T14:25:24.764Z",
+  "updated": "2026-09-13T15:25:39.680Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "1",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:35 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -56,17 +56,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN272",
-      "from": "Orlando",
-      "baggage": "7",
+      "airlineFlight": "West Jet WS2566",
+      "from": "Toronto",
+      "baggage": "1",
       "scheduledTime": "11:45 AM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2566",
-      "from": "Toronto",
-      "baggage": "1",
+      "airlineFlight": "Southwest Airlines WN272",
+      "from": "Orlando",
+      "baggage": "7",
       "scheduledTime": "11:45 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -120,10 +120,10 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "United Airlines UA1163",
-      "from": "Houston - IAH",
+      "airlineFlight": "American Airlines AA1284",
+      "from": "Charlotte",
       "baggage": "6",
-      "scheduledTime": "1:30 PM",
+      "scheduledTime": "1:09 PM",
       "actualTime": "",
       "status": "On-Time"
     },
