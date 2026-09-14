@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-14T17:26:30.709Z",
+  "updated": "2026-09-14T18:30:54.546Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -175,8 +175,8 @@
       "checkInCounters": "",
       "gate": "13",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",

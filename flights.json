@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-14T17:26:30.709Z",
+  "updated": "2026-09-14T18:30:54.546Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -156,8 +156,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "3",
       "scheduledTime": "4:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57478",
