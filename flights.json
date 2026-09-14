@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-14T13:30:13.894Z",
+  "updated": "2026-09-14T14:30:01.644Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -28,8 +28,8 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "11:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:26 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
@@ -52,24 +52,24 @@
       "from": "New York - JFK",
       "baggage": "1",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:05 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "7",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:18 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "11:48 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:10 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -84,8 +84,8 @@
       "from": "Orlando",
       "baggage": "2",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:01 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA3234",
@@ -100,8 +100,8 @@
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:53 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1284",
@@ -116,16 +116,16 @@
       "from": "Orlando",
       "baggage": "4",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "1",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:19 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
@@ -148,8 +148,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:28 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2890",
