@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-14T16:27:54.020Z",
+  "updated": "2026-09-14T17:26:30.709Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -112,8 +112,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -130,8 +130,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6326",
