@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-14T20:26:37.477Z",
+  "updated": "2026-09-14T21:26:32.286Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -148,8 +148,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "3:28 PM",
-      "status": "Early"
+      "actualTime": "6:14 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2890",
@@ -164,8 +164,8 @@
       "from": "Bogota",
       "baggage": "5",
       "scheduledTime": "6:28 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
