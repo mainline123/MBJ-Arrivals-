@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-14T22:27:41.489Z",
+  "updated": "2026-09-14T23:24:28.767Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -157,8 +157,8 @@
       "checkInCounters": "87 - 98",
       "gate": "18",
       "scheduledTime": "4:50 PM",
-      "actualTime": "7:25 PM",
-      "status": "Delayed"
+      "actualTime": "9:00 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM45",

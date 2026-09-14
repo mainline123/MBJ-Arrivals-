@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-14T22:27:41.489Z",
+  "updated": "2026-09-14T23:24:28.767Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -148,7 +148,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "6:14 PM",
+      "actualTime": "8:56 PM",
       "status": "Delayed"
     },
     {
