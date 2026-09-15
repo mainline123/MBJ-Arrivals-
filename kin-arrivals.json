@@ -6,7 +6,7 @@
     "month": "09",
     "day": "15"
   },
-  "updated": "2026-09-15T08:35:36.045Z",
+  "updated": "2026-09-15T09:37:46.509Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -37,11 +37,11 @@
       "airportCode": "JFK",
       "city": "New York",
       "scheduledTime": "9:05AM",
-      "estimatedTime": "9:05AM",
+      "estimatedTime": "8:39AM",
       "actualTime": "",
-      "updatedTime": "9:05AM",
+      "updatedTime": "8:39AM",
       "timeType": "Estimated",
-      "displayTime": "9:05AM",
+      "displayTime": "8:39AM",
       "status": "On time",
       "gate": "",
       "terminal": "",
