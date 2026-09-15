@@ -5,8 +5,16 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-15T11:26:24.338Z",
+  "updated": "2026-09-15T12:32:17.955Z",
   "flights": [
+    {
+      "airlineFlight": "Jet Blue B61179",
+      "from": "New York - JFK",
+      "baggage": "2",
+      "scheduledTime": "10:34 AM",
+      "actualTime": "10:00 AM",
+      "status": "Early"
+    },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Tocumen",
@@ -116,8 +124,8 @@
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:01 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6279",
@@ -140,8 +148,8 @@
       "from": "Amsterdam",
       "baggage": "6",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:33 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2814",
@@ -156,14 +164,6 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "Jet Blue B61179",
-      "from": "New York - JFK",
-      "baggage": "2",
-      "scheduledTime": "10:20 PM",
       "actualTime": "",
       "status": "On-Time"
     }
