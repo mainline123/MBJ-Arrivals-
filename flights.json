@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-15T17:24:37.684Z",
+  "updated": "2026-09-15T18:28:11.244Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "6",
+      "baggage": "4",
       "scheduledTime": "12:03 PM",
       "actualTime": "11:59 AM",
       "status": "Early"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "West Jet WS2914",
       "from": "Montreal",
-      "baggage": "1",
+      "baggage": "5",
       "scheduledTime": "12:50 PM",
       "actualTime": "12:15 PM",
       "status": "Early"
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "3",
       "scheduledTime": "1:01 PM",
       "actualTime": "12:48 PM",
       "status": "Early"

@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-15T17:24:37.684Z",
+  "updated": "2026-09-15T18:28:11.244Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -163,7 +163,7 @@
     {
       "airlineFlight": "TUI Fly - NL OR511",
       "to": "Amsterdam",
-      "checkInCounters": "99 - 106",
+      "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "4:30 PM",
       "actualTime": "",
