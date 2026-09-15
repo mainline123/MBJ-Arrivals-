@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-15T20:25:50.332Z",
+  "updated": "2026-09-15T21:24:53.188Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -166,8 +166,8 @@
       "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "4:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2815",
