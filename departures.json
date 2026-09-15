@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-15T15:26:42.085Z",
+  "updated": "2026-09-15T16:27:43.630Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -137,7 +137,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "18",
+      "gate": "5",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
