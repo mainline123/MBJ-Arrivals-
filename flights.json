@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-15T09:33:00.109Z",
+  "updated": "2026-09-15T10:28:27.135Z",
   "flights": [
     {
       "airlineFlight": "Copa Airlines CM146",
