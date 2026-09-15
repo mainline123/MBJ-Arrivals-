@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-15T18:28:11.244Z",
+  "updated": "2026-09-15T19:25:25.535Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -74,7 +74,7 @@
       "airlineFlight": "Delta Airlines DL1928",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "19",
+      "gate": "",
       "scheduledTime": "1:14 PM",
       "actualTime": "",
       "status": "On-Time"
