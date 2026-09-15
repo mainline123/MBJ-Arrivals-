@@ -6,7 +6,7 @@
     "month": "09",
     "day": "15"
   },
-  "updated": "2026-09-15T06:39:33.321Z",
+  "updated": "2026-09-15T07:34:30.827Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -17,11 +17,11 @@
       "airportCode": "MIA",
       "city": "Miami",
       "scheduledTime": "5:25AM",
-      "estimatedTime": "",
+      "estimatedTime": "12:43AM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "5:25AM",
+      "updatedTime": "12:43AM",
+      "timeType": "Estimated",
+      "displayTime": "12:43AM",
       "status": "On time",
       "gate": "",
       "terminal": "",
@@ -42,11 +42,11 @@
       "updatedTime": "",
       "timeType": "Scheduled",
       "displayTime": "7:15AM",
-      "status": "Scheduled",
+      "status": "On time",
       "gate": "",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1408393846,
       "source": "FlightStats"
     },
     {
@@ -210,26 +210,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1376",
-      "flight": "B61376",
-      "airportCode": "FLL",
-      "city": "Fort Lauderdale",
-      "scheduledTime": "3:05PM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "3:05PM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408391260,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "AC",
       "airline": "Air Canada",
       "flightNumber": "965",
@@ -247,6 +227,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408384029,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "B6",
+      "airline": "JetBlue",
+      "flightNumber": "1376",
+      "flight": "B61376",
+      "airportCode": "FLL",
+      "city": "Fort Lauderdale",
+      "scheduledTime": "3:05PM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "3:05PM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408391260,
       "source": "FlightStats"
     },
     {
