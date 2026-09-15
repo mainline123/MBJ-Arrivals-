@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-14T23:24:28.767Z",
+  "updated": "2026-09-15T00:35:32.336Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -155,7 +155,7 @@
       "airlineFlight": "Delta Airlines DL1987",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "18",
+      "gate": "9",
       "scheduledTime": "4:50 PM",
       "actualTime": "9:00 AM",
       "status": "Early"
