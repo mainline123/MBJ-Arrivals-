@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-16T17:25:01.525Z",
+  "updated": "2026-09-16T18:29:42.779Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -108,8 +108,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:44 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1284",
@@ -124,8 +124,8 @@
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:55 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM138",
