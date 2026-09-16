@@ -6,7 +6,7 @@
     "month": "09",
     "day": "15"
   },
-  "updated": "2026-09-15T23:29:46.088Z",
+  "updated": "2026-09-16T00:38:08.896Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -297,11 +297,11 @@
       "airportCode": "ATL",
       "city": "Atlanta",
       "scheduledTime": "8:10PM",
-      "estimatedTime": "8:05PM",
+      "estimatedTime": "8:04PM",
       "actualTime": "",
-      "updatedTime": "8:05PM",
+      "updatedTime": "8:04PM",
       "timeType": "Estimated",
-      "displayTime": "8:05PM",
+      "displayTime": "8:04PM",
       "status": "On time",
       "gate": "003",
       "terminal": "",
