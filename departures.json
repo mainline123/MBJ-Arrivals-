@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-16T18:29:42.779Z",
+  "updated": "2026-09-16T19:25:44.608Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -146,7 +146,7 @@
       "airlineFlight": "TUI Airways TOM139",
       "to": "Manchester",
       "checkInCounters": "55 - 64",
-      "gate": "17",
+      "gate": "18",
       "scheduledTime": "4:50 PM",
       "actualTime": "",
       "status": "On-Time"
