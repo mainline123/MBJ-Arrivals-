@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-16T16:27:11.884Z",
+  "updated": "2026-09-16T17:25:01.525Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -60,8 +60,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "11:48 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:30 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -74,10 +74,10 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "11:55 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
