@@ -6,7 +6,7 @@
     "month": "09",
     "day": "16"
   },
-  "updated": "2026-09-16T06:39:00.001Z",
+  "updated": "2026-09-16T07:33:15.936Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -150,26 +150,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1060",
-      "flight": "B61060",
-      "airportCode": "JFK",
-      "city": "New York",
-      "scheduledTime": "10:15AM",
-      "estimatedTime": "10:15AM",
-      "actualTime": "",
-      "updatedTime": "10:15AM",
-      "timeType": "Estimated",
-      "displayTime": "10:15AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408577612,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "BW",
       "airline": "Caribbean Airlines",
       "flightNumber": "79",
@@ -187,6 +167,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408580315,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "B6",
+      "airline": "JetBlue",
+      "flightNumber": "1060",
+      "flight": "B61060",
+      "airportCode": "JFK",
+      "city": "New York",
+      "scheduledTime": "10:15AM",
+      "estimatedTime": "10:15AM",
+      "actualTime": "",
+      "updatedTime": "10:15AM",
+      "timeType": "Estimated",
+      "displayTime": "10:15AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408577612,
       "source": "FlightStats"
     },
     {
@@ -270,26 +270,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1376",
-      "flight": "B61376",
-      "airportCode": "FLL",
-      "city": "Fort Lauderdale",
-      "scheduledTime": "3:05PM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "3:05PM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408577731,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "AC",
       "airline": "Air Canada",
       "flightNumber": "965",
@@ -307,6 +287,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408570497,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "B6",
+      "airline": "JetBlue",
+      "flightNumber": "1376",
+      "flight": "B61376",
+      "airportCode": "FLL",
+      "city": "Fort Lauderdale",
+      "scheduledTime": "3:05PM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "3:05PM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408577731,
       "source": "FlightStats"
     },
     {
