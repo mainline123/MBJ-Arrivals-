@@ -6,7 +6,7 @@
     "month": "09",
     "day": "16"
   },
-  "updated": "2026-09-16T10:32:46.771Z",
+  "updated": "2026-09-16T12:38:32.444Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -70,6 +70,26 @@
       "source": "FlightStats"
     },
     {
+      "airlineCode": "DL",
+      "airline": "Delta Air Lines",
+      "flightNumber": "1841",
+      "flight": "DL1841",
+      "airportCode": "ATL",
+      "city": "Atlanta",
+      "scheduledTime": "9:10AM",
+      "estimatedTime": "9:10AM",
+      "actualTime": "",
+      "updatedTime": "9:10AM",
+      "timeType": "Estimated",
+      "displayTime": "9:10AM",
+      "status": "On time",
+      "gate": "002",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408587726,
+      "source": "FlightStats"
+    },
+    {
       "airlineCode": "KX",
       "airline": "Cayman Airways",
       "flightNumber": "601",
@@ -87,26 +107,6 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408614577,
-      "source": "FlightStats"
-    },
-    {
-      "airlineCode": "DL",
-      "airline": "Delta Air Lines",
-      "flightNumber": "1841",
-      "flight": "DL1841",
-      "airportCode": "ATL",
-      "city": "Atlanta",
-      "scheduledTime": "9:10AM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "9:10AM",
-      "status": "On time",
-      "gate": "03",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408587726,
       "source": "FlightStats"
     },
     {
@@ -150,26 +150,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "BW",
-      "airline": "Caribbean Airlines",
-      "flightNumber": "79",
-      "flight": "BW79",
-      "airportCode": "YYZ",
-      "city": "Toronto",
-      "scheduledTime": "10:15AM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "10:15AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408580315,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1060",
@@ -187,6 +167,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408577612,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "BW",
+      "airline": "Caribbean Airlines",
+      "flightNumber": "79",
+      "flight": "BW79",
+      "airportCode": "YYZ",
+      "city": "Toronto",
+      "scheduledTime": "10:15AM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "10:15AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408580315,
       "source": "FlightStats"
     },
     {
