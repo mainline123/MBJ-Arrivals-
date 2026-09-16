@@ -6,7 +6,7 @@
     "month": "09",
     "day": "16"
   },
-  "updated": "2026-09-16T18:35:34.373Z",
+  "updated": "2026-09-16T19:30:41.231Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -150,26 +150,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "BW",
-      "airline": "Caribbean Airlines",
-      "flightNumber": "79",
-      "flight": "BW79",
-      "airportCode": "YYZ",
-      "city": "Toronto",
-      "scheduledTime": "10:15AM",
-      "estimatedTime": "",
-      "actualTime": "10:08AM",
-      "updatedTime": "10:08AM",
-      "timeType": "Actual",
-      "displayTime": "10:08AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408580315,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1060",
@@ -187,6 +167,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408577612,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "BW",
+      "airline": "Caribbean Airlines",
+      "flightNumber": "79",
+      "flight": "BW79",
+      "airportCode": "YYZ",
+      "city": "Toronto",
+      "scheduledTime": "10:15AM",
+      "estimatedTime": "",
+      "actualTime": "10:08AM",
+      "updatedTime": "10:08AM",
+      "timeType": "Actual",
+      "displayTime": "10:08AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408580315,
       "source": "FlightStats"
     },
     {
@@ -363,7 +363,7 @@
       "timeType": "Estimated",
       "displayTime": "5:08PM",
       "status": "On time",
-      "gate": "",
+      "gate": "9",
       "terminal": "",
       "baggage": "",
       "flightId": 1408563472,
