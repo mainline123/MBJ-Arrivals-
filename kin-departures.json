@@ -6,7 +6,7 @@
     "month": "09",
     "day": "17"
   },
-  "updated": "2026-09-17T07:33:15.219Z",
+  "updated": "2026-09-17T08:33:37.061Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -70,26 +70,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "DL",
-      "airline": "Delta Air Lines",
-      "flightNumber": "1841",
-      "flight": "DL1841",
-      "airportCode": "ATL",
-      "city": "Atlanta",
-      "scheduledTime": "9:10AM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "9:10AM",
-      "status": "On time",
-      "gate": "08",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1408777278,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "KX",
       "airline": "Cayman Airways",
       "flightNumber": "601",
@@ -107,6 +87,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1408805182,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "DL",
+      "airline": "Delta Air Lines",
+      "flightNumber": "1841",
+      "flight": "DL1841",
+      "airportCode": "ATL",
+      "city": "Atlanta",
+      "scheduledTime": "9:10AM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "9:10AM",
+      "status": "On time",
+      "gate": "08",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1408777278,
       "source": "FlightStats"
     },
     {
