@@ -6,7 +6,7 @@
     "month": "09",
     "day": "17"
   },
-  "updated": "2026-09-18T03:31:41.488Z",
+  "updated": "2026-09-18T04:31:47.309Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -62,7 +62,7 @@
       "updatedTime": "",
       "timeType": "Scheduled",
       "displayTime": "9:00AM",
-      "status": "On time",
+      "status": "Unknown",
       "gate": "",
       "terminal": "",
       "baggage": "",
