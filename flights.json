@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-18T18:28:08.093Z",
+  "updated": "2026-09-18T19:24:25.640Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -140,8 +140,8 @@
       "from": "London-Gatwick",
       "baggage": "6",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:50 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
