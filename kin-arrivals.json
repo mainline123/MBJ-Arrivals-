@@ -6,7 +6,7 @@
     "month": "09",
     "day": "17"
   },
-  "updated": "2026-09-18T01:29:54.683Z",
+  "updated": "2026-09-18T02:32:49.738Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -378,15 +378,15 @@
       "city": "Atlanta",
       "scheduledTime": "8:10PM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "8:10PM",
-      "status": "Scheduled",
-      "gate": "",
+      "actualTime": "8:11PM",
+      "updatedTime": "8:11PM",
+      "timeType": "Actual",
+      "displayTime": "8:11PM",
+      "status": "On time",
+      "gate": "08",
       "terminal": "",
       "baggage": "",
-      "flightId": null,
+      "flightId": 1408777304,
       "source": "FlightStats"
     }
   ]
