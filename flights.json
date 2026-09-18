@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-18T15:26:28.500Z",
+  "updated": "2026-09-18T17:23:45.823Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -26,7 +26,7 @@
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "2",
+      "baggage": "4",
       "scheduledTime": "11:15 AM",
       "actualTime": "11:48 AM",
       "status": "Delayed"
@@ -44,21 +44,21 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:11 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:07 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "4",
+      "baggage": "2",
       "scheduledTime": "11:43 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "7",
+      "baggage": "2",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
