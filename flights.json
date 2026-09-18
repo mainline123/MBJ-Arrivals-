@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-18T14:26:52.946Z",
+  "updated": "2026-09-18T15:26:28.500Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "10:34 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:04 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -28,8 +28,8 @@
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "11:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:48 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
