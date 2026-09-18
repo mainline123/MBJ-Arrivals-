@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-18T17:23:45.823Z",
+  "updated": "2026-09-18T18:28:08.093Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -100,8 +100,8 @@
       "from": "Miami",
       "baggage": "2",
       "scheduledTime": "12:53 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:18 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
@@ -124,16 +124,16 @@
       "from": "Orlando",
       "baggage": "4",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:12 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM52",
