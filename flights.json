@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T18:27:10.387Z",
+  "updated": "2026-09-19T19:22:16.941Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "Southwest Airlines WN292",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "12:50 PM",
       "actualTime": "1:23 PM",
       "status": "Delayed"
@@ -170,7 +170,7 @@
     {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "1:30 PM",
       "actualTime": "",
       "status": "On-Time"
