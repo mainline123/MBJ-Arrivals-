@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-19T16:25:31.808Z",
+  "updated": "2026-09-19T17:23:25.249Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -130,8 +130,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "1:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:55 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN273",
@@ -139,8 +139,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1332",
