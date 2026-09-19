@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-19T19:22:16.941Z",
+  "updated": "2026-09-19T20:24:56.773Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -80,8 +80,8 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "United Airlines UA1683",
-      "to": "Denver",
+      "airlineFlight": "United Airlines UA1628",
+      "to": "Newark",
       "checkInCounters": "23 - 30",
       "gate": "5",
       "scheduledTime": "12:52 PM",
@@ -211,8 +211,8 @@
       "checkInCounters": "99 - 106",
       "gate": "4",
       "scheduledTime": "3:26 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -238,8 +238,8 @@
       "checkInCounters": "1 - 8",
       "gate": "9",
       "scheduledTime": "5:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2577",

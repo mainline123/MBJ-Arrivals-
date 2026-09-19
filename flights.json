@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T19:22:16.941Z",
+  "updated": "2026-09-19T20:24:56.773Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -188,8 +188,8 @@
       "from": "Medellin",
       "baggage": "1",
       "scheduledTime": "2:36 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:16 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -212,8 +212,8 @@
       "from": "Lima",
       "baggage": "1",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2572",
