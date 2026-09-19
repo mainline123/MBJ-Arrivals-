@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T21:24:07.077Z",
+  "updated": "2026-09-19T22:24:13.753Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -202,7 +202,7 @@
     {
       "airlineFlight": "American Airlines AA2890",
       "from": "Dallas-Ft. Worth",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "4:16 PM",
       "actualTime": "",
       "status": "On-Time"
