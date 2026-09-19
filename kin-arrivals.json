@@ -6,7 +6,7 @@
     "month": "09",
     "day": "19"
   },
-  "updated": "2026-09-19T10:30:16.720Z",
+  "updated": "2026-09-19T11:29:19.338Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -217,12 +217,12 @@
       "airportCode": "LGW",
       "city": "London",
       "scheduledTime": "4:55PM",
-      "estimatedTime": "4:33PM",
+      "estimatedTime": "4:38PM",
       "actualTime": "",
-      "updatedTime": "4:33PM",
+      "updatedTime": "4:38PM",
       "timeType": "Estimated",
-      "displayTime": "4:33PM",
-      "status": "On time",
+      "displayTime": "4:38PM",
+      "status": "Delayed by 15m",
       "gate": "",
       "terminal": "",
       "baggage": "",
