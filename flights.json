@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T13:25:02.530Z",
+  "updated": "2026-09-19T14:24:50.125Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "9:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:15 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
