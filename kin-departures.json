@@ -6,7 +6,7 @@
     "month": "09",
     "day": "18"
   },
-  "updated": "2026-09-19T02:31:06.669Z",
+  "updated": "2026-09-19T03:31:06.057Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -382,7 +382,7 @@
       "updatedTime": "6:35PM",
       "timeType": "Actual",
       "displayTime": "6:35PM",
-      "status": "On time",
+      "status": "Delayed by 15m",
       "gate": "",
       "terminal": "",
       "baggage": "",
@@ -422,7 +422,7 @@
       "updatedTime": "8:38PM",
       "timeType": "Actual",
       "displayTime": "8:38PM",
-      "status": "On time",
+      "status": "Delayed by 23m",
       "gate": "",
       "terminal": "",
       "baggage": "",
