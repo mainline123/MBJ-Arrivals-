@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-19T20:24:56.773Z",
+  "updated": "2026-09-19T21:24:07.077Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
