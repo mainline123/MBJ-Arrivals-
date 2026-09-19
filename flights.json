@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T12:29:57.511Z",
+  "updated": "2026-09-19T13:25:02.530Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
