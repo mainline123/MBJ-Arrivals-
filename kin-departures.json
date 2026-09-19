@@ -6,7 +6,7 @@
     "month": "09",
     "day": "19"
   },
-  "updated": "2026-09-19T18:32:23.735Z",
+  "updated": "2026-09-19T19:27:47.036Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -178,10 +178,10 @@
       "city": "Sint Maarten",
       "scheduledTime": "1:50PM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "1:50PM",
+      "actualTime": "1:34PM",
+      "updatedTime": "1:34PM",
+      "timeType": "Actual",
+      "displayTime": "1:34PM",
       "status": "On time",
       "gate": "",
       "terminal": "",
