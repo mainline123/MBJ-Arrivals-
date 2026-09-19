@@ -6,7 +6,7 @@
     "month": "09",
     "day": "19"
   },
-  "updated": "2026-09-19T17:28:30.659Z",
+  "updated": "2026-09-19T18:32:23.735Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -157,11 +157,11 @@
       "airportCode": "MIA",
       "city": "Miami",
       "scheduledTime": "1:09PM",
-      "estimatedTime": "1:09PM",
-      "actualTime": "",
-      "updatedTime": "1:09PM",
-      "timeType": "Estimated",
-      "displayTime": "1:09PM",
+      "estimatedTime": "",
+      "actualTime": "1:20PM",
+      "updatedTime": "1:20PM",
+      "timeType": "Actual",
+      "displayTime": "1:20PM",
       "status": "On time",
       "gate": "9",
       "terminal": "",
