@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-19T17:23:25.249Z",
+  "updated": "2026-09-19T18:27:10.387Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "12:03 PM",
       "actualTime": "12:20 PM",
       "status": "Delayed"
@@ -124,7 +124,7 @@
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "12:25 PM",
-      "actualTime": "1:55 PM",
+      "actualTime": "2:13 PM",
       "status": "Delayed"
     },
     {
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -154,7 +154,7 @@
     {
       "airlineFlight": "American Airlines AA1284",
       "from": "Charlotte",
-      "baggage": "7",
+      "baggage": "5",
       "scheduledTime": "1:09 PM",
       "actualTime": "",
       "status": "On-Time"
