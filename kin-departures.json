@@ -6,7 +6,7 @@
     "month": "09",
     "day": "20"
   },
-  "updated": "2026-09-20T06:36:05.548Z",
+  "updated": "2026-09-20T07:30:04.008Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -157,10 +157,10 @@
       "airportCode": "FLL",
       "city": "Fort Lauderdale",
       "scheduledTime": "1:40PM",
-      "estimatedTime": "",
+      "estimatedTime": "1:40PM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
+      "updatedTime": "1:40PM",
+      "timeType": "Estimated",
       "displayTime": "1:40PM",
       "status": "On time",
       "gate": "",
