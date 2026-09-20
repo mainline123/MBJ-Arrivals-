@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-20T16:47:57.318Z",
+  "updated": "2026-09-20T19:26:51.320Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "5",
+      "baggage": "7",
       "scheduledTime": "11:33 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -58,7 +58,7 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "7",
+      "baggage": "3",
       "scheduledTime": "11:45 AM",
       "actualTime": "11:52 AM",
       "status": "Delayed"
@@ -66,7 +66,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "11:45 AM",
       "actualTime": "11:50 AM",
       "status": "Delayed"
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "12:03 PM",
       "actualTime": "12:12 PM",
       "status": "Delayed"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "12:10 PM",
       "actualTime": "12:06 PM",
       "status": "Early"
@@ -108,8 +108,8 @@
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "12:53 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:42 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
@@ -129,8 +129,8 @@
     },
     {
       "airlineFlight": "American Airlines AA1284",
-      "from": "Miami",
-      "baggage": "",
+      "from": "Charlotte",
+      "baggage": "3",
       "scheduledTime": "1:09 PM",
       "actualTime": "12:59 PM",
       "status": "Early"
@@ -140,8 +140,8 @@
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -172,8 +172,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:27 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Transat TS518",
