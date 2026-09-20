@@ -6,7 +6,7 @@
     "month": "09",
     "day": "19"
   },
-  "updated": "2026-09-20T00:39:08.299Z",
+  "updated": "2026-09-20T01:30:34.358Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -262,7 +262,7 @@
       "updatedTime": "6:01PM",
       "timeType": "Actual",
       "displayTime": "6:01PM",
-      "status": "Delayed by 50m",
+      "status": "Delayed by 49m",
       "gate": "8",
       "terminal": "",
       "baggage": "",
@@ -297,14 +297,14 @@
       "airportCode": "MBJ",
       "city": "Montego Bay",
       "scheduledTime": "7:45PM",
-      "estimatedTime": "7:45PM",
+      "estimatedTime": "8:20PM",
       "actualTime": "",
-      "updatedTime": "7:45PM",
+      "updatedTime": "8:20PM",
       "timeType": "Estimated",
-      "displayTime": "7:45PM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
+      "displayTime": "8:20PM",
+      "status": "Delayed by 35m",
+      "gate": "9",
+      "terminal": "MA",
       "baggage": "",
       "flightId": 1409889311,
       "source": "FlightStats"
