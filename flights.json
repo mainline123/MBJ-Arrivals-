@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-20T11:24:26.743Z",
+  "updated": "2026-09-20T12:29:59.904Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:32 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -124,14 +124,6 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "United Airlines UA1163",
-      "from": "Houston - IAH",
-      "baggage": "2",
-      "scheduledTime": "1:30 PM",
       "actualTime": "",
       "status": "On-Time"
     },
