@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-20T19:26:51.320Z",
+  "updated": "2026-09-20T22:26:17.977Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -164,15 +164,15 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:16 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:35 PM",
-      "actualTime": "5:27 PM",
+      "actualTime": "5:49 PM",
       "status": "Delayed"
     },
     {
@@ -188,16 +188,16 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "3",
       "scheduledTime": "4:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:12 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "1",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:37 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Neos Spa NO736",
