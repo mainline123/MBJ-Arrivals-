@@ -5,10 +5,10 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-20T12:29:59.904Z",
+  "updated": "2026-09-20T16:47:57.318Z",
   "flights": [
     {
-      "airlineFlight": "Jet Blue B6280",
+      "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
       "gate": "10",
@@ -20,17 +20,26 @@
       "airlineFlight": "American Airlines AA1337",
       "to": "Dallas-Ft. Worth",
       "checkInCounters": "65 - 78",
-      "gate": "12",
+      "gate": "3",
       "scheduledTime": "12:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:13 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM147",
       "to": "Panama City",
       "checkInCounters": "1 - 8",
-      "gate": "13",
+      "gate": "12",
       "scheduledTime": "12:22 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "West Jet WS4177",
+      "to": "Toronto",
+      "checkInCounters": "43 - 54",
+      "gate": "6",
+      "scheduledTime": "12:30 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -38,7 +47,7 @@
       "airlineFlight": "Air Canada AC1805",
       "to": "Toronto",
       "checkInCounters": "55 - 64",
-      "gate": "9",
+      "gate": "13",
       "scheduledTime": "12:30 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -103,8 +112,8 @@
       "checkInCounters": "107 - 114",
       "gate": "4",
       "scheduledTime": "1:42 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1332",
@@ -125,6 +134,15 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "American Airlines AA1284",
+      "to": "Miami",
+      "checkInCounters": "65 - 78",
+      "gate": "13",
+      "scheduledTime": "2:09 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 97",
@@ -134,7 +152,7 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B6380",
+      "airlineFlight": "Jet Blue B6280",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
       "gate": "10",
