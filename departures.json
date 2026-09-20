@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-20T02:26:04.750Z",
+  "updated": "2026-09-20T03:27:13.510Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -245,9 +245,9 @@
       "airlineFlight": "West Jet WS2577",
       "to": "Toronto",
       "checkInCounters": "43 - 54",
-      "gate": "9",
+      "gate": "8",
       "scheduledTime": "7:30 PM",
-      "actualTime": "10:30 PM",
+      "actualTime": "10:50 PM",
       "status": "Delayed"
     },
     {
