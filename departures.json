@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-20T01:25:25.742Z",
+  "updated": "2026-09-20T02:26:04.750Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -247,7 +247,7 @@
       "checkInCounters": "43 - 54",
       "gate": "9",
       "scheduledTime": "7:30 PM",
-      "actualTime": "9:00 PM",
+      "actualTime": "10:30 PM",
       "status": "Delayed"
     },
     {
