@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-21T14:08:50.278Z",
+  "updated": "2026-09-21T19:28:06.503Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA9602",
@@ -67,8 +67,8 @@
       "checkInCounters": "23 - 30",
       "gate": "4",
       "scheduledTime": "12:52 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -184,8 +184,8 @@
       "checkInCounters": "",
       "gate": "13",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",
