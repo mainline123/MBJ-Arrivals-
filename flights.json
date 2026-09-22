@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-22T18:54:47.393Z",
+  "updated": "2026-09-22T22:09:03.303Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -124,7 +124,7 @@
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "1:15 PM",
-      "actualTime": "3:35 PM",
+      "actualTime": "3:46 PM",
       "status": "Delayed"
     },
     {
@@ -148,8 +148,8 @@
       "from": "Amsterdam",
       "baggage": "6",
       "scheduledTime": "5:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:42 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2814",

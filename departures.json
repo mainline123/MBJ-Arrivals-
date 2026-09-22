@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-22T18:54:47.393Z",
+  "updated": "2026-09-22T22:09:03.303Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -137,7 +137,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "18",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -146,7 +146,7 @@
       "airlineFlight": "TUI Airways TOM637",
       "to": "Birmingham",
       "checkInCounters": "55 - 64",
-      "gate": "19",
+      "gate": "18",
       "scheduledTime": "3:15 PM",
       "actualTime": "5:35 PM",
       "status": "Delayed"
@@ -173,7 +173,7 @@
       "airlineFlight": "TUI Fly - NL OR511",
       "to": "Amsterdam",
       "checkInCounters": "99 - 104",
-      "gate": "18",
+      "gate": "19",
       "scheduledTime": "8:55 PM",
       "actualTime": "",
       "status": "On-Time"
