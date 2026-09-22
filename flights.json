@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-22T14:54:05.338Z",
+  "updated": "2026-09-22T18:54:47.393Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -28,16 +28,16 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:09 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:01 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1462",
@@ -60,8 +60,8 @@
       "from": "Orlando",
       "baggage": "7",
       "scheduledTime": "11:55 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:18 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -116,24 +116,24 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:49 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM636",
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:35 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:30 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Wingo P57482",

@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-22T14:54:05.338Z",
+  "updated": "2026-09-22T18:54:47.393Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -49,8 +49,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:21 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -58,8 +58,8 @@
       "checkInCounters": "87 - 98",
       "gate": "18",
       "scheduledTime": "12:59 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1332",
@@ -137,7 +137,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "18",
+      "gate": "8",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -148,13 +148,13 @@
       "checkInCounters": "55 - 64",
       "gate": "19",
       "scheduledTime": "3:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:35 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57483",
       "to": "Medellin",
-      "checkInCounters": "99 - 106",
+      "checkInCounters": "81 - 86",
       "gate": "13",
       "scheduledTime": "4:19 PM",
       "actualTime": "",
@@ -172,7 +172,7 @@
     {
       "airlineFlight": "TUI Fly - NL OR511",
       "to": "Amsterdam",
-      "checkInCounters": "81 - 86",
+      "checkInCounters": "99 - 104",
       "gate": "18",
       "scheduledTime": "8:55 PM",
       "actualTime": "",
