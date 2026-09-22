@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-21T23:16:33.619Z",
+  "updated": "2026-09-22T04:56:03.106Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA9786",
