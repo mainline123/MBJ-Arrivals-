@@ -6,7 +6,7 @@
     "month": "09",
     "day": "22"
   },
-  "updated": "2026-09-22T22:17:42.465Z",
+  "updated": "2026-09-23T00:42:55.833Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -22,7 +22,7 @@
       "updatedTime": "",
       "timeType": "Scheduled",
       "displayTime": "5:25AM",
-      "status": "On time",
+      "status": "Unknown",
       "gate": "",
       "terminal": "",
       "baggage": "",
@@ -210,26 +210,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "AC",
-      "airline": "Air Canada",
-      "flightNumber": "965",
-      "flight": "AC965",
-      "airportCode": "YYZ",
-      "city": "Toronto",
-      "scheduledTime": "3:05PM",
-      "estimatedTime": "",
-      "actualTime": "4:48PM",
-      "updatedTime": "4:48PM",
-      "timeType": "Actual",
-      "displayTime": "4:48PM",
-      "status": "Delayed by 1h 28m",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1409764385,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1376",
@@ -250,6 +230,26 @@
       "source": "FlightStats"
     },
     {
+      "airlineCode": "AC",
+      "airline": "Air Canada",
+      "flightNumber": "965",
+      "flight": "AC965",
+      "airportCode": "YYZ",
+      "city": "Toronto",
+      "scheduledTime": "3:05PM",
+      "estimatedTime": "",
+      "actualTime": "4:48PM",
+      "updatedTime": "4:48PM",
+      "timeType": "Actual",
+      "displayTime": "4:48PM",
+      "status": "Delayed by 1h 30m",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1409764385,
+      "source": "FlightStats"
+    },
+    {
       "airlineCode": "AA",
       "airline": "American Airlines",
       "flightNumber": "1082",
@@ -262,7 +262,7 @@
       "updatedTime": "3:56PM",
       "timeType": "Actual",
       "displayTime": "3:56PM",
-      "status": "Delayed by 22h 49m",
+      "status": "Delayed by 22h 44m",
       "gate": "8",
       "terminal": "",
       "baggage": "",
