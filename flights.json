@@ -5,8 +5,16 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-23T11:36:33.400Z",
+  "updated": "2026-09-23T16:58:25.382Z",
   "flights": [
+    {
+      "airlineFlight": "Jet Blue B61179",
+      "from": "New York - JFK",
+      "baggage": "3",
+      "scheduledTime": "10:34 AM",
+      "actualTime": "10:13 AM",
+      "status": "Early"
+    },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
@@ -20,8 +28,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:46 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
@@ -50,10 +58,10 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "11:48 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:24 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -66,7 +74,7 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "11:55 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -124,16 +132,16 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2162",
       "from": "Frankfurt",
-      "baggage": "1",
+      "baggage": "6",
       "scheduledTime": "4:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "3P4159",
