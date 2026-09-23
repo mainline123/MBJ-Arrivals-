@@ -6,7 +6,7 @@
     "month": "09",
     "day": "23"
   },
-  "updated": "2026-09-23T06:05:03.061Z",
+  "updated": "2026-09-23T11:49:23.278Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -150,26 +150,6 @@
       "source": "FlightStats"
     },
     {
-      "airlineCode": "BW",
-      "airline": "Caribbean Airlines",
-      "flightNumber": "79",
-      "flight": "BW79",
-      "airportCode": "YYZ",
-      "city": "Toronto",
-      "scheduledTime": "10:15AM",
-      "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
-      "displayTime": "10:15AM",
-      "status": "On time",
-      "gate": "",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1409955199,
-      "source": "FlightStats"
-    },
-    {
       "airlineCode": "B6",
       "airline": "JetBlue",
       "flightNumber": "1060",
@@ -187,6 +167,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1409952501,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "BW",
+      "airline": "Caribbean Airlines",
+      "flightNumber": "79",
+      "flight": "BW79",
+      "airportCode": "YYZ",
+      "city": "Toronto",
+      "scheduledTime": "10:15AM",
+      "estimatedTime": "",
+      "actualTime": "",
+      "updatedTime": "",
+      "timeType": "Scheduled",
+      "displayTime": "10:15AM",
+      "status": "On time",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1409955199,
       "source": "FlightStats"
     },
     {
@@ -387,6 +387,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1409987917,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "BW",
+      "airline": "Caribbean Airlines",
+      "flightNumber": "8043",
+      "flight": "BW8043",
+      "airportCode": "MIA",
+      "city": "Miami",
+      "scheduledTime": "7:10PM",
+      "estimatedTime": "",
+      "actualTime": "4:21AM",
+      "updatedTime": "4:21AM",
+      "timeType": "Actual",
+      "displayTime": "4:21AM",
+      "status": "Delayed by 9h 4m",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1409774291,
       "source": "FlightStats"
     },
     {
