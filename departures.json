@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-23T16:58:25.382Z",
+  "updated": "2026-09-23T20:21:57.601Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -119,7 +119,7 @@
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "19",
+      "gate": "18",
       "scheduledTime": "2:26 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -154,7 +154,7 @@
     {
       "airlineFlight": "Condor DE2163",
       "to": "Frankfurt",
-      "checkInCounters": "",
+      "checkInCounters": "81 - 86",
       "gate": "19",
       "scheduledTime": "6:00 PM",
       "actualTime": "",
@@ -163,8 +163,8 @@
     {
       "airlineFlight": "3P4160",
       "to": "Lisbon",
-      "checkInCounters": "",
-      "gate": "18",
+      "checkInCounters": "55 - 62",
+      "gate": "17",
       "scheduledTime": "9:50 PM",
       "actualTime": "",
       "status": "On-Time"
