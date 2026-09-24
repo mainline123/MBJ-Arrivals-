@@ -5,14 +5,14 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-24T10:01:00.650Z",
+  "updated": "2026-09-24T15:06:13.934Z",
   "flights": [
     {
-      "airlineFlight": "Wingo P57479",
-      "to": "Bogota",
-      "checkInCounters": "99 - 106",
-      "gate": "5",
-      "scheduledTime": "11:37 AM",
+      "airlineFlight": "Jet Blue B6280",
+      "to": "New York - JFK",
+      "checkInCounters": "31 - 40",
+      "gate": "12",
+      "scheduledTime": "8:40 AM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -157,6 +157,15 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "3:51 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Wingo P57479",
+      "to": "Bogota",
+      "checkInCounters": "99 - 106",
+      "gate": "5",
+      "scheduledTime": "4:02 PM",
       "actualTime": "",
       "status": "On-Time"
     },

@@ -5,13 +5,13 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-24T10:01:00.650Z",
+  "updated": "2026-09-24T15:06:13.934Z",
   "flights": [
     {
-      "airlineFlight": "Wingo P57478",
-      "from": "Bogota",
-      "baggage": "1",
-      "scheduledTime": "10:38 AM",
+      "airlineFlight": "Jet Blue B61179",
+      "from": "New York - JFK",
+      "baggage": "",
+      "scheduledTime": "7:40 AM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -148,6 +148,14 @@
       "from": "London-Gatwick",
       "baggage": "6",
       "scheduledTime": "2:45 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Wingo P57478",
+      "from": "Bogota",
+      "baggage": "1",
+      "scheduledTime": "3:03 PM",
       "actualTime": "",
       "status": "On-Time"
     },
