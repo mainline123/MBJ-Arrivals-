@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-25T13:47:20.674Z",
+  "updated": "2026-09-25T18:36:40.218Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -121,8 +121,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:45 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -197,11 +197,11 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Condor DE2163",
+      "airlineFlight": "Condor DE2164",
       "to": "Frankfurt",
       "checkInCounters": "43 - 50",
       "gate": "19",
-      "scheduledTime": "5:35 PM",
+      "scheduledTime": "8:10 PM",
       "actualTime": "",
       "status": "On-Time"
     }
