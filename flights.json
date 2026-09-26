@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-26T13:05:39.961Z",
+  "updated": "2026-09-26T17:10:41.249Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -34,66 +34,66 @@
     {
       "airlineFlight": "Jet Blue B61193",
       "from": "Boston",
-      "baggage": "6",
+      "baggage": "5",
       "scheduledTime": "10:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:27 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2618",
       "from": "Miami",
       "baggage": "3",
       "scheduledTime": "11:03 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:44 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:17 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:55 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA681",
       "from": "Philadelphia",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "11:17 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:44 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
       "baggage": "4",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:13 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:08 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "7",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:13 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "6",
+      "baggage": "3",
       "scheduledTime": "11:48 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:32 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
