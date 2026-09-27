@@ -5,10 +5,10 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-27T08:10:03.396Z",
+  "updated": "2026-09-27T13:58:17.100Z",
   "flights": [
     {
-      "airlineFlight": "Jet Blue B6280",
+      "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
       "gate": "10",
@@ -44,19 +44,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN907",
-      "to": "Baltimore",
-      "checkInCounters": "115 - 126",
-      "gate": "2",
+      "airlineFlight": "West Jet WS2567",
+      "to": "Toronto",
+      "checkInCounters": "43 - 54",
+      "gate": "16",
       "scheduledTime": "12:45 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2567",
-      "to": "Toronto",
-      "checkInCounters": "43 - 54",
-      "gate": "16",
+      "airlineFlight": "Southwest Airlines WN907",
+      "to": "Baltimore",
+      "checkInCounters": "115 - 126",
+      "gate": "2",
       "scheduledTime": "12:45 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -134,20 +134,20 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B6380",
-      "to": "New York - JFK",
-      "checkInCounters": "31 - 40",
-      "gate": "13",
-      "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "United Airlines UA223",
       "to": "Houston - IAH",
       "checkInCounters": "23 - 30",
       "gate": "5",
       "scheduledTime": "2:40 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Jet Blue B6280",
+      "to": "New York - JFK",
+      "checkInCounters": "31 - 40",
+      "gate": "13",
+      "scheduledTime": "2:43 PM",
       "actualTime": "",
       "status": "On-Time"
     },
