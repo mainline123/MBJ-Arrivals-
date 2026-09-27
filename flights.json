@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-27T18:23:59.796Z",
+  "updated": "2026-09-27T22:10:52.327Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -122,7 +122,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "1",
+      "baggage": "7",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -180,8 +180,8 @@
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:35 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Transat TS518",
