@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-27T13:58:17.100Z",
+  "updated": "2026-09-27T18:23:59.796Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:31 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2618",
@@ -28,8 +28,8 @@
       "from": "Panama City",
       "baggage": "2",
       "scheduledTime": "11:17 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:56 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
@@ -44,24 +44,24 @@
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:17 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "3",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:44 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:54 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2566",
@@ -84,8 +84,8 @@
       "from": "Ft. Lauderdale",
       "baggage": "2",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:45 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6521",
@@ -128,12 +128,20 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "American Airlines AA1284",
+      "from": "Charlotte",
+      "baggage": "5",
+      "scheduledTime": "1:08 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
       "baggage": "3",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
@@ -164,8 +172,8 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
