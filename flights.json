@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-27T22:10:52.327Z",
+  "updated": "2026-09-28T00:47:28.392Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -211,9 +211,9 @@
       "airlineFlight": "Neos Spa NO736",
       "from": "Malpensa",
       "baggage": "6",
-      "scheduledTime": "7:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "8:30 PM",
+      "actualTime": "8:26 PM",
+      "status": "Early"
     }
   ]
 }
