@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-28T15:27:53.412Z",
+  "updated": "2026-09-28T22:00:44.536Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -22,8 +22,8 @@
       "checkInCounters": "65 - 78",
       "gate": "5",
       "scheduledTime": "12:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:49 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN907",
@@ -65,10 +65,10 @@
       "airlineFlight": "Delta Airlines DL1957",
       "to": "New York - JFK",
       "checkInCounters": "87 - 98",
-      "gate": "17",
+      "gate": "19",
       "scheduledTime": "12:59 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -112,14 +112,14 @@
       "checkInCounters": "115 - 126",
       "gate": "6",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:38 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "5",
+      "gate": "3",
       "scheduledTime": "2:26 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -148,8 +148,8 @@
       "checkInCounters": "81 - 86",
       "gate": "3",
       "scheduledTime": "3:51 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
