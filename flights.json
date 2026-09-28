@@ -5,12 +5,12 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-28T06:54:10.153Z",
+  "updated": "2026-09-28T15:27:53.412Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "10:34 AM",
       "actualTime": "",
       "status": "On-Time"

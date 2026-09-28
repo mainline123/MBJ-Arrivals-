@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-28T06:54:10.153Z",
+  "updated": "2026-09-28T15:27:53.412Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -29,7 +29,7 @@
       "airlineFlight": "Southwest Airlines WN907",
       "to": "Baltimore",
       "checkInCounters": "115 - 126",
-      "gate": "2",
+      "gate": "6",
       "scheduledTime": "12:15 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -110,7 +110,7 @@
       "airlineFlight": "Southwest Airlines WN293",
       "to": "Orlando",
       "checkInCounters": "115 - 126",
-      "gate": "2",
+      "gate": "6",
       "scheduledTime": "2:15 PM",
       "actualTime": "",
       "status": "On-Time"
