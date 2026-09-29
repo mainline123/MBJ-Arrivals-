@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-29T15:51:30.217Z",
+  "updated": "2026-09-29T20:47:01.766Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -34,7 +34,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "11:33 AM",
       "actualTime": "11:18 AM",
       "status": "Early"
@@ -50,7 +50,7 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "4",
+      "baggage": "3",
       "scheduledTime": "11:48 AM",
       "actualTime": "11:38 AM",
       "status": "Early"
@@ -66,18 +66,18 @@
     {
       "airlineFlight": "American Airlines AA2618",
       "from": "Miami",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "11:56 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:31 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6521",
@@ -92,8 +92,8 @@
       "from": "Montreal",
       "baggage": "5",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "4",
+      "baggage": "7",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -114,10 +114,10 @@
     {
       "airlineFlight": "American Airlines AA1284",
       "from": "Charlotte",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "1:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:49 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM636",
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "1:50 PM",
       "actualTime": "1:21 PM",
       "status": "Early"
@@ -147,7 +147,7 @@
       "airlineFlight": "TUI Fly - NL OR511",
       "from": "Amsterdam",
       "baggage": "6",
-      "scheduledTime": "5:45 PM",
+      "scheduledTime": "3:35 PM",
       "actualTime": "2:53 PM",
       "status": "Early"
     },
@@ -164,8 +164,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:59 PM",
+      "status": "Early"
     }
   ]
 }
