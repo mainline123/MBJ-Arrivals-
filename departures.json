@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-09-30T19:19:55.611Z",
+  "updated": "2026-09-30T23:49:28.496Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -154,11 +154,11 @@
     {
       "airlineFlight": "Condor DE2164",
       "to": "Frankfurt",
-      "checkInCounters": "81 - 86",
+      "checkInCounters": "43 - 52",
       "gate": "19",
-      "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "scheduledTime": "8:10 PM",
+      "actualTime": "8:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "3P4160",

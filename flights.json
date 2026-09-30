@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-09-30T19:19:55.611Z",
+  "updated": "2026-09-30T23:49:28.496Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -136,18 +136,18 @@
       "status": "Delayed"
     },
     {
-      "airlineFlight": "Condor DE2164",
-      "from": "Frankfurt",
-      "baggage": "6",
-      "scheduledTime": "4:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "3P4159",
       "from": "Lisbon",
       "baggage": "6",
       "scheduledTime": "5:40 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Condor DE2164",
+      "from": "Frankfurt",
+      "baggage": "6",
+      "scheduledTime": "7:02 PM",
       "actualTime": "",
       "status": "On-Time"
     }
