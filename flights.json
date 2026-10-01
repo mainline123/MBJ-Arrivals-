@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-01T18:55:33.463Z",
+  "updated": "2026-10-01T23:12:29.036Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -140,39 +140,39 @@
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "2:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM36",
       "from": "London-Gatwick",
       "baggage": "6",
       "scheduledTime": "2:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:16 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
       "baggage": "2",
       "scheduledTime": "3:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:13 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:57 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2890",
       "from": "Dallas-Ft. Worth",
       "baggage": "2",
       "scheduledTime": "4:16 PM",
-      "actualTime": "6:30 PM",
+      "actualTime": "8:26 PM",
       "status": "Delayed"
     },
     {
@@ -180,8 +180,8 @@
       "from": "Lima",
       "baggage": "5",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:29 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",

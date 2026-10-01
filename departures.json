@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-01T18:55:33.463Z",
+  "updated": "2026-10-01T23:12:29.036Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -157,8 +157,8 @@
       "checkInCounters": "23 - 28",
       "gate": "4",
       "scheduledTime": "3:51 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",
@@ -166,8 +166,8 @@
       "checkInCounters": "99 - 106",
       "gate": "5",
       "scheduledTime": "4:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM37",
@@ -193,7 +193,7 @@
       "checkInCounters": "",
       "gate": "9",
       "scheduledTime": "5:16 PM",
-      "actualTime": "7:30 PM",
+      "actualTime": "9:26 PM",
       "status": "Delayed"
     },
     {
