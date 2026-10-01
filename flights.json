@@ -5,12 +5,12 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-01T05:53:32.286Z",
+  "updated": "2026-10-01T13:14:31.894Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "2",
       "scheduledTime": "10:35 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -26,7 +26,7 @@
     {
       "airlineFlight": "American Airlines AA2618",
       "from": "Miami",
-      "baggage": "1",
+      "baggage": "6",
       "scheduledTime": "11:03 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -34,7 +34,7 @@
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
-      "baggage": "",
+      "baggage": "1",
       "scheduledTime": "11:17 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "",
+      "baggage": "4",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "1:50 PM",
       "actualTime": "",
       "status": "On-Time"
