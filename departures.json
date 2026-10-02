@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-02T16:16:20.519Z",
+  "updated": "2026-10-02T21:19:45.810Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -67,8 +67,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -156,7 +156,7 @@
       "to": "Atlanta",
       "checkInCounters": "81 - 86",
       "gate": "4",
-      "scheduledTime": "3:51 PM",
+      "scheduledTime": "3:42 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -184,8 +184,8 @@
       "checkInCounters": "87 - 98",
       "gate": "9",
       "scheduledTime": "4:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2963",
@@ -193,15 +193,15 @@
       "checkInCounters": "",
       "gate": "16",
       "scheduledTime": "5:16 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:02 PM",
+      "status": "Delayed"
     },
     {
-      "airlineFlight": "Condor DE2163",
+      "airlineFlight": "Condor DE2164",
       "to": "Frankfurt",
       "checkInCounters": "43 - 50",
       "gate": "19",
-      "scheduledTime": "5:35 PM",
+      "scheduledTime": "8:10 PM",
       "actualTime": "",
       "status": "On-Time"
     }
