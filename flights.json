@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-01T23:12:29.036Z",
+  "updated": "2026-10-02T02:17:36.020Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -156,7 +156,7 @@
       "from": "Bogota",
       "baggage": "2",
       "scheduledTime": "3:03 PM",
-      "actualTime": "8:13 PM",
+      "actualTime": "8:16 PM",
       "status": "Delayed"
     },
     {
@@ -188,8 +188,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:47 PM",
+      "status": "Early"
     }
   ]
 }
