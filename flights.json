@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-02T09:45:59.712Z",
+  "updated": "2026-10-02T16:16:20.519Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "1",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:09 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -32,6 +32,14 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "Copa Airlines CM146",
+      "from": "Panama City",
+      "baggage": "4",
+      "scheduledTime": "11:17 AM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
       "baggage": "7",
@@ -44,8 +52,8 @@
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "11:33 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:53 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
@@ -128,6 +136,14 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "TUI Airways TOM52",
+      "from": "London-Gatwick",
+      "baggage": "7",
+      "scheduledTime": "2:15 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
       "baggage": "4",
@@ -144,17 +160,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Transat TS486",
-      "from": "Montreal",
-      "baggage": "7",
+      "airlineFlight": "Delta Airlines DL1949",
+      "from": "Atlanta",
+      "baggage": "5",
       "scheduledTime": "3:35 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Delta Airlines DL1949",
-      "from": "Atlanta",
-      "baggage": "5",
+      "airlineFlight": "Air Transat TS486",
+      "from": "Montreal",
+      "baggage": "7",
       "scheduledTime": "3:35 PM",
       "actualTime": "",
       "status": "On-Time"
