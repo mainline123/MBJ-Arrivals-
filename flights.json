@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-03T17:16:45.547Z",
+  "updated": "2026-10-03T21:14:38.812Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -90,9 +90,9 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "11:43 AM",
-      "actualTime": "3:13 PM",
+      "actualTime": "3:40 PM",
       "status": "Delayed"
     },
     {
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "1:01 PM",
       "actualTime": "12:51 PM",
       "status": "Early"
@@ -154,7 +154,7 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "7",
       "scheduledTime": "1:05 PM",
       "actualTime": "1:01 PM",
       "status": "Early"
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "1:30 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -186,7 +186,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "1:50 PM",
       "actualTime": "1:14 PM",
       "status": "Early"
@@ -196,8 +196,8 @@
       "from": "Medellin",
       "baggage": "3",
       "scheduledTime": "2:36 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:23 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -228,8 +228,8 @@
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2572",
