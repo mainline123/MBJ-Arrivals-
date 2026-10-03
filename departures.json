@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-03T12:33:40.079Z",
+  "updated": "2026-10-03T17:16:45.547Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -20,9 +20,9 @@
       "airlineFlight": "Jet Blue B68810",
       "to": "Southwest Florida Reg",
       "checkInCounters": "31 - 40",
-      "gate": "17",
+      "gate": "5",
       "scheduledTime": "11:00 AM",
-      "actualTime": "11:55 AM",
+      "actualTime": "12:30 PM",
       "status": "Delayed"
     },
     {
@@ -49,8 +49,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "11:55 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1337",
@@ -83,10 +83,10 @@
       "airlineFlight": "United Airlines UA1683",
       "to": "Denver",
       "checkInCounters": "23 - 30",
-      "gate": "5",
+      "gate": "2",
       "scheduledTime": "12:52 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN1116",
@@ -112,8 +112,8 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "1:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -173,7 +173,7 @@
       "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "10",
       "scheduledTime": "2:40 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -191,7 +191,7 @@
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "10",
+      "gate": "8",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
