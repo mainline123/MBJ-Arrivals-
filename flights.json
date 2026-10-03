@@ -5,39 +5,39 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-03T06:34:55.438Z",
+  "updated": "2026-10-03T12:33:40.079Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "9:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:11 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B69009F",
       "from": "Orlando",
       "baggage": "",
       "scheduledTime": "10:00 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:55 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:09 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61193",
       "from": "Boston",
       "baggage": "5",
       "scheduledTime": "10:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:23 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -160,6 +160,14 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "TUI Airways TOM854",
+      "from": "Birmingham",
+      "baggage": "6",
+      "scheduledTime": "1:20 PM",
+      "actualTime": "12:49 PM",
+      "status": "Early"
+    },
+    {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
       "baggage": "2",
@@ -172,22 +180,14 @@
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:05 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1284",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "2:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "TUI Airways TOM854",
-      "from": "Birmingham",
-      "baggage": "6",
-      "scheduledTime": "2:15 PM",
       "actualTime": "",
       "status": "On-Time"
     },
