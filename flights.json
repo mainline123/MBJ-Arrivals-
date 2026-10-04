@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-04T17:34:37.780Z",
+  "updated": "2026-10-04T21:24:44.377Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -122,7 +122,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "1:01 PM",
       "actualTime": "12:37 PM",
       "status": "Early"
@@ -184,14 +184,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Neos Spa NO736",
-      "from": "Malpensa",
-      "baggage": "6",
-      "scheduledTime": "4:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "American Airlines AA2890",
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
@@ -204,6 +196,14 @@
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
+      "actualTime": "4:33 PM",
+      "status": "Early"
+    },
+    {
+      "airlineFlight": "Neos Spa NO736",
+      "from": "Malpensa",
+      "baggage": "6",
+      "scheduledTime": "8:30 PM",
       "actualTime": "",
       "status": "On-Time"
     }
