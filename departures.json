@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-04T05:52:12.448Z",
+  "updated": "2026-10-04T12:21:36.848Z",
   "flights": [
     {
       "airlineFlight": "Southwest Airlines WN273",
