@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-04T21:24:44.377Z",
+  "updated": "2026-10-05T00:55:26.968Z",
   "flights": [
     {
       "airlineFlight": "Southwest Airlines WN273",
@@ -226,7 +226,7 @@
     {
       "airlineFlight": "Neos Spa NO736",
       "to": "Malpensa",
-      "checkInCounters": "20 - 27",
+      "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "10:00 PM",
       "actualTime": "",
