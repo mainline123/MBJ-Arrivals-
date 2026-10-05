@@ -5,29 +5,37 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-05T07:02:26.551Z",
+  "updated": "2026-10-05T16:00:05.708Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:07 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "1",
+      "baggage": "7",
       "scheduledTime": "11:00 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA855",
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "11:08 AM",
+      "actualTime": "10:49 AM",
+      "status": "Early"
+    },
+    {
+      "airlineFlight": "Copa Airlines CM146",
+      "from": "Panama City",
+      "baggage": "7",
+      "scheduledTime": "11:17 AM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -66,7 +74,7 @@
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "11:48 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -76,8 +84,8 @@
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:14 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -90,7 +98,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "12:10 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -98,7 +106,7 @@
     {
       "airlineFlight": "American Airlines AA3912",
       "from": "Miami",
-      "baggage": "2",
+      "baggage": "6",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -114,7 +122,7 @@
     {
       "airlineFlight": "American Airlines AA2620",
       "from": "Charlotte",
-      "baggage": "1",
+      "baggage": "5",
       "scheduledTime": "1:08 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -154,7 +162,7 @@
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
-      "baggage": "1",
+      "baggage": "6",
       "scheduledTime": "4:12 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -162,7 +170,7 @@
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
-      "baggage": "3",
+      "baggage": "6",
       "scheduledTime": "6:28 PM",
       "actualTime": "",
       "status": "On-Time"

@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-05T07:02:26.551Z",
+  "updated": "2026-10-05T16:00:05.708Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -22,8 +22,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "12:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA863",
@@ -44,6 +44,15 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "Copa Airlines CM147",
+      "to": "Panama City",
+      "checkInCounters": "1 - 8",
+      "gate": "9",
+      "scheduledTime": "12:22 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Air Canada AC1805",
       "to": "Toronto",
       "checkInCounters": "55 - 64",
@@ -58,8 +67,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:14 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -92,7 +101,7 @@
       "airlineFlight": "Jet Blue B6522",
       "to": "Orlando",
       "checkInCounters": "31 - 40",
-      "gate": "9",
+      "gate": "8",
       "scheduledTime": "1:15 PM",
       "actualTime": "",
       "status": "On-Time"
