@@ -5,13 +5,13 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-06T10:17:23.501Z",
+  "updated": "2026-10-06T17:10:58.118Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
-      "gate": "16",
+      "gate": "12",
       "scheduledTime": "11:35 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -40,8 +40,8 @@
       "checkInCounters": "65 - 78",
       "gate": "13",
       "scheduledTime": "12:18 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:51 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM147",
@@ -67,8 +67,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:06 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
