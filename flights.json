@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-06T17:10:58.118Z",
+  "updated": "2026-10-06T21:37:56.568Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "11:50 AM",
       "actualTime": "12:06 PM",
       "status": "Delayed"
@@ -90,7 +90,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "7",
+      "baggage": "3",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "12:10 PM",
       "actualTime": "12:04 PM",
       "status": "Early"
@@ -116,16 +116,16 @@
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:42 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA3912",
       "from": "Miami",
       "baggage": "1",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:37 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2620",
@@ -148,8 +148,8 @@
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Fly - NL OR511",
@@ -164,32 +164,32 @@
       "from": "Medellin",
       "baggage": "5",
       "scheduledTime": "3:29 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:21 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2814",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "6:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:18 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:55 PM",
+      "status": "Early"
     }
   ]
 }
