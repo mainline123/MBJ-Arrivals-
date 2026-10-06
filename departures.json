@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-05T22:37:10.502Z",
+  "updated": "2026-10-06T03:00:18.668Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -193,14 +193,14 @@
       "checkInCounters": "99 - 106",
       "gate": "16",
       "scheduledTime": "7:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS166",
       "to": "Heathrow",
       "checkInCounters": "65 - 77",
-      "gate": "17",
+      "gate": "19",
       "scheduledTime": "10:55 PM",
       "actualTime": "",
       "status": "On-Time"
