@@ -5,92 +5,100 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-07T01:32:00.298Z",
+  "updated": "2026-10-07T08:39:02.481Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "5",
+      "baggage": "2",
       "scheduledTime": "10:34 AM",
-      "actualTime": "10:11 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "11:00 AM",
-      "actualTime": "10:48 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "American Airlines AA855",
       "from": "Charlotte",
-      "baggage": "4",
+      "baggage": "5",
       "scheduledTime": "11:08 AM",
-      "actualTime": "10:51 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
       "baggage": "1",
-      "scheduledTime": "11:17 AM",
-      "actualTime": "11:03 AM",
-      "status": "Early"
+      "scheduledTime": "11:12 AM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "American Airlines AA2963",
       "from": "Miami",
       "baggage": "7",
       "scheduledTime": "11:18 AM",
-      "actualTime": "11:51 AM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:20 AM",
-      "actualTime": "11:10 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "11:30 AM",
-      "actualTime": "11:11 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "11:43 AM",
-      "actualTime": "11:15 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "West Jet WS2566",
+      "from": "Toronto",
+      "baggage": "2",
+      "scheduledTime": "11:45 AM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "11:50 AM",
-      "actualTime": "12:06 PM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "11:51 AM",
-      "actualTime": "11:33 AM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "12:03 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -98,98 +106,74 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "12:10 PM",
-      "actualTime": "12:04 PM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2914",
-      "from": "Montreal",
-      "baggage": "2",
-      "scheduledTime": "12:50 PM",
-      "actualTime": "12:21 PM",
-      "status": "Early"
+      "airlineFlight": "American Airlines AA347",
+      "from": "Miami",
+      "baggage": "5",
+      "scheduledTime": "12:54 PM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "1:00 PM",
-      "actualTime": "12:42 PM",
-      "status": "Early"
-    },
-    {
-      "airlineFlight": "American Airlines AA3912",
-      "from": "Miami",
-      "baggage": "1",
-      "scheduledTime": "1:01 PM",
-      "actualTime": "12:37 PM",
-      "status": "Early"
-    },
-    {
-      "airlineFlight": "American Airlines AA2620",
-      "from": "Charlotte",
-      "baggage": "5",
-      "scheduledTime": "1:08 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "TUI Airways TOM636",
-      "from": "Birmingham",
+      "airlineFlight": "American Airlines AA2620",
+      "from": "Charlotte",
       "baggage": "6",
-      "scheduledTime": "1:15 PM",
-      "actualTime": "1:05 PM",
-      "status": "Early"
+      "scheduledTime": "1:08 PM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "1:08 PM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
-      "airlineFlight": "TUI Fly - NL OR511",
-      "from": "Amsterdam",
+      "airlineFlight": "TUI Airways TOM138",
+      "from": "Manchester",
       "baggage": "6",
-      "scheduledTime": "2:55 PM",
-      "actualTime": "2:17 PM",
-      "status": "Early"
+      "scheduledTime": "2:50 PM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
-      "airlineFlight": "Wingo P57482",
-      "from": "Medellin",
-      "baggage": "5",
-      "scheduledTime": "3:29 PM",
-      "actualTime": "3:21 PM",
-      "status": "Early"
+      "airlineFlight": "Condor DE2162",
+      "from": "Frankfurt",
+      "baggage": "6",
+      "scheduledTime": "4:00 PM",
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
-      "baggage": "6",
+      "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "4:19 PM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2814",
-      "from": "Toronto",
-      "baggage": "6",
-      "scheduledTime": "6:30 PM",
-      "actualTime": "6:18 PM",
-      "status": "Early"
-    },
-    {
-      "airlineFlight": "Virgin Atlantic VS165",
-      "from": "Heathrow",
-      "baggage": "6",
-      "scheduledTime": "9:05 PM",
-      "actualTime": "7:55 PM",
-      "status": "Early"
+      "airlineFlight": "3P4159",
+      "from": "Lisbon",
+      "baggage": "",
+      "scheduledTime": "5:40 PM",
+      "actualTime": "",
+      "status": "On-Time"
     }
   ]
 }
