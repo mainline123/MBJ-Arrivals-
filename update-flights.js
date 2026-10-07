@@ -77,36 +77,158 @@ function getStatus(rawHtml = "") {
 
 
 /* ==================================================
+   WAIT BETWEEN RETRIES
+   ================================================== */
+
+function wait(ms) {
+
+  return new Promise(
+    resolve =>
+      setTimeout(
+        resolve,
+        ms
+      )
+  );
+}
+
+
+/* ==================================================
    FETCH MBJ PAGE
+
+   RETRY PROTECTION ADDED:
+
+   - Up to 3 attempts
+   - Up to 30 seconds per attempt
+   - Wait 5 seconds after first failure
+   - Wait 10 seconds after second failure
    ================================================== */
 
 async function fetchPage(url, label) {
 
-  console.log(
-    `Fetching MBJ ${label} from official airport website...`
-  );
+  const MAX_ATTEMPTS = 3;
 
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (compatible; MBJ-Flight-Board/1.0)",
-      "Accept":
-        "text/html,application/xhtml+xml"
-    }
-  });
+  const TIMEOUT_MS = 30000;
 
-  console.log(
-    `${label} HTTP status:`,
-    response.status
-  );
 
-  if (!response.ok) {
-    throw new Error(
-      `MBJ ${label} returned HTTP ${response.status}`
+  for (
+    let attempt = 1;
+    attempt <= MAX_ATTEMPTS;
+    attempt++
+  ) {
+
+    console.log(
+      `Fetching MBJ ${label} from official airport website... attempt ${attempt} of ${MAX_ATTEMPTS}`
     );
-  }
 
-  return await response.text();
+
+    const controller =
+      new AbortController();
+
+
+    const timeout =
+      setTimeout(
+        () =>
+          controller.abort(),
+        TIMEOUT_MS
+      );
+
+
+    try {
+
+      const response =
+        await fetch(
+          url,
+          {
+            headers: {
+
+              "User-Agent":
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+
+              "Accept":
+                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+
+              "Accept-Language":
+                "en-US,en;q=0.9",
+
+              "Cache-Control":
+                "no-cache"
+            },
+
+            signal:
+              controller.signal
+          }
+        );
+
+
+      clearTimeout(
+        timeout
+      );
+
+
+      console.log(
+        `${label} HTTP status:`,
+        response.status
+      );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          `MBJ ${label} returned HTTP ${response.status}`
+        );
+      }
+
+
+      const html =
+        await response.text();
+
+
+      console.log(
+        `MBJ ${label} download successful.`
+      );
+
+
+      return html;
+
+
+    } catch (error) {
+
+      clearTimeout(
+        timeout
+      );
+
+
+      console.log(
+        `MBJ ${label} attempt ${attempt} failed:`,
+        error.message
+      );
+
+
+      if (
+        attempt ===
+        MAX_ATTEMPTS
+      ) {
+
+        throw new Error(
+          `Unable to connect to MBJ ${label} after ${MAX_ATTEMPTS} attempts. Last error: ${error.message}`
+        );
+      }
+
+
+      const delay =
+        attempt * 5000;
+
+
+      console.log(
+        `Waiting ${delay / 1000} seconds before retrying...`
+      );
+
+
+      await wait(
+        delay
+      );
+    }
+  }
 }
 
 
@@ -354,8 +476,11 @@ async function main() {
       "arrivals"
     );
 
+
   const arrivals =
-    parseArrivals(arrivalsHtml);
+    parseArrivals(
+      arrivalsHtml
+    );
 
 
   console.log(
@@ -371,6 +496,7 @@ async function main() {
       arrivalsHtml
     );
 
+
     throw new Error(
       "No MBJ arrivals were extracted. Existing flight data was left untouched."
     );
@@ -380,6 +506,7 @@ async function main() {
   console.log(
     "\nARRIVAL STATUS RESULTS:"
   );
+
 
   for (const flight of arrivals) {
 
@@ -399,8 +526,11 @@ async function main() {
       "departures"
     );
 
+
   const departures =
-    parseDepartures(departuresHtml);
+    parseDepartures(
+      departuresHtml
+    );
 
 
   console.log(
@@ -416,6 +546,7 @@ async function main() {
       departuresHtml
     );
 
+
     throw new Error(
       "No MBJ departures were extracted. Existing departure data was left untouched."
     );
@@ -425,6 +556,7 @@ async function main() {
   console.log(
     "\nDEPARTURE STATUS RESULTS:"
   );
+
 
   for (const flight of departures) {
 
@@ -536,13 +668,21 @@ async function main() {
 }
 
 
+/* ==================================================
+   RUN
+   ================================================== */
+
 main().catch(error => {
 
   console.error(
     "MBJ UPDATE FAILED:"
   );
 
-  console.error(error);
+
+  console.error(
+    error
+  );
+
 
   process.exit(1);
 
