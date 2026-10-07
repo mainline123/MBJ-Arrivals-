@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-07T16:28:15.723Z",
+  "updated": "2026-10-07T22:19:19.283Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -84,8 +84,8 @@
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
@@ -98,57 +98,57 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA347",
       "from": "Miami",
       "baggage": "5",
       "scheduledTime": "12:54 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:51 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:37 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2620",
       "from": "Charlotte",
       "baggage": "6",
       "scheduledTime": "1:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:45 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "1:50 PM",
-      "actualTime": "1:23 PM",
-      "status": "Early"
+      "actualTime": "3:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM138",
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:50 PM",
-      "actualTime": "2:32 PM",
+      "actualTime": "2:40 PM",
       "status": "Early"
     },
     {
@@ -164,16 +164,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "3P4159",
-      "from": "Lisbon",
-      "baggage": "",
-      "scheduledTime": "5:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:29 PM",
+      "status": "Delayed"
     }
   ]
 }

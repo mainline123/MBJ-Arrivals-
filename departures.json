@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-07T16:28:15.723Z",
+  "updated": "2026-10-07T22:19:19.283Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6280",
@@ -76,8 +76,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -103,8 +103,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "1:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -157,8 +157,8 @@
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM139",
@@ -172,11 +172,11 @@
     {
       "airlineFlight": "American Airlines AA3208",
       "to": "Miami",
-      "checkInCounters": "",
+      "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "5:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2163",
@@ -184,15 +184,6 @@
       "checkInCounters": "43 - 52",
       "gate": "19",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "3P4160",
-      "to": "Lisbon",
-      "checkInCounters": "",
-      "gate": "",
-      "scheduledTime": "9:50 PM",
       "actualTime": "",
       "status": "On-Time"
     }
