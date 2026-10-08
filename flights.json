@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-08T16:28:13.010Z",
+  "updated": "2026-10-08T22:04:19.070Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -14,14 +14,6 @@
       "scheduledTime": "10:35 AM",
       "actualTime": "10:14 AM",
       "status": "Early"
-    },
-    {
-      "airlineFlight": "Wingo P57478",
-      "from": "Bogota",
-      "baggage": "7",
-      "scheduledTime": "10:38 AM",
-      "actualTime": "",
-      "status": "On-Time"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -64,20 +56,20 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Canada AC1804",
-      "from": "Toronto",
-      "baggage": "6",
-      "scheduledTime": "11:30 AM",
-      "actualTime": "11:01 AM",
-      "status": "Early"
-    },
-    {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "11:30 AM",
       "actualTime": "",
       "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Air Canada AC1804",
+      "from": "Toronto",
+      "baggage": "6",
+      "scheduledTime": "11:30 AM",
+      "actualTime": "11:01 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
@@ -90,7 +82,7 @@
     {
       "airlineFlight": "Wingo P57482",
       "from": "Medellin",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "11:45 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -148,32 +140,40 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:52 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "2",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "2:33 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM36",
       "from": "London-Gatwick",
       "baggage": "6",
       "scheduledTime": "2:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:15 PM",
+      "status": "Early"
+    },
+    {
+      "airlineFlight": "Wingo P57478",
+      "from": "Bogota",
+      "baggage": "1",
+      "scheduledTime": "3:03 PM",
+      "actualTime": "2:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -188,8 +188,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "4",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",

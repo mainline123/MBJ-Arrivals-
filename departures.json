@@ -5,17 +5,8 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-08T16:28:13.010Z",
+  "updated": "2026-10-08T22:04:19.070Z",
   "flights": [
-    {
-      "airlineFlight": "Wingo P57479",
-      "to": "Bogota",
-      "checkInCounters": "99 - 106",
-      "gate": "5",
-      "scheduledTime": "11:37 AM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
     {
       "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
@@ -146,7 +137,7 @@
       "airlineFlight": "American Airlines AA3912",
       "to": "Miami",
       "checkInCounters": "65 - 78",
-      "gate": "9",
+      "gate": "10",
       "scheduledTime": "1:41 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -157,8 +148,8 @@
       "checkInCounters": "65 - 78",
       "gate": "13",
       "scheduledTime": "2:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:52 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -175,8 +166,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "3:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9124",
@@ -184,6 +175,15 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "3:48 PM",
+      "actualTime": "4:20 PM",
+      "status": "Delayed"
+    },
+    {
+      "airlineFlight": "Wingo P57479",
+      "to": "Bogota",
+      "checkInCounters": "99 - 106",
+      "gate": "5",
+      "scheduledTime": "4:02 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -211,13 +211,13 @@
       "checkInCounters": "",
       "gate": "9",
       "scheduledTime": "5:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
       "to": "Lima",
-      "checkInCounters": "99 - 106",
+      "checkInCounters": "1 - 8",
       "gate": "16",
       "scheduledTime": "5:50 PM",
       "actualTime": "",
