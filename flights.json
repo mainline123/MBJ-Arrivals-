@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-08T22:04:19.070Z",
+  "updated": "2026-10-09T02:09:54.674Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -204,8 +204,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:25 PM",
+      "status": "Early"
     }
   ]
 }
