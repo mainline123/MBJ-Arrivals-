@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-09T09:04:22.756Z",
+  "updated": "2026-10-09T16:12:22.471Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:14 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -60,8 +60,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:05 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
@@ -156,6 +156,14 @@
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "2:05 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM052",
+      "from": "London-Gatwick",
+      "baggage": "6",
+      "scheduledTime": "2:15 PM",
       "actualTime": "",
       "status": "On-Time"
     },
