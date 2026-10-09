@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-09T16:12:22.471Z",
+  "updated": "2026-10-09T20:56:25.156Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -26,7 +26,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "7",
+      "baggage": "4",
       "scheduledTime": "11:03 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "11:12 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "7",
+      "baggage": "2",
       "scheduledTime": "11:43 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -92,13 +92,13 @@
       "from": "Orlando",
       "baggage": "2",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:39 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "1",
+      "baggage": "6",
       "scheduledTime": "11:51 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "5",
       "scheduledTime": "12:06 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -116,24 +116,24 @@
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "12:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:06 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:43 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA3912",
       "from": "Miami",
       "baggage": "2",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2620",
@@ -148,16 +148,16 @@
       "from": "Atlanta",
       "baggage": "6",
       "scheduledTime": "1:31 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:44 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM052",
@@ -172,8 +172,8 @@
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:49 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -196,8 +196,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "3",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:47 PM",
+      "status": "Delayed"
     }
   ]
 }
