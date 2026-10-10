@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-10T18:35:32.795Z",
+  "updated": "2026-10-10T22:31:41.454Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -180,8 +180,8 @@
       "from": "Philadelphia",
       "baggage": "2",
       "scheduledTime": "2:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:32 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
@@ -204,8 +204,8 @@
       "from": "Medellin",
       "baggage": "3",
       "scheduledTime": "2:36 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:18 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -236,8 +236,8 @@
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:34 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2572",
@@ -252,8 +252,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:48 PM",
+      "status": "Early"
     }
   ]
 }
