@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-10T13:41:17.409Z",
+  "updated": "2026-10-10T18:35:32.795Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2709",
@@ -31,8 +31,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "11:55 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6826",
@@ -56,10 +56,10 @@
       "airlineFlight": "Copa Airlines CM147",
       "to": "Panama City",
       "checkInCounters": "1 - 8",
-      "gate": "10",
+      "gate": "",
       "scheduledTime": "12:22 PM",
       "actualTime": "",
-      "status": "On-Time"
+      "status": "Cancelled"
     },
     {
       "airlineFlight": "American Airlines AA863",
@@ -83,10 +83,10 @@
       "airlineFlight": "United Airlines UA1683",
       "to": "Denver",
       "checkInCounters": "23 - 30",
-      "gate": "5",
+      "gate": "6",
       "scheduledTime": "12:52 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:42 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN1116",
@@ -139,8 +139,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "1:44 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:17 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN907",
@@ -148,8 +148,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:43 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -193,8 +193,8 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "2:46 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:25 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2162",
@@ -247,8 +247,8 @@
       "checkInCounters": "23 - 30",
       "gate": "5",
       "scheduledTime": "4:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3208",
