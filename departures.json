@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-09T20:56:25.156Z",
+  "updated": "2026-10-10T00:50:55.131Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -166,8 +166,8 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "2:49 PM",
-      "actualTime": "5:40 PM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "Cancelled"
     },
     {
       "airlineFlight": "Jet Blue B6326",

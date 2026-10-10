@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-09T20:56:25.156Z",
+  "updated": "2026-10-10T00:50:55.131Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
-      "baggage": "6",
+      "baggage": "1",
       "scheduledTime": "1:31 PM",
       "actualTime": "4:23 PM",
       "status": "Delayed"
