@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-11T15:40:48.368Z",
+  "updated": "2026-10-11T20:16:37.236Z",
   "flights": [
     {
       "airlineFlight": "WT2708",
@@ -16,9 +16,17 @@
       "status": "Delayed"
     },
     {
+      "airlineFlight": "West Jet WS2708",
+      "from": "Toronto",
+      "baggage": "2",
+      "scheduledTime": "9:30 AM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "2",
+      "baggage": "5",
       "scheduledTime": "10:35 AM",
       "actualTime": "11:11 AM",
       "status": "Delayed"
@@ -36,8 +44,8 @@
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "11:03 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:58 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA855",
@@ -74,7 +82,7 @@
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
-      "baggage": "5",
+      "baggage": "7",
       "scheduledTime": "11:30 AM",
       "actualTime": "12:00 PM",
       "status": "Delayed"
@@ -90,7 +98,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "4",
+      "baggage": "6",
       "scheduledTime": "11:45 AM",
       "actualTime": "11:58 AM",
       "status": "Delayed"
@@ -132,8 +140,8 @@
       "from": "Bogota",
       "baggage": "2",
       "scheduledTime": "12:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
@@ -156,24 +164,16 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:08 PM",
-      "actualTime": "1:23 PM",
+      "actualTime": "1:14 PM",
       "status": "Delayed"
-    },
-    {
-      "airlineFlight": "TUI Airways TOM114",
-      "from": "Manchester",
-      "baggage": "6",
-      "scheduledTime": "1:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
     },
     {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:19 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
@@ -188,6 +188,14 @@
       "from": "Ft. Lauderdale",
       "baggage": "1",
       "scheduledTime": "2:05 PM",
+      "actualTime": "2:11 PM",
+      "status": "Delayed"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM114",
+      "from": "Manchester",
+      "baggage": "6",
+      "scheduledTime": "2:40 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -204,8 +212,8 @@
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2059",

@@ -5,8 +5,17 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-11T15:40:48.368Z",
+  "updated": "2026-10-11T20:16:37.236Z",
   "flights": [
+    {
+      "airlineFlight": "West Jet WS2571",
+      "to": "Toronto",
+      "checkInCounters": "43 - 54",
+      "gate": "",
+      "scheduledTime": "10:30 AM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
     {
       "airlineFlight": "WT2571",
       "to": "Toronto",
@@ -119,7 +128,7 @@
       "airlineFlight": "Jet Blue B6522",
       "to": "Orlando",
       "checkInCounters": "31 - 40",
-      "gate": "10",
+      "gate": "8",
       "scheduledTime": "1:15 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -157,8 +166,8 @@
       "checkInCounters": "99 - 106",
       "gate": "16",
       "scheduledTime": "1:42 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA875",
@@ -166,14 +175,14 @@
       "checkInCounters": "65 - 78",
       "gate": "13",
       "scheduledTime": "2:08 PM",
-      "actualTime": "2:20 PM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "5",
+      "gate": "4",
       "scheduledTime": "2:26 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -202,17 +211,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "3:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "TUI Airways TOM115",
-      "to": "Manchester",
-      "checkInCounters": "55 - 64",
-      "gate": "17",
-      "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -229,6 +229,15 @@
       "checkInCounters": "99 - 106",
       "gate": "13",
       "scheduledTime": "4:55 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM115",
+      "to": "Manchester",
+      "checkInCounters": "55 - 64",
+      "gate": "17",
+      "scheduledTime": "5:05 PM",
       "actualTime": "",
       "status": "On-Time"
     },
