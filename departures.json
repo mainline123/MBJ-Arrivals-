@@ -5,16 +5,25 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-11T08:50:42.225Z",
+  "updated": "2026-10-11T15:40:48.368Z",
   "flights": [
+    {
+      "airlineFlight": "WT2571",
+      "to": "Toronto",
+      "checkInCounters": "",
+      "gate": "5",
+      "scheduledTime": "10:30 AM",
+      "actualTime": "11:09 AM",
+      "status": "Delayed"
+    },
     {
       "airlineFlight": "Jet Blue B6380",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN273",
@@ -22,8 +31,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6826",
@@ -76,8 +85,8 @@
       "checkInCounters": "43 - 54",
       "gate": "5",
       "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -94,8 +103,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -103,8 +112,8 @@
       "checkInCounters": "87 - 98",
       "gate": "18",
       "scheduledTime": "12:59 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6522",
@@ -130,8 +139,8 @@
       "checkInCounters": "31 - 40",
       "gate": "9",
       "scheduledTime": "1:28 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3912",
@@ -150,6 +159,15 @@
       "scheduledTime": "1:42 PM",
       "actualTime": "",
       "status": "On-Time"
+    },
+    {
+      "airlineFlight": "American Airlines AA875",
+      "to": "Charlotte",
+      "checkInCounters": "65 - 78",
+      "gate": "13",
+      "scheduledTime": "2:08 PM",
+      "actualTime": "2:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -218,7 +236,7 @@
       "airlineFlight": "American Airlines AA3208",
       "to": "Miami",
       "checkInCounters": "",
-      "gate": "13",
+      "gate": "12",
       "scheduledTime": "5:13 PM",
       "actualTime": "",
       "status": "On-Time"
