@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-12T07:21:07.213Z",
+  "updated": "2026-10-12T17:54:06.552Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -40,8 +40,8 @@
       "checkInCounters": "65 - 78",
       "gate": "8",
       "scheduledTime": "12:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:21 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA439",
@@ -85,8 +85,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",

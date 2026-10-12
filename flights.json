@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-12T07:21:07.213Z",
+  "updated": "2026-10-12T17:54:06.552Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:15 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -36,8 +36,8 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "11:08 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:21 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
@@ -60,45 +60,45 @@
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:06 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:36 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:30 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:11 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
-      "baggage": "4",
+      "baggage": "3",
       "scheduledTime": "11:51 AM",
       "actualTime": "",
       "status": "On-Time"
