@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-11T20:16:37.236Z",
+  "updated": "2026-10-12T00:32:13.227Z",
   "flights": [
     {
       "airlineFlight": "WT2708",
