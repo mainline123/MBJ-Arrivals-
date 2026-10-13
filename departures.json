@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-12T17:54:06.552Z",
+  "updated": "2026-10-13T00:39:36.546Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -161,20 +161,20 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Frontier Airlines F9124",
-      "to": "Atlanta",
-      "checkInCounters": "81 - 86",
-      "gate": "4",
-      "scheduledTime": "2:49 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "Jet Blue B6326",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "3:10 PM",
+      "actualTime": "4:15 PM",
+      "status": "Delayed"
+    },
+    {
+      "airlineFlight": "Frontier Airlines F9124",
+      "to": "Atlanta",
+      "checkInCounters": "81 - 86",
+      "gate": "4",
+      "scheduledTime": "3:48 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -193,8 +193,8 @@
       "checkInCounters": "87 - 98",
       "gate": "19",
       "scheduledTime": "4:42 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3208",
@@ -202,8 +202,8 @@
       "checkInCounters": "",
       "gate": "13",
       "scheduledTime": "5:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",

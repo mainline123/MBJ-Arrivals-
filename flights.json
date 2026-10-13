@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-12T17:54:06.552Z",
+  "updated": "2026-10-13T00:39:36.546Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -144,20 +144,12 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Frontier Airlines F9125",
-      "from": "Atlanta",
-      "baggage": "3",
-      "scheduledTime": "1:31 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "2",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "TUI Airways TOM44",
@@ -168,25 +160,33 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "Frontier Airlines F9125",
+      "from": "Atlanta",
+      "baggage": "3",
+      "scheduledTime": "2:33 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:27 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
-      "baggage": "6",
+      "baggage": "1",
       "scheduledTime": "6:28 PM",
       "actualTime": "",
       "status": "On-Time"
