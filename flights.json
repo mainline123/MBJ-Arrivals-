@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-13T15:58:46.545Z",
+  "updated": "2026-10-14T00:20:35.756Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -60,8 +60,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:04 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
@@ -76,24 +76,24 @@
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:12 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:31 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
@@ -116,40 +116,40 @@
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "12:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:40 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2914",
       "from": "Montreal",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:27 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "4",
+      "baggage": "3",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:38 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA3912",
       "from": "Miami",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "1:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:41 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2620",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "1:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:47 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Airways TOM636",
@@ -168,14 +168,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "TUI Fly - NL OR511",
-      "from": "Amsterdam",
-      "baggage": "6",
-      "scheduledTime": "2:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "Wingo P57482",
       "from": "Medellin",
       "baggage": "5",
@@ -184,28 +176,36 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "American Airlines AA2059",
-      "from": "Dallas-Ft. Worth",
+      "airlineFlight": "TUI Fly - NL OR511",
+      "from": "Amsterdam",
       "baggage": "6",
-      "scheduledTime": "4:12 PM",
+      "scheduledTime": "3:35 PM",
       "actualTime": "",
       "status": "On-Time"
+    },
+    {
+      "airlineFlight": "American Airlines AA2059",
+      "from": "Dallas-Ft. Worth",
+      "baggage": "4",
+      "scheduledTime": "4:12 PM",
+      "actualTime": "3:57 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2814",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "6:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:49 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:49 PM",
+      "status": "Early"
     }
   ]
 }
