@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-14T17:10:15.517Z",
+  "updated": "2026-10-14T20:42:11.384Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -50,9 +50,9 @@
     {
       "airlineFlight": "American Airlines AA2963",
       "from": "Miami",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "11:18 AM",
-      "actualTime": "12:52 PM",
+      "actualTime": "1:42 PM",
       "status": "Delayed"
     },
     {
@@ -156,16 +156,16 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2162",
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "4:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:46 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2059",

@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-14T17:10:15.517Z",
+  "updated": "2026-10-14T20:42:11.384Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -47,9 +47,9 @@
       "airlineFlight": "American Airlines AA439",
       "to": "Dallas-Ft. Worth",
       "checkInCounters": "65 - 78",
-      "gate": "",
+      "gate": "4",
       "scheduledTime": "12:18 PM",
-      "actualTime": "1:52 PM",
+      "actualTime": "2:42 PM",
       "status": "Delayed"
     },
     {
@@ -181,7 +181,7 @@
     {
       "airlineFlight": "American Airlines AA3208",
       "to": "Miami",
-      "checkInCounters": "",
+      "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "5:13 PM",
       "actualTime": "",
