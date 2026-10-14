@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-14T11:51:48.648Z",
+  "updated": "2026-10-14T17:10:15.517Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -29,10 +29,10 @@
       "airlineFlight": "Jet Blue B6826",
       "to": "Ft. Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "12",
+      "gate": "9",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA863",
@@ -47,10 +47,10 @@
       "airlineFlight": "American Airlines AA439",
       "to": "Dallas-Ft. Worth",
       "checkInCounters": "65 - 78",
-      "gate": "9",
+      "gate": "",
       "scheduledTime": "12:18 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:52 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM147",
@@ -193,15 +193,6 @@
       "checkInCounters": "43 - 50",
       "gate": "19",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "3P4160",
-      "to": "Lisbon",
-      "checkInCounters": "",
-      "gate": "",
-      "scheduledTime": "9:50 PM",
       "actualTime": "",
       "status": "On-Time"
     }
