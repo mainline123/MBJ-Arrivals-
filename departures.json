@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-15T15:00:57.729Z",
+  "updated": "2026-10-15T19:07:16.544Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -157,8 +157,8 @@
       "checkInCounters": "65 - 78",
       "gate": "13",
       "scheduledTime": "2:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:18 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -217,7 +217,7 @@
     {
       "airlineFlight": "American Airlines AA3208",
       "to": "Miami",
-      "checkInCounters": "",
+      "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "5:13 PM",
       "actualTime": "",
@@ -226,7 +226,7 @@
     {
       "airlineFlight": "LP2447",
       "to": "Lima",
-      "checkInCounters": "43 - 50",
+      "checkInCounters": "1 - 8",
       "gate": "12",
       "scheduledTime": "5:50 PM",
       "actualTime": "",
