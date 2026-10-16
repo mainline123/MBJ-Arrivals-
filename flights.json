@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-16T21:07:58.284Z",
+  "updated": "2026-10-16T23:35:15.270Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -188,7 +188,7 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "4:48 PM",
+      "actualTime": "6:58 PM",
       "status": "Delayed"
     },
     {
