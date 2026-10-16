@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-16T07:09:17.147Z",
+  "updated": "2026-10-16T12:24:48.638Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
