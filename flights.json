@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-16T12:24:48.638Z",
+  "updated": "2026-10-16T17:23:51.971Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -20,8 +20,8 @@
       "from": "Baltimore",
       "baggage": "4",
       "scheduledTime": "11:00 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:06 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -60,72 +60,72 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York - JFK",
       "baggage": "7",
       "scheduledTime": "11:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:00 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "4",
       "scheduledTime": "11:43 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:50 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:20 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "11:51 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:46 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
       "baggage": "7",
       "scheduledTime": "12:06 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:00 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
       "baggage": "6",
       "scheduledTime": "12:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:53 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA3912",
@@ -140,8 +140,8 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6827",
@@ -164,16 +164,16 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "2:33 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:25 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "6",
       "scheduledTime": "3:27 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:19 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Transat TS486",
@@ -188,8 +188,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:38 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2164",
