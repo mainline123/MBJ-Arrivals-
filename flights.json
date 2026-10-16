@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-16T17:23:51.971Z",
+  "updated": "2026-10-16T21:07:58.284Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -164,31 +164,31 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "2:33 PM",
-      "actualTime": "2:25 PM",
-      "status": "Early"
+      "actualTime": "2:41 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "6",
       "scheduledTime": "3:27 PM",
-      "actualTime": "3:19 PM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "Air Transat TS486",
       "from": "Montreal",
       "baggage": "4",
       "scheduledTime": "3:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:43 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "4:38 PM",
+      "actualTime": "4:48 PM",
       "status": "Delayed"
     },
     {
