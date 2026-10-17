@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-17T17:10:13.146Z",
+  "updated": "2026-10-17T19:24:07.753Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "6",
+      "baggage": "1",
       "scheduledTime": "11:43 AM",
       "actualTime": "12:08 PM",
       "status": "Delayed"
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "Southwest Airlines WN1115",
       "from": "Houston",
-      "baggage": "1",
+      "baggage": "6",
       "scheduledTime": "11:55 AM",
       "actualTime": "11:40 AM",
       "status": "Early"
@@ -114,7 +114,7 @@
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York - JFK",
-      "baggage": "4",
+      "baggage": "5",
       "scheduledTime": "12:23 PM",
       "actualTime": "12:11 PM",
       "status": "Early"
@@ -140,7 +140,7 @@
       "from": "Orlando",
       "baggage": "7",
       "scheduledTime": "1:05 PM",
-      "actualTime": "1:32 PM",
+      "actualTime": "1:26 PM",
       "status": "Delayed"
     },
     {
@@ -156,7 +156,7 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "1:27 PM",
-      "actualTime": "1:52 PM",
+      "actualTime": "1:44 PM",
       "status": "Delayed"
     },
     {
@@ -180,16 +180,16 @@
       "from": "Philadelphia",
       "baggage": "2",
       "scheduledTime": "2:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:54 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
@@ -204,8 +204,8 @@
       "from": "Medellin",
       "baggage": "3",
       "scheduledTime": "2:36 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:23 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
@@ -228,16 +228,16 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "1",
       "scheduledTime": "4:12 PM",
-      "actualTime": "4:20 PM",
-      "status": "Delayed"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:31 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2572",
@@ -252,8 +252,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:50 PM",
+      "status": "Early"
     }
   ]
 }
