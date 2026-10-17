@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-17T19:24:07.753Z",
+  "updated": "2026-10-17T22:18:41.339Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -202,7 +202,7 @@
     {
       "airlineFlight": "Wingo P57482",
       "from": "Medellin",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "2:36 PM",
       "actualTime": "2:23 PM",
       "status": "Early"
