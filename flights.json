@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-18T18:05:20.977Z",
+  "updated": "2026-10-18T20:42:44.804Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -138,7 +138,7 @@
     {
       "airlineFlight": "American Airlines AA3912",
       "from": "Miami",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "1:01 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -160,34 +160,34 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "TUI Airways TOM114",
-      "from": "Manchester",
-      "baggage": "6",
-      "scheduledTime": "1:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "United Airlines UA1163",
       "from": "Houston - IAH",
       "baggage": "3",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:13 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "5",
       "scheduledTime": "2:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
       "baggage": "2",
       "scheduledTime": "2:33 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM114",
+      "from": "Manchester",
+      "baggage": "6",
+      "scheduledTime": "2:40 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -204,31 +204,31 @@
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:47 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:55 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "4",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:34 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Neos Spa NO736",
       "from": "Malpensa",
       "baggage": "6",
       "scheduledTime": "8:30 PM",
-      "actualTime": "9:50 PM",
+      "actualTime": "9:00 PM",
       "status": "Delayed"
     }
   ]
