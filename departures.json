@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-19T07:46:02.150Z",
+  "updated": "2026-10-19T15:35:51.176Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -110,7 +110,7 @@
       "airlineFlight": "Jet Blue B6280",
       "to": "New York - JFK",
       "checkInCounters": "31 - 40",
-      "gate": "9",
+      "gate": "7",
       "scheduledTime": "1:15 PM",
       "actualTime": "",
       "status": "On-Time"

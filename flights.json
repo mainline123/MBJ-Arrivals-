@@ -5,20 +5,20 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-19T07:46:02.150Z",
+  "updated": "2026-10-19T15:35:51.176Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:08 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "7",
+      "baggage": "4",
       "scheduledTime": "11:00 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -26,7 +26,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "7",
       "scheduledTime": "11:01 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -34,7 +34,7 @@
     {
       "airlineFlight": "American Airlines AA855",
       "from": "Charlotte",
-      "baggage": "4",
+      "baggage": "2",
       "scheduledTime": "11:08 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "6",
+      "baggage": "7",
       "scheduledTime": "11:45 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -114,7 +114,7 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "12:21 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "2:05 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "2:33 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -186,7 +186,7 @@
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
-      "baggage": "1",
+      "baggage": "5",
       "scheduledTime": "6:28 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -194,7 +194,7 @@
     {
       "airlineFlight": "West Jet WS2814",
       "from": "Toronto",
-      "baggage": "2",
+      "baggage": "6",
       "scheduledTime": "6:30 PM",
       "actualTime": "",
       "status": "On-Time"
