@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-20T17:07:52.867Z",
+  "updated": "2026-10-20T20:34:47.041Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -37,7 +37,7 @@
     {
       "airlineFlight": "American Airlines AA863",
       "to": "Charlotte",
-      "checkInCounters": "65 - 78",
+      "checkInCounters": "67 - 81",
       "gate": "9",
       "scheduledTime": "12:13 PM",
       "actualTime": "",
@@ -46,7 +46,7 @@
     {
       "airlineFlight": "American Airlines AA439",
       "to": "Dallas-Ft. Worth",
-      "checkInCounters": "65 - 78",
+      "checkInCounters": "67 - 81",
       "gate": "13",
       "scheduledTime": "12:18 PM",
       "actualTime": "",
@@ -136,7 +136,7 @@
     {
       "airlineFlight": "American Airlines AA3912",
       "to": "Miami",
-      "checkInCounters": "65 - 78",
+      "checkInCounters": "67 - 81",
       "gate": "10",
       "scheduledTime": "1:41 PM",
       "actualTime": "",
@@ -154,7 +154,7 @@
     {
       "airlineFlight": "American Airlines AA875",
       "to": "Charlotte",
-      "checkInCounters": "65 - 78",
+      "checkInCounters": "67 - 81",
       "gate": "13",
       "scheduledTime": "2:08 PM",
       "actualTime": "",
@@ -164,7 +164,7 @@
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "3",
+      "gate": "5",
       "scheduledTime": "2:26 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -208,7 +208,7 @@
     {
       "airlineFlight": "American Airlines AA3208",
       "to": "Miami",
-      "checkInCounters": "",
+      "checkInCounters": "67 - 81",
       "gate": "9",
       "scheduledTime": "5:13 PM",
       "actualTime": "",
