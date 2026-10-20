@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-20T20:34:47.041Z",
+  "updated": "2026-10-20T23:52:26.869Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -188,8 +188,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "6",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:47 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2814",
@@ -204,8 +204,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:28 PM",
+      "status": "Early"
     }
   ]
 }
