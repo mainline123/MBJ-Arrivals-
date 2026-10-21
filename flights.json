@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-21T15:13:56.496Z",
+  "updated": "2026-10-21T19:20:11.935Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -50,7 +50,7 @@
     {
       "airlineFlight": "American Airlines AA2963",
       "from": "Miami",
-      "baggage": "6",
+      "baggage": "5",
       "scheduledTime": "11:18 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -92,8 +92,8 @@
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "11:50 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:56 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
@@ -106,10 +106,10 @@
     {
       "airlineFlight": "Jet Blue B6521",
       "from": "Orlando",
-      "baggage": "4",
+      "baggage": "6",
       "scheduledTime": "12:06 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:03 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6279",
@@ -124,24 +124,24 @@
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "12:54 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:34 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:42 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2620",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "1:08 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:45 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
@@ -156,8 +156,8 @@
       "from": "Manchester",
       "baggage": "6",
       "scheduledTime": "2:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE2162",
@@ -172,8 +172,8 @@
       "from": "Dallas-Ft. Worth",
       "baggage": "5",
       "scheduledTime": "4:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:02 PM",
+      "status": "Early"
     }
   ]
 }
