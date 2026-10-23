@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-23T19:13:00.551Z",
+  "updated": "2026-10-23T22:14:10.233Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -144,14 +144,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Frontier Airlines F9125",
-      "from": "Atlanta",
-      "baggage": "5",
-      "scheduledTime": "1:31 PM",
-      "actualTime": "4:10 PM",
-      "status": "Delayed"
-    },
-    {
       "airlineFlight": "Jet Blue B6827",
       "from": "Ft. Lauderdale",
       "baggage": "3",
@@ -168,34 +160,42 @@
       "status": "Delayed"
     },
     {
-      "airlineFlight": "Condor DE2162",
-      "from": "Frankfurt",
-      "baggage": "6",
-      "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "airlineFlight": "Frontier Airlines F9125",
+      "from": "Atlanta",
+      "baggage": "5",
+      "scheduledTime": "2:33 PM",
+      "actualTime": "4:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "3:27 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Transat TS486",
       "from": "Montreal",
       "baggage": "4",
       "scheduledTime": "3:35 PM",
-      "actualTime": "8:40 PM",
-      "status": "Delayed"
+      "actualTime": "12:15 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
-      "baggage": "5",
+      "baggage": "3",
       "scheduledTime": "4:12 PM",
+      "actualTime": "3:58 PM",
+      "status": "Early"
+    },
+    {
+      "airlineFlight": "Condor DE2164",
+      "from": "Frankfurt",
+      "baggage": "6",
+      "scheduledTime": "6:10 PM",
       "actualTime": "",
       "status": "On-Time"
     }
