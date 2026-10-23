@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-23T10:03:29.780Z",
+  "updated": "2026-10-23T15:04:02.366Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -156,6 +156,14 @@
       "from": "Ft. Lauderdale",
       "baggage": "3",
       "scheduledTime": "2:05 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM052",
+      "from": "London-Gatwick",
+      "baggage": "",
+      "scheduledTime": "2:15 PM",
       "actualTime": "",
       "status": "On-Time"
     },
