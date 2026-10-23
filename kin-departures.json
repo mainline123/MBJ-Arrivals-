@@ -6,7 +6,7 @@
     "month": "10",
     "day": "22"
   },
-  "updated": "2026-10-22T22:27:29.987Z",
+  "updated": "2026-10-23T01:37:28.265Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -222,7 +222,7 @@
       "updatedTime": "3:46PM",
       "timeType": "Actual",
       "displayTime": "3:46PM",
-      "status": "On time",
+      "status": "Delayed by 2h 52m",
       "gate": "",
       "terminal": "",
       "baggage": "",
