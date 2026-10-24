@@ -5,23 +5,23 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-24T10:59:46.242Z",
+  "updated": "2026-10-24T14:32:46.137Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "9:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:00 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:03 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -124,8 +124,8 @@
       "from": "Montreal",
       "baggage": "1",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:37 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA347",
@@ -158,6 +158,14 @@
       "scheduledTime": "1:08 PM",
       "actualTime": "",
       "status": "On-Time"
+    },
+    {
+      "airlineFlight": "TUI Airways TOM854",
+      "from": "Birmingham",
+      "baggage": "",
+      "scheduledTime": "1:20 PM",
+      "actualTime": "2:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1163",
@@ -252,8 +260,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:23 PM",
+      "status": "Delayed"
     }
   ]
 }
