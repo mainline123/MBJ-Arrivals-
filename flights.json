@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-24T18:08:52.484Z",
+  "updated": "2026-10-24T20:49:19.495Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "TUI Airways TOM854",
       "from": "Birmingham",
-      "baggage": "",
+      "baggage": "6",
       "scheduledTime": "1:20 PM",
       "actualTime": "2:51 PM",
       "status": "Delayed"
@@ -244,8 +244,8 @@
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:17 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2572",
@@ -260,8 +260,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "9:05 PM",
-      "actualTime": "9:23 PM",
-      "status": "Delayed"
+      "actualTime": "8:57 PM",
+      "status": "Early"
     }
   ]
 }
