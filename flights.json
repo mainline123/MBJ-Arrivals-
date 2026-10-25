@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-25T19:36:52.612Z",
+  "updated": "2026-10-25T22:33:05.144Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2672",
@@ -226,7 +226,7 @@
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
-      "baggage": "6",
+      "baggage": "1",
       "scheduledTime": "4:12 PM",
       "actualTime": "3:51 PM",
       "status": "Early"

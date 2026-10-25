@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-25T19:36:52.612Z",
+  "updated": "2026-10-25T22:33:05.144Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2673",
