@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-24T23:13:59.294Z",
+  "updated": "2026-10-25T01:14:40.165Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2708",
@@ -252,8 +252,8 @@
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "6:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:10 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
