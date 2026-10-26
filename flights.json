@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-26T06:13:06.995Z",
+  "updated": "2026-10-26T13:10:37.955Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "5",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:19 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -76,8 +76,8 @@
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "11:25 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:33 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
@@ -124,8 +124,8 @@
       "from": "O'Hare International",
       "baggage": "3",
       "scheduledTime": "12:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:57 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
@@ -188,8 +188,8 @@
       "from": "London-Gatwick",
       "baggage": "6",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:46 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
