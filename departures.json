@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-25T22:33:05.144Z",
+  "updated": "2026-10-26T01:09:55.900Z",
   "flights": [
     {
       "airlineFlight": "West Jet WS2673",
@@ -271,7 +271,7 @@
     {
       "airlineFlight": "Neos Spa NO736",
       "to": "Malpensa",
-      "checkInCounters": "23 - 30",
+      "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "10:30 PM",
       "actualTime": "",
