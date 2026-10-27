@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-26T19:19:29.655Z",
+  "updated": "2026-10-27T05:04:15.929Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -74,7 +74,7 @@
     {
       "airlineFlight": "West Jet WS2672",
       "from": "Toronto",
-      "baggage": "5",
+      "baggage": "",
       "scheduledTime": "11:25 AM",
       "actualTime": "10:33 AM",
       "status": "Early"
@@ -228,8 +228,8 @@
       "from": "Bogota",
       "baggage": "5",
       "scheduledTime": "6:28 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",

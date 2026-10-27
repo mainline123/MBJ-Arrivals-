@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-26T19:19:29.655Z",
+  "updated": "2026-10-27T05:04:15.929Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -83,10 +83,10 @@
       "airlineFlight": "West Jet WS2673",
       "to": "Toronto",
       "checkInCounters": "43 - 54",
-      "gate": "3",
+      "gate": "",
       "scheduledTime": "12:35 PM",
       "actualTime": "",
-      "status": "On-Time"
+      "status": "Cancelled"
     },
     {
       "airlineFlight": "Southwest Airlines WN907",
@@ -253,11 +253,11 @@
     {
       "airlineFlight": "Wingo P57479",
       "to": "Bogota",
-      "checkInCounters": "99 - 106",
+      "checkInCounters": "80 - 87",
       "gate": "9",
       "scheduledTime": "7:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS166",
