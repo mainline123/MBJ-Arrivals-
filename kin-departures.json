@@ -6,7 +6,7 @@
     "month": "10",
     "day": "28"
   },
-  "updated": "2026-10-28T05:54:52.158Z",
+  "updated": "2026-10-28T13:11:31.498Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -38,9 +38,9 @@
       "city": "Providenciales",
       "scheduledTime": "8:00AM",
       "estimatedTime": "",
-      "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
+      "actualTime": "8:00AM",
+      "updatedTime": "8:00AM",
+      "timeType": "Actual",
       "displayTime": "8:00AM",
       "status": "On time",
       "gate": "",
@@ -97,10 +97,10 @@
       "airportCode": "ATL",
       "city": "Atlanta",
       "scheduledTime": "9:15AM",
-      "estimatedTime": "",
+      "estimatedTime": "9:15AM",
       "actualTime": "",
-      "updatedTime": "",
-      "timeType": "Scheduled",
+      "updatedTime": "9:15AM",
+      "timeType": "Estimated",
       "displayTime": "9:15AM",
       "status": "On time",
       "gate": "08",
@@ -447,6 +447,26 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1416722388,
+      "source": "FlightStats"
+    },
+    {
+      "airlineCode": "BW",
+      "airline": "Caribbean Airlines",
+      "flightNumber": "8043",
+      "flight": "BW8043",
+      "airportCode": "MIA",
+      "city": "Miami",
+      "scheduledTime": "7:10PM",
+      "estimatedTime": "",
+      "actualTime": "3:53AM",
+      "updatedTime": "3:53AM",
+      "timeType": "Actual",
+      "displayTime": "3:53AM",
+      "status": "Delayed by 8h 24m",
+      "gate": "",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1416516963,
       "source": "FlightStats"
     }
   ]
