@@ -5,23 +5,23 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-28T08:31:42.650Z",
+  "updated": "2026-10-28T16:02:37.843Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "4",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:10 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
       "baggage": "7",
       "scheduledTime": "11:00 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:35 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -36,8 +36,8 @@
       "from": "Montreal",
       "baggage": "6",
       "scheduledTime": "11:05 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:03 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA855",
@@ -60,8 +60,8 @@
       "from": "Newark",
       "baggage": "2",
       "scheduledTime": "11:13 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:57 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2963",
