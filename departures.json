@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-27T21:19:11.539Z",
+  "updated": "2026-10-28T01:21:32.683Z",
   "flights": [
     {
       "airlineFlight": "Air Transat TS517",
