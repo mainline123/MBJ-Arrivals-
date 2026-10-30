@@ -5,23 +5,23 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-30T07:06:11.536Z",
+  "updated": "2026-10-30T14:07:49.242Z",
   "flights": [
     {
       "airlineFlight": "Air Transat TS516",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "9:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:14 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "3",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:05 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -44,8 +44,8 @@
       "from": "Montreal",
       "baggage": "4",
       "scheduledTime": "11:05 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:41 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA855",
