@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-30T19:21:52.674Z",
+  "updated": "2026-10-30T23:46:38.808Z",
   "flights": [
     {
       "airlineFlight": "Air Transat TS516",
@@ -194,18 +194,18 @@
     {
       "airlineFlight": "TUI Airways TOM52",
       "from": "London-Gatwick",
-      "baggage": "6",
+      "baggage": "7",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:12 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "3:27 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2059",
@@ -220,8 +220,8 @@
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "4:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:48 PM",
+      "status": "Early"
     }
   ]
 }

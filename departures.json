@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-30T19:21:52.674Z",
+  "updated": "2026-10-30T23:46:38.808Z",
   "flights": [
     {
       "airlineFlight": "Air Transat TS517",
@@ -220,8 +220,8 @@
       "checkInCounters": "55 - 64",
       "gate": "17",
       "scheduledTime": "4:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:12 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -244,7 +244,7 @@
     {
       "airlineFlight": "Condor DE2163",
       "to": "Frankfurt",
-      "checkInCounters": "43 - 50",
+      "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "6:10 PM",
       "actualTime": "",
