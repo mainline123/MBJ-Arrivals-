@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-29T20:17:21.036Z",
+  "updated": "2026-10-30T00:58:51.086Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
@@ -210,7 +210,7 @@
     {
       "airlineFlight": "American Airlines AA2059",
       "from": "Dallas-Ft. Worth",
-      "baggage": "3",
+      "baggage": "1",
       "scheduledTime": "4:12 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -228,8 +228,8 @@
       "from": "Heathrow",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:11 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Edelweiss Air WK22",
