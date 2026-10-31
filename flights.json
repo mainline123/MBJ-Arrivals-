@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-10-31T05:40:14.242Z",
+  "updated": "2026-10-31T12:29:11.539Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
       "baggage": "2",
       "scheduledTime": "10:35 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:08 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -228,8 +228,8 @@
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "2:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1519",
