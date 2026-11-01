@@ -5,23 +5,23 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-01T07:31:40.936Z",
+  "updated": "2026-11-01T15:07:49.698Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "10:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:49 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York - JFK",
-      "baggage": "2",
+      "baggage": "5",
       "scheduledTime": "10:28 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:45 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
-      "baggage": "4",
+      "baggage": "1",
       "scheduledTime": "12:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -82,7 +82,7 @@
     {
       "airlineFlight": "American Airlines AA1311",
       "from": "Miami",
-      "baggage": "6",
+      "baggage": "4",
       "scheduledTime": "12:21 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -106,7 +106,7 @@
     {
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "12:50 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -130,7 +130,7 @@
     {
       "airlineFlight": "American Airlines AA2939",
       "from": "Philadelphia",
-      "baggage": "6",
+      "baggage": "7",
       "scheduledTime": "1:12 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -146,7 +146,7 @@
     {
       "airlineFlight": "Air Canada AC1834",
       "from": "Montreal",
-      "baggage": "7",
+      "baggage": "6",
       "scheduledTime": "1:25 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -194,7 +194,7 @@
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "7",
+      "baggage": "3",
       "scheduledTime": "2:25 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -202,7 +202,7 @@
     {
       "airlineFlight": "American Airlines AA2250",
       "from": "Charlotte",
-      "baggage": "6",
+      "baggage": "7",
       "scheduledTime": "2:28 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -258,7 +258,7 @@
     {
       "airlineFlight": "West Jet WS2230",
       "from": "Edmonton",
-      "baggage": "2",
+      "baggage": "4",
       "scheduledTime": "4:30 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -274,7 +274,7 @@
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "4:45 PM",
       "actualTime": "",
       "status": "On-Time"
