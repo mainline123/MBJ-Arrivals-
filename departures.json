@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-10-31T21:33:29.171Z",
+  "updated": "2026-11-01T01:09:28.603Z",
   "flights": [
     {
       "airlineFlight": "Jet Blue B6380",
@@ -307,7 +307,7 @@
     {
       "airlineFlight": "LP2447",
       "to": "Lima",
-      "checkInCounters": "",
+      "checkInCounters": "1 - 8",
       "gate": "12",
       "scheduledTime": "5:50 PM",
       "actualTime": "",
