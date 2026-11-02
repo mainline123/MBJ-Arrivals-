@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-02T06:01:33.932Z",
+  "updated": "2026-11-02T15:51:34.332Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -88,10 +88,10 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2672",
-      "from": "Toronto",
-      "baggage": "1",
-      "scheduledTime": "12:25 PM",
+      "airlineFlight": "Southwest Airlines WN272",
+      "from": "Orlando",
+      "baggage": "2",
+      "scheduledTime": "12:50 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -99,14 +99,6 @@
       "airlineFlight": "Air Canada AC1804",
       "from": "Toronto",
       "baggage": "6",
-      "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "Southwest Airlines WN272",
-      "from": "Orlando",
-      "baggage": "2",
       "scheduledTime": "12:50 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -138,7 +130,7 @@
     {
       "airlineFlight": "West Jet WS2566",
       "from": "Toronto",
-      "baggage": "7",
+      "baggage": "5",
       "scheduledTime": "1:35 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -200,9 +192,17 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "West Jet WS2672",
+      "from": "Toronto",
+      "baggage": "1",
+      "scheduledTime": "2:25 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Southwest Airlines WN292",
       "from": "Orlando",
-      "baggage": "4",
+      "baggage": "1",
       "scheduledTime": "2:45 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -210,7 +210,7 @@
     {
       "airlineFlight": "American Airlines AA3228",
       "from": "O'Hare International",
-      "baggage": "3",
+      "baggage": "4",
       "scheduledTime": "2:52 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -234,7 +234,7 @@
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
-      "baggage": "2",
+      "baggage": "3",
       "scheduledTime": "3:08 PM",
       "actualTime": "",
       "status": "On-Time"
