@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-04T17:16:03.256Z",
+  "updated": "2026-11-04T23:40:02.387Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -85,8 +85,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "1:21 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -191,7 +191,7 @@
       "airlineFlight": "West Jet WS9459",
       "to": "Montreal",
       "checkInCounters": "43 - 54",
-      "gate": "6",
+      "gate": "1",
       "scheduledTime": "3:05 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -200,7 +200,7 @@
       "airlineFlight": "United Airlines UA1206",
       "to": "Newark",
       "checkInCounters": "23 - 30",
-      "gate": "3",
+      "gate": "6",
       "scheduledTime": "3:20 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -271,7 +271,7 @@
     {
       "airlineFlight": "American Airlines AA1285",
       "to": "Miami",
-      "checkInCounters": "",
+      "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "6:09 PM",
       "actualTime": "",
@@ -280,7 +280,7 @@
     {
       "airlineFlight": "Condor DE2163",
       "to": "Frankfurt",
-      "checkInCounters": "43 - 50",
+      "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "6:10 PM",
       "actualTime": "",
