@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-05T21:58:49.627Z",
+  "updated": "2026-11-06T02:25:22.437Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -283,8 +283,8 @@
       "checkInCounters": "1 - 8",
       "gate": "13",
       "scheduledTime": "5:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -292,8 +292,8 @@
       "checkInCounters": "87 - 98",
       "gate": "19",
       "scheduledTime": "5:59 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:48 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1285",
@@ -301,8 +301,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:02 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS166",
