@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-06T23:07:52.048Z",
+  "updated": "2026-11-07T02:47:24.808Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -140,7 +140,7 @@
       "from": "Philadelphia",
       "baggage": "5",
       "scheduledTime": "1:12 PM",
-      "actualTime": "7:14 PM",
+      "actualTime": "7:17 PM",
       "status": "Delayed"
     },
     {
@@ -164,7 +164,7 @@
       "from": "Newark",
       "baggage": "7",
       "scheduledTime": "2:14 PM",
-      "actualTime": "8:58 PM",
+      "actualTime": "9:38 PM",
       "status": "Delayed"
     },
     {
@@ -220,7 +220,7 @@
       "from": "Fort Lauderdale",
       "baggage": "7",
       "scheduledTime": "2:57 PM",
-      "actualTime": "3:35 PM",
+      "actualTime": "3:42 PM",
       "status": "Delayed"
     },
     {
