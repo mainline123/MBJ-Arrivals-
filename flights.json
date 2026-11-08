@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-07T20:52:32.479Z",
+  "updated": "2026-11-08T00:35:21.744Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -284,40 +284,40 @@
       "from": "Washington",
       "baggage": "1",
       "scheduledTime": "4:19 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:03 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Condor DE2162",
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "4:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:56 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "2",
       "scheduledTime": "4:34 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:49 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:53 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1682",
       "from": "Denver",
-      "baggage": "7",
+      "baggage": "2",
       "scheduledTime": "4:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:22 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2677",
@@ -332,8 +332,8 @@
       "from": "Calgary",
       "baggage": "2",
       "scheduledTime": "5:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:59 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1806",
@@ -348,24 +348,24 @@
       "from": "Montreal",
       "baggage": "1",
       "scheduledTime": "6:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:34 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2568",
       "from": "Toronto",
       "baggage": "1",
       "scheduledTime": "7:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:04 PM",
+      "status": "Early"
     }
   ]
 }
