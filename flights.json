@@ -5,39 +5,39 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-08T07:19:16.809Z",
+  "updated": "2026-11-08T15:11:31.484Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "5",
       "scheduledTime": "10:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:02 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York",
       "baggage": "6",
       "scheduledTime": "10:28 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:43 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:05 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2672",
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "11:25 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:48 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
@@ -52,8 +52,8 @@
       "from": "Charlotte",
       "baggage": "3",
       "scheduledTime": "12:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:35 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -68,16 +68,16 @@
       "from": "New York",
       "baggage": "2",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:44 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA2126",
       "from": "Newark",
       "baggage": "6",
       "scheduledTime": "12:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:58 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1311",
@@ -92,8 +92,8 @@
       "from": "New York",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:53 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "6",
+      "baggage": "5",
       "scheduledTime": "2:14 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -258,7 +258,7 @@
     {
       "airlineFlight": "West Jet WS2230",
       "from": "Edmonton",
-      "baggage": "3",
+      "baggage": "5",
       "scheduledTime": "4:30 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -266,7 +266,7 @@
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "4:34 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -274,7 +274,7 @@
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
-      "baggage": "4",
+      "baggage": "3",
       "scheduledTime": "4:45 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -282,7 +282,7 @@
     {
       "airlineFlight": "American Airlines AA2677",
       "from": "Dallas",
-      "baggage": "6",
+      "baggage": "4",
       "scheduledTime": "5:09 PM",
       "actualTime": "",
       "status": "On-Time"
