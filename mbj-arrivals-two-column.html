@@ -220,7 +220,7 @@ const AIRLINES={
   "F9":"FFT","CM":"CMP","TS":"TSC",
   "WG":"SWG","BW":"BWA","VS":"VIR",
   "BY":"TOM","OR":"TFL","SY":"SCX",
-  "5Y":"GTI","LP":"LAN"
+  "5Y":"GTI"
 };
 
 const AIRLINE_NAMES={
@@ -244,12 +244,14 @@ const AIRLINE_NAMES={
   "SY":"Sun Country",
   "5Y":"Atlas Air",
   "P5":"Wingo",
-  "LP":"LATAM Airlines Peru"
+  "LP":"LATAM Airlines Peru",
+  "NO":"Neos"
 };
 
 const LOCAL_LOGOS={
   "P5":"airline-logos/wingo.svg",
-  "LP":"airline-logos/latam.jpg"
+  "LP":"airline-logos/latam.jpg",
+  "NO":"airline-logos/neos.jpg"
 };
 
 const LOGO_BASE=
@@ -272,7 +274,7 @@ function getFlightNumber(text){
 
 function getAirlineCode(text){
   const number=getFlightNumber(text);
-  return number?number.match(/^[A-Z0-9]{2}/)[0]:"";
+  return number?number.slice(0,2):"";
 }
 
 function airlineDisplay(airlineFlight){
