@@ -23,70 +23,70 @@ html,body {
 }
 body {display:flex;flex-direction:column}
 header {
-  height:12%;flex-shrink:0;
-  display:flex;align-items:center;
-  justify-content:space-between;
-  padding:1vh 2.5vw;
-  background:linear-gradient(120deg,#06182c,#0b3d66);
-  border-bottom:.35vh solid var(--gold);
-}
-.mbj {
-  font-size:5vw;font-weight:900;
-  color:var(--cyan);line-height:.9;
-}
-.jamaica {
-  color:var(--gold);font-size:1.35vw;
-  letter-spacing:.25em;font-weight:900;
-  margin-top:.5vh;
-}
-.airport {text-align:right}
-.airportName {font-size:2.2vw;font-weight:900}
-.location {
-  font-size:1.35vw;color:var(--gold);
-  font-weight:800;margin-top:.3vh;
-}
-.live {
-  color:var(--green);font-size:1.25vw;
-  font-weight:800;margin-top:.3vh;
-}
-.topline {
   height:9%;flex-shrink:0;
   display:flex;align-items:center;
   justify-content:space-between;
-  padding:0 2.5vw;background:var(--blue);
+  padding:.5vh 2vw;
+  background:linear-gradient(120deg,#06182c,#0b3d66);
+  border-bottom:.3vh solid var(--gold);
+}
+.mbj {
+  font-size:4vw;font-weight:900;
+  color:var(--cyan);line-height:.9;
+}
+.jamaica {
+  color:var(--gold);font-size:1vw;
+  letter-spacing:.25em;font-weight:900;
+  margin-top:.3vh;
+}
+.airport {text-align:right}
+.airportName {font-size:1.8vw;font-weight:900}
+.location {
+  font-size:1.05vw;color:var(--gold);
+  font-weight:800;margin-top:.2vh;
+}
+.live {
+  color:var(--green);font-size:1vw;
+  font-weight:800;margin-top:.2vh;
+}
+.topline {
+  height:7%;flex-shrink:0;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  padding:0 2vw;background:var(--blue);
   border-bottom:.3vh solid var(--cyan);
 }
-.topline h1 {font-size:3.5vw;letter-spacing:.06em}
+.topline h1 {font-size:2.8vw;letter-spacing:.06em}
 .clock {
-  color:var(--gold);font-size:2.35vw;
+  color:var(--gold);font-size:2vw;
   font-weight:900;
 }
-.date {font-size:1.3vw;color:var(--muted)}
+.date {font-size:1vw;color:var(--muted)}
 .boards {
   flex:1;min-height:0;display:grid;
   grid-template-columns:1fr 1fr;
-  gap:1vw;padding:1.1vh 1.4vw;
+  gap:.8vw;padding:.8vh 1vw;
 }
 .board {
   min-height:0;display:flex;
   flex-direction:column;
   border:1px solid var(--line);
-  border-radius:.6vw;overflow:hidden;
+  border-radius:.5vw;overflow:hidden;
   background:#09243d;
 }
 .columnHeader,.flightRow {
   display:grid;align-items:center;
-  grid-template-columns:1.38fr 1.25fr .55fr .9fr 1.05fr;
-  column-gap:.2vw;
+  grid-template-columns:1.65fr 1.2fr .45fr .85fr 1fr;
+  column-gap:.15vw;
 }
 .columnHeader {
-  height:7%;flex-shrink:0;
+  height:6%;flex-shrink:0;
   background:#0d4770;color:var(--cyan);
-  font-size:1.05vw;font-weight:900;
+  font-size:.95vw;font-weight:900;
 }
 .columnHeader>div,.flightRow>div {
   min-width:0;overflow:hidden;
-  padding:0 .4vw;
+  padding:0 .25vw;
   text-overflow:ellipsis;white-space:nowrap;
 }
 .flightRows {
@@ -95,7 +95,7 @@ header {
 }
 .flightRow {
   flex:1;min-height:0;
-  font-size:1.15vw;font-weight:800;
+  font-size:1.05vw;font-weight:800;
   border-bottom:1px solid var(--line);
 }
 .flightRow:nth-child(even) {
@@ -105,25 +105,36 @@ header {
   background:rgba(255,255,255,.025);
 }
 .airlineCell {
-  display:flex;align-items:center;gap:.4vw;
+  display:flex;align-items:center;gap:.35vw;
 }
 .logoBox {
-  width:1.65vw;height:1.65vw;
+  width:1.8vw;height:1.8vw;
   flex-shrink:0;border-radius:.25vw;
   background:white;display:flex;
   align-items:center;justify-content:center;
-  overflow:hidden;padding:.12vw;
+  overflow:hidden;padding:.1vw;
 }
 .airlineLogo {
   width:100%;height:100%;object-fit:contain;
 }
 .codeBadge {
   display:none;color:#08243d;
-  font-size:.9vw;font-weight:900;
+  font-size:.8vw;font-weight:900;
 }
 .flightText {
+  min-width:0;overflow:hidden;
+  display:flex;flex-direction:column;
+  justify-content:center;
+  line-height:1.08;
+}
+.airlineName {
+  color:#fff;font-size:.92vw;
   overflow:hidden;text-overflow:ellipsis;
   white-space:nowrap;
+}
+.flightCode {
+  color:var(--cyan);font-size:1.04vw;
+  font-weight:900;
 }
 .number {text-align:center}
 .time {color:var(--gold)}
@@ -134,11 +145,11 @@ header {
   color:var(--muted);font-size:1.6vw;
 }
 footer {
-  height:4.5%;flex-shrink:0;
+  height:4%;flex-shrink:0;
   display:flex;justify-content:space-between;
-  align-items:center;padding:0 2vw;
+  align-items:center;padding:0 1.5vw;
   border-top:1px solid var(--line);
-  color:var(--muted);font-size:1.02vw;
+  color:var(--muted);font-size:.9vw;
 }
 .footerCenter {color:var(--cyan);font-weight:900}
 .footerRight {color:white}
@@ -146,7 +157,6 @@ footer {
 </style>
 </head>
 <body>
-
 <header>
   <div>
     <div class="mbj">MBJ</div>
@@ -178,7 +188,6 @@ footer {
     </div>
     <div class="flightRows" id="leftFlights"></div>
   </section>
-
   <section class="board">
     <div class="columnHeader">
       <div>AIRLINE / FLIGHT</div>
@@ -211,7 +220,36 @@ const AIRLINES={
   "F9":"FFT","CM":"CMP","TS":"TSC",
   "WG":"SWG","BW":"BWA","VS":"VIR",
   "BY":"TOM","OR":"TFL","SY":"SCX",
-  "5Y":"GTI"
+  "5Y":"GTI","LP":"LAN"
+};
+
+const AIRLINE_NAMES={
+  "AA":"American Airlines",
+  "B6":"JetBlue",
+  "AC":"Air Canada",
+  "WS":"WestJet",
+  "DL":"Delta",
+  "UA":"United Airlines",
+  "WN":"Southwest",
+  "BA":"British Airways",
+  "NK":"Spirit",
+  "F9":"Frontier",
+  "CM":"Copa Airlines",
+  "TS":"Air Transat",
+  "WG":"Sunwing",
+  "BW":"Caribbean Airlines",
+  "VS":"Virgin Atlantic",
+  "BY":"TUI Airways",
+  "OR":"TUI fly",
+  "SY":"Sun Country",
+  "5Y":"Atlas Air",
+  "P5":"Wingo",
+  "LP":"LATAM Airlines Peru"
+};
+
+const LOCAL_LOGOS={
+  "P5":"airline-logos/wingo.svg",
+  "LP":"airline-logos/latam.jpg"
 };
 
 const LOGO_BASE=
@@ -226,43 +264,55 @@ function escapeHTML(value){
     .replace(/'/g,"&#039;");
 }
 
-function getAirlineCode(text){
+function getFlightNumber(text){
   const match=String(text||"").toUpperCase()
-    .match(/\b([A-Z0-9]{2})\s*\d{1,4}[A-Z]?\b/);
-  return match?match[1]:"";
+    .match(/\b([A-Z0-9]{2})\s*(\d{1,4}[A-Z]?)\b/);
+  return match?match[1]+match[2]:"";
+}
+
+function getAirlineCode(text){
+  const number=getFlightNumber(text);
+  return number?number.match(/^[A-Z0-9]{2}/)[0]:"";
 }
 
 function airlineDisplay(airlineFlight){
-  const safeText=escapeHTML(airlineFlight||"—");
-  const code=getAirlineCode(airlineFlight);
+  const raw=String(airlineFlight||"—");
+  const code=getAirlineCode(raw);
+  const number=getFlightNumber(raw);
 
-  if(code==="P5"){
-    return `<div class="logoBox">
-      <img class="airlineLogo"
-        src="airline-logos/wingo.svg"
-        alt="Wingo"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-      <div class="codeBadge">P5</div>
-    </div>
-    <div class="flightText">${safeText}</div>`;
-  }
+  const originalName=number
+    ?raw.replace(
+      new RegExp("\\b"+number.slice(0,2)+"\\s*"+
+        number.slice(2)+"\\b","i"),""
+    ).trim()
+    :raw;
 
-  const icao=AIRLINES[code];
+  const airlineName=AIRLINE_NAMES[code]||
+    originalName||raw;
 
-  if(!code||!icao){
-    return `<div class="flightText">${safeText}</div>`;
-  }
+  const textHTML=number
+    ?`<div class="flightText">
+        <div class="airlineName">${escapeHTML(airlineName)}</div>
+        <div class="flightCode">${escapeHTML(number)}</div>
+      </div>`
+    :`<div class="flightText">
+        <div class="airlineName">${escapeHTML(raw)}</div>
+      </div>`;
 
-  const logoURL=LOGO_BASE+
-    encodeURIComponent(icao)+".png";
+  const logoURL=LOCAL_LOGOS[code]||
+    (AIRLINES[code]
+      ?LOGO_BASE+encodeURIComponent(AIRLINES[code])+".png"
+      :"");
+
+  if(!logoURL)return textHTML;
 
   return `<div class="logoBox">
     <img class="airlineLogo"
-      src="${logoURL}" alt=""
+      src="${escapeHTML(logoURL)}"
+      alt="${escapeHTML(airlineName)}"
       onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
     <div class="codeBadge">${escapeHTML(code)}</div>
-  </div>
-  <div class="flightText">${safeText}</div>`;
+  </div>${textHTML}`;
 }
 
 function updateClock(){
@@ -304,7 +354,6 @@ function jamaicaMinutesNow(){
 
 function flightTimeMinutes(timeString){
   if(!timeString)return null;
-
   const match=String(timeString).trim()
     .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
 
@@ -326,7 +375,6 @@ function getCurrentFlights(allFlights){
   if(flights.length<=MAX_ROWS)return flights;
 
   const now=jamaicaMinutesNow();
-
   let nextIndex=flights.findIndex(f=>{
     const mins=flightTimeMinutes(f.scheduledTime);
     return mins!==null&&mins>=now;
@@ -401,7 +449,6 @@ async function loadFlights(){
 
     if(data.updated){
       const updatedDate=new Date(data.updated);
-
       if(!isNaN(updatedDate.getTime())){
         document.getElementById("updated").textContent=
           "UPDATED "+
