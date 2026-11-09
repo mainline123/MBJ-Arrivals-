@@ -4,82 +4,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBJ Live Arrivals - Two Columns</title>
+<title>MBJ Live Arrivals - Single Screen</title>
 <style>
-:root {
-  --navy:#06182c;
-  --blue:#0b3153;
-  --cyan:#29d8ff;
-  --gold:#ffd52e;
-  --green:#42e582;
-  --muted:#c5d4e1;
-  --line:rgba(255,255,255,.18);
+:root{
+ --navy:#06182c;--blue:#0b3153;--cyan:#29d8ff;
+ --gold:#ffd52e;--green:#42e582;
+ --muted:#c5d4e1;--line:rgba(255,255,255,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{
-  width:100%;height:100%;overflow:hidden;
-  background:var(--navy);color:white;
-  font-family:Arial,Helvetica,sans-serif;
+ width:100%;height:100%;overflow:hidden;
+ background:var(--navy);color:white;
+ font-family:Arial,Helvetica,sans-serif;
 }
 body{display:flex;flex-direction:column}
 header{
-  height:12%;flex-shrink:0;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1vh 2.5vw;
-  background:linear-gradient(120deg,#06182c,#0b3d66);
-  border-bottom:.35vh solid var(--gold);
+ height:12%;flex-shrink:0;display:flex;
+ justify-content:space-between;align-items:center;
+ padding:1vh 2.5vw;
+ background:linear-gradient(120deg,#06182c,#0b3d66);
+ border-bottom:.35vh solid var(--gold);
 }
 .mbj{font-size:5vw;font-weight:900;color:var(--cyan);line-height:.9}
-.jamaica{color:var(--gold);font-size:1.35vw;letter-spacing:.25em;font-weight:900;margin-top:.5vh}
+.jamaica{font-size:1.35vw;color:var(--gold);font-weight:900;letter-spacing:.25em;margin-top:.5vh}
 .airport{text-align:right}
 .airportName{font-size:2.2vw;font-weight:900}
 .location{font-size:1.35vw;color:var(--gold);font-weight:800;margin-top:.3vh}
-.live{color:var(--green);font-size:1.25vw;font-weight:800;margin-top:.3vh}
+.live{font-size:1.25vw;color:var(--green);font-weight:800;margin-top:.3vh}
 .topline{
-  height:9%;flex-shrink:0;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 2.5vw;background:var(--blue);
-  border-bottom:.3vh solid var(--cyan);
+ height:9%;flex-shrink:0;display:flex;
+ justify-content:space-between;align-items:center;
+ padding:0 2.5vw;background:var(--blue);
+ border-bottom:.3vh solid var(--cyan);
 }
 .topline h1{font-size:3.5vw;letter-spacing:.06em}
 .clock{color:var(--gold);font-size:2.35vw;font-weight:900}
 .date{font-size:1.3vw;color:var(--muted)}
 .boards{
-  flex:1;min-height:0;display:grid;
-  grid-template-columns:1fr 1fr;gap:1vw;
-  padding:1.1vh 1.4vw;
+ flex:1;min-height:0;display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:1vw;padding:1.1vh 1.4vw;
 }
 .board{
-  min-height:0;display:flex;flex-direction:column;
-  border:1px solid var(--line);
-  border-radius:.6vw;overflow:hidden;background:#09243d;
+ min-height:0;display:flex;flex-direction:column;
+ border:1px solid var(--line);border-radius:.6vw;
+ overflow:hidden;background:#09243d;
 }
 .columnHeader,.flightRow{
-  display:grid;
-  grid-template-columns:1.38fr 1.25fr .55fr .9fr 1.05fr;
-  align-items:center;column-gap:.2vw;
+ display:grid;align-items:center;
+ grid-template-columns:1.38fr 1.25fr .55fr .9fr 1.05fr;
+ column-gap:.2vw;
 }
 .columnHeader{
-  height:7%;flex-shrink:0;background:#0d4770;
-  color:var(--cyan);font-size:1.05vw;font-weight:900;
+ height:7%;flex-shrink:0;background:#0d4770;
+ color:var(--cyan);font-size:1.05vw;font-weight:900;
 }
 .columnHeader>div,.flightRow>div{
-  min-width:0;overflow:hidden;padding:0 .4vw;
-  text-overflow:ellipsis;white-space:nowrap;
+ min-width:0;overflow:hidden;padding:0 .4vw;
+ text-overflow:ellipsis;white-space:nowrap;
 }
-.flightRows{flex:1;min-height:0;display:flex;flex-direction:column}
+.flightRows{
+ flex:1;min-height:0;
+ display:flex;flex-direction:column;
+}
 .flightRow{
-  flex:1;min-height:0;font-size:1.28vw;font-weight:800;
-  border-bottom:1px solid var(--line);
+ flex:1;min-height:0;font-size:1.15vw;
+ font-weight:800;border-bottom:1px solid var(--line);
 }
 .flightRow:nth-child(even){background:rgba(36,145,213,.18)}
 .flightRow:nth-child(odd){background:rgba(255,255,255,.025)}
 .airlineCell{display:flex;align-items:center;gap:.4vw}
 .logoBox{
-  width:2.15vw;height:2.15vw;flex-shrink:0;
-  border-radius:.25vw;background:white;
-  display:flex;align-items:center;justify-content:center;
-  overflow:hidden;padding:.12vw;
+ width:1.65vw;height:1.65vw;flex-shrink:0;
+ border-radius:.25vw;background:white;
+ display:flex;align-items:center;justify-content:center;
+ overflow:hidden;padding:.12vw;
 }
 .airlineLogo{width:100%;height:100%;object-fit:contain}
 .codeBadge{display:none;color:#08243d;font-size:.9vw;font-weight:900}
@@ -88,14 +87,14 @@ header{
 .time{color:var(--gold)}
 .status{color:var(--green)}
 .empty{
-  flex:1;display:flex;align-items:center;justify-content:center;
-  color:var(--muted);font-size:1.6vw;
+ flex:1;display:flex;align-items:center;
+ justify-content:center;color:var(--muted);font-size:1.6vw;
 }
 footer{
-  height:4.5%;flex-shrink:0;display:flex;
-  justify-content:space-between;align-items:center;
-  padding:0 2vw;border-top:1px solid var(--line);
-  color:var(--muted);font-size:1.02vw;
+ height:4.5%;flex-shrink:0;display:flex;
+ justify-content:space-between;align-items:center;
+ padding:0 2vw;border-top:1px solid var(--line);
+ color:var(--muted);font-size:1.02vw;
 }
 .footerCenter{color:var(--cyan);font-weight:900}
 .footerRight{color:white}
@@ -104,51 +103,49 @@ footer{
 </head>
 <body>
 <header>
-  <div>
-    <div class="mbj">MBJ</div>
-    <div class="jamaica">JAMAICA</div>
-  </div>
-  <div class="airport">
-    <div class="airportName">SANGSTER INTERNATIONAL AIRPORT</div>
-    <div class="location">MONTEGO BAY • JAMAICA</div>
-    <div class="live">● FLIGHT INFORMATION</div>
-  </div>
+ <div>
+  <div class="mbj">MBJ</div>
+  <div class="jamaica">JAMAICA</div>
+ </div>
+ <div class="airport">
+  <div class="airportName">SANGSTER INTERNATIONAL AIRPORT</div>
+  <div class="location">MONTEGO BAY • JAMAICA</div>
+  <div class="live">● FLIGHT INFORMATION</div>
+ </div>
 </header>
 <div class="topline">
-  <h1>ARRIVALS ✈</h1>
-  <div style="text-align:right">
-    <div class="clock" id="clock">--:--</div>
-    <div class="date" id="date"></div>
-  </div>
+ <h1>ARRIVALS ✈</h1>
+ <div style="text-align:right">
+  <div class="clock" id="clock">--:--</div>
+  <div class="date" id="date"></div>
+ </div>
 </div>
 <main class="boards">
-  <section class="board">
-    <div class="columnHeader">
-      <div>AIRLINE / FLIGHT</div><div>FROM</div>
-      <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
-    </div>
-    <div class="flightRows" id="leftFlights"></div>
-  </section>
-  <section class="board">
-    <div class="columnHeader">
-      <div>AIRLINE / FLIGHT</div><div>FROM</div>
-      <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
-    </div>
-    <div class="flightRows" id="rightFlights"></div>
-  </section>
+ <section class="board">
+  <div class="columnHeader">
+   <div>AIRLINE / FLIGHT</div><div>FROM</div>
+   <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
+  </div>
+  <div class="flightRows" id="leftFlights"></div>
+ </section>
+ <section class="board">
+  <div class="columnHeader">
+   <div>AIRLINE / FLIGHT</div><div>FROM</div>
+   <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
+  </div>
+  <div class="flightRows" id="rightFlights"></div>
+ </section>
 </main>
 <footer>
-  <div>Sangster International Airport</div>
-  <div class="footerCenter">HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.</div>
-  <div class="pageInfo" id="pageInfo">PAGE 1</div>
-  <div class="footerRight" id="updated">Loading...</div>
+ <div>Sangster International Airport</div>
+ <div class="footerCenter">HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.</div>
+ <div class="pageInfo" id="pageInfo">ARRIVALS</div>
+ <div class="footerRight" id="updated">Loading...</div>
 </footer>
 <script>
-const MAX_ROWS=16;
-const WINDOW_ROWS=120;
-const PAGE_SECONDS=15;
+const MAX_ROWS=30;
+const WINDOW_ROWS=30;
 const KEEP_PREVIOUS=4;
-let currentPage=0;
 let cachedFlights=[];
 
 const AIRLINES={
@@ -175,7 +172,8 @@ function airlineDisplay(airlineFlight){
  const safeText=escapeHTML(airlineFlight||"—");
  const code=getAirlineCode(airlineFlight);
  const icao=AIRLINES[code];
- if(!code||!icao)return `<div class="flightText">${safeText}</div>`;
+ if(!code||!icao)
+  return `<div class="flightText">${safeText}</div>`;
  const logoURL=LOGO_BASE+encodeURIComponent(icao)+".png";
  return `<div class="logoBox">
   <img class="airlineLogo" src="${logoURL}" alt=""
@@ -231,44 +229,31 @@ function getCurrentFlights(allFlights){
  const start=Math.max(0,nextIndex-KEEP_PREVIOUS);
  return flights.slice(start,start+WINDOW_ROWS);
 }
+function makeRows(items){
+ if(!items.length)
+  return '<div class="empty">No flights to display</div>';
+ return items.map(f=>{
+  const displayStatus=f.actualTime||f.status||"—";
+  return `<div class="flightRow">
+   <div class="airlineCell">${airlineDisplay(f.airlineFlight)}</div>
+   <div>${escapeHTML(f.from||"—")}</div>
+   <div class="number">${escapeHTML(f.baggage||"—")}</div>
+   <div class="time">${escapeHTML(f.scheduledTime||"—")}</div>
+   <div class="status">${escapeHTML(displayStatus)}</div>
+  </div>`;
+ }).join("");
+}
 function renderFlights(allFlights){
  cachedFlights=Array.isArray(allFlights)?allFlights:[];
- currentPage=0;
- drawPage();
-}
-function drawPage(){
- const totalPages=Math.max(1,Math.ceil(cachedFlights.length/MAX_ROWS));
- currentPage=currentPage%totalPages;
- const flights=cachedFlights.slice(
-  currentPage*MAX_ROWS,(currentPage+1)*MAX_ROWS
- );
- function makeRows(items){
-  if(!items.length)return '<div class="empty">No flights to display</div>';
-  return items.map(f=>{
-   const displayStatus=f.actualTime||f.status||"—";
-   return `<div class="flightRow">
-    <div class="airlineCell">${airlineDisplay(f.airlineFlight)}</div>
-    <div>${escapeHTML(f.from||"—")}</div>
-    <div class="number">${escapeHTML(f.baggage||"—")}</div>
-    <div class="time">${escapeHTML(f.scheduledTime||"—")}</div>
-    <div class="status">${escapeHTML(displayStatus)}</div>
-   </div>`;
-  }).join("");
- }
+ const flights=cachedFlights.slice(0,MAX_ROWS);
+ const midpoint=Math.ceil(flights.length/2);
  document.getElementById("leftFlights").innerHTML=
-  makeRows(flights.slice(0,8));
+  makeRows(flights.slice(0,midpoint));
  document.getElementById("rightFlights").innerHTML=
-  makeRows(flights.slice(8,16));
+  makeRows(flights.slice(midpoint));
  document.getElementById("pageInfo").textContent=
-  `PAGE ${currentPage+1} OF ${totalPages}`;
+  `${flights.length} FLIGHTS`;
 }
-setInterval(()=>{
- if(cachedFlights.length>MAX_ROWS){
-  currentPage++;
-  drawPage();
- }
-},PAGE_SECONDS*1000);
-
 async function loadFlights(){
  try{
   const response=await fetch(
@@ -289,7 +274,8 @@ async function loadFlights(){
   }
  }catch(error){
   console.error(error);
-  document.getElementById("updated").textContent="UPDATE UNAVAILABLE";
+  document.getElementById("updated").textContent=
+   "UPDATE UNAVAILABLE";
  }
 }
 loadFlights();
