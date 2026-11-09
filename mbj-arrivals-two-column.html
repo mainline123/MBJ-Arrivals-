@@ -4,285 +4,423 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBJ Live Arrivals - Single Screen</title>
+<title>MBJ Live Arrivals</title>
 <style>
-:root{
- --navy:#06182c;--blue:#0b3153;--cyan:#29d8ff;
- --gold:#ffd52e;--green:#42e582;
- --muted:#c5d4e1;--line:rgba(255,255,255,.18);
+:root {
+  --navy:#06182c;
+  --blue:#0b3153;
+  --cyan:#29d8ff;
+  --gold:#ffd52e;
+  --green:#42e582;
+  --muted:#c5d4e1;
+  --line:rgba(255,255,255,.18);
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{
- width:100%;height:100%;overflow:hidden;
- background:var(--navy);color:white;
- font-family:Arial,Helvetica,sans-serif;
+* {box-sizing:border-box;margin:0;padding:0}
+html,body {
+  width:100%;height:100%;overflow:hidden;
+  background:var(--navy);color:white;
+  font-family:Arial,Helvetica,sans-serif;
 }
-body{display:flex;flex-direction:column}
-header{
- height:12%;flex-shrink:0;display:flex;
- justify-content:space-between;align-items:center;
- padding:1vh 2.5vw;
- background:linear-gradient(120deg,#06182c,#0b3d66);
- border-bottom:.35vh solid var(--gold);
+body {display:flex;flex-direction:column}
+header {
+  height:12%;flex-shrink:0;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  padding:1vh 2.5vw;
+  background:linear-gradient(120deg,#06182c,#0b3d66);
+  border-bottom:.35vh solid var(--gold);
 }
-.mbj{font-size:5vw;font-weight:900;color:var(--cyan);line-height:.9}
-.jamaica{font-size:1.35vw;color:var(--gold);font-weight:900;letter-spacing:.25em;margin-top:.5vh}
-.airport{text-align:right}
-.airportName{font-size:2.2vw;font-weight:900}
-.location{font-size:1.35vw;color:var(--gold);font-weight:800;margin-top:.3vh}
-.live{font-size:1.25vw;color:var(--green);font-weight:800;margin-top:.3vh}
-.topline{
- height:9%;flex-shrink:0;display:flex;
- justify-content:space-between;align-items:center;
- padding:0 2.5vw;background:var(--blue);
- border-bottom:.3vh solid var(--cyan);
+.mbj {
+  font-size:5vw;font-weight:900;
+  color:var(--cyan);line-height:.9;
 }
-.topline h1{font-size:3.5vw;letter-spacing:.06em}
-.clock{color:var(--gold);font-size:2.35vw;font-weight:900}
-.date{font-size:1.3vw;color:var(--muted)}
-.boards{
- flex:1;min-height:0;display:grid;
- grid-template-columns:1fr 1fr;
- gap:1vw;padding:1.1vh 1.4vw;
+.jamaica {
+  color:var(--gold);font-size:1.35vw;
+  letter-spacing:.25em;font-weight:900;
+  margin-top:.5vh;
 }
-.board{
- min-height:0;display:flex;flex-direction:column;
- border:1px solid var(--line);border-radius:.6vw;
- overflow:hidden;background:#09243d;
+.airport {text-align:right}
+.airportName {font-size:2.2vw;font-weight:900}
+.location {
+  font-size:1.35vw;color:var(--gold);
+  font-weight:800;margin-top:.3vh;
 }
-.columnHeader,.flightRow{
- display:grid;align-items:center;
- grid-template-columns:1.38fr 1.25fr .55fr .9fr 1.05fr;
- column-gap:.2vw;
+.live {
+  color:var(--green);font-size:1.25vw;
+  font-weight:800;margin-top:.3vh;
 }
-.columnHeader{
- height:7%;flex-shrink:0;background:#0d4770;
- color:var(--cyan);font-size:1.05vw;font-weight:900;
+.topline {
+  height:9%;flex-shrink:0;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  padding:0 2.5vw;background:var(--blue);
+  border-bottom:.3vh solid var(--cyan);
 }
-.columnHeader>div,.flightRow>div{
- min-width:0;overflow:hidden;padding:0 .4vw;
- text-overflow:ellipsis;white-space:nowrap;
+.topline h1 {font-size:3.5vw;letter-spacing:.06em}
+.clock {
+  color:var(--gold);font-size:2.35vw;
+  font-weight:900;
 }
-.flightRows{
- flex:1;min-height:0;
- display:flex;flex-direction:column;
+.date {font-size:1.3vw;color:var(--muted)}
+.boards {
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1vw;padding:1.1vh 1.4vw;
 }
-.flightRow{
- flex:1;min-height:0;font-size:1.15vw;
- font-weight:800;border-bottom:1px solid var(--line);
+.board {
+  min-height:0;display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  border-radius:.6vw;overflow:hidden;
+  background:#09243d;
 }
-.flightRow:nth-child(even){background:rgba(36,145,213,.18)}
-.flightRow:nth-child(odd){background:rgba(255,255,255,.025)}
-.airlineCell{display:flex;align-items:center;gap:.4vw}
-.logoBox{
- width:1.65vw;height:1.65vw;flex-shrink:0;
- border-radius:.25vw;background:white;
- display:flex;align-items:center;justify-content:center;
- overflow:hidden;padding:.12vw;
+.columnHeader,.flightRow {
+  display:grid;align-items:center;
+  grid-template-columns:1.38fr 1.25fr .55fr .9fr 1.05fr;
+  column-gap:.2vw;
 }
-.airlineLogo{width:100%;height:100%;object-fit:contain}
-.codeBadge{display:none;color:#08243d;font-size:.9vw;font-weight:900}
-.flightText{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.number{text-align:center}
-.time{color:var(--gold)}
-.status{color:var(--green)}
-.empty{
- flex:1;display:flex;align-items:center;
- justify-content:center;color:var(--muted);font-size:1.6vw;
+.columnHeader {
+  height:7%;flex-shrink:0;
+  background:#0d4770;color:var(--cyan);
+  font-size:1.05vw;font-weight:900;
 }
-footer{
- height:4.5%;flex-shrink:0;display:flex;
- justify-content:space-between;align-items:center;
- padding:0 2vw;border-top:1px solid var(--line);
- color:var(--muted);font-size:1.02vw;
+.columnHeader>div,.flightRow>div {
+  min-width:0;overflow:hidden;
+  padding:0 .4vw;
+  text-overflow:ellipsis;white-space:nowrap;
 }
-.footerCenter{color:var(--cyan);font-weight:900}
-.footerRight{color:white}
-.pageInfo{color:var(--gold);font-weight:900}
+.flightRows {
+  flex:1;min-height:0;
+  display:flex;flex-direction:column;
+}
+.flightRow {
+  flex:1;min-height:0;
+  font-size:1.15vw;font-weight:800;
+  border-bottom:1px solid var(--line);
+}
+.flightRow:nth-child(even) {
+  background:rgba(36,145,213,.18);
+}
+.flightRow:nth-child(odd) {
+  background:rgba(255,255,255,.025);
+}
+.airlineCell {
+  display:flex;align-items:center;gap:.4vw;
+}
+.logoBox {
+  width:1.65vw;height:1.65vw;
+  flex-shrink:0;border-radius:.25vw;
+  background:white;display:flex;
+  align-items:center;justify-content:center;
+  overflow:hidden;padding:.12vw;
+}
+.airlineLogo {
+  width:100%;height:100%;object-fit:contain;
+}
+.codeBadge {
+  display:none;color:#08243d;
+  font-size:.9vw;font-weight:900;
+}
+.flightText {
+  overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.number {text-align:center}
+.time {color:var(--gold)}
+.status {color:var(--green)}
+.empty {
+  flex:1;display:flex;align-items:center;
+  justify-content:center;
+  color:var(--muted);font-size:1.6vw;
+}
+footer {
+  height:4.5%;flex-shrink:0;
+  display:flex;justify-content:space-between;
+  align-items:center;padding:0 2vw;
+  border-top:1px solid var(--line);
+  color:var(--muted);font-size:1.02vw;
+}
+.footerCenter {color:var(--cyan);font-weight:900}
+.footerRight {color:white}
+.pageInfo {color:var(--gold);font-weight:900}
 </style>
 </head>
 <body>
+
 <header>
- <div>
-  <div class="mbj">MBJ</div>
-  <div class="jamaica">JAMAICA</div>
- </div>
- <div class="airport">
-  <div class="airportName">SANGSTER INTERNATIONAL AIRPORT</div>
-  <div class="location">MONTEGO BAY • JAMAICA</div>
-  <div class="live">● FLIGHT INFORMATION</div>
- </div>
+  <div>
+    <div class="mbj">MBJ</div>
+    <div class="jamaica">JAMAICA</div>
+  </div>
+  <div class="airport">
+    <div class="airportName">SANGSTER INTERNATIONAL AIRPORT</div>
+    <div class="location">MONTEGO BAY • JAMAICA</div>
+    <div class="live">● LIVE FLIGHT INFORMATION</div>
+  </div>
 </header>
+
 <div class="topline">
- <h1>ARRIVALS ✈</h1>
- <div style="text-align:right">
-  <div class="clock" id="clock">--:--</div>
-  <div class="date" id="date"></div>
- </div>
+  <h1>ARRIVALS ✈</h1>
+  <div style="text-align:right">
+    <div class="clock" id="clock">--:--</div>
+    <div class="date" id="date"></div>
+  </div>
 </div>
+
 <main class="boards">
- <section class="board">
-  <div class="columnHeader">
-   <div>AIRLINE / FLIGHT</div><div>FROM</div>
-   <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
-  </div>
-  <div class="flightRows" id="leftFlights"></div>
- </section>
- <section class="board">
-  <div class="columnHeader">
-   <div>AIRLINE / FLIGHT</div><div>FROM</div>
-   <div>BAG</div><div>TIME</div><div>ACTUAL / STATUS</div>
-  </div>
-  <div class="flightRows" id="rightFlights"></div>
- </section>
+  <section class="board">
+    <div class="columnHeader">
+      <div>AIRLINE / FLIGHT</div>
+      <div>FROM</div>
+      <div>BAG</div>
+      <div>TIME</div>
+      <div>ACTUAL / STATUS</div>
+    </div>
+    <div class="flightRows" id="leftFlights"></div>
+  </section>
+
+  <section class="board">
+    <div class="columnHeader">
+      <div>AIRLINE / FLIGHT</div>
+      <div>FROM</div>
+      <div>BAG</div>
+      <div>TIME</div>
+      <div>ACTUAL / STATUS</div>
+    </div>
+    <div class="flightRows" id="rightFlights"></div>
+  </section>
 </main>
+
 <footer>
- <div>Sangster International Airport</div>
- <div class="footerCenter">HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.</div>
- <div class="pageInfo" id="pageInfo">ARRIVALS</div>
- <div class="footerRight" id="updated">Loading...</div>
+  <div>Sangster International Airport</div>
+  <div class="footerCenter">
+    HALIFAX VIRTUAL MEDIA MASTERS &amp; EVENTS LTD.
+  </div>
+  <div class="pageInfo" id="pageInfo">ARRIVALS</div>
+  <div class="footerRight" id="updated">Loading...</div>
 </footer>
+
 <script>
 const MAX_ROWS=30;
-const WINDOW_ROWS=30;
 const KEEP_PREVIOUS=4;
-let cachedFlights=[];
 
 const AIRLINES={
- "AA":"AAL","B6":"JBU","AC":"ACA","WS":"WJA",
- "DL":"DAL","UA":"UAL","WN":"SWA","BA":"BAW",
- "NK":"NKS","F9":"FFT","CM":"CMP","TS":"TSC",
- "WG":"SWG","BW":"BWA","VS":"VIR","BY":"TOM",
- "OR":"TFL","SY":"SCX","5Y":"GTI"
+  "AA":"AAL","B6":"JBU","AC":"ACA",
+  "WS":"WJA","DL":"DAL","UA":"UAL",
+  "WN":"SWA","BA":"BAW","NK":"NKS",
+  "F9":"FFT","CM":"CMP","TS":"TSC",
+  "WG":"SWG","BW":"BWA","VS":"VIR",
+  "BY":"TOM","OR":"TFL","SY":"SCX",
+  "5Y":"GTI"
 };
-const LOGO_BASE="https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
+
+const LOGO_BASE=
+  "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/master/images/";
 
 function escapeHTML(value){
- return String(value??"")
-  .replace(/&/g,"&amp;").replace(/</g,"&lt;")
-  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")
-  .replace(/'/g,"&#039;");
+  return String(value??"")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
 }
+
 function getAirlineCode(text){
- const match=String(text||"").toUpperCase()
-  .match(/\b([A-Z0-9]{2})\s*\d{1,4}[A-Z]?\b/);
- return match?match[1]:"";
+  const match=String(text||"").toUpperCase()
+    .match(/\b([A-Z0-9]{2})\s*\d{1,4}[A-Z]?\b/);
+  return match?match[1]:"";
 }
+
 function airlineDisplay(airlineFlight){
- const safeText=escapeHTML(airlineFlight||"—");
- const code=getAirlineCode(airlineFlight);
- const icao=AIRLINES[code];
- if(!code||!icao)
-  return `<div class="flightText">${safeText}</div>`;
- const logoURL=LOGO_BASE+encodeURIComponent(icao)+".png";
- return `<div class="logoBox">
-  <img class="airlineLogo" src="${logoURL}" alt=""
-   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-  <div class="codeBadge">${escapeHTML(code)}</div>
- </div><div class="flightText">${safeText}</div>`;
+  const safeText=escapeHTML(airlineFlight||"—");
+  const code=getAirlineCode(airlineFlight);
+
+  if(code==="P5"){
+    return `<div class="logoBox">
+      <img class="airlineLogo"
+        src="airline-logos/wingo.svg"
+        alt="Wingo"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="codeBadge">P5</div>
+    </div>
+    <div class="flightText">${safeText}</div>`;
+  }
+
+  const icao=AIRLINES[code];
+
+  if(!code||!icao){
+    return `<div class="flightText">${safeText}</div>`;
+  }
+
+  const logoURL=LOGO_BASE+
+    encodeURIComponent(icao)+".png";
+
+  return `<div class="logoBox">
+    <img class="airlineLogo"
+      src="${logoURL}" alt=""
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="codeBadge">${escapeHTML(code)}</div>
+  </div>
+  <div class="flightText">${safeText}</div>`;
 }
+
 function updateClock(){
- const now=new Date();
- document.getElementById("clock").textContent=
-  new Intl.DateTimeFormat("en-US",{
-   timeZone:"America/Jamaica",hour:"numeric",
-   minute:"2-digit",second:"2-digit",hour12:true
-  }).format(now);
- document.getElementById("date").textContent=
-  new Intl.DateTimeFormat("en-US",{
-   timeZone:"America/Jamaica",weekday:"short",
-   month:"short",day:"numeric",year:"numeric"
-  }).format(now);
+  const now=new Date();
+
+  document.getElementById("clock").textContent=
+    new Intl.DateTimeFormat("en-US",{
+      timeZone:"America/Jamaica",
+      hour:"numeric",minute:"2-digit",
+      second:"2-digit",hour12:true
+    }).format(now);
+
+  document.getElementById("date").textContent=
+    new Intl.DateTimeFormat("en-US",{
+      timeZone:"America/Jamaica",
+      weekday:"short",month:"short",
+      day:"numeric",year:"numeric"
+    }).format(now);
 }
+
 updateClock();
 setInterval(updateClock,1000);
 
 function jamaicaMinutesNow(){
- const parts=new Intl.DateTimeFormat("en-US",{
-  timeZone:"America/Jamaica",hour:"numeric",
-  minute:"2-digit",hour12:false
- }).formatToParts(new Date());
- const hour=Number(parts.find(p=>p.type==="hour")?.value||0);
- const minute=Number(parts.find(p=>p.type==="minute")?.value||0);
- return (hour%24)*60+minute;
-}
-function flightTimeMinutes(timeString){
- if(!timeString)return null;
- const match=String(timeString).trim()
-  .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
- if(!match)return null;
- let hour=Number(match[1]);
- const minute=Number(match[2]);
- if(hour===12)hour=0;
- if(match[3].toUpperCase()==="PM")hour+=12;
- return hour*60+minute;
-}
-function getCurrentFlights(allFlights){
- const flights=Array.isArray(allFlights)?allFlights:[];
- if(flights.length<=WINDOW_ROWS)return flights;
- const now=jamaicaMinutesNow();
- let nextIndex=flights.findIndex(f=>{
-  const mins=flightTimeMinutes(f.scheduledTime);
-  return mins!==null&&mins>=now;
- });
- if(nextIndex===-1)return flights.slice(-WINDOW_ROWS);
- const start=Math.max(0,nextIndex-KEEP_PREVIOUS);
- return flights.slice(start,start+WINDOW_ROWS);
-}
-function makeRows(items){
- if(!items.length)
-  return '<div class="empty">No flights to display</div>';
- return items.map(f=>{
-  const displayStatus=f.actualTime||f.status||"—";
-  return `<div class="flightRow">
-   <div class="airlineCell">${airlineDisplay(f.airlineFlight)}</div>
-   <div>${escapeHTML(f.from||"—")}</div>
-   <div class="number">${escapeHTML(f.baggage||"—")}</div>
-   <div class="time">${escapeHTML(f.scheduledTime||"—")}</div>
-   <div class="status">${escapeHTML(displayStatus)}</div>
-  </div>`;
- }).join("");
-}
-function renderFlights(allFlights){
- cachedFlights=Array.isArray(allFlights)?allFlights:[];
- const flights=cachedFlights.slice(0,MAX_ROWS);
- const midpoint=Math.ceil(flights.length/2);
- document.getElementById("leftFlights").innerHTML=
-  makeRows(flights.slice(0,midpoint));
- document.getElementById("rightFlights").innerHTML=
-  makeRows(flights.slice(midpoint));
- document.getElementById("pageInfo").textContent=
-  `${flights.length} FLIGHTS`;
-}
-async function loadFlights(){
- try{
-  const response=await fetch(
-   `flights.json?t=${Date.now()}`,{cache:"no-store"}
+  const parts=new Intl.DateTimeFormat("en-US",{
+    timeZone:"America/Jamaica",
+    hour:"numeric",minute:"2-digit",
+    hour12:false
+  }).formatToParts(new Date());
+
+  const hour=Number(
+    parts.find(p=>p.type==="hour")?.value||0
   );
-  if(!response.ok)throw new Error("Unable to retrieve arrivals");
-  const data=await response.json();
-  renderFlights(getCurrentFlights(data.flights||[]));
-  if(data.updated){
-   const updatedDate=new Date(data.updated);
-   if(!isNaN(updatedDate.getTime())){
-    document.getElementById("updated").textContent=
-     "UPDATED "+new Intl.DateTimeFormat("en-US",{
-      timeZone:"America/Jamaica",hour:"numeric",
-      minute:"2-digit",hour12:true
-     }).format(updatedDate);
-   }
-  }
- }catch(error){
-  console.error(error);
-  document.getElementById("updated").textContent=
-   "UPDATE UNAVAILABLE";
- }
+  const minute=Number(
+    parts.find(p=>p.type==="minute")?.value||0
+  );
+  return (hour%24)*60+minute;
 }
+
+function flightTimeMinutes(timeString){
+  if(!timeString)return null;
+
+  const match=String(timeString).trim()
+    .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+
+  if(!match)return null;
+
+  let hour=Number(match[1]);
+  const minute=Number(match[2]);
+
+  if(hour===12)hour=0;
+  if(match[3].toUpperCase()==="PM")hour+=12;
+
+  return hour*60+minute;
+}
+
+function getCurrentFlights(allFlights){
+  const flights=Array.isArray(allFlights)
+    ?allFlights:[];
+
+  if(flights.length<=MAX_ROWS)return flights;
+
+  const now=jamaicaMinutesNow();
+
+  let nextIndex=flights.findIndex(f=>{
+    const mins=flightTimeMinutes(f.scheduledTime);
+    return mins!==null&&mins>=now;
+  });
+
+  if(nextIndex===-1){
+    return flights.slice(-MAX_ROWS);
+  }
+
+  let start=Math.max(0,nextIndex-KEEP_PREVIOUS);
+
+  if(start+MAX_ROWS>flights.length){
+    start=Math.max(0,flights.length-MAX_ROWS);
+  }
+
+  return flights.slice(start,start+MAX_ROWS);
+}
+
+function makeRows(items){
+  if(!items.length){
+    return '<div class="empty">No flights to display</div>';
+  }
+
+  return items.map(f=>{
+    const displayStatus=f.actualTime||f.status||"—";
+
+    return `<div class="flightRow">
+      <div class="airlineCell">
+        ${airlineDisplay(f.airlineFlight)}
+      </div>
+      <div>${escapeHTML(f.from||"—")}</div>
+      <div class="number">
+        ${escapeHTML(f.baggage||"—")}
+      </div>
+      <div class="time">
+        ${escapeHTML(f.scheduledTime||"—")}
+      </div>
+      <div class="status">
+        ${escapeHTML(displayStatus)}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderFlights(allFlights){
+  const flights=getCurrentFlights(allFlights);
+  const midpoint=Math.ceil(flights.length/2);
+
+  document.getElementById("leftFlights").innerHTML=
+    makeRows(flights.slice(0,midpoint));
+
+  document.getElementById("rightFlights").innerHTML=
+    makeRows(flights.slice(midpoint));
+
+  document.getElementById("pageInfo").textContent=
+    `${flights.length} FLIGHTS`;
+}
+
+async function loadFlights(){
+  try{
+    const response=await fetch(
+      `flights.json?t=${Date.now()}`,
+      {cache:"no-store"}
+    );
+
+    if(!response.ok){
+      throw new Error("Unable to retrieve arrivals");
+    }
+
+    const data=await response.json();
+    renderFlights(data.flights||[]);
+
+    if(data.updated){
+      const updatedDate=new Date(data.updated);
+
+      if(!isNaN(updatedDate.getTime())){
+        document.getElementById("updated").textContent=
+          "UPDATED "+
+          new Intl.DateTimeFormat("en-US",{
+            timeZone:"America/Jamaica",
+            hour:"numeric",minute:"2-digit",
+            hour12:true
+          }).format(updatedDate);
+      }
+    }
+  }catch(error){
+    console.error(error);
+    document.getElementById("updated").textContent=
+      "UPDATE UNAVAILABLE";
+  }
+}
+
 loadFlights();
 setInterval(loadFlights,300000);
-document.addEventListener("contextmenu",e=>e.preventDefault());
-document.addEventListener("selectstart",e=>e.preventDefault());
-document.addEventListener("dragstart",e=>e.preventDefault());
 </script>
 </body>
 </html>
