@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-10T17:49:49.945Z",
+  "updated": "2026-11-10T23:21:25.510Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -49,8 +49,8 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2943",
@@ -58,8 +58,8 @@
       "checkInCounters": "63 - 76",
       "gate": "9",
       "scheduledTime": "1:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:01 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6826",
@@ -67,7 +67,7 @@
       "checkInCounters": "31 - 40",
       "gate": "8",
       "scheduledTime": "1:07 PM",
-      "actualTime": "1:37 PM",
+      "actualTime": "1:35 PM",
       "status": "Delayed"
     },
     {
@@ -76,8 +76,8 @@
       "checkInCounters": "63 - 76",
       "gate": "13",
       "scheduledTime": "1:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:45 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2558",
@@ -85,8 +85,8 @@
       "checkInCounters": "63 - 76",
       "gate": "7",
       "scheduledTime": "1:21 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -112,8 +112,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:57 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Canada AC1805",
@@ -121,8 +121,8 @@
       "checkInCounters": "53 - 62",
       "gate": "17",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:41 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -130,8 +130,8 @@
       "checkInCounters": "87 - 98",
       "gate": "6",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6522",
@@ -139,8 +139,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "2:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:07 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2939",
@@ -148,8 +148,8 @@
       "checkInCounters": "63 - 76",
       "gate": "1",
       "scheduledTime": "2:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:10 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -157,8 +157,8 @@
       "checkInCounters": "87 - 98",
       "gate": "12",
       "scheduledTime": "2:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2227",
@@ -166,8 +166,8 @@
       "checkInCounters": "43 - 52",
       "gate": "3",
       "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1160",
@@ -175,8 +175,8 @@
       "checkInCounters": "23 - 30",
       "gate": "4",
       "scheduledTime": "2:54 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2915",
@@ -184,8 +184,8 @@
       "checkInCounters": "43 - 52",
       "gate": "19",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:54 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6280",
@@ -193,8 +193,8 @@
       "checkInCounters": "31 - 40",
       "gate": "8",
       "scheduledTime": "3:05 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:06 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1206",
@@ -202,8 +202,8 @@
       "checkInCounters": "23 - 30",
       "gate": "5",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2250",
@@ -211,17 +211,17 @@
       "checkInCounters": "63 - 76",
       "gate": "13",
       "scheduledTime": "3:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:13 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN905",
       "to": "Baltimore",
       "checkInCounters": "115 - 126",
-      "gate": "2",
+      "gate": "5",
       "scheduledTime": "3:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:18 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -229,8 +229,8 @@
       "checkInCounters": "87 - 98",
       "gate": "6",
       "scheduledTime": "3:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:33 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN293",
@@ -238,17 +238,17 @@
       "checkInCounters": "115 - 126",
       "gate": "7",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA975",
       "to": "Chicago",
-      "checkInCounters": "63 - 78",
+      "checkInCounters": "63 - 76",
       "gate": "9",
       "scheduledTime": "3:56 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6326",
@@ -256,8 +256,8 @@
       "checkInCounters": "31 - 40",
       "gate": "10",
       "scheduledTime": "4:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:54 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57483",
@@ -274,8 +274,8 @@
       "checkInCounters": "53 - 62",
       "gate": "17",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:21 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -283,8 +283,8 @@
       "checkInCounters": "87 - 98",
       "gate": "4",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
@@ -292,8 +292,8 @@
       "checkInCounters": "63 - 76",
       "gate": "9",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2569",
@@ -309,7 +309,7 @@
       "to": "Amsterdam",
       "checkInCounters": "81 - 86",
       "gate": "19",
-      "scheduledTime": "8:55 PM",
+      "scheduledTime": "7:05 PM",
       "actualTime": "",
       "status": "On-Time"
     },
