@@ -6,7 +6,7 @@
     "month": "11",
     "day": "09"
   },
-  "updated": "2026-11-09T22:30:14.204Z",
+  "updated": "2026-11-10T04:40:46.916Z",
   "source": "FlightStats",
   "flights": [
     {
@@ -270,6 +270,26 @@
       "source": "FlightStats"
     },
     {
+      "airlineCode": "B6",
+      "airline": "JetBlue",
+      "flightNumber": "1576",
+      "flight": "B61576",
+      "airportCode": "FLL",
+      "city": "Fort Lauderdale",
+      "scheduledTime": "2:58PM",
+      "estimatedTime": "",
+      "actualTime": "3:26PM",
+      "updatedTime": "3:26PM",
+      "timeType": "Actual",
+      "displayTime": "3:26PM",
+      "status": "Delayed by 25m",
+      "gate": "3",
+      "terminal": "",
+      "baggage": "",
+      "flightId": 1418857072,
+      "source": "FlightStats"
+    },
+    {
       "airlineCode": "CM",
       "airline": "Copa Airlines",
       "flightNumber": "417",
@@ -287,26 +307,6 @@
       "terminal": "",
       "baggage": "",
       "flightId": 1418861994,
-      "source": "FlightStats"
-    },
-    {
-      "airlineCode": "B6",
-      "airline": "JetBlue",
-      "flightNumber": "1576",
-      "flight": "B61576",
-      "airportCode": "FLL",
-      "city": "Fort Lauderdale",
-      "scheduledTime": "2:58PM",
-      "estimatedTime": "",
-      "actualTime": "3:26PM",
-      "updatedTime": "3:26PM",
-      "timeType": "Actual",
-      "displayTime": "3:26PM",
-      "status": "Delayed by 26m",
-      "gate": "3",
-      "terminal": "",
-      "baggage": "",
-      "flightId": 1418857072,
       "source": "FlightStats"
     },
     {
@@ -362,7 +362,7 @@
       "updatedTime": "5:08PM",
       "timeType": "Actual",
       "displayTime": "5:08PM",
-      "status": "Delayed by 22m",
+      "status": "Delayed by 26m",
       "gate": "",
       "terminal": "",
       "baggage": "",
