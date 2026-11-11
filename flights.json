@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-11T06:18:50.328Z",
+  "updated": "2026-11-11T15:11:18.571Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "10:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:07 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
@@ -32,14 +32,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Transat TS516",
-      "from": "Toronto",
-      "baggage": "5",
-      "scheduledTime": "11:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
       "baggage": "1",
@@ -48,17 +40,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "American Airlines AA2943",
-      "from": "Charlotte",
-      "baggage": "2",
+      "airlineFlight": "Jet Blue B62427",
+      "from": "Fort Lauderdale",
+      "baggage": "3",
       "scheduledTime": "12:02 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B62427",
-      "from": "Fort Lauderdale",
-      "baggage": "3",
+      "airlineFlight": "American Airlines AA2943",
+      "from": "Charlotte",
+      "baggage": "2",
       "scheduledTime": "12:02 PM",
       "actualTime": "",
       "status": "On-Time"
