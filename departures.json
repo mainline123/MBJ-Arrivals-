@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-11T21:58:12.114Z",
+  "updated": "2026-11-12T02:58:45.037Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -274,8 +274,8 @@
       "checkInCounters": "87 - 98",
       "gate": "4",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:14 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
@@ -283,8 +283,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:00 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Condor DE2163",
@@ -292,8 +292,8 @@
       "checkInCounters": "79 - 86",
       "gate": "19",
       "scheduledTime": "6:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:43 PM",
+      "status": "Delayed"
     }
   ]
 }
