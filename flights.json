@@ -5,31 +5,31 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-13T07:57:30.367Z",
+  "updated": "2026-11-13T16:23:21.904Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "5",
       "scheduledTime": "10:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:13 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York",
-      "baggage": "2",
+      "baggage": "4",
       "scheduledTime": "10:28 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:41 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Transat TS516",
       "from": "Toronto",
-      "baggage": "3",
+      "baggage": "6",
       "scheduledTime": "10:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:32 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
@@ -44,13 +44,13 @@
       "from": "Baltimore",
       "baggage": "1",
       "scheduledTime": "12:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2943",
       "from": "Charlotte",
-      "baggage": "3",
+      "baggage": "5",
       "scheduledTime": "12:02 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -148,13 +148,13 @@
       "from": "Montreal",
       "baggage": "6",
       "scheduledTime": "1:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:52 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1146",
       "from": "Chicago",
-      "baggage": "1",
+      "baggage": "4",
       "scheduledTime": "1:48 PM",
       "actualTime": "",
       "status": "On-Time"
