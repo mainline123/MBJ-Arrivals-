@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-12T18:55:57.959Z",
+  "updated": "2026-11-13T00:23:23.568Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -164,21 +164,21 @@
       "from": "New York",
       "baggage": "3",
       "scheduledTime": "1:58 PM",
-      "actualTime": "1:50 PM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
       "baggage": "6",
       "scheduledTime": "2:14 PM",
-      "actualTime": "1:43 PM",
-      "status": "Early"
+      "actualTime": "2:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "4",
+      "baggage": "5",
       "scheduledTime": "2:15 PM",
       "actualTime": "1:48 PM",
       "status": "Early"
@@ -188,7 +188,7 @@
       "from": "Baltimore",
       "baggage": "5",
       "scheduledTime": "2:25 PM",
-      "actualTime": "2:32 PM",
+      "actualTime": "2:41 PM",
       "status": "Delayed"
     },
     {
@@ -196,7 +196,7 @@
       "from": "Charlotte",
       "baggage": "7",
       "scheduledTime": "2:28 PM",
-      "actualTime": "2:41 PM",
+      "actualTime": "2:43 PM",
       "status": "Delayed"
     },
     {
@@ -204,15 +204,15 @@
       "from": "Orlando",
       "baggage": "2",
       "scheduledTime": "2:45 PM",
-      "actualTime": "3:07 PM",
+      "actualTime": "3:09 PM",
       "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3228",
       "from": "Chicago",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "2:52 PM",
-      "actualTime": "2:21 PM",
+      "actualTime": "2:24 PM",
       "status": "Early"
     },
     {
@@ -220,7 +220,7 @@
       "from": "Fort Lauderdale",
       "baggage": "4",
       "scheduledTime": "2:57 PM",
-      "actualTime": "3:18 PM",
+      "actualTime": "3:31 PM",
       "status": "Delayed"
     },
     {
@@ -228,7 +228,7 @@
       "from": "Bogota",
       "baggage": "1",
       "scheduledTime": "3:03 PM",
-      "actualTime": "2:41 PM",
+      "actualTime": "2:49 PM",
       "status": "Early"
     },
     {
@@ -236,15 +236,15 @@
       "from": "London",
       "baggage": "6",
       "scheduledTime": "3:15 PM",
-      "actualTime": "2:45 PM",
-      "status": "Early"
+      "actualTime": "3:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "3:29 PM",
-      "actualTime": "3:22 PM",
+      "actualTime": "3:27 PM",
       "status": "Early"
     },
     {
@@ -252,7 +252,7 @@
       "from": "Atlanta",
       "baggage": "1",
       "scheduledTime": "4:35 PM",
-      "actualTime": "4:48 PM",
+      "actualTime": "4:47 PM",
       "status": "Delayed"
     },
     {
@@ -260,7 +260,7 @@
       "from": "Lima",
       "baggage": "2",
       "scheduledTime": "4:45 PM",
-      "actualTime": "4:27 PM",
+      "actualTime": "4:24 PM",
       "status": "Early"
     },
     {
@@ -268,15 +268,15 @@
       "from": "Dallas",
       "baggage": "3",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:54 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "6:05 PM",
+      "actualTime": "6:14 PM",
       "status": "Early"
     },
     {
