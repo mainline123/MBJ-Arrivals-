@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-13T22:37:20.396Z",
+  "updated": "2026-11-14T03:14:59.451Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -252,8 +252,8 @@
       "from": "Dallas",
       "baggage": "5",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:34 PM",
+      "status": "Delayed"
     }
   ]
 }
