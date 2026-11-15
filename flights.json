@@ -5,20 +5,20 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-15T09:25:34.512Z",
+  "updated": "2026-11-15T17:10:19.634Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "10:15 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:38 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61179",
       "from": "New York",
-      "baggage": "5",
+      "baggage": "",
       "scheduledTime": "10:28 AM",
       "actualTime": "",
       "status": "On-Time"
@@ -28,61 +28,61 @@
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:10 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2672",
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "11:25 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:14 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
       "baggage": "1",
       "scheduledTime": "12:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "American Airlines AA2943",
-      "from": "Charlotte",
-      "baggage": "3",
-      "scheduledTime": "12:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:51 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Fort Lauderdale",
       "baggage": "2",
       "scheduledTime": "12:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:18 PM",
+      "status": "Delayed"
+    },
+    {
+      "airlineFlight": "American Airlines AA2943",
+      "from": "Charlotte",
+      "baggage": "3",
+      "scheduledTime": "12:02 PM",
+      "actualTime": "12:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1349",
       "from": "New York",
       "baggage": "5",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:57 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA2126",
       "from": "Newark",
       "baggage": "6",
       "scheduledTime": "12:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:49 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1311",
       "from": "Miami",
-      "baggage": "7",
+      "baggage": "",
       "scheduledTime": "12:21 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -138,7 +138,7 @@
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
-      "baggage": "",
+      "baggage": "4",
       "scheduledTime": "1:18 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -156,21 +156,21 @@
       "from": "Toronto",
       "baggage": "4",
       "scheduledTime": "1:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:12 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1146",
       "from": "Chicago",
       "baggage": "1",
       "scheduledTime": "1:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:25 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6279",
       "from": "New York",
-      "baggage": "2",
+      "baggage": "",
       "scheduledTime": "1:58 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -188,8 +188,8 @@
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
@@ -202,7 +202,7 @@
     {
       "airlineFlight": "American Airlines AA2250",
       "from": "Charlotte",
-      "baggage": "",
+      "baggage": "7",
       "scheduledTime": "2:28 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -234,7 +234,7 @@
     {
       "airlineFlight": "American Airlines AA3228",
       "from": "Chicago",
-      "baggage": "4",
+      "baggage": "",
       "scheduledTime": "2:52 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -252,6 +252,14 @@
       "from": "Atlanta",
       "baggage": "1",
       "scheduledTime": "3:29 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "West Jet WS4222",
+      "from": "Toronto",
+      "baggage": "",
+      "scheduledTime": "3:55 PM",
       "actualTime": "",
       "status": "On-Time"
     },
