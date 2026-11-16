@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-15T21:49:18.108Z",
+  "updated": "2026-11-16T02:07:17.251Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -220,7 +220,7 @@
       "checkInCounters": "65 - 78",
       "gate": "6",
       "scheduledTime": "3:28 PM",
-      "actualTime": "5:49 PM",
+      "actualTime": "6:07 PM",
       "status": "Delayed"
     },
     {
@@ -229,8 +229,8 @@
       "checkInCounters": "",
       "gate": "19",
       "scheduledTime": "3:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -247,7 +247,7 @@
       "checkInCounters": "115 - 126",
       "gate": "3",
       "scheduledTime": "3:45 PM",
-      "actualTime": "4:49 PM",
+      "actualTime": "4:56 PM",
       "status": "Delayed"
     },
     {
@@ -274,8 +274,8 @@
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "4:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:43 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9124",
@@ -283,7 +283,7 @@
       "checkInCounters": "81 - 86",
       "gate": "4",
       "scheduledTime": "4:43 PM",
-      "actualTime": "7:03 PM",
+      "actualTime": "7:19 PM",
       "status": "Delayed"
     },
     {
@@ -292,7 +292,7 @@
       "checkInCounters": "99 - 108",
       "gate": "17",
       "scheduledTime": "4:45 PM",
-      "actualTime": "5:05 PM",
+      "actualTime": "6:04 PM",
       "status": "Delayed"
     },
     {
@@ -301,8 +301,8 @@
       "checkInCounters": "43 - 54",
       "gate": "5",
       "scheduledTime": "4:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2231",
@@ -310,8 +310,8 @@
       "checkInCounters": "43 - 54",
       "gate": "7",
       "scheduledTime": "5:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
@@ -319,8 +319,8 @@
       "checkInCounters": "1 - 8",
       "gate": "10",
       "scheduledTime": "5:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:47 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -328,17 +328,17 @@
       "checkInCounters": "87 - 98",
       "gate": "9",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:11 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
       "to": "Miami",
-      "checkInCounters": "65 - 78",
-      "gate": "13",
+      "checkInCounters": "",
+      "gate": "",
       "scheduledTime": "6:09 PM",
-      "actualTime": "6:42 PM",
-      "status": "Delayed"
+      "actualTime": "12:48 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Neos Spa NO736",
