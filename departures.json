@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-16T20:28:33.149Z",
+  "updated": "2026-11-17T03:53:18.086Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -67,7 +67,7 @@
       "checkInCounters": "65 - 78",
       "gate": "19",
       "scheduledTime": "1:10 PM",
-      "actualTime": "5:54 PM",
+      "actualTime": "7:22 PM",
       "status": "Delayed"
     },
     {
@@ -130,8 +130,8 @@
       "checkInCounters": "115 - 126",
       "gate": "",
       "scheduledTime": "2:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:17 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6522",
@@ -148,8 +148,8 @@
       "checkInCounters": "65 - 78",
       "gate": "10",
       "scheduledTime": "2:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -220,8 +220,8 @@
       "checkInCounters": "65 - 78",
       "gate": "7",
       "scheduledTime": "3:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN905",
@@ -229,8 +229,8 @@
       "checkInCounters": "115 - 126",
       "gate": "13",
       "scheduledTime": "3:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:31 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
@@ -238,8 +238,8 @@
       "checkInCounters": "87 - 98",
       "gate": "6",
       "scheduledTime": "3:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:37 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN293",
@@ -247,8 +247,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:53 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA975",
@@ -256,8 +256,8 @@
       "checkInCounters": "65 - 78",
       "gate": "19",
       "scheduledTime": "3:56 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:51 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6326",
@@ -265,7 +265,7 @@
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "4:02 PM",
-      "actualTime": "4:27 PM",
+      "actualTime": "4:44 PM",
       "status": "Delayed"
     },
     {
@@ -274,8 +274,8 @@
       "checkInCounters": "81 - 86",
       "gate": "5",
       "scheduledTime": "4:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:19 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "BY45",
@@ -283,8 +283,8 @@
       "checkInCounters": "99 - 106",
       "gate": "17",
       "scheduledTime": "5:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
@@ -292,8 +292,8 @@
       "checkInCounters": "13 - 20",
       "gate": "3",
       "scheduledTime": "5:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -301,8 +301,8 @@
       "checkInCounters": "87 - 98",
       "gate": "4",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
@@ -310,7 +310,7 @@
       "checkInCounters": "65 - 78",
       "gate": "10",
       "scheduledTime": "6:09 PM",
-      "actualTime": "6:52 PM",
+      "actualTime": "7:11 PM",
       "status": "Delayed"
     },
     {
@@ -319,8 +319,8 @@
       "checkInCounters": "55 - 64",
       "gate": "12",
       "scheduledTime": "6:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57479",
@@ -328,17 +328,17 @@
       "checkInCounters": "23 - 30",
       "gate": "9",
       "scheduledTime": "7:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "8:34 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS166",
       "to": "London",
-      "checkInCounters": "43 - 54",
+      "checkInCounters": "31 - 40",
       "gate": "17",
       "scheduledTime": "9:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:11 PM",
+      "status": "Delayed"
     }
   ]
 }

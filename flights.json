@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-16T20:28:33.149Z",
+  "updated": "2026-11-17T03:53:18.086Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -60,7 +60,7 @@
       "from": "New York",
       "baggage": "4",
       "scheduledTime": "12:10 PM",
-      "actualTime": "4:54 PM",
+      "actualTime": "5:22 PM",
       "status": "Delayed"
     },
     {
@@ -228,7 +228,7 @@
       "from": "Fort Lauderdale",
       "baggage": "2",
       "scheduledTime": "2:57 PM",
-      "actualTime": "3:22 PM",
+      "actualTime": "3:30 PM",
       "status": "Delayed"
     },
     {
@@ -252,7 +252,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "4:35 PM",
-      "actualTime": "4:43 PM",
+      "actualTime": "4:47 PM",
       "status": "Delayed"
     },
     {
@@ -260,15 +260,15 @@
       "from": "Lima",
       "baggage": "2",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:53 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2677",
       "from": "Dallas",
       "baggage": "3",
       "scheduledTime": "5:09 PM",
-      "actualTime": "5:52 PM",
+      "actualTime": "6:02 PM",
       "status": "Delayed"
     },
     {
@@ -276,24 +276,24 @@
       "from": "Toronto",
       "baggage": "1",
       "scheduledTime": "5:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Wingo P57478",
       "from": "Bogota",
       "baggage": "1",
       "scheduledTime": "6:28 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:43 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:10 PM",
+      "status": "Early"
     }
   ]
 }
