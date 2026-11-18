@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-17T22:23:28.836Z",
+  "updated": "2026-11-18T04:20:12.665Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -252,7 +252,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "4:35 PM",
-      "actualTime": "5:13 PM",
+      "actualTime": "5:16 PM",
       "status": "Delayed"
     },
     {
@@ -276,7 +276,7 @@
       "from": "Amsterdam",
       "baggage": "6",
       "scheduledTime": "5:45 PM",
-      "actualTime": "5:55 PM",
+      "actualTime": "5:48 PM",
       "status": "Delayed"
     },
     {
@@ -284,8 +284,8 @@
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:18 PM",
+      "status": "Early"
     }
   ]
 }
