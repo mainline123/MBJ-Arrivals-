@@ -5,16 +5,8 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-18T21:56:24.283Z",
+  "updated": "2026-11-19T03:27:11.705Z",
   "flights": [
-    {
-      "airlineFlight": "Delta Airlines DL1111",
-      "from": "Guadalajara",
-      "baggage": "",
-      "scheduledTime": "6:30 AM",
-      "actualTime": "12:45 PM",
-      "status": "Delayed"
-    },
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
@@ -252,7 +244,7 @@
       "from": "Frankfurt",
       "baggage": "6",
       "scheduledTime": "4:20 PM",
-      "actualTime": "4:52 PM",
+      "actualTime": "5:04 PM",
       "status": "Delayed"
     },
     {
@@ -260,7 +252,7 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "4:35 PM",
-      "actualTime": "6:40 PM",
+      "actualTime": "6:54 PM",
       "status": "Delayed"
     },
     {
@@ -268,8 +260,8 @@
       "from": "Dallas",
       "baggage": "4",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:56 PM",
+      "status": "Early"
     }
   ]
 }
