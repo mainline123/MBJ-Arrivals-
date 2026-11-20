@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-19T21:33:29.235Z",
+  "updated": "2026-11-20T03:15:10.648Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -236,7 +236,7 @@
       "from": "Fort Lauderdale",
       "baggage": "6",
       "scheduledTime": "4:18 PM",
-      "actualTime": "5:35 PM",
+      "actualTime": "5:33 PM",
       "status": "Delayed"
     },
     {
@@ -244,15 +244,15 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "4:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "6:43 PM",
+      "actualTime": "6:51 PM",
       "status": "Delayed"
     },
     {
@@ -260,32 +260,32 @@
       "from": "New York",
       "baggage": "4",
       "scheduledTime": "5:04 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:52 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2677",
       "from": "Dallas",
       "baggage": "",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:56 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:01 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Edelweiss Air WK22",
       "from": "Zurich",
       "baggage": "6",
       "scheduledTime": "9:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:38 PM",
+      "status": "Delayed"
     }
   ]
 }
