@@ -5,79 +5,79 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-21T09:54:31.053Z",
+  "updated": "2026-11-21T17:31:15.581Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "10:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:52 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:08 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
       "from": "Fort Lauderdale",
       "baggage": "3",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:44 AM",
+      "status": "Early"
+    },
+    {
+      "airlineFlight": "American Airlines AA1311",
+      "from": "Miami",
+      "baggage": "2",
+      "scheduledTime": "11:52 AM",
+      "actualTime": "11:23 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2943",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "12:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:36 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1349",
       "from": "New York",
       "baggage": "6",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:10 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:02 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York",
       "baggage": "4",
       "scheduledTime": "12:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:26 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2939",
       "from": "Philadelphia",
       "baggage": "2",
       "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "American Airlines AA1311",
-      "from": "Philadelphia",
-      "baggage": "5",
-      "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:15 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA2126",
@@ -86,6 +86,14 @@
       "scheduledTime": "12:48 PM",
       "actualTime": "",
       "status": "On-Time"
+    },
+    {
+      "airlineFlight": "American Airlines AA592",
+      "from": "Dallas",
+      "baggage": "1",
+      "scheduledTime": "12:48 PM",
+      "actualTime": "12:22 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
@@ -100,24 +108,24 @@
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
       "from": "Atlanta",
       "baggage": "7",
       "scheduledTime": "12:56 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:23 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN1042",
       "from": "Chicago",
       "baggage": "1",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:05 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6779",
@@ -140,8 +148,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2566",
@@ -168,17 +176,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B62427",
-      "from": "Fort Lauderdale",
-      "baggage": "2",
+      "airlineFlight": "Southwest Airlines WN918",
+      "from": "Baltimore",
+      "baggage": "1",
       "scheduledTime": "1:55 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN918",
-      "from": "Baltimore",
-      "baggage": "1",
+      "airlineFlight": "Jet Blue B62427",
+      "from": "Fort Lauderdale",
+      "baggage": "2",
       "scheduledTime": "1:55 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -196,8 +204,8 @@
       "from": "Montreal",
       "baggage": "6",
       "scheduledTime": "2:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:30 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
@@ -228,16 +236,16 @@
       "from": "Minneapolis",
       "baggage": "2",
       "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:13 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN292",
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:03 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1163",
@@ -272,17 +280,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B6621",
-      "from": "Orlando",
-      "baggage": "2",
+      "airlineFlight": "Southwest Airlines WN906",
+      "from": "Baltimore",
+      "baggage": "1",
       "scheduledTime": "3:20 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN906",
-      "from": "Baltimore",
-      "baggage": "1",
+      "airlineFlight": "Jet Blue B6621",
+      "from": "Orlando",
+      "baggage": "2",
       "scheduledTime": "3:20 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -304,6 +312,14 @@
       "status": "On-Time"
     },
     {
+      "airlineFlight": "Condor DE2162",
+      "from": "Frankfurt",
+      "baggage": "6",
+      "scheduledTime": "4:20 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
       "airlineFlight": "Jet Blue B61327",
       "from": "Fort Lauderdale",
       "baggage": "2",
@@ -312,17 +328,9 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Condor DE2162",
-      "from": "Frankfurt",
-      "baggage": "7",
-      "scheduledTime": "4:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
-      "baggage": "6",
+      "baggage": "1",
       "scheduledTime": "4:35 PM",
       "actualTime": "",
       "status": "On-Time"
