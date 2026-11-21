@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-20T21:05:04.651Z",
+  "updated": "2026-11-21T02:13:48.073Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -228,48 +228,40 @@
       "from": "Orlando",
       "baggage": "4",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:03 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B61327",
       "from": "Fort Lauderdale",
       "baggage": "5",
       "scheduledTime": "4:18 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
       "from": "Atlanta",
       "baggage": "6",
       "scheduledTime": "4:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:54 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6479",
       "from": "New York",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "5:04 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:38 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2677",
       "from": "Dallas",
       "baggage": "5",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "West Jet WS2568",
-      "from": "Toronto",
-      "baggage": "6",
-      "scheduledTime": "7:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:12 PM",
+      "status": "Delayed"
     }
   ]
 }

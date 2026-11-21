@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-20T21:05:04.651Z",
+  "updated": "2026-11-21T02:13:48.073Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -107,12 +107,12 @@
       "status": "Delayed"
     },
     {
-      "airlineFlight": "Air Canada AC1805",
-      "to": "Toronto",
-      "checkInCounters": "55 - 64",
-      "gate": "17",
+      "airlineFlight": "Delta Airlines DL1957",
+      "to": "New York",
+      "checkInCounters": "87 - 98",
+      "gate": "19",
       "scheduledTime": "1:50 PM",
-      "actualTime": "2:21 PM",
+      "actualTime": "2:00 PM",
       "status": "Delayed"
     },
     {
@@ -125,12 +125,12 @@
       "status": "Delayed"
     },
     {
-      "airlineFlight": "Delta Airlines DL1957",
-      "to": "New York",
-      "checkInCounters": "87 - 98",
-      "gate": "19",
+      "airlineFlight": "Air Canada AC1805",
+      "to": "Toronto",
+      "checkInCounters": "55 - 64",
+      "gate": "17",
       "scheduledTime": "1:50 PM",
-      "actualTime": "2:00 PM",
+      "actualTime": "2:21 PM",
       "status": "Delayed"
     },
     {
@@ -193,8 +193,8 @@
       "checkInCounters": "23 - 30",
       "gate": "6",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:52 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN905",
@@ -229,8 +229,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA975",
@@ -247,8 +247,8 @@
       "checkInCounters": "31 - 40",
       "gate": "8",
       "scheduledTime": "4:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:23 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "BY53",
@@ -256,8 +256,8 @@
       "checkInCounters": "55 - 60",
       "gate": "17",
       "scheduledTime": "4:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:17 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6326",
@@ -265,8 +265,8 @@
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "5:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:29 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1987",
@@ -274,17 +274,17 @@
       "checkInCounters": "87 - 98",
       "gate": "9",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:01 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
       "to": "Miami",
       "checkInCounters": "65 - 78",
-      "gate": "13",
+      "gate": "19",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6580",
@@ -292,17 +292,8 @@
       "checkInCounters": "31 - 40",
       "gate": "7",
       "scheduledTime": "6:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "West Jet WS2571",
-      "to": "Toronto",
-      "checkInCounters": "43 - 54",
-      "gate": "17",
-      "scheduledTime": "9:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:20 PM",
+      "status": "Early"
     }
   ]
 }
