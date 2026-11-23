@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-22T21:45:19.642Z",
+  "updated": "2026-11-23T02:45:14.562Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -252,7 +252,7 @@
       "from": "Orlando",
       "baggage": "2",
       "scheduledTime": "3:20 PM",
-      "actualTime": "6:45 PM",
+      "actualTime": "6:46 PM",
       "status": "Delayed"
     },
     {
@@ -284,31 +284,31 @@
       "from": "Atlanta",
       "baggage": "6",
       "scheduledTime": "4:35 PM",
-      "actualTime": "4:32 PM",
-      "status": "Early"
+      "actualTime": "4:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2446",
       "from": "Lima",
       "baggage": "3",
       "scheduledTime": "4:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:51 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2677",
       "from": "Dallas",
       "baggage": "5",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:59 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6479",
       "from": "New York",
       "baggage": "2",
       "scheduledTime": "5:10 PM",
-      "actualTime": "4:48 PM",
+      "actualTime": "4:55 PM",
       "status": "Early"
     },
     {
@@ -316,7 +316,7 @@
       "from": "Frankfurt",
       "baggage": "7",
       "scheduledTime": "5:25 PM",
-      "actualTime": "5:00 PM",
+      "actualTime": "4:58 PM",
       "status": "Early"
     },
     {
@@ -324,7 +324,7 @@
       "from": "Milan",
       "baggage": "6",
       "scheduledTime": "7:30 PM",
-      "actualTime": "10:10 PM",
+      "actualTime": "10:00 PM",
       "status": "Delayed"
     }
   ]
