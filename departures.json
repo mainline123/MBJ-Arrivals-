@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-23T12:39:14.923Z",
+  "updated": "2026-11-24T00:50:31.166Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -22,26 +22,26 @@
       "checkInCounters": "1 - 8",
       "gate": "10",
       "scheduledTime": "12:17 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:16 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6826",
       "to": "Fort Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "12",
+      "gate": "6",
       "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:32 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN907",
       "to": "Baltimore",
-      "checkInCounters": "",
+      "checkInCounters": "115 - 126",
       "gate": "5",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:06 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1349",
@@ -49,8 +49,8 @@
       "checkInCounters": "65 - 78",
       "gate": "8",
       "scheduledTime": "1:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:02 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2558",
@@ -58,8 +58,8 @@
       "checkInCounters": "65 - 78",
       "gate": "7",
       "scheduledTime": "1:17 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:22 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2943",
@@ -67,8 +67,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "1:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:24 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1628",
@@ -83,19 +83,19 @@
       "airlineFlight": "Air Canada AC1805",
       "to": "Toronto",
       "checkInCounters": "55 - 64",
-      "gate": "13",
+      "gate": "16",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:53 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN273",
       "to": "Orlando",
-      "checkInCounters": "",
+      "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:09 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1957",
@@ -103,8 +103,8 @@
       "checkInCounters": "87 - 98",
       "gate": "6",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:13 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9124",
@@ -112,17 +112,17 @@
       "checkInCounters": "81 - 86",
       "gate": "1",
       "scheduledTime": "2:01 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2939",
       "to": "Philadelphia",
       "checkInCounters": "65 - 78",
-      "gate": "12",
+      "gate": "17",
       "scheduledTime": "2:12 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:41 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1928",
@@ -130,26 +130,26 @@
       "checkInCounters": "87 - 98",
       "gate": "16",
       "scheduledTime": "2:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:38 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2567",
       "to": "Toronto",
-      "checkInCounters": "",
+      "checkInCounters": "43 - 54",
       "gate": "5",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:54 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6780",
       "to": "New York",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "12",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:41 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1160",
@@ -163,28 +163,28 @@
     {
       "airlineFlight": "West Jet WS2915",
       "to": "Montreal",
-      "checkInCounters": "43 - 46",
+      "checkInCounters": "43 - 54",
       "gate": "10",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:59 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62126",
       "to": "Fort Lauderdale",
       "checkInCounters": "31 - 40",
-      "gate": "9",
+      "gate": "8",
       "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2673",
-      "to": "Montreal",
-      "checkInCounters": "43 - 46",
+      "to": "Toronto",
+      "checkInCounters": "43 - 54",
       "gate": "3",
       "scheduledTime": "3:05 PM",
-      "actualTime": "1:35 PM",
+      "actualTime": "1:41 PM",
       "status": "Early"
     },
     {
@@ -193,53 +193,53 @@
       "checkInCounters": "23 - 30",
       "gate": "4",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:39 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN905",
       "to": "Baltimore",
-      "checkInCounters": "",
-      "gate": "2",
+      "checkInCounters": "115 - 126",
+      "gate": "1",
       "scheduledTime": "3:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2250",
       "to": "Charlotte",
       "checkInCounters": "65 - 78",
-      "gate": "16",
+      "gate": "13",
       "scheduledTime": "3:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1800",
       "to": "Atlanta",
       "checkInCounters": "87 - 98",
-      "gate": "6",
+      "gate": "9",
       "scheduledTime": "3:40 PM",
-      "actualTime": "3:28 PM",
+      "actualTime": "3:36 PM",
       "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN293",
       "to": "Orlando",
-      "checkInCounters": "",
-      "gate": "3",
+      "checkInCounters": "115 - 126",
+      "gate": "5",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:29 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA975",
       "to": "Chicago",
       "checkInCounters": "65 - 78",
-      "gate": "5",
+      "gate": "3",
       "scheduledTime": "3:49 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:47 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6922",
@@ -247,8 +247,8 @@
       "checkInCounters": "31 - 34",
       "gate": "12",
       "scheduledTime": "4:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:41 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "BY45",
@@ -265,17 +265,17 @@
       "checkInCounters": "107 - 114",
       "gate": "17",
       "scheduledTime": "5:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:20 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61326",
       "to": "Fort Lauderdale",
-      "checkInCounters": "",
-      "gate": "10",
+      "checkInCounters": "31 - 34",
+      "gate": "9",
       "scheduledTime": "5:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:02 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "LP2447",
@@ -299,10 +299,10 @@
       "airlineFlight": "American Airlines AA1285",
       "to": "Miami",
       "checkInCounters": "65 - 78",
-      "gate": "9",
+      "gate": "5",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:32 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Air Canada AC1807",
@@ -326,7 +326,7 @@
       "airlineFlight": "Condor DE3925",
       "to": "Dusseldorf",
       "checkInCounters": "107 - 114",
-      "gate": "17",
+      "gate": "13",
       "scheduledTime": "6:40 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -343,11 +343,11 @@
     {
       "airlineFlight": "Wingo P57479",
       "to": "Bogota",
-      "checkInCounters": "",
-      "gate": "9",
+      "checkInCounters": "81 - 86",
+      "gate": "12",
       "scheduledTime": "7:22 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "7:45 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Condor DE3749",
@@ -368,11 +368,11 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "PD746",
+      "airlineFlight": "Virgin Atlantic VS166",
       "to": "London",
-      "checkInCounters": "13 - 20",
-      "gate": "",
-      "scheduledTime": "9:20 PM",
+      "checkInCounters": "87 - 96",
+      "gate": "17",
+      "scheduledTime": "9:10 PM",
       "actualTime": "",
       "status": "On-Time"
     }
