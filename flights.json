@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-24T21:11:07.824Z",
+  "updated": "2026-11-25T04:12:32.976Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -250,7 +250,7 @@
     {
       "airlineFlight": "Jet Blue B61327",
       "from": "Fort Lauderdale",
-      "baggage": "",
+      "baggage": "5",
       "scheduledTime": "4:18 PM",
       "actualTime": "3:56 PM",
       "status": "Early"
@@ -260,15 +260,15 @@
       "from": "Atlanta",
       "baggage": "4",
       "scheduledTime": "4:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6479",
       "from": "New York",
       "baggage": "5",
       "scheduledTime": "5:04 PM",
-      "actualTime": "7:28 PM",
+      "actualTime": "7:41 PM",
       "status": "Delayed"
     },
     {
@@ -276,32 +276,32 @@
       "from": "Dallas",
       "baggage": "3",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:07 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2226",
       "from": "Calgary",
       "baggage": "4",
       "scheduledTime": "5:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:12 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "TUI Fly - NL OR511",
       "from": "Amsterdam",
       "baggage": "6",
       "scheduledTime": "5:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:01 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Virgin Atlantic VS165",
       "from": "London",
       "baggage": "6",
       "scheduledTime": "6:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:19 PM",
+      "status": "Early"
     }
   ]
 }
