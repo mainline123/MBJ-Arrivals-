@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T16:30:22.606Z",
+  "updated": "2026-11-27T16:45:21.728Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -67,8 +67,8 @@
       "checkInCounters": "65 - 78",
       "gate": "5",
       "scheduledTime": "1:17 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:57 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2943",

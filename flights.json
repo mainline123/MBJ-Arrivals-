@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T16:30:22.606Z",
+  "updated": "2026-11-27T16:45:21.728Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -92,8 +92,8 @@
       "from": "Philadelphia",
       "baggage": "3",
       "scheduledTime": "12:45 PM",
-      "actualTime": "12:17 PM",
-      "status": "Early"
+      "actualTime": "1:25 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2939",
