@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T00:37:44.194Z",
+  "updated": "2026-11-27T02:41:23.818Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -236,8 +236,8 @@
       "from": "Zurich",
       "baggage": "6",
       "scheduledTime": "9:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:26 PM",
+      "status": "Delayed"
     }
   ]
 }

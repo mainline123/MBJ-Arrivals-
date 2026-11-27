@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T00:37:44.194Z",
+  "updated": "2026-11-27T02:41:23.818Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -256,8 +256,8 @@
       "checkInCounters": "65 - 78",
       "gate": "17",
       "scheduledTime": "9:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "9:37 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Edelweiss Air WK22",
