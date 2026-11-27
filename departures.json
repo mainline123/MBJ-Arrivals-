@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T23:15:16.072Z",
+  "updated": "2026-11-27T23:30:19.442Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -274,8 +274,8 @@
       "checkInCounters": "87 - 98",
       "gate": "16",
       "scheduledTime": "6:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:11 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA1285",
@@ -283,8 +283,8 @@
       "checkInCounters": "65 - 78",
       "gate": "19",
       "scheduledTime": "6:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "6:04 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6580",
