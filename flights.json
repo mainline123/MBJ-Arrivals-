@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T19:00:23.746Z",
+  "updated": "2026-11-27T19:05:58.461Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Fort Lauderdale",
-      "baggage": "5",
+      "baggage": "4",
       "scheduledTime": "1:55 PM",
       "actualTime": "1:41 PM",
       "status": "Early"
