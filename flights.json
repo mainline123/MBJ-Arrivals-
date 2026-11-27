@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T19:30:19.909Z",
+  "updated": "2026-11-27T19:45:17.214Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -186,7 +186,7 @@
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "2:25 PM",
       "actualTime": "2:24 PM",
       "status": "Early"
@@ -194,7 +194,7 @@
     {
       "airlineFlight": "American Airlines AA2250",
       "from": "Charlotte",
-      "baggage": "5",
+      "baggage": "6",
       "scheduledTime": "2:32 PM",
       "actualTime": "2:27 PM",
       "status": "Early"
@@ -212,13 +212,13 @@
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "2:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3228",
       "from": "Chicago",
-      "baggage": "4",
+      "baggage": "5",
       "scheduledTime": "2:49 PM",
       "actualTime": "2:28 PM",
       "status": "Early"
@@ -260,14 +260,6 @@
       "from": "Dallas",
       "baggage": "6",
       "scheduledTime": "5:09 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "PD745",
-      "from": "London",
-      "baggage": "",
-      "scheduledTime": "7:01 PM",
       "actualTime": "",
       "status": "On-Time"
     },

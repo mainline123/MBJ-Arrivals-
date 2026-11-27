@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T19:30:19.909Z",
+  "updated": "2026-11-27T19:45:17.214Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -116,21 +116,21 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Delta Airlines DL1957",
-      "to": "New York",
-      "checkInCounters": "87 - 98",
-      "gate": "19",
-      "scheduledTime": "1:50 PM",
-      "actualTime": "2:08 PM",
-      "status": "Delayed"
-    },
-    {
       "airlineFlight": "Southwest Airlines WN273",
       "to": "Orlando",
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "1:50 PM",
       "actualTime": "2:33 PM",
+      "status": "Delayed"
+    },
+    {
+      "airlineFlight": "Delta Airlines DL1957",
+      "to": "New York",
+      "checkInCounters": "87 - 98",
+      "gate": "19",
+      "scheduledTime": "1:50 PM",
+      "actualTime": "2:08 PM",
       "status": "Delayed"
     },
     {
@@ -229,8 +229,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "3:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:07 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA975",
@@ -292,15 +292,6 @@
       "checkInCounters": "31 - 40",
       "gate": "7",
       "scheduledTime": "6:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "PD746",
-      "to": "London",
-      "checkInCounters": "13 - 20",
-      "gate": "",
-      "scheduledTime": "8:00 PM",
       "actualTime": "",
       "status": "On-Time"
     },
