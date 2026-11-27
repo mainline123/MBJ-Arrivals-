@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T20:30:21.365Z",
+  "updated": "2026-11-27T20:45:18.322Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -212,7 +212,7 @@
       "from": "Orlando",
       "baggage": "3",
       "scheduledTime": "2:45 PM",
-      "actualTime": "3:07 PM",
+      "actualTime": "3:12 PM",
       "status": "Delayed"
     },
     {
