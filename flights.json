@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T19:15:19.040Z",
+  "updated": "2026-11-27T19:30:19.909Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -178,7 +178,7 @@
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
-      "baggage": "1",
+      "baggage": "2",
       "scheduledTime": "2:15 PM",
       "actualTime": "2:02 PM",
       "status": "Early"
@@ -188,16 +188,16 @@
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "2:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:24 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2250",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "2:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:27 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "BY52",
@@ -220,8 +220,8 @@
       "from": "Chicago",
       "baggage": "4",
       "scheduledTime": "2:49 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:28 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6621",
