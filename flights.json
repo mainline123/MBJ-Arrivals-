@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T17:30:20.821Z",
+  "updated": "2026-11-27T17:45:18.010Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -42,7 +42,7 @@
     {
       "airlineFlight": "Southwest Airlines WN906",
       "from": "Baltimore",
-      "baggage": "1",
+      "baggage": "3",
       "scheduledTime": "12:00 PM",
       "actualTime": "12:07 PM",
       "status": "Delayed"
@@ -76,7 +76,7 @@
       "from": "New York",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "12:51 PM",
+      "actualTime": "12:43 PM",
       "status": "Delayed"
     },
     {
@@ -92,7 +92,7 @@
       "from": "Philadelphia",
       "baggage": "3",
       "scheduledTime": "12:45 PM",
-      "actualTime": "1:25 PM",
+      "actualTime": "3:25 PM",
       "status": "Delayed"
     },
     {
@@ -100,8 +100,8 @@
       "from": "Philadelphia",
       "baggage": "3",
       "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:31 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
