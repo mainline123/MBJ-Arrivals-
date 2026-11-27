@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T14:30:21.153Z",
+  "updated": "2026-11-27T14:45:17.051Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -245,7 +245,7 @@
       "airlineFlight": "Jet Blue B6922",
       "to": "Orlando",
       "checkInCounters": "31 - 40",
-      "gate": "8",
+      "gate": "7",
       "scheduledTime": "4:25 PM",
       "actualTime": "",
       "status": "On-Time"
