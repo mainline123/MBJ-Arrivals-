@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T16:45:21.728Z",
+  "updated": "2026-11-27T17:00:24.551Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -28,7 +28,7 @@
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "11:45 AM",
+      "actualTime": "11:56 AM",
       "status": "Delayed"
     },
     {
@@ -36,8 +36,8 @@
       "from": "Fort Lauderdale",
       "baggage": "5",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:50 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
@@ -52,8 +52,8 @@
       "from": "Newark",
       "baggage": "6",
       "scheduledTime": "12:13 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:52 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1349",
