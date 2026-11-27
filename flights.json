@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T12:15:16.972Z",
+  "updated": "2026-11-27T12:30:22.043Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -162,7 +162,7 @@
     {
       "airlineFlight": "Jet Blue B62427",
       "from": "Fort Lauderdale",
-      "baggage": "4",
+      "baggage": "5",
       "scheduledTime": "1:55 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -170,7 +170,7 @@
     {
       "airlineFlight": "United Airlines UA1462",
       "from": "Newark",
-      "baggage": "7",
+      "baggage": "4",
       "scheduledTime": "2:14 PM",
       "actualTime": "",
       "status": "On-Time"
