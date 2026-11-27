@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T15:00:26.154Z",
+  "updated": "2026-11-27T15:15:19.755Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "5",
       "scheduledTime": "10:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:05 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Transat TS516",
@@ -76,8 +76,8 @@
       "from": "New York",
       "baggage": "5",
       "scheduledTime": "12:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:51 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2566",
@@ -204,8 +204,8 @@
       "from": "London",
       "baggage": "6",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:27 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN292",
