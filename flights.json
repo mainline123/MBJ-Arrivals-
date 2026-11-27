@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T21:30:22.228Z",
+  "updated": "2026-11-27T21:45:16.787Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -244,16 +244,16 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "4:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:40 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6479",
       "from": "New York",
       "baggage": "4",
       "scheduledTime": "5:04 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:43 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2677",
