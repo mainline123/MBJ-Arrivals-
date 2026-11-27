@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T18:30:22.024Z",
+  "updated": "2026-11-27T18:45:16.551Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -92,7 +92,7 @@
       "from": "Philadelphia",
       "baggage": "3",
       "scheduledTime": "12:45 PM",
-      "actualTime": "3:25 PM",
+      "actualTime": "2:57 PM",
       "status": "Delayed"
     },
     {
@@ -164,8 +164,8 @@
       "from": "Fort Lauderdale",
       "baggage": "5",
       "scheduledTime": "1:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:41 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",
