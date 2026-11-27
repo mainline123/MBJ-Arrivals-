@@ -1,9 +1,10 @@
+
 name: Update MBJ Arrivals and Departures
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '*/30 * * * *'
 
 permissions:
   contents: write
