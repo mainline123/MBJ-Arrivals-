@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T16:00:23.960Z",
+  "updated": "2026-11-27T16:15:17.723Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -13,8 +13,8 @@
       "checkInCounters": "65 - 78",
       "gate": "9",
       "scheduledTime": "11:02 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:00 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Transat TS517",
