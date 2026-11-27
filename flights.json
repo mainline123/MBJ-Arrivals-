@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T19:05:58.461Z",
+  "updated": "2026-11-27T19:15:19.040Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -172,15 +172,15 @@
       "from": "Newark",
       "baggage": "4",
       "scheduledTime": "2:14 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:07 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
       "from": "Atlanta",
       "baggage": "1",
       "scheduledTime": "2:15 PM",
-      "actualTime": "1:45 PM",
+      "actualTime": "2:02 PM",
       "status": "Early"
     },
     {
