@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T18:00:27.383Z",
+  "updated": "2026-11-27T18:15:22.027Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -98,7 +98,7 @@
     {
       "airlineFlight": "American Airlines AA2939",
       "from": "Philadelphia",
-      "baggage": "3",
+      "baggage": "2",
       "scheduledTime": "12:45 PM",
       "actualTime": "12:31 PM",
       "status": "Early"
@@ -124,8 +124,8 @@
       "from": "Atlanta",
       "baggage": "5",
       "scheduledTime": "12:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9125",
