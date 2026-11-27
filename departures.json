@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T21:00:24.641Z",
+  "updated": "2026-11-27T21:15:16.931Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -193,8 +193,8 @@
       "checkInCounters": "23 - 30",
       "gate": "6",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN905",
