@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T15:30:21.938Z",
+  "updated": "2026-11-27T15:45:20.451Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -29,10 +29,10 @@
       "airlineFlight": "Copa Airlines CM147",
       "to": "Panama City",
       "checkInCounters": "1 - 8",
-      "gate": "13",
+      "gate": "9",
       "scheduledTime": "12:17 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:50 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6826",

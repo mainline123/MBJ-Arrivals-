@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T15:30:21.938Z",
+  "updated": "2026-11-27T15:45:20.451Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -20,16 +20,16 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "10:30 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:29 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:45 AM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B6827",
