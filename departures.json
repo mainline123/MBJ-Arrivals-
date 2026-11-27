@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-27T17:00:24.551Z",
+  "updated": "2026-11-27T17:15:16.761Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -65,7 +65,7 @@
       "airlineFlight": "American Airlines AA2558",
       "to": "Dallas",
       "checkInCounters": "65 - 78",
-      "gate": "5",
+      "gate": "",
       "scheduledTime": "1:17 PM",
       "actualTime": "1:57 PM",
       "status": "Delayed"
@@ -130,8 +130,8 @@
       "checkInCounters": "115 - 126",
       "gate": "2",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:33 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Frontier Airlines F9124",
