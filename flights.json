@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T20:45:18.322Z",
+  "updated": "2026-11-27T21:00:24.641Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -236,8 +236,8 @@
       "from": "Fort Lauderdale",
       "baggage": "4",
       "scheduledTime": "4:18 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:48 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1949",
