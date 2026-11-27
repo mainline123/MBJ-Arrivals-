@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-27T17:15:16.761Z",
+  "updated": "2026-11-27T17:30:20.821Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -68,8 +68,8 @@
       "from": "Charlotte",
       "baggage": "4",
       "scheduledTime": "12:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:18 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
@@ -108,8 +108,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:24 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
