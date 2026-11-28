@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T02:15:18.356Z",
+  "updated": "2026-11-28T02:30:22.707Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
