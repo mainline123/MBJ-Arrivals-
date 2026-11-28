@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T17:30:22.952Z",
+  "updated": "2026-11-28T17:45:17.928Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -76,8 +76,8 @@
       "from": "Philadelphia",
       "baggage": "5",
       "scheduledTime": "12:45 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:38 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA2126",
@@ -92,8 +92,8 @@
       "from": "Dallas",
       "baggage": "5",
       "scheduledTime": "12:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:34 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Air Canada AC1804",
@@ -124,7 +124,7 @@
       "from": "Chicago",
       "baggage": "1",
       "scheduledTime": "1:00 PM",
-      "actualTime": "12:40 PM",
+      "actualTime": "12:34 PM",
       "status": "Early"
     },
     {
@@ -180,8 +180,8 @@
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "1:55 PM",
-      "actualTime": "12:35 PM",
-      "status": "Early"
+      "actualTime": "1:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -212,8 +212,8 @@
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "2:14 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:35 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1801",
@@ -268,8 +268,8 @@
       "from": "Boston",
       "baggage": "4",
       "scheduledTime": "2:52 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:11 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA3228",

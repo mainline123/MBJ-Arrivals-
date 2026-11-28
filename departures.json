@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T17:30:22.952Z",
+  "updated": "2026-11-28T17:45:17.928Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -211,8 +211,8 @@
       "checkInCounters": "",
       "gate": "",
       "scheduledTime": "2:55 PM",
-      "actualTime": "1:35 PM",
-      "status": "Early"
+      "actualTime": "2:56 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2673",
@@ -238,8 +238,8 @@
       "checkInCounters": "23 - 30",
       "gate": "4",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:41 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2250",
@@ -301,8 +301,8 @@
       "checkInCounters": "31 - 40",
       "gate": "8",
       "scheduledTime": "4:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "4:19 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Wingo P57483",
