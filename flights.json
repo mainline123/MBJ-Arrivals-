@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T18:00:24.202Z",
+  "updated": "2026-11-28T18:15:17.316Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -100,7 +100,7 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "12:50 PM",
-      "actualTime": "1:08 PM",
+      "actualTime": "1:11 PM",
       "status": "Delayed"
     },
     {
@@ -116,8 +116,8 @@
       "from": "Atlanta",
       "baggage": "7",
       "scheduledTime": "12:56 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN1042",
@@ -132,8 +132,8 @@
       "from": "New York",
       "baggage": "2",
       "scheduledTime": "1:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:08 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN1831",
