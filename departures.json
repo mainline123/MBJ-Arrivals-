@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T15:00:23.786Z",
+  "updated": "2026-11-28T15:15:20.961Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -107,13 +107,13 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN1832",
-      "to": "St Louis",
+      "airlineFlight": "Southwest Airlines WN1043",
+      "to": "Chicago",
       "checkInCounters": "115 - 126",
-      "gate": "2",
+      "gate": "1",
       "scheduledTime": "2:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:40 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1683",
@@ -143,10 +143,10 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN1043",
-      "to": "Chicago",
+      "airlineFlight": "Southwest Airlines WN1832",
+      "to": "St Louis",
       "checkInCounters": "115 - 126",
-      "gate": "1",
+      "gate": "2",
       "scheduledTime": "2:25 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -197,15 +197,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2915",
-      "to": "Montreal",
-      "checkInCounters": "",
-      "gate": "",
-      "scheduledTime": "2:55 PM",
-      "actualTime": "1:35 PM",
-      "status": "Early"
-    },
-    {
       "airlineFlight": "Southwest Airlines WN905",
       "to": "Baltimore",
       "checkInCounters": "115 - 126",
@@ -215,19 +206,28 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B62126",
-      "to": "Fort Lauderdale",
-      "checkInCounters": "31 - 40",
-      "gate": "12",
-      "scheduledTime": "3:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "airlineFlight": "West Jet WS2915",
+      "to": "Montreal",
+      "checkInCounters": "",
+      "gate": "",
+      "scheduledTime": "2:55 PM",
+      "actualTime": "1:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "West Jet WS2673",
       "to": "Toronto",
       "checkInCounters": "43 - 54",
       "gate": "16",
+      "scheduledTime": "3:00 PM",
+      "actualTime": "",
+      "status": "On-Time"
+    },
+    {
+      "airlineFlight": "Jet Blue B62126",
+      "to": "Fort Lauderdale",
+      "checkInCounters": "31 - 40",
+      "gate": "12",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -247,15 +247,6 @@
       "checkInCounters": "65 - 78",
       "gate": "13",
       "scheduledTime": "3:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "West Jet WS2333",
-      "to": "Winnipeg",
-      "checkInCounters": "43 - 54",
-      "gate": "",
-      "scheduledTime": "3:35 PM",
       "actualTime": "",
       "status": "On-Time"
     },
@@ -422,19 +413,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2569",
+      "airlineFlight": "Air Canada AC1807",
       "to": "Toronto",
-      "checkInCounters": "43 - 54",
-      "gate": "5",
+      "checkInCounters": "55 - 64",
+      "gate": "10",
       "scheduledTime": "6:20 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Canada AC1807",
+      "airlineFlight": "West Jet WS2569",
       "to": "Toronto",
-      "checkInCounters": "55 - 64",
-      "gate": "10",
+      "checkInCounters": "43 - 54",
+      "gate": "5",
       "scheduledTime": "6:20 PM",
       "actualTime": "",
       "status": "On-Time"

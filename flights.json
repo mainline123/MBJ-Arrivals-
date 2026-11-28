@@ -5,15 +5,15 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T15:00:23.786Z",
+  "updated": "2026-11-28T15:15:20.961Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
       "from": "Miami",
       "baggage": "6",
       "scheduledTime": "10:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "10:03 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Copa Airlines CM146",
@@ -124,8 +124,8 @@
       "from": "Chicago",
       "baggage": "1",
       "scheduledTime": "1:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:40 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6779",
@@ -176,12 +176,12 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Southwest Airlines WN918",
-      "from": "Baltimore",
+      "airlineFlight": "West Jet WS2672",
+      "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "1:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B62427",
@@ -192,12 +192,12 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2672",
-      "from": "Toronto",
+      "airlineFlight": "Southwest Airlines WN918",
+      "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "1:55 PM",
-      "actualTime": "12:35 PM",
-      "status": "Early"
+      "actualTime": "",
+      "status": "On-Time"
     },
     {
       "airlineFlight": "West Jet WS2914",
@@ -235,14 +235,6 @@
       "airlineFlight": "Delta Airlines DL1915",
       "from": "Minneapolis",
       "baggage": "3",
-      "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
-      "airlineFlight": "West Jet WS2332",
-      "from": "Winnipeg",
-      "baggage": "",
       "scheduledTime": "2:35 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -336,17 +328,17 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Delta Airlines DL1949",
-      "from": "Atlanta",
-      "baggage": "1",
+      "airlineFlight": "PD747",
+      "from": "Toronto",
+      "baggage": "5",
       "scheduledTime": "4:35 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "PD747",
-      "from": "Toronto",
-      "baggage": "5",
+      "airlineFlight": "Delta Airlines DL1949",
+      "from": "Atlanta",
+      "baggage": "1",
       "scheduledTime": "4:35 PM",
       "actualTime": "",
       "status": "On-Time"
