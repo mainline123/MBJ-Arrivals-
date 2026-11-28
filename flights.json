@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T19:15:18.374Z",
+  "updated": "2026-11-28T19:30:23.660Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -172,8 +172,8 @@
       "from": "Houston",
       "baggage": "1",
       "scheduledTime": "1:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:24 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2672",
@@ -194,7 +194,7 @@
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
-      "baggage": "2",
+      "baggage": "1",
       "scheduledTime": "1:55 PM",
       "actualTime": "1:58 PM",
       "status": "Delayed"
@@ -228,8 +228,8 @@
       "from": "Charlotte",
       "baggage": "2",
       "scheduledTime": "2:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:19 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Delta Airlines DL1915",
@@ -252,8 +252,8 @@
       "from": "Houston",
       "baggage": "7",
       "scheduledTime": "2:39 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:22 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "BY854",
