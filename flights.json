@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T20:45:16.814Z",
+  "updated": "2026-11-28T21:00:23.725Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -284,8 +284,8 @@
       "from": "Orlando",
       "baggage": "2",
       "scheduledTime": "3:20 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:30 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN906",
