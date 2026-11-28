@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T19:45:21.514Z",
+  "updated": "2026-11-28T20:00:22.562Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -172,7 +172,7 @@
       "from": "Houston",
       "baggage": "1",
       "scheduledTime": "1:50 PM",
-      "actualTime": "2:24 PM",
+      "actualTime": "2:52 PM",
       "status": "Delayed"
     },
     {
@@ -236,16 +236,16 @@
       "from": "Minneapolis",
       "baggage": "3",
       "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:44 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN292",
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "2:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1163",
@@ -260,8 +260,8 @@
       "from": "Birmingham",
       "baggage": "6",
       "scheduledTime": "2:40 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Jet Blue B61193",
@@ -274,7 +274,7 @@
     {
       "airlineFlight": "American Airlines AA3228",
       "from": "Chicago",
-      "baggage": "5",
+      "baggage": "2",
       "scheduledTime": "2:57 PM",
       "actualTime": "2:35 PM",
       "status": "Early"
@@ -364,8 +364,8 @@
       "from": "New York",
       "baggage": "3",
       "scheduledTime": "5:04 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "5:28 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "American Airlines AA2677",
