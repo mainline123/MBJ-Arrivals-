@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T19:00:24.079Z",
+  "updated": "2026-11-28T19:15:18.374Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -180,7 +180,7 @@
       "from": "Toronto",
       "baggage": "2",
       "scheduledTime": "1:55 PM",
-      "actualTime": "1:56 PM",
+      "actualTime": "2:01 PM",
       "status": "Delayed"
     },
     {
@@ -220,8 +220,8 @@
       "from": "Atlanta",
       "baggage": "3",
       "scheduledTime": "2:15 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:58 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2250",
