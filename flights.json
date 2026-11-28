@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T15:30:21.823Z",
+  "updated": "2026-11-28T15:45:16.893Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -164,8 +164,8 @@
       "from": "Chicago",
       "baggage": "4",
       "scheduledTime": "1:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:00 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Southwest Airlines WN1115",
