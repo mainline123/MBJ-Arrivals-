@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T16:30:27.062Z",
+  "updated": "2026-11-28T16:45:18.284Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -28,8 +28,8 @@
       "from": "Fort Lauderdale",
       "baggage": "3",
       "scheduledTime": "11:45 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:36 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1311",
