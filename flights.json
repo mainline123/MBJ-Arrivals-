@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T17:15:18.628Z",
+  "updated": "2026-11-28T17:30:22.952Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -60,16 +60,16 @@
       "from": "Orlando",
       "baggage": "1",
       "scheduledTime": "12:10 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:25 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1955",
       "from": "New York",
       "baggage": "4",
       "scheduledTime": "12:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:18 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2939",
@@ -84,8 +84,8 @@
       "from": "Newark",
       "baggage": "3",
       "scheduledTime": "12:48 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "12:22 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA592",
