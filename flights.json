@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T16:15:22.714Z",
+  "updated": "2026-11-28T16:30:27.062Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -100,8 +100,8 @@
       "from": "Toronto",
       "baggage": "6",
       "scheduledTime": "12:50 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:08 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "Delta Airlines DL1997",
