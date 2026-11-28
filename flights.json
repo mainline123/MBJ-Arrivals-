@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T18:35:14.614Z",
+  "updated": "2026-11-28T18:45:16.436Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -156,8 +156,8 @@
       "from": "Toronto",
       "baggage": "3",
       "scheduledTime": "1:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:41 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "United Airlines UA1146",
