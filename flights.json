@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T18:45:16.436Z",
+  "updated": "2026-11-28T19:00:24.079Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -148,8 +148,8 @@
       "from": "Toronto",
       "baggage": "5",
       "scheduledTime": "1:30 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:46 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2566",
@@ -188,16 +188,16 @@
       "from": "Fort Lauderdale",
       "baggage": "7",
       "scheduledTime": "1:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:43 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN918",
       "from": "Baltimore",
       "baggage": "2",
       "scheduledTime": "1:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:58 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2914",
