@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T20:15:16.746Z",
+  "updated": "2026-11-28T20:30:22.087Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -268,7 +268,7 @@
       "from": "Boston",
       "baggage": "4",
       "scheduledTime": "2:52 PM",
-      "actualTime": "3:11 PM",
+      "actualTime": "3:22 PM",
       "status": "Delayed"
     },
     {
@@ -300,8 +300,8 @@
       "from": "Medellin",
       "baggage": "3",
       "scheduledTime": "3:21 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:14 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1519",

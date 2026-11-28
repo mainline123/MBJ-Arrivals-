@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T20:15:16.746Z",
+  "updated": "2026-11-28T20:30:22.087Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -202,8 +202,8 @@
       "checkInCounters": "115 - 126",
       "gate": "1",
       "scheduledTime": "2:55 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:15 PM",
+      "status": "Delayed"
     },
     {
       "airlineFlight": "West Jet WS2915",
@@ -211,7 +211,7 @@
       "checkInCounters": "",
       "gate": "",
       "scheduledTime": "2:55 PM",
-      "actualTime": "2:56 PM",
+      "actualTime": "3:18 PM",
       "status": "Delayed"
     },
     {
@@ -247,8 +247,8 @@
       "checkInCounters": "65 - 78",
       "gate": "6",
       "scheduledTime": "3:32 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "3:25 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN1116",
@@ -301,7 +301,7 @@
       "checkInCounters": "31 - 40",
       "gate": "12",
       "scheduledTime": "4:00 PM",
-      "actualTime": "4:19 PM",
+      "actualTime": "4:30 PM",
       "status": "Delayed"
     },
     {
