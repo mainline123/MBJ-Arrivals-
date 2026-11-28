@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T19:30:23.660Z",
+  "updated": "2026-11-28T19:45:21.514Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -212,7 +212,7 @@
       "from": "Newark",
       "baggage": "5",
       "scheduledTime": "2:14 PM",
-      "actualTime": "2:35 PM",
+      "actualTime": "2:43 PM",
       "status": "Delayed"
     },
     {
@@ -276,8 +276,8 @@
       "from": "Chicago",
       "baggage": "5",
       "scheduledTime": "2:57 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "2:35 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6621",
