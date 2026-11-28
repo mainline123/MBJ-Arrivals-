@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T14:45:18.468Z",
+  "updated": "2026-11-28T15:00:23.786Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -71,15 +71,6 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2915",
-      "to": "Montreal",
-      "checkInCounters": "43 - 54",
-      "gate": "",
-      "scheduledTime": "1:35 PM",
-      "actualTime": "",
-      "status": "On-Time"
-    },
-    {
       "airlineFlight": "American Airlines AA2939",
       "to": "Philadelphia",
       "checkInCounters": "65 - 78",
@@ -89,19 +80,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Canada AC1805",
-      "to": "Toronto",
-      "checkInCounters": "55 - 64",
-      "gate": "13",
+      "airlineFlight": "Delta Airlines DL1957",
+      "to": "New York",
+      "checkInCounters": "87 - 98",
+      "gate": "19",
       "scheduledTime": "1:50 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Delta Airlines DL1957",
-      "to": "New York",
-      "checkInCounters": "87 - 98",
-      "gate": "19",
+      "airlineFlight": "Air Canada AC1805",
+      "to": "Toronto",
+      "checkInCounters": "55 - 64",
+      "gate": "13",
       "scheduledTime": "1:50 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -161,19 +152,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "F82649",
-      "to": "Toronto",
-      "checkInCounters": "13 - 20",
-      "gate": "7",
+      "airlineFlight": "Jet Blue B6780",
+      "to": "New York",
+      "checkInCounters": "31 - 40",
+      "gate": "8",
       "scheduledTime": "2:30 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B6780",
-      "to": "New York",
-      "checkInCounters": "31 - 40",
-      "gate": "8",
+      "airlineFlight": "F82649",
+      "to": "Toronto",
+      "checkInCounters": "13 - 20",
+      "gate": "7",
       "scheduledTime": "2:30 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -206,10 +197,10 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS9459",
+      "airlineFlight": "West Jet WS2915",
       "to": "Montreal",
-      "checkInCounters": "43 - 54",
-      "gate": "14",
+      "checkInCounters": "",
+      "gate": "",
       "scheduledTime": "2:55 PM",
       "actualTime": "1:35 PM",
       "status": "Early"
@@ -224,19 +215,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2673",
-      "to": "Toronto",
-      "checkInCounters": "43 - 54",
-      "gate": "16",
+      "airlineFlight": "Jet Blue B62126",
+      "to": "Fort Lauderdale",
+      "checkInCounters": "31 - 40",
+      "gate": "12",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B62126",
-      "to": "Fort Lauderdale",
-      "checkInCounters": "31 - 40",
-      "gate": "12",
+      "airlineFlight": "West Jet WS2673",
+      "to": "Toronto",
+      "checkInCounters": "43 - 54",
+      "gate": "16",
       "scheduledTime": "3:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -305,19 +296,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Jet Blue B61194",
-      "to": "Boston",
-      "checkInCounters": "31 - 40",
-      "gate": "8",
+      "airlineFlight": "Delta Airlines DL1893",
+      "to": "Minneapolis",
+      "checkInCounters": "87 - 98",
+      "gate": "5",
       "scheduledTime": "4:00 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Delta Airlines DL1893",
-      "to": "Minneapolis",
-      "checkInCounters": "87 - 98",
-      "gate": "5",
+      "airlineFlight": "Jet Blue B61194",
+      "to": "Boston",
+      "checkInCounters": "31 - 40",
+      "gate": "8",
       "scheduledTime": "4:00 PM",
       "actualTime": "",
       "status": "On-Time"
@@ -431,19 +422,19 @@
       "status": "On-Time"
     },
     {
-      "airlineFlight": "Air Canada AC1807",
+      "airlineFlight": "West Jet WS2569",
       "to": "Toronto",
-      "checkInCounters": "55 - 64",
-      "gate": "10",
+      "checkInCounters": "43 - 54",
+      "gate": "5",
       "scheduledTime": "6:20 PM",
       "actualTime": "",
       "status": "On-Time"
     },
     {
-      "airlineFlight": "West Jet WS2569",
+      "airlineFlight": "Air Canada AC1807",
       "to": "Toronto",
-      "checkInCounters": "43 - 54",
-      "gate": "5",
+      "checkInCounters": "55 - 64",
+      "gate": "10",
       "scheduledTime": "6:20 PM",
       "actualTime": "",
       "status": "On-Time"
