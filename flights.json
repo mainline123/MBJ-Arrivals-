@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T16:45:18.284Z",
+  "updated": "2026-11-28T17:00:23.890Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -33,27 +33,27 @@
     },
     {
       "airlineFlight": "American Airlines AA1311",
-      "from": "Philadelphia",
+      "from": "Miami",
       "baggage": "2",
       "scheduledTime": "11:52 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:45 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2943",
       "from": "Charlotte",
       "baggage": "5",
       "scheduledTime": "12:02 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:59 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA1349",
       "from": "New York",
       "baggage": "6",
       "scheduledTime": "12:03 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:56 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Southwest Airlines WN272",
