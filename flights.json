@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T16:00:25.412Z",
+  "updated": "2026-11-28T16:15:22.714Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -20,8 +20,8 @@
       "from": "Panama City",
       "baggage": "1",
       "scheduledTime": "11:12 AM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "11:04 AM",
+      "status": "Early"
     },
     {
       "airlineFlight": "Jet Blue B6827",
