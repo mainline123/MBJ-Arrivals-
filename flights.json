@@ -5,7 +5,7 @@
   "type": "arrivals",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=arrivals",
-  "updated": "2026-11-28T18:15:17.316Z",
+  "updated": "2026-11-28T18:30:26.487Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -140,8 +140,8 @@
       "from": "St Louis",
       "baggage": "1",
       "scheduledTime": "1:25 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:18 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "F82648",
@@ -204,8 +204,8 @@
       "from": "Montreal",
       "baggage": "6",
       "scheduledTime": "2:00 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:24 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "United Airlines UA1462",

@@ -5,7 +5,7 @@
   "type": "departures",
   "source": "Official MBJ Airport website",
   "sourceUrl": "https://www.mbjairport.com/flights?type=departures",
-  "updated": "2026-11-28T18:15:17.316Z",
+  "updated": "2026-11-28T18:30:26.487Z",
   "flights": [
     {
       "airlineFlight": "American Airlines AA1651",
@@ -67,8 +67,8 @@
       "checkInCounters": "65 - 78",
       "gate": "7",
       "scheduledTime": "1:23 PM",
-      "actualTime": "",
-      "status": "On-Time"
+      "actualTime": "1:21 PM",
+      "status": "Early"
     },
     {
       "airlineFlight": "American Airlines AA2939",
@@ -370,7 +370,7 @@
     {
       "airlineFlight": "LP2447",
       "to": "Lima",
-      "checkInCounters": "1 - 8",
+      "checkInCounters": "",
       "gate": "7",
       "scheduledTime": "5:45 PM",
       "actualTime": "",
